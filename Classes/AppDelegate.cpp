@@ -5,6 +5,8 @@
 #include "AnimationBaseTest.h"
 #include "Knight.h"
 #include "CoreElement.h"
+#include "PopupWaiting.h"
+#include "Dealer.h"
 USING_NS_CC;
 
 AppDelegate::AppDelegate() 
@@ -44,12 +46,13 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.f / 60.f);
 
     FileUtils::getInstance()->addSearchPath("res");
-
+    auto scene = Dealer::createScene();
     // create a scene. it's an autorelease object
     //auto scene = HelloDragonBones::createScene();
     //auto scene = PerformanceTest::createScene();
     //auto scene = AnimationBaseTest::createScene();
-    auto scene = KnightGame::createScene();
+    //PopupWaiting::gI()->show();
+    //auto scene = KnightGame::createScene();
     //auto scene = CoreElementGame::createScene();
 
     // run
