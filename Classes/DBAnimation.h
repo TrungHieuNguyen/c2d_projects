@@ -7,7 +7,6 @@ class DBAnimation : public cocos2d::Node
 {
 public:
      DBAnimation();
-    virtual ~DBAnimation();
     void load(std::string , std::string);
     void run(std::string, std::string);
 private:

@@ -64,9 +64,9 @@ bool CoreElementGame::init()
     {
         assert(false);
     }
-    Dealer* animTest = new Dealer();
-    //animTest->load("DragonBoy/DragonBoy.json","DragonBoy/DragonBoy_texture_1.json");
-    animTest->show("Armature","animtion0");
+    DBAnimation* animTest = new DBAnimation();
+    animTest->load("Dealer/PokerKing_ske.json","Dealer/PokerKing_tex.json");
+    animTest->run("Armature","animtion0");
     addChild(animTest);
     
     return true;

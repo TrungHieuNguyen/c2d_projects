@@ -13,10 +13,7 @@ DBAnimation::DBAnimation()
     _armatureDisplay = nullptr;
     
 }
-DBAnimation::~DBAnimation()
-{
-    
-}
+
 
 void DBAnimation::load(std::string data,std::string texture)
 {
@@ -26,7 +23,6 @@ void DBAnimation::load(std::string data,std::string texture)
 }
 void DBAnimation::run(std::string arma, std::string anim)
 {
-    load("DragonBoy/DragonBoy.json","DragonBoy/DragonBoy_texture_1.json");
     if (_data)
     {
         if (_armature)
