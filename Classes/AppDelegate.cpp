@@ -46,14 +46,14 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.f / 60.f);
 
     FileUtils::getInstance()->addSearchPath("res");
-    auto scene = Dealer::createScene();
+    //auto scene = Dealer::createScene();
     // create a scene. it's an autorelease object
     //auto scene = HelloDragonBones::createScene();
     //auto scene = PerformanceTest::createScene();
     //auto scene = AnimationBaseTest::createScene();
     //PopupWaiting::gI()->show();
     //auto scene = KnightGame::createScene();
-    //auto scene = CoreElementGame::createScene();
+     auto scene = CoreElementGame::createScene();
 
     // run
     director->runWithScene(scene);

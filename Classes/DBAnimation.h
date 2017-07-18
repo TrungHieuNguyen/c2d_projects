@@ -3,12 +3,13 @@
 #include "cocos2d.h"
 #include "DragonBones/cocos2dx/CCDragonBonesHeaders.h"
 
-class Dealer : public cocos2d::Node
+class DBAnimation : public cocos2d::Node
 {
 public:
-    Dealer();
+     DBAnimation();
+    virtual ~DBAnimation();
     void load(std::string , std::string);
-    void show(std::string, std::string);
+    void run(std::string, std::string);
 private:
     bool _isMoved;
     float _prevArmatureScale;
@@ -21,6 +22,7 @@ private:
     dragonBones::Armature* _armature;
     dragonBones::CCArmatureDisplay* _armatureDisplay;
     dragonBones::CCFactory _factory;
+    
 
 };
 

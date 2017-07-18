@@ -1,5 +1,6 @@
 ﻿#include "CoreElement.h"
-
+#include "DBAnimation.h"
+#include "Dealer.h"
 USING_NS_CC;
 
 Scene* CoreElementGame::createScene()
@@ -63,7 +64,11 @@ bool CoreElementGame::init()
     {
         assert(false);
     }
-
+    Dealer* animTest = new Dealer();
+    //animTest->load("DragonBoy/DragonBoy.json","DragonBoy/DragonBoy_texture_1.json");
+    animTest->show("Armature","animtion0");
+    addChild(animTest);
+    
     return true;
 }
 
