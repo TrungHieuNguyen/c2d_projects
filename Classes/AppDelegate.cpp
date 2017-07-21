@@ -1,5 +1,5 @@
 ﻿#include "AppDelegate.h"
-
+#include "HelloWorldScene.h"
 #include "HelloDragonBones.h"
 #include "PerformanceTest.h"
 #include "AnimationBaseTest.h"
@@ -53,8 +53,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     //auto scene = AnimationBaseTest::createScene();
     //PopupWaiting::gI()->show();
     //auto scene = KnightGame::createScene();
-     auto scene = CoreElementGame::createScene();
-
+    //auto scene = CoreElementGame::createScene();
+	auto scene = HelloWorld::createScene();
     // run
     director->runWithScene(scene);
 

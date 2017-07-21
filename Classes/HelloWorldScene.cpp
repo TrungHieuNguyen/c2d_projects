@@ -1,6 +1,6 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
-
+#include "DBAnimation.h"
 USING_NS_CC;
 
 Scene* HelloWorld::createScene()
@@ -72,7 +72,11 @@ bool HelloWorld::init()
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
-    
+	DBAnimation* animTest = new DBAnimation();
+	animTest->setScale(0.75f);
+	animTest->load("Dealer/PokerKing_ske.json", "Dealer/PokerKing_tex.json");
+	animTest->run("Armature", "animtion0");
+	addChild(animTest);
     return true;
 }
 

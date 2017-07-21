@@ -10,12 +10,12 @@
 #define Popup_hpp
 #include <stdio.h>
 #include "cocos2d.h"
-#include "cocos-ext.h"
+
 #include "ui/CocosGUI.h"
 #include <stdio.h>
 #define  Z_POPUP_PRIORITY 100
 using namespace::cocos2d;
-using namespace::extension;
+
 #define COLOR_TITTLE Color3B(35, 195, 233)
 
 class Popup: public LayerColor
