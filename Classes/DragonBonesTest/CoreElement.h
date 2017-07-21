@@ -2,7 +2,7 @@
 #define __CORE_ELEMENT_H__
 
 #include "cocos2d.h"
-#include "DragonBones/cocos2dx/CCDragonBonesHeaders.h"
+#include "../DragonBones/cocos2dx/CCDragonBonesHeaders.h"
 
 class CoreElementBullet
 {

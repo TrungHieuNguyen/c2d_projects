@@ -1,10 +1,5 @@
 ﻿#include "AppDelegate.h"
-
-#include "HelloDragonBones.h"
-#include "PerformanceTest.h"
-#include "AnimationBaseTest.h"
-#include "Knight.h"
-#include "CoreElement.h"
+#include "DragonBonesTest/CoreElement.h"
 #include "PopupWaiting.h"
 #include "Dealer.h"
 USING_NS_CC;

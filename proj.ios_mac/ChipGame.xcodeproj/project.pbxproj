@@ -12,12 +12,7 @@
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		240A80CA1F0E15AB009893B7 /* AnimationBaseTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 240A80BE1F0E15AB009893B7 /* AnimationBaseTest.cpp */; };
 		240A80CB1F0E15AB009893B7 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 240A80C01F0E15AB009893B7 /* AppDelegate.cpp */; };
-		240A80CC1F0E15AB009893B7 /* CoreElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 240A80C21F0E15AB009893B7 /* CoreElement.cpp */; };
-		240A80CD1F0E15AB009893B7 /* HelloDragonBones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 240A80C41F0E15AB009893B7 /* HelloDragonBones.cpp */; };
-		240A80CE1F0E15AB009893B7 /* Knight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 240A80C61F0E15AB009893B7 /* Knight.cpp */; };
-		240A80CF1F0E15AB009893B7 /* PerformanceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 240A80C81F0E15AB009893B7 /* PerformanceTest.cpp */; };
 		240A81441F0E1639009893B7 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 240A80D31F0E1639009893B7 /* Animation.cpp */; };
 		240A81451F0E1639009893B7 /* AnimationState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 240A80D51F0E1639009893B7 /* AnimationState.cpp */; };
 		240A81461F0E1639009893B7 /* TimelineState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 240A80D91F0E1639009893B7 /* TimelineState.cpp */; };
@@ -41,6 +36,11 @@
 		240A81AE1F0E1DD6009893B7 /* CCSlot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 240A81A81F0E1DD6009893B7 /* CCSlot.cpp */; };
 		240A81AF1F0E1DD6009893B7 /* CCTextureData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 240A81AA1F0E1DD6009893B7 /* CCTextureData.cpp */; };
 		241E31931F1C66BD00554D06 /* Dealer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241E31911F1C66BD00554D06 /* Dealer.cpp */; };
+		241F02931F21EBB800323F34 /* AnimationBaseTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F02891F21EBB800323F34 /* AnimationBaseTest.cpp */; };
+		241F02941F21EBB800323F34 /* CoreElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F028B1F21EBB800323F34 /* CoreElement.cpp */; };
+		241F02951F21EBB800323F34 /* HelloDragonBones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F028D1F21EBB800323F34 /* HelloDragonBones.cpp */; };
+		241F02961F21EBB800323F34 /* Knight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F028F1F21EBB800323F34 /* Knight.cpp */; };
+		241F02971F21EBB800323F34 /* PerformanceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F02911F21EBB800323F34 /* PerformanceTest.cpp */; };
 		2423B7DB1F18A7DC00709667 /* Popup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2423B7D91F18A7DC00709667 /* Popup.cpp */; };
 		2423B7DF1F18AF7700709667 /* PopupWaiting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2423B7DD1F18AF7700709667 /* PopupWaiting.cpp */; };
 		243082BB1F1DE6120086F8ED /* DBAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 243082B91F1DE6120086F8ED /* DBAnimation.cpp */; };
@@ -153,18 +153,8 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* ChipGame-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChipGame-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		240A80BE1F0E15AB009893B7 /* AnimationBaseTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationBaseTest.cpp; sourceTree = "<group>"; };
-		240A80BF1F0E15AB009893B7 /* AnimationBaseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationBaseTest.h; sourceTree = "<group>"; };
 		240A80C01F0E15AB009893B7 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		240A80C11F0E15AB009893B7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		240A80C21F0E15AB009893B7 /* CoreElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoreElement.cpp; sourceTree = "<group>"; };
-		240A80C31F0E15AB009893B7 /* CoreElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreElement.h; sourceTree = "<group>"; };
-		240A80C41F0E15AB009893B7 /* HelloDragonBones.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloDragonBones.cpp; sourceTree = "<group>"; };
-		240A80C51F0E15AB009893B7 /* HelloDragonBones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloDragonBones.h; sourceTree = "<group>"; };
-		240A80C61F0E15AB009893B7 /* Knight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Knight.cpp; sourceTree = "<group>"; };
-		240A80C71F0E15AB009893B7 /* Knight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Knight.h; sourceTree = "<group>"; };
-		240A80C81F0E15AB009893B7 /* PerformanceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerformanceTest.cpp; sourceTree = "<group>"; };
-		240A80C91F0E15AB009893B7 /* PerformanceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceTest.h; sourceTree = "<group>"; };
 		240A80D31F0E1639009893B7 /* Animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animation.cpp; sourceTree = "<group>"; };
 		240A80D41F0E1639009893B7 /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
 		240A80D51F0E1639009893B7 /* AnimationState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationState.cpp; sourceTree = "<group>"; };
@@ -260,6 +250,16 @@
 		240A81AB1F0E1DD6009893B7 /* CCTextureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTextureData.h; sourceTree = "<group>"; };
 		241E31911F1C66BD00554D06 /* Dealer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dealer.cpp; sourceTree = "<group>"; };
 		241E31921F1C66BD00554D06 /* Dealer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dealer.h; sourceTree = "<group>"; };
+		241F02891F21EBB800323F34 /* AnimationBaseTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationBaseTest.cpp; sourceTree = "<group>"; };
+		241F028A1F21EBB800323F34 /* AnimationBaseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationBaseTest.h; sourceTree = "<group>"; };
+		241F028B1F21EBB800323F34 /* CoreElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoreElement.cpp; sourceTree = "<group>"; };
+		241F028C1F21EBB800323F34 /* CoreElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreElement.h; sourceTree = "<group>"; };
+		241F028D1F21EBB800323F34 /* HelloDragonBones.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloDragonBones.cpp; sourceTree = "<group>"; };
+		241F028E1F21EBB800323F34 /* HelloDragonBones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloDragonBones.h; sourceTree = "<group>"; };
+		241F028F1F21EBB800323F34 /* Knight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Knight.cpp; sourceTree = "<group>"; };
+		241F02901F21EBB800323F34 /* Knight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Knight.h; sourceTree = "<group>"; };
+		241F02911F21EBB800323F34 /* PerformanceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PerformanceTest.cpp; sourceTree = "<group>"; };
+		241F02921F21EBB800323F34 /* PerformanceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceTest.h; sourceTree = "<group>"; };
 		2423B7D91F18A7DC00709667 /* Popup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Popup.cpp; sourceTree = "<group>"; };
 		2423B7DA1F18A7DC00709667 /* Popup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Popup.hpp; sourceTree = "<group>"; };
 		2423B7DD1F18AF7700709667 /* PopupWaiting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PopupWaiting.cpp; sourceTree = "<group>"; };
@@ -643,6 +643,23 @@
 			path = DragonBones/cocos2dx;
 			sourceTree = "<group>";
 		};
+		241F02881F21EBB800323F34 /* DragonBonesTest */ = {
+			isa = PBXGroup;
+			children = (
+				241F02891F21EBB800323F34 /* AnimationBaseTest.cpp */,
+				241F028A1F21EBB800323F34 /* AnimationBaseTest.h */,
+				241F028B1F21EBB800323F34 /* CoreElement.cpp */,
+				241F028C1F21EBB800323F34 /* CoreElement.h */,
+				241F028D1F21EBB800323F34 /* HelloDragonBones.cpp */,
+				241F028E1F21EBB800323F34 /* HelloDragonBones.h */,
+				241F028F1F21EBB800323F34 /* Knight.cpp */,
+				241F02901F21EBB800323F34 /* Knight.h */,
+				241F02911F21EBB800323F34 /* PerformanceTest.cpp */,
+				241F02921F21EBB800323F34 /* PerformanceTest.h */,
+			);
+			path = DragonBonesTest;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
@@ -710,10 +727,9 @@
 			isa = PBXGroup;
 			children = (
 				240A80D01F0E15C5009893B7 /* DragonBones */,
+				241F02881F21EBB800323F34 /* DragonBonesTest */,
 				240A81681F0E1650009893B7 /* rapidjson */,
 				240A818F1F0E1650009893B7 /* rapidxml */,
-				240A80BF1F0E15AB009893B7 /* AnimationBaseTest.h */,
-				240A80BE1F0E15AB009893B7 /* AnimationBaseTest.cpp */,
 				2423B7D91F18A7DC00709667 /* Popup.cpp */,
 				2423B7DA1F18A7DC00709667 /* Popup.hpp */,
 				243082B91F1DE6120086F8ED /* DBAnimation.cpp */,
@@ -724,14 +740,6 @@
 				241E31921F1C66BD00554D06 /* Dealer.h */,
 				2423B7DD1F18AF7700709667 /* PopupWaiting.cpp */,
 				2423B7DE1F18AF7700709667 /* PopupWaiting.h */,
-				240A80C21F0E15AB009893B7 /* CoreElement.cpp */,
-				240A80C31F0E15AB009893B7 /* CoreElement.h */,
-				240A80C41F0E15AB009893B7 /* HelloDragonBones.cpp */,
-				240A80C51F0E15AB009893B7 /* HelloDragonBones.h */,
-				240A80C61F0E15AB009893B7 /* Knight.cpp */,
-				240A80C71F0E15AB009893B7 /* Knight.h */,
-				240A80C81F0E15AB009893B7 /* PerformanceTest.cpp */,
-				240A80C91F0E15AB009893B7 /* PerformanceTest.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -950,27 +958,27 @@
 				240A81471F0E1639009893B7 /* WorldClock.cpp in Sources */,
 				240A81481F0E1639009893B7 /* Armature.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				241F02961F21EBB800323F34 /* Knight.cpp in Sources */,
 				241E31931F1C66BD00554D06 /* Dealer.cpp in Sources */,
 				240A81AD1F0E1DD6009893B7 /* CCFactory.cpp in Sources */,
-				240A80CF1F0E15AB009893B7 /* PerformanceTest.cpp in Sources */,
 				2423B7DB1F18A7DC00709667 /* Popup.cpp in Sources */,
 				240A81511F0E1639009893B7 /* FrameData.cpp in Sources */,
 				240A81AC1F0E1DD6009893B7 /* CCArmatureDisplay.cpp in Sources */,
+				241F02931F21EBB800323F34 /* AnimationBaseTest.cpp in Sources */,
 				240A80CB1F0E15AB009893B7 /* AppDelegate.cpp in Sources */,
+				241F02941F21EBB800323F34 /* CoreElement.cpp in Sources */,
 				240A81451F0E1639009893B7 /* AnimationState.cpp in Sources */,
 				240A81AF1F0E1DD6009893B7 /* CCTextureData.cpp in Sources */,
 				240A81671F0E1639009893B7 /* TextureData.cpp in Sources */,
 				2423B7DF1F18AF7700709667 /* PopupWaiting.cpp in Sources */,
-				240A80CD1F0E15AB009893B7 /* HelloDragonBones.cpp in Sources */,
 				240A81461F0E1639009893B7 /* TimelineState.cpp in Sources */,
+				241F02951F21EBB800323F34 /* HelloDragonBones.cpp in Sources */,
+				241F02971F21EBB800323F34 /* PerformanceTest.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
-				240A80CE1F0E15AB009893B7 /* Knight.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				240A814A1F0E1639009893B7 /* Slot.cpp in Sources */,
-				240A80CC1F0E15AB009893B7 /* CoreElement.cpp in Sources */,
 				240A81531F0E1639009893B7 /* DataParser.cpp in Sources */,
 				240A81491F0E1639009893B7 /* Bone.cpp in Sources */,
-				240A80CA1F0E15AB009893B7 /* AnimationBaseTest.cpp in Sources */,
 				243082BB1F1DE6120086F8ED /* DBAnimation.cpp in Sources */,
 				240A81441F0E1639009893B7 /* Animation.cpp in Sources */,
 			);

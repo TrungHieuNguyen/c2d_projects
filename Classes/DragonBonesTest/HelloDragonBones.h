@@ -2,7 +2,7 @@
 #define __HELLO_DRAGONBONES_H__
 
 #include "cocos2d.h"
-#include "DragonBones/cocos2dx/CCDragonBonesHeaders.h"
+#include "../DragonBones/cocos2dx/CCDragonBonesHeaders.h"
 
 class HelloDragonBones : public cocos2d::LayerColor
 {
