@@ -1,6 +1,6 @@
 ﻿#include "CoreElement.h"
-#include "DBAnimation.h"
-#include "Dealer.h"
+#include "../DBAnimation.h"
+#include "../Dealer.h"
 USING_NS_CC;
 
 Scene* CoreElementGame::createScene()
@@ -64,9 +64,11 @@ bool CoreElementGame::init()
     {
         assert(false);
     }
+    
     DBAnimation* animTest = new DBAnimation();
     animTest->load("Dealer/PokerKing_ske.json","Dealer/PokerKing_tex.json");
     animTest->run("Armature","animtion0");
+    animTest->setScale(0.75f);
     addChild(animTest);
     
     return true;
