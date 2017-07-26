@@ -1,6 +1,7 @@
 ﻿#include "CoreElement.h"
-#include "../DBAnimation.h"
-#include "../Dealer.h"
+#include "../MiniGame/DBAnimation.h"
+#include "../MiniGame/Dealer.h"
+#include "extensions/GUI/CCScrollView/CCScrollView.h"
 USING_NS_CC;
 
 Scene* CoreElementGame::createScene()
@@ -16,6 +17,62 @@ const int CoreElementGame::GROUND = 120.f;
 const float CoreElementGame::G = -0.6f;
 CoreElementGame* CoreElementGame::instance = nullptr;
 
+static std::string getShortStringGoldDisplay(double value)
+{
+    double gold = value;
+    bool negative = false;
+    if (value < 0){
+        negative = true;
+        gold = (-1) * value;
+    }
+    std::string strUnit;
+    if (gold >= 1000000000)
+    {
+        gold /= 1000000000;
+        strUnit = "B";
+    }
+    else if(gold >= 1000000)
+    {
+        gold /= 1000000;
+        strUnit = "M";
+    }
+    else if (gold >= 1000)
+    {
+        gold /= 1000;
+        strUnit = "K";
+    }
+    
+    
+    int roundValue = (int)gold;
+    std::string str = StringUtils::format("%d",(int) roundValue);
+    if (gold - roundValue >= 0.001)
+    {
+        std::string strFloat = StringUtils::format("%.3g", gold - roundValue);
+        strFloat = strFloat.substr(1, strFloat.length() - 1);
+        strFloat[0] = '.';
+        int digitCount = (int) str.length();
+        for (int i = 1; i < strFloat.length(); i++)
+        {
+            digitCount++;
+            
+            if (digitCount >= 4)
+            {
+                strFloat = strFloat.substr(0, i + 1);
+                break;
+            }
+        }
+        str = str + strFloat;
+        
+    }
+    
+    
+    std::string res = "";
+    if (negative)
+        res = StringUtils::format("-%s%s", str.c_str(), strUnit.c_str());
+    else
+        res = StringUtils::format("%s%s", str.c_str(), strUnit.c_str());
+    return res;
+}
 bool CoreElementGame::init()
 {
     if (!LayerColor::initWithColor(cocos2d::Color4B(105, 105, 105, 255)))
@@ -70,6 +127,98 @@ bool CoreElementGame::init()
     animTest->run("Armature","animtion0");
     animTest->setScale(0.75f);
     addChild(animTest);
+    
+    
+   
+    // get the screen size
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    
+    // get the origin
+    Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    
+    // create a container-layer with white color-background & having 90% of screen size & 1200px vertical size
+    auto containerLayer = LayerColor::create(Color4B(255,255,255,255.0), visibleSize.width*0.9, 1200);
+    
+    // get the Lorem Ipsum Text for the Label
+    const char *helpText = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.";
+    
+    // create a label with	35 font size
+    auto label = LabelTTF::create(helpText, "Marker Felt", 35);
+    
+    // set the color of the label. Dark-Gray here.
+    label->setColor(Color3B(70.0, 70.0, 70.0));
+    
+    // Set the position of lable in such a way that
+    // adds 5% space on left & 5% on right
+    label->setPosition(Vec2(containerLayer->getContentSize().width*0.5,containerLayer->getContentSize().height*.5f));
+    
+    // set the size of the layer
+    label->setDimensions(Size(containerLayer->getContentSize().width*0.9,1200));
+    
+    // add the label into the container-layer
+    containerLayer->addChild(label);
+    
+    // NOW create a Scrollview
+    auto scrollView = cocos2d::extension::ScrollView::create();
+    scrollView->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
+    // set the scrollview size = container layer size
+    scrollView->setContentSize(Size(containerLayer->getContentSize().width, containerLayer->getContentSize().height));
+    
+    // set the position of the scroll-view	(here center of the screen
+    scrollView->setPosition(Point(visibleSize.width/2,visibleSize.height/2));
+    
+    // set the scroll-direction for scroll-view
+    scrollView->setDirection(cocos2d::extension::ScrollView::Direction::VERTICAL);
+    
+    // set the size of the scrollview - here 90% of visible screen.
+    scrollView->setViewSize(Size(visibleSize.width*0.9,visibleSize.height*0.9));
+    
+    // set the content offset of the scrollview
+    scrollView->setContentOffset(Vec2(0, 0));
+    
+    // add / set the container-layer to the scrollview.
+    scrollView->setContainer(containerLayer);
+    
+    // add scroll-view to your scene-layer.
+    //this->addChild(scrollView);
+    
+    
+    
+    Label *set1 = Label::createWithTTF("1.200.000.000", "Marker Felt.ttf", 30);
+    set1->setPosition(Point(100, 200));
+    set1->setDimensions(100, set1->getContentSize().height);
+    addChild(set1);
+    Rect aabb = set1->getBoundingBox();
+    DrawNode* drawNode = DrawNode::create();
+    drawNode->drawRect(aabb.origin, aabb.origin + aabb.size, Color4F(1, 0, 0, 1));
+    addChild(drawNode, 100);
+    
+    auto stencil = Sprite::create("bg_event.png");
+    auto _showSize = stencil->getContentSize();
+    stencil->setAnchorPoint(Vec2(0.5f, 0.5f));
+    stencil->setPosition(_showSize.width / 2, _showSize.height / 2);
+    
+    auto _text = Label::createWithTTF("AAAAAAAAA", "Marker Felt.ttf", 30);
+    _text->setTextColor(Color4B::WHITE);
+    _text->setAnchorPoint(Vec2(0.5f, 0.5f));
+    _text->setPositionY(_showSize.height / 2);
+    auto _wordSize = _text->getContentSize();
+    _text->setPositionX(_showSize.width + _wordSize.width / 2);
+    
+    ClippingNode* clipNode = ClippingNode::create();
+    clipNode->setStencil(stencil);
+    clipNode->setAnchorPoint(Vec2::ZERO);
+    clipNode->setPosition(Vec2::ZERO);
+    this->addChild(clipNode);
+    clipNode->addChild(_text);
+    clipNode->setCascadeOpacityEnabled(true);
+    
+    //this->setIgnoreAnchorPointForPosition(false);
+    //this->setContentSize(_showSize);
+    
+//    auto spBg = Sprite::create("bg_event.png");
+//    addChild(spBg, -1);
+//    spBg->setPosition(_showSize/2);
     
     return true;
 }

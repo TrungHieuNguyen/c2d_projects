@@ -1,7 +1,7 @@
 #pragma once
 
 #include "cocos2d.h"
-#include "DragonBones/cocos2dx/CCDragonBonesHeaders.h"
+#include "../DragonBones/cocos2dx/CCDragonBonesHeaders.h"
 
 class DBAnimation : public cocos2d::Node
 {

@@ -1,5 +1,5 @@
 ﻿#include "AppDelegate.h"
-#include "DragonBonesTest/CoreElement.h"
+#include "../DragonBonesTest/CoreElement.h"
 #include "PopupWaiting.h"
 #include "Dealer.h"
 USING_NS_CC;
@@ -41,6 +41,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.f / 60.f);
 
     FileUtils::getInstance()->addSearchPath("res");
+    FileUtils::getInstance()->addSearchPath("fonts");
     //auto scene = Dealer::createScene();
     // create a scene. it's an autorelease object
     //auto scene = HelloDragonBones::createScene();
