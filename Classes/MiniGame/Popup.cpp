@@ -161,6 +161,9 @@ void Popup::effectShow(Node* mainNode)
     mainNode->stopAllActions();
     mainNode->runAction(out);
 }
+void Popup::effectHide()
+{
+}
 void Popup::effectColse()
 {
     Size size = Director::getInstance()->getVisibleSize();

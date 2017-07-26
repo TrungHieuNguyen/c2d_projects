@@ -5,7 +5,7 @@
 
 #include <stdio.h>
 #include "cocos2d.h"
-#include "cocos-ext.h"
+
 
 using namespace std;
 using namespace cocos2d;

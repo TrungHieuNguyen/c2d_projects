@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -96,7 +96,8 @@
       </Command>
     </PostBuildEvent>
     <PreLinkEvent>
-      <Command></Command>
+      <Command>
+      </Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup>
@@ -108,7 +109,6 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
       <Inputs>$(TargetFileName)</Inputs>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
@@ -139,17 +139,130 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
       </Command>
     </PostBuildEvent>
     <PreLinkEvent>
-      <Command></Command>
+      <Command>
+      </Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Classes\AnimationBaseTest.cpp" />
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\CoreElement.cpp" />
+    <ClCompile Include="..\Classes\DBAnimation.cpp" />
+    <ClCompile Include="..\Classes\Dealer.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\animation\Animation.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\animation\AnimationState.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\animation\TimelineState.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\animation\WorldClock.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\armature\Armature.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\armature\Bone.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\armature\Slot.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\cocos2dx\CCArmatureDisplay.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\cocos2dx\CCFactory.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\cocos2dx\CCSlot.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\cocos2dx\CCTextureData.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\core\BaseObject.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\events\EventObject.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\factories\BaseFactory.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\model\AnimationData.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\model\ArmatureData.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\model\DragonBonesData.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\model\FrameData.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\model\TimelineData.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\parsers\DataParser.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\parsers\JSONDataParser.cpp" />
+    <ClCompile Include="..\Classes\DragonBones\textures\TextureData.cpp" />
+    <ClCompile Include="..\Classes\HelloDragonBones.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\Knight.cpp" />
+    <ClCompile Include="..\Classes\PerformanceTest.cpp" />
+    <ClCompile Include="..\Classes\Popup.cpp" />
+    <ClCompile Include="..\Classes\PopupWaiting.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Classes\AnimationBaseTest.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\CoreElement.h" />
+    <ClInclude Include="..\Classes\DBAnimation.h" />
+    <ClInclude Include="..\Classes\Dealer.h" />
+    <ClInclude Include="..\Classes\DragonBones\animation\Animation.h" />
+    <ClInclude Include="..\Classes\DragonBones\animation\AnimationState.h" />
+    <ClInclude Include="..\Classes\DragonBones\animation\BaseTimelineState.h" />
+    <ClInclude Include="..\Classes\DragonBones\animation\IAnimateble.h" />
+    <ClInclude Include="..\Classes\DragonBones\animation\TimelineState.h" />
+    <ClInclude Include="..\Classes\DragonBones\animation\WorldClock.h" />
+    <ClInclude Include="..\Classes\DragonBones\armature\Armature.h" />
+    <ClInclude Include="..\Classes\DragonBones\armature\Bone.h" />
+    <ClInclude Include="..\Classes\DragonBones\armature\IArmatureDisplay.h" />
+    <ClInclude Include="..\Classes\DragonBones\armature\Slot.h" />
+    <ClInclude Include="..\Classes\DragonBones\armature\TransformObject.h" />
+    <ClInclude Include="..\Classes\DragonBones\cocos2dx\CCArmatureDisplay.h" />
+    <ClInclude Include="..\Classes\DragonBones\cocos2dx\CCDragonBonesHeaders.h" />
+    <ClInclude Include="..\Classes\DragonBones\cocos2dx\CCFactory.h" />
+    <ClInclude Include="..\Classes\DragonBones\cocos2dx\CCSlot.h" />
+    <ClInclude Include="..\Classes\DragonBones\cocos2dx\CCTextureData.h" />
+    <ClInclude Include="..\Classes\DragonBones\core\BaseObject.h" />
+    <ClInclude Include="..\Classes\DragonBones\core\DragonBones.h" />
+    <ClInclude Include="..\Classes\DragonBones\DragonBonesHeaders.h" />
+    <ClInclude Include="..\Classes\DragonBones\events\EventObject.h" />
+    <ClInclude Include="..\Classes\DragonBones\factories\BaseFactory.h" />
+    <ClInclude Include="..\Classes\DragonBones\geom\ColorTransform.h" />
+    <ClInclude Include="..\Classes\DragonBones\geom\Matrix.h" />
+    <ClInclude Include="..\Classes\DragonBones\geom\Point.h" />
+    <ClInclude Include="..\Classes\DragonBones\geom\Rectangle.h" />
+    <ClInclude Include="..\Classes\DragonBones\geom\Transform.h" />
+    <ClInclude Include="..\Classes\DragonBones\model\AnimationData.h" />
+    <ClInclude Include="..\Classes\DragonBones\model\ArmatureData.h" />
+    <ClInclude Include="..\Classes\DragonBones\model\DragonBonesData.h" />
+    <ClInclude Include="..\Classes\DragonBones\model\FrameData.h" />
+    <ClInclude Include="..\Classes\DragonBones\model\TimelineData.h" />
+    <ClInclude Include="..\Classes\DragonBones\parsers\DataParser.h" />
+    <ClInclude Include="..\Classes\DragonBones\parsers\JSONDataParser.h" />
+    <ClInclude Include="..\Classes\DragonBones\textures\TextureData.h" />
+    <ClInclude Include="..\Classes\HelloDragonBones.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\Knight.h" />
+    <ClInclude Include="..\Classes\PerformanceTest.h" />
+    <ClInclude Include="..\Classes\Popup.hpp" />
+    <ClInclude Include="..\Classes\PopupWaiting.h" />
+    <ClInclude Include="..\Classes\rapidjson\allocators.h" />
+    <ClInclude Include="..\Classes\rapidjson\document.h" />
+    <ClInclude Include="..\Classes\rapidjson\encodedstream.h" />
+    <ClInclude Include="..\Classes\rapidjson\encodings.h" />
+    <ClInclude Include="..\Classes\rapidjson\error\en.h" />
+    <ClInclude Include="..\Classes\rapidjson\error\error.h" />
+    <ClInclude Include="..\Classes\rapidjson\filereadstream.h" />
+    <ClInclude Include="..\Classes\rapidjson\filewritestream.h" />
+    <ClInclude Include="..\Classes\rapidjson\fwd.h" />
+    <ClInclude Include="..\Classes\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="..\Classes\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="..\Classes\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="..\Classes\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="..\Classes\rapidjson\internal\itoa.h" />
+    <ClInclude Include="..\Classes\rapidjson\internal\meta.h" />
+    <ClInclude Include="..\Classes\rapidjson\internal\pow10.h" />
+    <ClInclude Include="..\Classes\rapidjson\internal\regex.h" />
+    <ClInclude Include="..\Classes\rapidjson\internal\stack.h" />
+    <ClInclude Include="..\Classes\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="..\Classes\rapidjson\internal\strtod.h" />
+    <ClInclude Include="..\Classes\rapidjson\internal\swap.h" />
+    <ClInclude Include="..\Classes\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="..\Classes\rapidjson\memorybuffer.h" />
+    <ClInclude Include="..\Classes\rapidjson\memorystream.h" />
+    <ClInclude Include="..\Classes\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="..\Classes\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="..\Classes\rapidjson\pointer.h" />
+    <ClInclude Include="..\Classes\rapidjson\prettywriter.h" />
+    <ClInclude Include="..\Classes\rapidjson\rapidjson.h" />
+    <ClInclude Include="..\Classes\rapidjson\reader.h" />
+    <ClInclude Include="..\Classes\rapidjson\schema.h" />
+    <ClInclude Include="..\Classes\rapidjson\stream.h" />
+    <ClInclude Include="..\Classes\rapidjson\stringbuffer.h" />
+    <ClInclude Include="..\Classes\rapidjson\writer.h" />
+    <ClInclude Include="..\Classes\rapidxml\rapidxml.hpp" />
+    <ClInclude Include="..\Classes\rapidxml\rapidxml_iterators.hpp" />
+    <ClInclude Include="..\Classes\rapidxml\rapidxml_print.hpp" />
+    <ClInclude Include="..\Classes\rapidxml\rapidxml_utils.hpp" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
