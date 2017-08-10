@@ -6,7 +6,7 @@
       <ObjectData Name="Scene" ctype="GameNodeObjectData">
         <Size X="960.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="Default" ActionTag="953446860" Tag="5" IconVisible="False" ctype="SpriteObjectData">
+          <AbstractNodeData Name="Default" ActionTag="953446860" VisibleForFrame="False" Tag="5" IconVisible="False" ctype="SpriteObjectData">
             <Size X="960.0000" Y="640.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="480.0000" Y="320.0000" />
@@ -17,13 +17,13 @@
             <FileData Type="Normal" Path="images/HelloWorld.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ArmatureNode_1" ActionTag="830930107" Tag="3" IconVisible="True" LeftMargin="148.0000" RightMargin="812.0000" TopMargin="326.0000" BottomMargin="314.0000" IsLoop="True" IsAutoPlay="True" CurrentAnimationName="walk" ctype="ArmatureNodeObjectData">
+          <AbstractNodeData Name="ArmatureNode_1" ActionTag="830930107" Tag="3" IconVisible="True" LeftMargin="835.0000" RightMargin="125.0000" TopMargin="132.0000" BottomMargin="508.0000" IsLoop="True" IsAutoPlay="True" CurrentAnimationName="walk" ctype="ArmatureNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <AnchorPoint />
-            <Position X="148.0000" Y="314.0000" />
+            <Position X="835.0000" Y="508.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1542" Y="0.4906" />
+            <PrePosition X="0.8698" Y="0.7937" />
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Default" Path="Default/DemoPlayer.ExportJson" Plist="" />
           </AbstractNodeData>

@@ -134,6 +134,7 @@ bool CoreElementGame::init()
     animTest->load("Dealer/PokerKing_ske.json","Dealer/PokerKing_tex.json");
     animTest->run("Armature","animtion0");
     animTest->setScale(0.75f);
+    animTest->setPositionX(-200);
     addChild(animTest);
     
     
