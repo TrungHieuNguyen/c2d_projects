@@ -2,6 +2,10 @@
 #include "../MiniGame/DBAnimation.h"
 #include "../MiniGame/Dealer.h"
 #include "extensions/GUI/CCScrollView/CCScrollView.h"
+#include "ui/CocosGUI.h"
+#include "../cocos/editor-support/cocostudio/CocoStudio.h"
+
+
 USING_NS_CC;
 
 Scene* CoreElementGame::createScene()
@@ -86,6 +90,10 @@ bool CoreElementGame::init()
     _right = false;
     _player = nullptr;
 
+    auto rootNode = CSLoader::createNode("MainScene.csb");
+    
+    addChild(rootNode);
+    
     // Load DragonBones Data.
     const auto dragonBonesData = factory.loadDragonBonesData("CoreElement/CoreElement.json");
     factory.loadTextureAtlasData("CoreElement/CoreElement_texture_1.json");
@@ -219,6 +227,8 @@ bool CoreElementGame::init()
 //    auto spBg = Sprite::create("bg_event.png");
 //    addChild(spBg, -1);
 //    spBg->setPosition(_showSize/2);
+    
+    
     
     return true;
 }

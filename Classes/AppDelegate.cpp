@@ -1,7 +1,7 @@
-﻿#include "AppDelegate.h"
-#include "../DragonBonesTest/CoreElement.h"
-#include "PopupWaiting.h"
-#include "Dealer.h"
+#include "AppDelegate.h"
+#include "DragonBonesTest/CoreElement.h"
+#include "MiniGame/PopupWaiting.h"
+#include "MiniGame/Dealer.h"
 USING_NS_CC;
 
 AppDelegate::AppDelegate() 
@@ -53,6 +53,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // run
     director->runWithScene(scene);
+
     return true;
 }
 
