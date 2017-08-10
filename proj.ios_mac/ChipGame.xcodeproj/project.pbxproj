@@ -12,7 +12,6 @@
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		24079D421F28335300501F01 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24079D381F28335300501F01 /* AppDelegate.cpp */; };
 		24079D431F28335300501F01 /* DBAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24079D3A1F28335300501F01 /* DBAnimation.cpp */; };
 		24079D441F28335300501F01 /* Dealer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24079D3C1F28335300501F01 /* Dealer.cpp */; };
 		24079D451F28335300501F01 /* Popup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24079D3E1F28335300501F01 /* Popup.cpp */; };
@@ -44,6 +43,7 @@
 		241F02951F21EBB800323F34 /* HelloDragonBones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F028D1F21EBB800323F34 /* HelloDragonBones.cpp */; };
 		241F02961F21EBB800323F34 /* Knight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F028F1F21EBB800323F34 /* Knight.cpp */; };
 		241F02971F21EBB800323F34 /* PerformanceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F02911F21EBB800323F34 /* PerformanceTest.cpp */; };
+		24FBDA6D1F3C78C500B21CFB /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24FBDA6B1F3C78C500B21CFB /* AppDelegate.cpp */; };
 		2869428C89A123723A617FE2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47049ADB418185730B77336 /* AdSupport.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		294D0D641D0D56D500F7F5D4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294D0D631D0D56D500F7F5D4 /* CoreText.framework */; };
@@ -153,8 +153,6 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* ChipGame-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChipGame-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		24079D381F28335300501F01 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = MiniGame/AppDelegate.cpp; sourceTree = "<group>"; };
-		24079D391F28335300501F01 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MiniGame/AppDelegate.h; sourceTree = "<group>"; };
 		24079D3A1F28335300501F01 /* DBAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DBAnimation.cpp; sourceTree = "<group>"; };
 		24079D3B1F28335300501F01 /* DBAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAnimation.h; sourceTree = "<group>"; };
 		24079D3C1F28335300501F01 /* Dealer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dealer.cpp; sourceTree = "<group>"; };
@@ -266,6 +264,8 @@
 		241F02C01F220A6D00323F34 /* rapidxml_iterators.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_iterators.hpp; sourceTree = "<group>"; };
 		241F02C11F220A6D00323F34 /* rapidxml_print.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_print.hpp; sourceTree = "<group>"; };
 		241F02C21F220A6D00323F34 /* rapidxml_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_utils.hpp; sourceTree = "<group>"; };
+		24FBDA6B1F3C78C500B21CFB /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
+		24FBDA6C1F3C78C500B21CFB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		294D0D631D0D56D500F7F5D4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		31304B1F971C43E71FB62C74 /* PluginFacebook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PluginFacebook.framework; sourceTree = SOURCE_ROOT; };
@@ -737,8 +737,8 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				24079D381F28335300501F01 /* AppDelegate.cpp */,
-				24079D391F28335300501F01 /* AppDelegate.h */,
+				24FBDA6B1F3C78C500B21CFB /* AppDelegate.cpp */,
+				24FBDA6C1F3C78C500B21CFB /* AppDelegate.h */,
 				24079D371F28335300501F01 /* MiniGame */,
 				240A80D01F0E15C5009893B7 /* DragonBones */,
 				241F02881F21EBB800323F34 /* DragonBonesTest */,
@@ -979,8 +979,8 @@
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				240A814A1F0E1639009893B7 /* Slot.cpp in Sources */,
-				24079D421F28335300501F01 /* AppDelegate.cpp in Sources */,
 				240A81531F0E1639009893B7 /* DataParser.cpp in Sources */,
+				24FBDA6D1F3C78C500B21CFB /* AppDelegate.cpp in Sources */,
 				240A81491F0E1639009893B7 /* Bone.cpp in Sources */,
 				240A81441F0E1639009893B7 /* Animation.cpp in Sources */,
 			);

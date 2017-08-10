@@ -1,7 +1,6 @@
-#include "AppDelegate.h"
+﻿#include "AppDelegate.h"
 #include "DragonBonesTest/CoreElement.h"
-#include "MiniGame/PopupWaiting.h"
-#include "MiniGame/Dealer.h"
+
 USING_NS_CC;
 
 AppDelegate::AppDelegate() 
@@ -40,6 +39,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.f / 60.f);
 
+    FileUtils::getInstance()->addSearchPath(".");
     FileUtils::getInstance()->addSearchPath("res");
     FileUtils::getInstance()->addSearchPath("fonts");
     //auto scene = Dealer::createScene();
@@ -53,7 +53,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // run
     director->runWithScene(scene);
-
     return true;
 }
 
