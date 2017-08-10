@@ -1,0 +1,21 @@
+<Solution>
+  <PropertyGroup Name="CSSample" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="images">
+          <Image Name="bich1.png" />
+          <Image Name="co1.png" />
+          <Image Name="co1_1.png" />
+          <Image Name="fin1.png" />
+          <Image Name="fin2.png" />
+          <Image Name="fin3.png" />
+          <Image Name="HelloWorld.png" />
+          <Image Name="Main_dealer2_ani.png" />
+        </Folder>
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Project Name="Skeleton.csd" Type="Skeleton" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

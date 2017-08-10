@@ -40,6 +40,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.f / 60.f);
 
+    FileUtils::getInstance()->addSearchPath(".");
     FileUtils::getInstance()->addSearchPath("res");
     FileUtils::getInstance()->addSearchPath("fonts");
     //auto scene = Dealer::createScene();
