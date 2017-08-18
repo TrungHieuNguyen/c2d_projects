@@ -357,7 +357,114 @@ obj/local/armeabi/objs-debug/MyGame_shared/__/__/__/Classes/AppDelegate.o: \
  /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/git_cgame/cocos2d/cocos/3d/../platform/android/CCApplication-android.h \
  /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/git_cgame/cocos2d/cocos/3d/../renderer/CCGLProgramCache.h \
  /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/git_cgame/cocos2d/cocos/3d/../renderer/ccGLStateCache.h \
- jni/../../../Classes/HelloWorldScene.h
+ jni/../../../Classes/DragonBonesTest/CoreElement.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/CCDragonBonesHeaders.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/CCTextureData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../DragonBonesHeaders.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../core/DragonBones.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../core/BaseObject.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../core/DragonBones.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/ColorTransform.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/../core/DragonBones.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/Matrix.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/Point.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/Point.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/Rectangle.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/Transform.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/Matrix.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../textures/TextureData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../textures/../core/BaseObject.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../textures/../geom/Rectangle.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/FrameData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/../core/BaseObject.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/../geom/Transform.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/../geom/ColorTransform.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/DragonBonesData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/ArmatureData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/../geom/Point.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/../textures/TextureData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/AnimationData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/TimelineData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/FrameData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/ArmatureData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/AnimationData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/TimelineData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/DataParser.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../core/DragonBones.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../model/DragonBonesData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../textures/TextureData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/JSONDataParser.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/DataParser.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/document.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/reader.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/allocators.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/rapidjson.h \
+ /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/stream.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/encodings.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/encodedstream.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/memorystream.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/meta.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/../rapidjson.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/stack.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/../allocators.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/swap.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/strtod.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/ieee754.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/biginteger.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/diyfp.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/pow10.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/error/error.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/error/../rapidjson.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/strfunc.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/../stream.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/../rapidjson.h \
+ /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/BaseFactory.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../parsers/JSONDataParser.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/Armature.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../core/BaseObject.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../model/ArmatureData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../animation/IAnimateble.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../animation/../core/DragonBones.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../events/EventObject.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../events/../core/BaseObject.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/IArmatureDisplay.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../core/DragonBones.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../animation/Animation.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../animation/../core/BaseObject.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../animation/../model/AnimationData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/Bone.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/TransformObject.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../geom/Matrix.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../geom/Transform.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/Slot.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/Bone.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../armature/IArmatureDisplay.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../armature/Armature.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../armature/TransformObject.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../armature/Bone.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../armature/Slot.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/IAnimateble.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/WorldClock.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../core/DragonBones.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/IAnimateble.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/Animation.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/AnimationState.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../core/BaseObject.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../model/AnimationData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/BaseTimelineState.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../model/FrameData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../model/TimelineData.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../armature/Armature.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../armature/Slot.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/AnimationState.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/TimelineState.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/BaseTimelineState.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../events/EventObject.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/CCArmatureDisplay.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/CCSlot.h \
+ jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/CCFactory.h
 
 jni/../../../Classes/AppDelegate.h:
 
@@ -1075,4 +1182,218 @@ jni/../../../Classes/AppDelegate.h:
 
 /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/git_cgame/cocos2d/cocos/3d/../renderer/ccGLStateCache.h:
 
-jni/../../../Classes/HelloWorldScene.h:
+jni/../../../Classes/DragonBonesTest/CoreElement.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/CCDragonBonesHeaders.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/CCTextureData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../DragonBonesHeaders.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../core/DragonBones.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../core/BaseObject.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../core/DragonBones.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/ColorTransform.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/../core/DragonBones.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/Matrix.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/Point.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/Point.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/Rectangle.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/Transform.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../geom/Matrix.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../textures/TextureData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../textures/../core/BaseObject.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../textures/../geom/Rectangle.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/FrameData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/../core/BaseObject.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/../geom/Transform.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/../geom/ColorTransform.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/DragonBonesData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/ArmatureData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/../geom/Point.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/../textures/TextureData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/AnimationData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/TimelineData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/FrameData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/ArmatureData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/AnimationData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../model/TimelineData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/DataParser.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../core/DragonBones.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../model/DragonBonesData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../textures/TextureData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/JSONDataParser.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/DataParser.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/document.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/reader.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/allocators.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/rapidjson.h:
+
+/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/stream.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/encodings.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/encodedstream.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/memorystream.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/meta.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/../rapidjson.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/stack.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/../allocators.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/swap.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/strtod.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/ieee754.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/biginteger.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/diyfp.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/pow10.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/error/error.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/error/../rapidjson.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/strfunc.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/../stream.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../parsers/../rapidjson/internal/../rapidjson.h:
+
+/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/BaseFactory.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../parsers/JSONDataParser.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/Armature.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../core/BaseObject.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../model/ArmatureData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../animation/IAnimateble.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../animation/../core/DragonBones.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../events/EventObject.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../events/../core/BaseObject.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/IArmatureDisplay.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../core/DragonBones.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../animation/Animation.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../animation/../core/BaseObject.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../animation/../model/AnimationData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/Bone.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/TransformObject.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../geom/Matrix.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/../geom/Transform.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/Slot.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../factories/../armature/Bone.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../armature/IArmatureDisplay.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../armature/Armature.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../armature/TransformObject.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../armature/Bone.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../armature/Slot.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/IAnimateble.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/WorldClock.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../core/DragonBones.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/IAnimateble.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/Animation.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/AnimationState.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../core/BaseObject.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../model/AnimationData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/BaseTimelineState.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../model/FrameData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../model/TimelineData.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../armature/Armature.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/../armature/Slot.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/AnimationState.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/TimelineState.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../animation/BaseTimelineState.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/../events/EventObject.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/CCArmatureDisplay.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/CCSlot.h:
+
+jni/../../../Classes/DragonBonesTest/../DragonBones/cocos2dx/CCFactory.h:
