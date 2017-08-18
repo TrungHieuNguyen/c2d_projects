@@ -43,6 +43,8 @@
 		241F02951F21EBB800323F34 /* HelloDragonBones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F028D1F21EBB800323F34 /* HelloDragonBones.cpp */; };
 		241F02961F21EBB800323F34 /* Knight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F028F1F21EBB800323F34 /* Knight.cpp */; };
 		241F02971F21EBB800323F34 /* PerformanceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F02911F21EBB800323F34 /* PerformanceTest.cpp */; };
+		2489FD791F46E43500D14F0B /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2489FD771F46E43500D14F0B /* MainScene.cpp */; };
+		2489FD7D1F46E49200D14F0B /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2489FD7B1F46E49200D14F0B /* HelloWorldScene.cpp */; };
 		24FBDA6D1F3C78C500B21CFB /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24FBDA6B1F3C78C500B21CFB /* AppDelegate.cpp */; };
 		2869428C89A123723A617FE2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47049ADB418185730B77336 /* AdSupport.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -264,6 +266,10 @@
 		241F02C01F220A6D00323F34 /* rapidxml_iterators.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_iterators.hpp; sourceTree = "<group>"; };
 		241F02C11F220A6D00323F34 /* rapidxml_print.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_print.hpp; sourceTree = "<group>"; };
 		241F02C21F220A6D00323F34 /* rapidxml_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_utils.hpp; sourceTree = "<group>"; };
+		2489FD771F46E43500D14F0B /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainScene.cpp; sourceTree = "<group>"; };
+		2489FD781F46E43500D14F0B /* MainScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainScene.hpp; sourceTree = "<group>"; };
+		2489FD7B1F46E49200D14F0B /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
+		2489FD7C1F46E49200D14F0B /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		24FBDA6B1F3C78C500B21CFB /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		24FBDA6C1F3C78C500B21CFB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -420,12 +426,16 @@
 			children = (
 				24079D3A1F28335300501F01 /* DBAnimation.cpp */,
 				24079D3B1F28335300501F01 /* DBAnimation.h */,
+				2489FD7B1F46E49200D14F0B /* HelloWorldScene.cpp */,
+				2489FD7C1F46E49200D14F0B /* HelloWorldScene.h */,
 				24079D3C1F28335300501F01 /* Dealer.cpp */,
 				24079D3D1F28335300501F01 /* Dealer.h */,
 				24079D3E1F28335300501F01 /* Popup.cpp */,
 				24079D3F1F28335300501F01 /* Popup.hpp */,
 				24079D401F28335300501F01 /* PopupWaiting.cpp */,
 				24079D411F28335300501F01 /* PopupWaiting.h */,
+				2489FD771F46E43500D14F0B /* MainScene.cpp */,
+				2489FD781F46E43500D14F0B /* MainScene.hpp */,
 			);
 			path = MiniGame;
 			sourceTree = "<group>";
@@ -953,6 +963,7 @@
 				240A81521F0E1639009893B7 /* TimelineData.cpp in Sources */,
 				24079D441F28335300501F01 /* Dealer.cpp in Sources */,
 				24079D451F28335300501F01 /* Popup.cpp in Sources */,
+				2489FD791F46E43500D14F0B /* MainScene.cpp in Sources */,
 				240A814C1F0E1639009893B7 /* EventObject.cpp in Sources */,
 				240A814E1F0E1639009893B7 /* AnimationData.cpp in Sources */,
 				240A814B1F0E1639009893B7 /* BaseObject.cpp in Sources */,
@@ -970,6 +981,7 @@
 				240A81AC1F0E1DD6009893B7 /* CCArmatureDisplay.cpp in Sources */,
 				241F02931F21EBB800323F34 /* AnimationBaseTest.cpp in Sources */,
 				241F02941F21EBB800323F34 /* CoreElement.cpp in Sources */,
+				2489FD7D1F46E49200D14F0B /* HelloWorldScene.cpp in Sources */,
 				240A81451F0E1639009893B7 /* AnimationState.cpp in Sources */,
 				240A81AF1F0E1DD6009893B7 /* CCTextureData.cpp in Sources */,
 				240A81671F0E1639009893B7 /* TextureData.cpp in Sources */,
