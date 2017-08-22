@@ -43,6 +43,8 @@
 		241F02951F21EBB800323F34 /* HelloDragonBones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F028D1F21EBB800323F34 /* HelloDragonBones.cpp */; };
 		241F02961F21EBB800323F34 /* Knight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F028F1F21EBB800323F34 /* Knight.cpp */; };
 		241F02971F21EBB800323F34 /* PerformanceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F02911F21EBB800323F34 /* PerformanceTest.cpp */; };
+		2429EF851F4BEC650095D2B8 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2429EF831F4BEC650095D2B8 /* GameScene.cpp */; };
+		2429EF991F4BFBF40095D2B8 /* TiledMap in Resources */ = {isa = PBXBuildFile; fileRef = 2429EF981F4BFBF40095D2B8 /* TiledMap */; };
 		2489FD791F46E43500D14F0B /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2489FD771F46E43500D14F0B /* MainScene.cpp */; };
 		2489FD7D1F46E49200D14F0B /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2489FD7B1F46E49200D14F0B /* HelloWorldScene.cpp */; };
 		24FBDA6D1F3C78C500B21CFB /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24FBDA6B1F3C78C500B21CFB /* AppDelegate.cpp */; };
@@ -266,6 +268,9 @@
 		241F02C01F220A6D00323F34 /* rapidxml_iterators.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_iterators.hpp; sourceTree = "<group>"; };
 		241F02C11F220A6D00323F34 /* rapidxml_print.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_print.hpp; sourceTree = "<group>"; };
 		241F02C21F220A6D00323F34 /* rapidxml_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_utils.hpp; sourceTree = "<group>"; };
+		2429EF831F4BEC650095D2B8 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
+		2429EF841F4BEC650095D2B8 /* GameScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameScene.hpp; sourceTree = "<group>"; };
+		2429EF981F4BFBF40095D2B8 /* TiledMap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TiledMap; sourceTree = "<group>"; };
 		2489FD771F46E43500D14F0B /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainScene.cpp; sourceTree = "<group>"; };
 		2489FD781F46E43500D14F0B /* MainScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainScene.hpp; sourceTree = "<group>"; };
 		2489FD7B1F46E49200D14F0B /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
@@ -436,6 +441,8 @@
 				24079D411F28335300501F01 /* PopupWaiting.h */,
 				2489FD771F46E43500D14F0B /* MainScene.cpp */,
 				2489FD781F46E43500D14F0B /* MainScene.hpp */,
+				2429EF831F4BEC650095D2B8 /* GameScene.cpp */,
+				2429EF841F4BEC650095D2B8 /* GameScene.hpp */,
 			);
 			path = MiniGame;
 			sourceTree = "<group>";
@@ -685,7 +692,7 @@
 			isa = PBXGroup;
 			children = (
 				46880B8319C43A87006E1F66 /* Classes */,
-				46880B7519C43A67006E1F66 /* Resources */,
+				46880B7519C43A67006E1F66 /* Resources/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/git_cgame/Resources/TiledMap */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* ios */,
@@ -730,9 +737,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		46880B7519C43A67006E1F66 /* Resources */ = {
+		46880B7519C43A67006E1F66 /* Resources/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/git_cgame/Resources/TiledMap */ = {
 			isa = PBXGroup;
 			children = (
+				2429EF981F4BFBF40095D2B8 /* TiledMap */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
@@ -740,7 +748,7 @@
 				46880B7A19C43A67006E1F66 /* HelloWorld.png */,
 				E300439EB548D74EB0E7CA86 /* sdkbox_config.json */,
 			);
-			name = Resources;
+			name = Resources/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/git_cgame/Resources/TiledMap;
 			path = ../Resources;
 			sourceTree = "<group>";
 		};
@@ -933,6 +941,7 @@
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
+				2429EF991F4BFBF40095D2B8 /* TiledMap in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 				CDD34559A389B8AC14C6BC14 /* sdkbox_config.json in Resources */,
 			);
@@ -964,6 +973,7 @@
 				24079D441F28335300501F01 /* Dealer.cpp in Sources */,
 				24079D451F28335300501F01 /* Popup.cpp in Sources */,
 				2489FD791F46E43500D14F0B /* MainScene.cpp in Sources */,
+				2429EF851F4BEC650095D2B8 /* GameScene.cpp in Sources */,
 				240A814C1F0E1639009893B7 /* EventObject.cpp in Sources */,
 				240A814E1F0E1639009893B7 /* AnimationData.cpp in Sources */,
 				240A814B1F0E1639009893B7 /* BaseObject.cpp in Sources */,
