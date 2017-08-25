@@ -275,6 +275,7 @@
 		2489FD781F46E43500D14F0B /* MainScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainScene.hpp; sourceTree = "<group>"; };
 		2489FD7B1F46E49200D14F0B /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
 		2489FD7C1F46E49200D14F0B /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
+		24F2DEDE1F4EAEB5009E0469 /* GameDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameDefine.h; sourceTree = "<group>"; };
 		24FBDA6B1F3C78C500B21CFB /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		24FBDA6C1F3C78C500B21CFB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -443,6 +444,7 @@
 				2489FD781F46E43500D14F0B /* MainScene.hpp */,
 				2429EF831F4BEC650095D2B8 /* GameScene.cpp */,
 				2429EF841F4BEC650095D2B8 /* GameScene.hpp */,
+				24F2DEDE1F4EAEB5009E0469 /* GameDefine.h */,
 			);
 			path = MiniGame;
 			sourceTree = "<group>";

@@ -20,10 +20,10 @@ public:
     virtual ~PopupWaiting();
     CREATE_FUNC(PopupWaiting);
     virtual bool init();
-    void show();
-	void showEmpty();
-    void show(Node * node);
-    void show(Node * node, Size _nodeSize);
+    void open();
+	void openEmpty();
+    void open(Node * node);
+    void open(Node * node, Size _nodeSize);
     void dismiss();
     
     static PopupWaiting* instance ;

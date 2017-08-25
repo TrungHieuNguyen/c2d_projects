@@ -25,7 +25,7 @@ bool GameScene::init()
         return false;
     }
     
-    
+    isStartedGame = false;
     _tileMap = new CCTMXTiledMap();
     _tileMap->initWithTMXFile("TiledMap/TileMap.tmx");
     _background = _tileMap->layerNamed("Background");
@@ -37,14 +37,29 @@ bool GameScene::init()
         CCLog("tile map has no objects object layer");
         return false;
     }
+    // all tiles are aliased by default, let's set them anti-aliased
+    for (const auto& child : _tileMap->getChildren())
+    {
+        static_cast<SpriteBatchNode*>(child)->getTexture()->setAntiAliasTexParameters();
+    }
+    //ValueMap *spawnPoint = objectGroup->objectNamed("SpawnPoint");
     
-    //CCDictionary *spawnPoint = objectGroup->objectNamed("SpawnPoint");
-    
-   // int x = ((CCString)*spawnPoint->valueForKey("x")).intValue();
+    //int x = ((CCString)*spawnPoint->valueForKey("x")).intValue();
     //int y = ((CCString)*spawnPoint->valueForKey("y")).intValue();
     
+    auto group = _tileMap->getObjectGroup("Objects");
+    auto& objects = group->getObjects();
+    for (auto& obj : objects)
+    {
+        ValueMap& dict = obj.asValueMap();
+        
+        float x = dict["x"].asFloat();
+        float y = dict["y"].asFloat();
+        log("%f:%f",x,y);
+    }
+    
     _player = new CCSprite();
-    _player->initWithFile("Player.png");
+    _player->initWithFile("TiledMap\Player.png");
     //_player->setPosition(ccp(x,y));
     
     this->addChild(_player);
@@ -52,26 +67,94 @@ bool GameScene::init()
     
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    auto rootNode = CSLoader::createNode("MainScene.csb");
+    auto layerBG = CSLoader::createNode("GameScene.csb");
+    layerBG->setAnchorPoint(Point(0.5f, 0.5f));
+    layerBG->setPosition(layerBG->getContentSize()/2);
+    addChild(layerBG);
     
-    addChild(rootNode);
+    Button* btnA = (Button*) layerBG->getChildByName("btnA");
+    btnA->addClickEventListener([&](Ref* sender){
+        if(!isStartedGame)
+            start();
+        else
+            stop();
+    });
 
-    auto label = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 24);
-    label->setPosition(Vec2(origin.x + visibleSize.width/2,
-                            origin.y + visibleSize.height - label->getContentSize().height));
-    this->addChild(label, 1);
-    auto sprite = Sprite::create("HelloWorld.png");
-    sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-    this->addChild(sprite, 0);
+    Button* btnB = (Button*) layerBG->getChildByName("btnB");
+    btnB->addClickEventListener([&](Ref* sender){
+        if(!isStartedGame)
+            start();
+        else
+            stop();
+        
+    });
+    //LayerCard
+    auto LayerCard = layerBG->getChildByName("LayerCard");
     
-    //this->setTouchEnabled(true);
-     this->schedule(schedule_selector(GameScene::update));
+    
+    lbScore = (Text*) layerBG->getChildByName("lbScore");
+    lbScore->setColor(Color3B::WHITE);
+    lbScore->setIgnoreAnchorPointForPosition(false);
+    lbScore->setAnchorPoint(Point(0, 0.5f));
+
+    
+//    auto label = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 24);
+//    label->setPosition(Vec2(origin.x + visibleSize.width/2,
+//                            origin.y + visibleSize.height - label->getContentSize().height));
+//    this->addChild(label, 1);
+    
+//    auto sprite = Sprite::create("HelloWorld.png");
+//    sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+//    this->addChild(sprite, 0);
+//    
+    auto card01 = LayerCard->getChildByName("sprMC01");
+    auto card02 = LayerCard->getChildByName("sprMC02");
+    auto card03 = LayerCard->getChildByName("sprMC03");
+    
+    
+    listenerTouchByOne = EventListenerTouchOneByOne::create();
+    listenerTouchByOne->setSwallowTouches(true);
+    
+    listenerTouchByOne->onTouchBegan = [](Touch* touch, Event* event){
+        auto target = static_cast<Sprite*>(event->getCurrentTarget());
+        
+        Vec2 locationInNode = target->convertToNodeSpace(touch->getLocation());
+        Size s = target->getContentSize();
+        Rect rect = Rect(0, 0, s.width, s.height);
+        
+        if (rect.containsPoint(locationInNode))
+        {
+            log("sprite began... x = %f, y = %f", locationInNode.x, locationInNode.y);
+            target->setOpacity(180);
+            return true;
+        }
+        return false;
+    };
+    
+    listenerTouchByOne->onTouchMoved = [](Touch* touch, Event* event){
+        auto target = static_cast<Sprite*>(event->getCurrentTarget());
+        target->setPosition(target->getPosition() + touch->getDelta());
+    };
+    
+    listenerTouchByOne->onTouchEnded = [=](Touch* touch, Event* event){
+        auto target = static_cast<Sprite*>(event->getCurrentTarget());
+        target->setOpacity(255);
+
+    };
+    
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerTouchByOne, card01);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerTouchByOne->clone(), card02);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerTouchByOne->clone(), card03);
+    
+    
     
     return true;
 }
 void GameScene::update(float dt)
 {
-    
+    log("update...%ld", dt);
+    lbScore->setString(std::to_string(dt));
+
 }
 void GameScene::setViewPointCenter(CCPoint position) {
     
@@ -138,3 +221,15 @@ void GameScene::ccTouchEnded(CCTouch *touch, CCEvent *event)
     
     this->setViewPointCenter(_player->getPosition());
 }
+void GameScene::start()
+{
+    isStartedGame = true;
+    this->schedule(schedule_selector(GameScene::update));
+}
+void GameScene::stop()
+{
+    isStartedGame = false;
+    this->unschedule(schedule_selector(GameScene::update));
+    _eventDispatcher->removeEventListener(listenerTouchByOne);
+}
+void GameScene::pause(){}

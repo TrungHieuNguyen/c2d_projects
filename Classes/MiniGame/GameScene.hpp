@@ -10,12 +10,19 @@
 #define GameScene_hpp
 
 #include <stdio.h>
+#include "cocos2d.h"
+#include "ui/CocosGUI.h"
 using namespace cocos2d;
+using namespace ui;
+
 class GameScene : public cocos2d::Scene
 {
     CCTMXTiledMap *_tileMap;
     CCTMXLayer *_background;
     CCSprite *_player;
+    EventListenerTouchOneByOne* listenerTouchByOne;
+    Text* lbScore;
+    bool isStartedGame;
 public:
     static cocos2d::Scene* createScene();
     
@@ -28,5 +35,8 @@ public:
     bool ccTouchBegan(CCTouch *touch, CCEvent *event);
     void ccTouchEnded(CCTouch *touch, CCEvent *event);
     CREATE_FUNC(GameScene);
+    void start();
+    void stop();
+    void pause();
 };
 #endif /* GameScene_hpp */

@@ -1,14 +1,5 @@
 <UserData Version="3.10.0.0">
   <Properties>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="MainScene.csd" />
-          <FilePathData Path="Skeleton.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="MainScene.csd" />
-      </Value>
-    </Item>
     <Item Key="CocosRecentOperation">
       <Value ctype="CocosRecentOperation">
         <LastPublishType Value="Resource" />
@@ -27,7 +18,7 @@
         <iOS_Target Value="CSSample-mobile" />
         <iOS_BundleID Value="iPhone Developer: trunghieu.nguyen@hotmail.com (Z4PFM2JWBS)" />
         <Platform Value="None" />
-        <RunPlatform Value="None" />
+        <RunPlatform Value="Mac" />
         <FrameworkVersion Value="cocos2d-x-3.10" />
         <IsDebugKeystore Value="True" />
         <KeystorePassword Value="" />

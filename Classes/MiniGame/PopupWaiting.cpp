@@ -42,7 +42,7 @@ bool PopupWaiting::init()
     return true;
 }
 
-void PopupWaiting::show() {
+void PopupWaiting::open() {
     if (isShow) return;
     setContentSize(size);
     removeTouch();
@@ -111,11 +111,11 @@ void PopupWaiting::show() {
 
 }
 
-void PopupWaiting::show(Node * node)
+void PopupWaiting::open(Node * node)
 {
-    show(node, node->getContentSize());
+    open(node, node->getContentSize());
 }
-void PopupWaiting::show(Node * node, Size _nodeSize)
+void PopupWaiting::open(Node * node, Size _nodeSize)
 {
     if (isShow) return;
     setContentSize(_nodeSize);
