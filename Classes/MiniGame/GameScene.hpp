@@ -23,6 +23,9 @@ class GameScene : public cocos2d::Scene
     EventListenerTouchOneByOne* listenerTouchByOne;
     Text* lbScore;
     bool isStartedGame;
+    long _frameCounter;
+    LoadingBar* _ldbGameClock;
+    
 public:
     static cocos2d::Scene* createScene();
     

@@ -26,6 +26,7 @@ bool GameScene::init()
     }
     
     isStartedGame = false;
+    _frameCounter = 0;
     _tileMap = new CCTMXTiledMap();
     _tileMap->initWithTMXFile("TiledMap/TileMap.tmx");
     _background = _tileMap->layerNamed("Background");
@@ -147,6 +148,37 @@ bool GameScene::init()
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listenerTouchByOne->clone(), card03);
     
     
+    auto spBarBg = Sprite::create("res/loading/loading_bar2.png");
+    spBarBg->setPosition(Vec2(visibleSize.width / 2, 20));
+    addChild(spBarBg);
+    
+    _ldbGameClock = ui::LoadingBar::create("res/loading/loading_bar.png", 0);
+    _ldbGameClock->setPosition(spBarBg->getPosition());
+    addChild(_ldbGameClock);
+    
+    auto slider = Slider::create();
+    slider->loadBarTexture("res/loading/Slider_Back.png"); // what the slider looks like
+    slider->loadSlidBallTextures("res/loading/SliderNode_Normal.png", "res/loading/SliderNode_Press.png", "res/loading/SliderNode_Disable.png");
+    slider->loadProgressBarTexture("res/loading/Slider_PressBar.png");
+    slider->setScale(2.0f);
+    slider->setRotation(90);
+    slider->setPosition(Vec2(30, slider->getContentSize().width/2) );
+ 
+   
+    slider->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type){
+        https://kencoding.wordpress.com/category/cocos2d-x-developer/
+        switch (type)
+        {
+            case ui::Widget::TouchEventType::BEGAN:
+                break;
+            case ui::Widget::TouchEventType::ENDED:
+                break;
+            default:
+                break;
+        }
+    });
+    
+    this->addChild(slider);
     
     return true;
 }
@@ -154,6 +186,14 @@ void GameScene::update(float dt)
 {
     log("update...%ld", dt);
     lbScore->setString(std::to_string(dt));
+    _frameCounter++;
+    if (_frameCounter >= 100)
+    {
+        //unschedule(schedule_selector(LoadingScreen::loading));
+        _frameCounter = 0;
+    }
+
+    _ldbGameClock->setPercent(_frameCounter);
 
 }
 void GameScene::setViewPointCenter(CCPoint position) {
@@ -224,12 +264,16 @@ void GameScene::ccTouchEnded(CCTouch *touch, CCEvent *event)
 void GameScene::start()
 {
     isStartedGame = true;
+    _frameCounter = 0;
     this->schedule(schedule_selector(GameScene::update));
 }
 void GameScene::stop()
 {
     isStartedGame = false;
     this->unschedule(schedule_selector(GameScene::update));
-    _eventDispatcher->removeEventListener(listenerTouchByOne);
+    _eventDispatcher->removeAllEventListeners();
 }
-void GameScene::pause(){}
+void GameScene::pause()
+{
+    
+}
