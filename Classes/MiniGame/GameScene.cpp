@@ -162,7 +162,7 @@ bool GameScene::init()
     slider->loadProgressBarTexture("res/loading/Slider_PressBar.png");
     slider->setScale(2.0f);
     slider->setRotation(90);
-    slider->setPosition(Vec2(30, slider->getContentSize().width/2) );
+    slider->setPosition(Vec2(30, slider->getContentSize().width +100) );
  
    
     slider->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type){
@@ -271,7 +271,7 @@ void GameScene::stop()
 {
     isStartedGame = false;
     this->unschedule(schedule_selector(GameScene::update));
-    _eventDispatcher->removeAllEventListeners();
+    //_eventDispatcher->removeAllEventListeners();
 }
 void GameScene::pause()
 {
