@@ -30,8 +30,9 @@ bool GameScene::init()
     _tileMap = new CCTMXTiledMap();
     _tileMap->initWithTMXFile("TiledMap/TileMap.tmx");
     _background = _tileMap->layerNamed("Background");
-    
-    this->addChild(_tileMap);
+    //_meta = _tileMap->layerNamed("Meta");
+    //_meta->setVisible(false);
+    this->addChild(_tileMap,5);
     CCTMXObjectGroup *objectGroup = _tileMap->objectGroupNamed("Objects");
     
     if(objectGroup == NULL){
@@ -59,19 +60,18 @@ bool GameScene::init()
         log("%f:%f",x,y);
     }
     
-    _player = new CCSprite();
-    _player->initWithFile("TiledMap\Player.png");
-    //_player->setPosition(ccp(x,y));
-    
-    this->addChild(_player);
+    _player = Sprite::create("Player.png");
+    _player->setPosition(Vec2(300,100));
+    this->addChild(_player,6);
     this->setViewPointCenter(_player->getPosition());
+    
     
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     auto layerBG = CSLoader::createNode("GameScene.csb");
     layerBG->setAnchorPoint(Point(0.5f, 0.5f));
     layerBG->setPosition(layerBG->getContentSize()/2);
-    addChild(layerBG);
+    //addChild(layerBG);
     
     Button* btnA = (Button*) layerBG->getChildByName("btnA");
     btnA->addClickEventListener([&](Ref* sender){
@@ -179,7 +179,14 @@ bool GameScene::init()
     });
     
     this->addChild(slider);
+    auto touchListener = EventListenerTouchOneByOne::create();
     
+    touchListener->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchBegan, this);
+    touchListener->onTouchEnded = CC_CALLBACK_2(GameScene::onTouchEnded, this);
+    touchListener->onTouchMoved = CC_CALLBACK_2(GameScene::onTouchMoved, this);
+    touchListener->onTouchCancelled = CC_CALLBACK_2(GameScene::onTouchCancelled, this);
+    
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
     return true;
 }
 void GameScene::update(float dt)
@@ -214,18 +221,12 @@ void GameScene::setViewPointCenter(CCPoint position) {
 
 #pragma mark - handle touches
 
-void GameScene::registerWithTouchDispatcher() {
-   // CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
-}
 
 bool GameScene::ccTouchBegan(CCTouch *touch, CCEvent *event)
 {
     return true;
 }
 
-void GameScene::setPlayerPosition(CCPoint position) {
-    _player->setPosition(position);
-}
 
 void GameScene::ccTouchEnded(CCTouch *touch, CCEvent *event)
 {
@@ -276,4 +277,82 @@ void GameScene::stop()
 void GameScene::pause()
 {
     
+}
+void GameScene::setPlayerPosition(CCPoint position)
+{
+    CCPoint tileCoord = this->tileCoordForPosition(position);
+    //int tileGid = _meta->tileGIDAt(tileCoord);
+    //if (tileGid) {
+//        CCDictionary *properties = _tileMap->propertiesForGID(tileGid);
+//        if (properties) {
+//            CCString *collision = new CCString();
+//            *collision = *properties->valueForKey("Collidable");
+//            if (collision && (collision->compare("True") == 0)) {
+//                return;
+//            }
+//        }
+   // }
+    _player->setPosition(position);
+}
+
+CCPoint GameScene::tileCoordForPosition(CCPoint position)
+{
+    int x = position.x / _tileMap->getTileSize().width;
+    int y = ((_tileMap->getMapSize().height * _tileMap->getTileSize().height) - position.y) / _tileMap->getTileSize().height;
+    return ccp(x, y);
+}
+
+
+bool GameScene::onTouchBegan(Touch* touch, Event* event)
+{
+    //labelTouchInfo->setPosition(touch->getLocation());
+    //labelTouchInfo->setString("You Touched Here");
+    return true;
+}
+
+void GameScene::onTouchEnded(Touch* touch, Event* event)
+{
+    cocos2d::log("touch ended");
+    CCPoint touchLocation = touch->getLocationInView();
+    touchLocation = CCDirector::sharedDirector()->convertToGL(touchLocation);
+    touchLocation = this->convertToNodeSpace(touchLocation);
+    
+    CCPoint playerPos = _player->getPosition();
+    CCPoint diff = ccpSub(touchLocation, playerPos);
+    
+    if ( abs(diff.x) > abs(diff.y) ) {
+        if (diff.x > 0) {
+            playerPos.x += _tileMap->getTileSize().width;
+        } else {
+            playerPos.x -= _tileMap->getTileSize().width;
+        }
+    } else {
+        if (diff.y > 0) {
+            playerPos.y += _tileMap->getTileSize().height;
+        } else {
+            playerPos.y -= _tileMap->getTileSize().height;
+        }
+    }
+    
+    // safety check on the bounds of the map
+    if (playerPos.x <= (_tileMap->getMapSize().width * _tileMap->getTileSize().width) &&
+        playerPos.y <= (_tileMap->getMapSize().height * _tileMap->getTileSize().height) &&
+        playerPos.y >= 0 &&
+        playerPos.x >= 0 )
+    {
+        this->setPlayerPosition(playerPos);
+    }
+    
+    this->setViewPointCenter(_player->getPosition());
+
+}
+
+void GameScene::onTouchMoved(Touch* touch, Event* event)
+{
+    cocos2d::log("touch moved");
+}
+
+void GameScene::onTouchCancelled(Touch* touch, Event* event)
+{
+    cocos2d::log("touch cancelled");
 }

@@ -36,7 +36,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     FileUtils::getInstance()->addSearchPath(".");
     FileUtils::getInstance()->addSearchPath("res");
     FileUtils::getInstance()->addSearchPath("fonts");
-     auto scene = GameScene::createScene();
+    auto scene = GameScene::createScene();
 
     director->runWithScene(scene);
     return true;
