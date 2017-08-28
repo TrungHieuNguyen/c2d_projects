@@ -17,26 +17,26 @@ using namespace ui;
 
 class GameScene : public cocos2d::Scene
 {
-    CCTMXTiledMap *_tileMap;
-    CCTMXLayer *_background;
+    TMXTiledMap *_tileMap;
+    TMXLayer *_background;
+    TMXLayer *_foreground;
+    TMXLayer *_meta;
     Sprite *_player;
     EventListenerTouchOneByOne* listenerTouchByOne;
     Text* lbScore;
     bool isStartedGame;
     long _frameCounter;
     LoadingBar* _ldbGameClock;
-    CCTMXLayer *_meta;
+
 public:
     static cocos2d::Scene* createScene();
     
     virtual bool init();
     void update(float dt);
     void menuCloseCallback(cocos2d::Ref* pSender);
-    void setViewPointCenter(CCPoint position);
+    void setViewPointCenter(Point position);
     void registerWithTouchDispatcher();
-    void setPlayerPosition(CCPoint position);
-    bool ccTouchBegan(CCTouch *touch, CCEvent *event);
-    void ccTouchEnded(CCTouch *touch, CCEvent *event);
+    void setPlayerPosition(Point position);
     CREATE_FUNC(GameScene);
     void start();
     void stop();
@@ -45,6 +45,6 @@ public:
     virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchMoved(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchCancelled(cocos2d::Touch*, cocos2d::Event*);
-    CCPoint tileCoordForPosition(CCPoint position);
+    Point tileCoordForPosition(Point position);
 };
 #endif /* GameScene_hpp */
