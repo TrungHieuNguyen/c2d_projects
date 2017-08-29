@@ -20,7 +20,7 @@ bool MainScene::init()
     
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    auto rootNode = CSLoader::createNode("MainScene.csb");
+    auto rootNode = CSLoader::createNode("GameScene.csb");
     
     addChild(rootNode);
     auto closeItem = MenuItemImage::create(

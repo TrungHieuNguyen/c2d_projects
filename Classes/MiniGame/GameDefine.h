@@ -9,5 +9,8 @@
 #ifndef GameDefine_h
 #define GameDefine_h
 
+#define Z_ODER_TILEMAP 1
+#define Z_ODER_HUD 2
+
 
 #endif /* GameDefine_h */

@@ -7,6 +7,7 @@
 //
 
 #include "GameScene.hpp"
+#include "GameDefine.h"
 #include "ui/CocosGUI.h"
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
 #include "SimpleAudioEngine.h"
@@ -24,6 +25,8 @@ bool GameScene::init()
     {
         return false;
     }
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
     isStartedGame = false;
     _frameCounter = 0;
@@ -32,7 +35,7 @@ bool GameScene::init()
     _foreground = _tileMap->layerNamed("Foreground");
     _meta = _tileMap->layerNamed("Meta");
     _meta->setVisible(false);
-    this->addChild(_tileMap,5);
+    //this->addChild(_tileMap,Z_ODER_TILEMAP);
     TMXObjectGroup *objectGroup = _tileMap->getObjectGroup("Objects");
     
     if(objectGroup == NULL){
@@ -51,15 +54,14 @@ bool GameScene::init()
     _player = Sprite::create("Player.png");
     _player->setPosition(Vec2(x,y));
     this->addChild(_player,6);
-    this->setViewPointCenter(_player->getPosition());
+    //this->setViewPointCenter(_player->getPosition());
     
     
-    auto visibleSize = Director::getInstance()->getVisibleSize();
-    Vec2 origin = Director::getInstance()->getVisibleOrigin();
+
     auto layerBG = CSLoader::createNode("GameScene.csb");
     layerBG->setAnchorPoint(Point(0.5f, 0.5f));
     layerBG->setPosition(layerBG->getContentSize()/2);
-    //addChild(layerBG);
+    addChild(layerBG);
     
     Button* btnA = (Button*) layerBG->getChildByName("btnA");
     btnA->addClickEventListener([&](Ref* sender){
@@ -165,6 +167,14 @@ bool GameScene::init()
     touchListener->onTouchCancelled = CC_CALLBACK_2(GameScene::onTouchCancelled, this);
     
     _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
+    
+    
+    
+    auto layerHUD = CSLoader::createNode("HUD_Layer.csb");
+    layerHUD->setAnchorPoint(Point(0.5f, 0.5f));
+    layerHUD->setPosition(Vec2(layerHUD->getContentSize().width/2,visibleSize.height -70));
+    addChild(layerHUD, Z_ODER_HUD);
+
     return true;
 }
 void GameScene::update(float dt)
@@ -182,6 +192,7 @@ void GameScene::update(float dt)
 
 }
 void GameScene::setViewPointCenter(Point position) {
+    return;
     
     CCSize winSize = Director::sharedDirector()->getWinSize();
     

@@ -692,7 +692,7 @@
 			isa = PBXGroup;
 			children = (
 				46880B8319C43A87006E1F66 /* Classes */,
-				46880B7519C43A67006E1F66 /* Resources/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/git_cgame/Resources/TiledMap */,
+				46880B7519C43A67006E1F66 /* Resources */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* ios */,
@@ -737,7 +737,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		46880B7519C43A67006E1F66 /* Resources/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/git_cgame/Resources/TiledMap */ = {
+		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				521A8EA819F11F5000D177D7 /* fonts */,
@@ -747,7 +747,7 @@
 				46880B7A19C43A67006E1F66 /* HelloWorld.png */,
 				E300439EB548D74EB0E7CA86 /* sdkbox_config.json */,
 			);
-			name = Resources/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/git_cgame/Resources/TiledMap;
+			name = Resources;
 			path = ../Resources;
 			sourceTree = "<group>";
 		};
