@@ -168,19 +168,23 @@ bool GameScene::init()
     
     _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
     
-    
-    
-    auto layerHUD = CSLoader::createNode("HUD_Layer.csb");
+    layerHUD = CSLoader::createNode("HUDLayer.csb");
     layerHUD->setAnchorPoint(Point(0.5f, 0.5f));
     layerHUD->setPosition(Vec2(layerHUD->getContentSize().width/2,visibleSize.height -70));
     addChild(layerHUD, Z_ODER_HUD);
-
+    
+    
     return true;
 }
 void GameScene::update(float dt)
 {
     log("update...%f", dt);
-    lbScore->setString(std::to_string(dt));
+    Sprite* sprMoneyBar = layerHUD->getChildByName<Sprite*>("sprMoneyBar");
+    Text* lbMoneyValue = sprMoneyBar->getChildByName<Text*>("lbMoney");
+    lbMoneyValue->setString(std::to_string(_frameCounter));
+    Sprite* sprCoinBar = layerHUD->getChildByName<Sprite*>("sprCoinBar");
+    Text* lbCoinValue = sprCoinBar->getChildByName<Text*>("lbCoin");
+    lbCoinValue->setString(std::to_string(dt));
     _frameCounter++;
     if (_frameCounter >= 100)
     {
