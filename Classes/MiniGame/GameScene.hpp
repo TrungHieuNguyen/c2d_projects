@@ -28,7 +28,10 @@ class GameScene : public cocos2d::Scene
     bool isStartedGame;
     long _frameCounter;
     LoadingBar* _ldbGameClock;
-    
+    int   sliderUnit;
+    long sliderValue;
+    Node* silderDatChuong;
+    void updateSliderBar(int value);
 
 public:
     static cocos2d::Scene* createScene();
@@ -49,4 +52,6 @@ public:
     virtual void onTouchCancelled(cocos2d::Touch*, cocos2d::Event*);
     Point tileCoordForPosition(Point position);
 };
+
+
 #endif /* GameScene_hpp */

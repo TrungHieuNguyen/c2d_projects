@@ -173,7 +173,38 @@ bool GameScene::init()
     layerHUD->setPosition(Vec2(layerHUD->getContentSize().width/2,visibleSize.height -70));
     addChild(layerHUD, Z_ODER_HUD);
     
+    sliderValue = 0;
+    sliderUnit = 500;
+    silderDatChuong = CSLoader::createNode(RES_SLIDER_DATCHUONG_CSB);
+    silderDatChuong->setAnchorPoint(Point(0.5f, 0.5f));
+    silderDatChuong->setPosition(Vec2(visibleSize.width - silderDatChuong->getContentSize().width/2 - 50 , visibleSize.height/2 - 50 ));
+    this->addChild(silderDatChuong,101);
+    auto btnChuong = silderDatChuong->getChildByName<Button*>("btnChuong");
+    btnChuong->setPressedActionEnabled(true);
+    btnChuong->addClickEventListener([&](Ref* sender){
+       
+    });
+    cocos2d::ui::Slider *sliderSound = ( cocos2d::ui::Slider * )silderDatChuong->getChildByName( "Slider" );
+    auto txtValue = silderDatChuong->getChildByName<Text*>("lbValueChuong");
+    sliderSound->setMaxPercent(9);
+    sliderValue = (sliderSound->getPercent() + 1) * sliderUnit;
+    txtValue->setString(std::to_string(sliderValue));
+    sliderSound->addEventListener([&,txtValue](Ref* sender, Slider::EventType type) {
+        auto slider = dynamic_cast<Slider*>(sender);
+        if (type == Slider::EventType::ON_PERCENTAGE_CHANGED) {
+            log("MOVED: %d",slider->getPercent());
+            sliderValue = (slider->getPercent() + 1)*sliderUnit;
+            txtValue->setString(std::to_string(sliderValue));
+        }
+    });
     
+    for(int i = 0; i<10 ; i++)
+    {
+        //std::string btnName = "btnValue0" + Utils::IntToString(i);
+        std::string txtName = "lbValue0" + std::to_string(i);
+        auto txtValue = silderDatChuong->getChildByName<Text*>(txtName);
+        txtValue->setString(std::to_string((i+1)*sliderUnit));
+    }
     return true;
 }
 void GameScene::update(float dt)
@@ -299,7 +330,7 @@ void GameScene::onTouchEnded(Touch* touch, Event* event)
         playerPos.y >= 0 &&
         playerPos.x >= 0 )
     {
-        this->setPlayerPosition(playerPos);
+        //this->setPlayerPosition(playerPos);
     }
     
     this->setViewPointCenter(_player->getPosition());
@@ -314,4 +345,30 @@ void GameScene::onTouchMoved(Touch* touch, Event* event)
 void GameScene::onTouchCancelled(Touch* touch, Event* event)
 {
     cocos2d::log("touch cancelled");
+}
+void GameScene::updateSliderBar(int value)
+{
+//    for(int i = 1; i<=5 ; i++)
+//    {
+//        std::string btnName = "btnValue0" + Utils::IntToString(i);
+//        std::string txtName = "lbValue0" + Utils::IntToString(i);
+//        auto txtValue = silderDatChuong->getChildByName<Text*>(txtName);
+//        auto btnValue = silderDatChuong->getChildByName<Button*>(btnName);
+//        auto sprEffect = btnValue->getChildByName<Sprite*>("sprEffectSelected");
+//        if(i==value)
+//        {
+//            sprEffect->setRotation(0);
+//            sprEffect->runAction(RotateTo::create(0.5, 180));
+//            txtValue->setOpacity(255);
+//            btnValue->setOpacity(255);
+//            txtValue->setTextColor(Color4B::YELLOW);
+//        }
+//        else
+//        {
+//            txtValue->setOpacity(75);
+//            txtValue->setTextColor(Color4B::WHITE);
+//            btnValue->setOpacity(75);
+//        }
+//        
+//    }
 }

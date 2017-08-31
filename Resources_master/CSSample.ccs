@@ -108,6 +108,8 @@
             <Image Name="arrowR.png" />
             <Image Name="box_hide.png" />
             <Image Name="box_mail.png" />
+            <Image Name="box_slide.png" />
+            <Image Name="box_slide_2.png" />
             <Image Name="boxBgPopup.png" />
             <Image Name="boxNormal.png" />
             <Image Name="boxProfile.png" />
@@ -115,10 +117,13 @@
             <Image Name="boxSelect2.png" />
             <Image Name="boxThanhTich.png" />
             <Image Name="boxUser.png" />
+            <Image Name="btn-.png" />
+            <Image Name="btn_add.png" />
             <Image Name="btn_back.png" />
             <Image Name="btn_here.png" />
             <Image Name="btn_kick.png" />
             <Image Name="btn_next.png" />
+            <Image Name="btn_select.png" />
             <Image Name="btnBgMucCuoc.png" />
             <Image Name="btnBlue.png" />
             <Image Name="btnBoxYellow.png" />
@@ -135,6 +140,7 @@
             <Image Name="check_box.png" />
             <Image Name="coin.png" />
             <Image Name="effectTopPopup.png" />
+            <Image Name="frame_slide.png" />
             <Image Name="frame_top.png" />
             <Image Name="hotro.png" />
             <Image Name="icon_no_email.png" />
@@ -161,8 +167,9 @@
         </Folder>
         <Project Name="GameScene.csd" Type="Layer" />
         <Project Name="HUDLayer.csd" Type="Layer" />
-        <Project Name="Result.csd" Type="Layer" />
         <Project Name="PopupResult.csd" Type="Layer" />
+        <Project Name="Result.csd" Type="Layer" />
+        <Project Name="SilderDatChuong10.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
