@@ -165,6 +165,7 @@
           <Image Name="HelloWorld.png" />
           <Image Name="Main_dealer2_ani.png" />
         </Folder>
+        <Project Name="WinLoseResult.csd" Type="Layer" />
         <Project Name="GameScene.csd" Type="Layer" />
         <Project Name="HUDLayer.csd" Type="Layer" />
         <Project Name="PopupResult.csd" Type="Layer" />
