@@ -11,6 +11,7 @@
 #include "ui/CocosGUI.h"
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
 #include "SimpleAudioEngine.h"
+#include "PopupResult.hpp"
 
 USING_NS_CC;
 
@@ -73,10 +74,14 @@ bool GameScene::init()
 
     Button* btnB = (Button*) layerBG->getChildByName("btnB");
     btnB->addClickEventListener([&](Ref* sender){
-        if(!isStartedGame)
-            start();
-        else
-            stop();
+        PopupResult* p = PopupResult::gI();
+        if (p->getParent() == NULL)
+        {
+            p->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2, Director::getInstance()->getVisibleSize().height/2));
+            addChild(p, Z_ODER_POPUP);
+            p->fadeInBgDark();
+            p->open();
+        }
         
     });
     //LayerCard
@@ -177,11 +182,12 @@ bool GameScene::init()
     sliderUnit = 500;
     silderDatChuong = CSLoader::createNode(RES_SLIDER_DATCHUONG_CSB);
     silderDatChuong->setAnchorPoint(Point(0.5f, 0.5f));
-    silderDatChuong->setPosition(Vec2(visibleSize.width - silderDatChuong->getContentSize().width/2 - 50 , visibleSize.height/2 - 50 ));
-    this->addChild(silderDatChuong,101);
+    silderDatChuong->setPosition(Vec2(visibleSize.width - silderDatChuong->getContentSize().width/2 - 200 , visibleSize.height/2 - 50 ));
+    this->addChild(silderDatChuong,Z_ODER_HUD);
     auto btnChuong = silderDatChuong->getChildByName<Button*>("btnChuong");
     btnChuong->setPressedActionEnabled(true);
-    btnChuong->addClickEventListener([&](Ref* sender){
+    btnChuong->addClickEventListener([&](Ref* sender)
+    {
        
     });
     cocos2d::ui::Slider *sliderSound = ( cocos2d::ui::Slider * )silderDatChuong->getChildByName( "Slider" );
@@ -205,6 +211,13 @@ bool GameScene::init()
         auto txtValue = silderDatChuong->getChildByName<Text*>(txtName);
         txtValue->setString(std::to_string((i+1)*sliderUnit));
     }
+    
+    
+    
+
+    
+
+    
     return true;
 }
 void GameScene::update(float dt)

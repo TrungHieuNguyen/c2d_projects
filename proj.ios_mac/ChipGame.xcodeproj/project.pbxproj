@@ -46,6 +46,7 @@
 		2429EF851F4BEC650095D2B8 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2429EF831F4BEC650095D2B8 /* GameScene.cpp */; };
 		2489FD791F46E43500D14F0B /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2489FD771F46E43500D14F0B /* MainScene.cpp */; };
 		2489FD7D1F46E49200D14F0B /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2489FD7B1F46E49200D14F0B /* HelloWorldScene.cpp */; };
+		24ECF2BC1F5FC4B9000A35A8 /* PopupResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24ECF2BA1F5FC4B9000A35A8 /* PopupResult.cpp */; };
 		24FBDA6D1F3C78C500B21CFB /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24FBDA6B1F3C78C500B21CFB /* AppDelegate.cpp */; };
 		2869428C89A123723A617FE2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47049ADB418185730B77336 /* AdSupport.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
@@ -267,6 +268,8 @@
 		2489FD781F46E43500D14F0B /* MainScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainScene.hpp; sourceTree = "<group>"; };
 		2489FD7B1F46E49200D14F0B /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
 		2489FD7C1F46E49200D14F0B /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
+		24ECF2BA1F5FC4B9000A35A8 /* PopupResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PopupResult.cpp; sourceTree = "<group>"; };
+		24ECF2BB1F5FC4B9000A35A8 /* PopupResult.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PopupResult.hpp; sourceTree = "<group>"; };
 		24F2DEDE1F4EAEB5009E0469 /* GameDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameDefine.h; sourceTree = "<group>"; };
 		24FBDA6B1F3C78C500B21CFB /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		24FBDA6C1F3C78C500B21CFB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -434,6 +437,8 @@
 				2429EF831F4BEC650095D2B8 /* GameScene.cpp */,
 				2429EF841F4BEC650095D2B8 /* GameScene.hpp */,
 				24F2DEDE1F4EAEB5009E0469 /* GameDefine.h */,
+				24ECF2BA1F5FC4B9000A35A8 /* PopupResult.cpp */,
+				24ECF2BB1F5FC4B9000A35A8 /* PopupResult.hpp */,
 			);
 			path = MiniGame;
 			sourceTree = "<group>";
@@ -970,6 +975,7 @@
 				240A81511F0E1639009893B7 /* FrameData.cpp in Sources */,
 				240A81AC1F0E1DD6009893B7 /* CCArmatureDisplay.cpp in Sources */,
 				241F02931F21EBB800323F34 /* AnimationBaseTest.cpp in Sources */,
+				24ECF2BC1F5FC4B9000A35A8 /* PopupResult.cpp in Sources */,
 				241F02941F21EBB800323F34 /* CoreElement.cpp in Sources */,
 				2489FD7D1F46E49200D14F0B /* HelloWorldScene.cpp in Sources */,
 				240A81451F0E1639009893B7 /* AnimationState.cpp in Sources */,
