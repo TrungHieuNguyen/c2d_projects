@@ -1,56 +1,74 @@
 obj/local/armeabi/objs-debug/cocos2dx_internal_static/base/allocator/CCAllocatorGlobalNewDelete.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorGlobalNewDelete.cpp \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorStrategyGlobalSmallBlock.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorMacros.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/ccConfig.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformConfig.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformMacros.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformDefine.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorBase.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/string \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorGlobal.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorStrategyDefault.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorStrategyFixedBlock.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/typeinfo \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorMutex.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorDiagnostics.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_set
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorGlobalNewDelete.cpp \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorStrategyGlobalSmallBlock.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorMacros.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/ccConfig.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformConfig.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformMacros.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformDefine.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/android/CCPlatformDefine-android.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/log.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorBase.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/string \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorGlobal.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorStrategyDefault.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdlib.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/alloca.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/strings.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorStrategyFixedBlock.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/typeinfo \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorMutex.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorDiagnostics.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_set \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorStrategyGlobalSmallBlock.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorStrategyGlobalSmallBlock.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorMacros.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorMacros.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/ccConfig.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/ccConfig.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformConfig.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformConfig.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformMacros.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformMacros.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformDefine.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformDefine.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/android/CCPlatformDefine-android.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorBase.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/log.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/string:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorBase.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorGlobal.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/string:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorStrategyDefault.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorGlobal.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorStrategyFixedBlock.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorStrategyDefault.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdlib.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/typeinfo:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/alloca.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/strings.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorMutex.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/allocator/CCAllocatorDiagnostics.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorStrategyFixedBlock.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_set:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/typeinfo:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorMutex.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/allocator/CCAllocatorDiagnostics.h:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_set:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h:

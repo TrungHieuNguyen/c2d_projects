@@ -1,8 +1,50 @@
 obj/local/armeabi/objs-debug/box2d_static/Common/b2BlockAllocator.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/Box2D/Common/b2BlockAllocator.cpp \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/Box2D/../Box2D/Common/b2BlockAllocator.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/Box2D/../Box2D/Common/b2Settings.h
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/Box2D/Common/b2BlockAllocator.cpp \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/Box2D/../Box2D/Common/b2BlockAllocator.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/Box2D/../Box2D/Common/b2Settings.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs_elf.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/api-level.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/limits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/limits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/limits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/internal_types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/limits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/syslimits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/page.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/string.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/malloc.h
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/Box2D/../Box2D/Common/b2BlockAllocator.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/Box2D/../Box2D/Common/b2BlockAllocator.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/Box2D/../Box2D/Common/b2Settings.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/Box2D/../Box2D/Common/b2Settings.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs_elf.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/api-level.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/limits.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/limits.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/limits.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/internal_types.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/limits.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/syslimits.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/page.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/string.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/malloc.h:

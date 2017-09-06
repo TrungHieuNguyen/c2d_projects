@@ -1,50 +1,65 @@
 obj/local/armeabi/objs-debug/cocos2dx_internal_static/vr/CCVRDistortionMesh.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./vr/CCVRDistortionMesh.cpp \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./vr/CCVRDistortionMesh.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformMacros.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/ccConfig.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformConfig.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformDefine.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./vr/CCVRDistortion.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./math/Vec2.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./math/CCMathBase.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./math/Vec2.inl \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCGL.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/android/CCGL-android.h
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./vr/CCVRDistortionMesh.cpp \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./vr/CCVRDistortionMesh.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformMacros.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/ccConfig.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformConfig.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformDefine.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/android/CCPlatformDefine-android.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/log.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./vr/CCVRDistortion.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./math/Vec2.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./math/CCMathBase.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./math/Vec2.inl \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCGL.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/android/CCGL-android.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2platform.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/KHR/khrplatform.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2ext.h
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./vr/CCVRDistortionMesh.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./vr/CCVRDistortionMesh.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformMacros.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformMacros.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/ccConfig.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/ccConfig.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformConfig.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformConfig.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformDefine.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformDefine.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/android/CCPlatformDefine-android.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/log.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./vr/CCVRDistortion.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./math/Vec2.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./vr/CCVRDistortion.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./math/Vec2.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./math/CCMathBase.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./math/CCMathBase.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./math/Vec2.inl:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCGL.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./math/Vec2.inl:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/android/CCGL-android.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCGL.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/android/CCGL-android.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2platform.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/KHR/khrplatform.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2ext.h:

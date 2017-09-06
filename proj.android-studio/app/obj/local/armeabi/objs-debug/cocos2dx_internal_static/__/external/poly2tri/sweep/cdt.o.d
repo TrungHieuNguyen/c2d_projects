@@ -1,29 +1,41 @@
 obj/local/armeabi/objs-debug/cocos2dx_internal_static/__/external/poly2tri/sweep/cdt.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/poly2tri/sweep/cdt.cc \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/poly2tri/sweep/cdt.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/poly2tri/sweep/advancing_front.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/poly2tri/sweep/../common/shapes.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstddef \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cmath \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/poly2tri/sweep/sweep_context.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/poly2tri/sweep/sweep.h
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/poly2tri/sweep/cdt.cc \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/poly2tri/sweep/cdt.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/poly2tri/sweep/advancing_front.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/poly2tri/sweep/../common/shapes.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstddef \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs_elf.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/api-level.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cmath \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/poly2tri/sweep/sweep_context.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/poly2tri/sweep/sweep.h
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/poly2tri/sweep/cdt.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/poly2tri/sweep/cdt.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/poly2tri/sweep/advancing_front.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/poly2tri/sweep/advancing_front.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/poly2tri/sweep/../common/shapes.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/poly2tri/sweep/../common/shapes.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstddef:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstddef:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cmath:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/poly2tri/sweep/sweep_context.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/poly2tri/sweep/sweep.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/api-level.h:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cmath:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/poly2tri/sweep/sweep_context.h:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/poly2tri/sweep/sweep.h:

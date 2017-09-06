@@ -1,2 +1,2 @@
 obj/local/armeabi/objs-debug/bullet_static/BulletMultiThreaded/SpuLibspe2Support.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/BulletMultiThreaded/SpuLibspe2Support.cpp
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/BulletMultiThreaded/SpuLibspe2Support.cpp

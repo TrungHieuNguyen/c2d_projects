@@ -1,44 +1,71 @@
 obj/local/armeabi/objs-debug/cocos_flatbuffers_static/idl_gen_text.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/flatbuffers/idl_gen_text.cpp \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/flatbuffers/../flatbuffers/flatbuffers.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstdint \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstddef \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/string \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/flatbuffers/../flatbuffers/idl.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/flatbuffers/../flatbuffers/util.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/fstream \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/iomanip \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/flatbuffers/idl_gen_text.cpp \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/flatbuffers/../flatbuffers/flatbuffers.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs_elf.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/api-level.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstdint \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstddef \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/string \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/flatbuffers/../flatbuffers/idl.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/flatbuffers/../flatbuffers/util.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/fstream \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/iomanip \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/stat.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/stat.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/endian.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/endian.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/endian.h
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/flatbuffers/../flatbuffers/flatbuffers.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/flatbuffers/../flatbuffers/flatbuffers.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstdint:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstddef:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/string:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/api-level.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstdint:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstddef:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/flatbuffers/../flatbuffers/idl.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/string:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/flatbuffers/../flatbuffers/util.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/fstream:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/flatbuffers/../flatbuffers/idl.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/iomanip:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/flatbuffers/../flatbuffers/util.h:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/fstream:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/iomanip:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/stat.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/stat.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/endian.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/endian.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/endian.h:

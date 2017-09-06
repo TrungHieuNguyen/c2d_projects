@@ -1,182 +1,227 @@
 obj/local/armeabi/objs-debug/audioengine_static/__/AudioEngine.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../AudioEngine.cpp \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/ccConfig.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/include/Export.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/queue \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCFileUtils.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/ccTypes.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/CCGeometry.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/ccMacros.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCConsole.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCRef.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCStdC.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/android/CCStdC-android.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/ccRandom.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/random \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/CCMath.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Vec2.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/CCMathBase.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Vec2.inl \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Vec3.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Vec3.inl \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Mat4.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Vec4.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Vec4.inl \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Mat4.inl \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Quaternion.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Quaternion.inl \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCGL.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/android/CCGL-android.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCValue.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCData.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/ccUtils.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../2d/CCNode.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCVector.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCProtocols.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../renderer/CCTexture2D.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCScriptSupport.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCCommon.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCTouch.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCEventTouch.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCEvent.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCEventKeyboard.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/CCAffineTransform.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../2d/CCComponentContainer.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCMap.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../2d/CCComponent.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../physics/CCPhysicsBody.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../physics/CCPhysicsShape.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/AudioEngine-inl.h
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../AudioEngine.cpp \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCPlatformConfig.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/include/AudioEngine.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCPlatformMacros.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/ccConfig.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCPlatformDefine.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/android/CCPlatformDefine-android.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/log.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/include/Export.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/queue \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCFileUtils.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/ccTypes.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/CCGeometry.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/ccMacros.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCConsole.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/select.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCRef.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCStdC.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/android/CCStdC-android.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/math.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdlib.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/alloca.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/strings.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/ccRandom.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/random \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/CCMath.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Vec2.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/CCMathBase.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Vec2.inl \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Vec3.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Vec3.inl \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Mat4.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Vec4.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Vec4.inl \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Mat4.inl \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Quaternion.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Quaternion.inl \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCGL.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/android/CCGL-android.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2platform.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/KHR/khrplatform.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2ext.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCValue.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCData.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/ccUtils.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../2d/CCNode.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCVector.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCProtocols.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../renderer/CCTexture2D.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCScriptSupport.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCCommon.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCTouch.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCEventTouch.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCEvent.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCEventKeyboard.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/CCAffineTransform.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../2d/CCComponentContainer.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCMap.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../2d/CCComponent.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../physics/CCPhysicsBody.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../physics/CCPhysicsShape.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/AudioEngine-inl.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES_Platform.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES_Android.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES.h
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCPlatformConfig.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCPlatformConfig.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/include/AudioEngine.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/include/AudioEngine.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCPlatformMacros.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCPlatformMacros.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/ccConfig.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/ccConfig.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCPlatformDefine.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCPlatformDefine.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/android/CCPlatformDefine-android.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/android/CCPlatformDefine-android.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/include/Export.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/log.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/include/Export.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/queue:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCFileUtils.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/queue:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/ccTypes.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCFileUtils.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/CCGeometry.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/ccTypes.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/ccMacros.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/CCGeometry.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCConsole.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/ccMacros.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCConsole.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/select.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCRef.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCStdC.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/android/CCStdC-android.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCRef.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCStdC.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/ccRandom.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/android/CCStdC-android.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/random:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/math.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/CCMath.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdlib.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Vec2.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/alloca.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/strings.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/CCMathBase.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Vec2.inl:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Vec3.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/ccRandom.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Vec3.inl:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/random:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Mat4.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/CCMath.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Vec4.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Vec2.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Vec4.inl:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Mat4.inl:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/CCMathBase.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Quaternion.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Vec2.inl:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/Quaternion.inl:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Vec3.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCGL.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Vec3.inl:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/android/CCGL-android.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Mat4.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCValue.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Vec4.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCData.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Vec4.inl:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/ccUtils.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Mat4.inl:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../2d/CCNode.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Quaternion.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCVector.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/Quaternion.inl:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCProtocols.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCGL.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../renderer/CCTexture2D.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/android/CCGL-android.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCScriptSupport.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2platform.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../platform/CCCommon.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/KHR/khrplatform.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCTouch.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCEventTouch.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2ext.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCEvent.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCValue.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCEventKeyboard.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCData.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../math/CCAffineTransform.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/ccUtils.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../2d/CCComponentContainer.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../2d/CCNode.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../base/CCMap.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCVector.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../2d/CCComponent.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCProtocols.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../physics/CCPhysicsBody.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../renderer/CCTexture2D.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../physics/CCPhysicsShape.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCScriptSupport.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/AudioEngine-inl.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../platform/CCCommon.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCTouch.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCEventTouch.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCEvent.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCEventKeyboard.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../math/CCAffineTransform.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../2d/CCComponentContainer.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../base/CCMap.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../2d/CCComponent.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../physics/CCPhysicsBody.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../physics/CCPhysicsShape.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/AudioEngine-inl.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES_Platform.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES_Android.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES.h:

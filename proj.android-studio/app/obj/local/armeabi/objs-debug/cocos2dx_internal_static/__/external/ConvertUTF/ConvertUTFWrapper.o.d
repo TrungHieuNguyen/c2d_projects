@@ -1,11 +1,17 @@
 obj/local/armeabi/objs-debug/cocos2dx_internal_static/__/external/ConvertUTF/ConvertUTFWrapper.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/ConvertUTF/ConvertUTFWrapper.cpp \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/ConvertUTF/ConvertUTF.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/string
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/ConvertUTF/ConvertUTFWrapper.cpp \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/ConvertUTF/ConvertUTF.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/string \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/ConvertUTF/ConvertUTF.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/ConvertUTF/ConvertUTF.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/string:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/string:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h:

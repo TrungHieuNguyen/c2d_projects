@@ -1,221 +1,242 @@
 obj/local/armeabi/objs-debug/cocos3d_static/CCAnimation3D.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/CCAnimation3D.cpp \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCAnimation3D.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCAnimationCurve.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cmath \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/CCPlatformMacros.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/ccConfig.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/CCPlatformConfig.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/CCPlatformDefine.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/android/CCPlatformDefine-android.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/CCRef.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/CCMath.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Vec2.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/CCMathBase.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Vec2.inl \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Vec3.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Vec3.inl \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Mat4.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/ccMacros.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/CCConsole.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/CCStdC.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/android/CCStdC-android.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/ccRandom.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Vec4.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Vec4.inl \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Mat4.inl \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Quaternion.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Quaternion.inl \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCAnimationCurve.inl \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCBundle3DData.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/ccTypes.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/CCGeometry.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/CCGL.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/android/CCGL-android.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCAABB.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCBundle3D.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/CCData.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCBundleReader.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/document-wrapper.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/rapidjson.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/document.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/reader.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/allocators.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/rapidjson.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/stream.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/encodings.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/encodedstream.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/memorystream.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/meta.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/../rapidjson.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/stack.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/../allocators.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/swap.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/strtod.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/ieee754.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/biginteger.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/diyfp.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/pow10.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/error/error.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/error/../rapidjson.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/strfunc.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/../stream.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/../rapidjson.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/CCFileUtils.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/CCValue.h
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/CCAnimation3D.cpp \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCAnimation3D.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCAnimationCurve.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cmath \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/CCPlatformMacros.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/ccConfig.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/CCPlatformConfig.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/CCPlatformDefine.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/android/CCPlatformDefine-android.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/log.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/CCRef.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/CCMath.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Vec2.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/CCMathBase.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Vec2.inl \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Vec3.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Vec3.inl \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Mat4.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/ccMacros.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/CCConsole.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/select.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/CCStdC.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/android/CCStdC-android.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/ccRandom.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Vec4.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Vec4.inl \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Mat4.inl \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Quaternion.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Quaternion.inl \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCAnimationCurve.inl \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCBundle3DData.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/ccTypes.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/CCGeometry.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/CCGL.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/android/CCGL-android.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2platform.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/KHR/khrplatform.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2ext.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCAABB.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCBundle3D.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/CCData.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCBundleReader.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/document-wrapper.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/rapidjson.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/inttypes.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/document.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/reader.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/allocators.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/rapidjson.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/stream.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/encodings.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/encodedstream.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/memorystream.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/meta.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/../rapidjson.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/stack.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/../allocators.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/swap.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/strtod.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/ieee754.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/biginteger.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/diyfp.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/pow10.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/error/error.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/error/../rapidjson.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/strfunc.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/../stream.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/../rapidjson.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/CCFileUtils.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/CCValue.h
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCAnimation3D.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCAnimation3D.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCAnimationCurve.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCAnimationCurve.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cmath:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cmath:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/CCPlatformMacros.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/CCPlatformMacros.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/ccConfig.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/ccConfig.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/CCPlatformConfig.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/CCPlatformConfig.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/CCPlatformDefine.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/CCPlatformDefine.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/android/CCPlatformDefine-android.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/android/CCPlatformDefine-android.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/CCRef.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/log.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/CCMath.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/CCRef.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Vec2.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/CCMath.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Vec2.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/CCMathBase.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/CCMathBase.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Vec2.inl:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Vec3.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Vec2.inl:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Vec3.inl:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Vec3.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Mat4.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Vec3.inl:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/ccMacros.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Mat4.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/CCConsole.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/ccMacros.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/CCConsole.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/select.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/CCStdC.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/android/CCStdC-android.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/CCStdC.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/ccRandom.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/android/CCStdC-android.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Vec4.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Vec4.inl:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/ccRandom.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Mat4.inl:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Vec4.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Quaternion.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Vec4.inl:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/Quaternion.inl:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Mat4.inl:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCAnimationCurve.inl:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Quaternion.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCBundle3DData.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/Quaternion.inl:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/ccTypes.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCAnimationCurve.inl:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../math/CCGeometry.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCBundle3DData.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/CCGL.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/ccTypes.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/android/CCGL-android.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../math/CCGeometry.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCAABB.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/CCGL.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCBundle3D.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/android/CCGL-android.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/CCData.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2platform.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../3d/CCBundleReader.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/KHR/khrplatform.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/document-wrapper.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/rapidjson.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/GLES2/gl2ext.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCAABB.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/document.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCBundle3D.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/reader.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/CCData.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/allocators.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../3d/CCBundleReader.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/rapidjson.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/document-wrapper.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/stream.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/rapidjson.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/encodings.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/encodedstream.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/inttypes.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/memorystream.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/document.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/meta.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/reader.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/../rapidjson.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/allocators.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/stack.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/rapidjson.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/../allocators.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/stream.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/swap.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/encodings.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/strtod.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/encodedstream.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/ieee754.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/memorystream.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/biginteger.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/meta.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/diyfp.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/../rapidjson.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/pow10.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/stack.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/error/error.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/../allocators.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/error/../rapidjson.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/swap.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/strfunc.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/strtod.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/../stream.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/ieee754.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./../external/json/internal/../rapidjson.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/biginteger.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/diyfp.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../platform/CCFileUtils.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/pow10.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/3d/../base/CCValue.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/error/error.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/error/../rapidjson.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/strfunc.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/../stream.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./../external/json/internal/../rapidjson.h:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../platform/CCFileUtils.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/3d/../base/CCValue.h:

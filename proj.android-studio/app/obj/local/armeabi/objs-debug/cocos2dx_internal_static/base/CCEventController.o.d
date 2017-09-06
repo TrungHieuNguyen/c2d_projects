@@ -1,26 +1,29 @@
 obj/local/armeabi/objs-debug/cocos2dx_internal_static/base/CCEventController.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/CCEventController.cpp \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/CCEventController.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformMacros.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/ccConfig.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformConfig.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformDefine.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/CCEvent.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/CCRef.h
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/CCEventController.cpp \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/CCEventController.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformMacros.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/ccConfig.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformConfig.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformDefine.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/android/CCPlatformDefine-android.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/log.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/CCEvent.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/CCRef.h
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/CCEventController.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/CCEventController.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformMacros.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformMacros.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/ccConfig.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/ccConfig.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformConfig.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformConfig.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/CCPlatformDefine.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/CCPlatformDefine.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./platform/android/CCPlatformDefine-android.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/CCEvent.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/log.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/./base/CCRef.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/CCEvent.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/./base/CCRef.h:

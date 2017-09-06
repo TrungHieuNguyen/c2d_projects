@@ -1,152 +1,245 @@
 obj/local/armeabi/objs-debug/bullet_static/BulletDynamics/Character/btKinematicCharacterController.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/BulletDynamics/Character/btKinematicCharacterController.cpp \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btIDebugDraw.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btVector3.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btMinMax.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btTransform.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btMatrix3x3.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btQuaternion.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btQuadWord.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btGhostObject.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObject.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btTransform.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btMotionState.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAlignedObjectArray.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/new \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btOverlappingPairCallback.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btOverlappingPairCache.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseInterface.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseProxy.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btVector3.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btOverlappingPairCallback.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionWorld.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionDispatcher.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btDispatcher.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btPersistentManifold.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btManifoldPoint.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btTransformUtil.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btManifoldResult.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObjectWrapper.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObject.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseProxy.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionCreateFunc.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btMultiSphereShape.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexInternalShape.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexShape.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionShape.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btMatrix3x3.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionMargin.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAabbUtil2.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btCollisionAlgorithm.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionWorld.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btDefaultMotionState.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btMotionState.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/BulletDynamics/Character/btKinematicCharacterController.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/BulletDynamics/Character/btCharacterControllerInterface.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletDynamics/Dynamics/btActionInterface.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletDynamics/Dynamics/btRigidBody.h
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/BulletDynamics/Character/btKinematicCharacterController.cpp \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdio.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs_elf.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/api-level.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdint.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/_types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/_types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/posix_types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/stddef.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/compiler.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/posix_types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/kernel.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/sysmacros.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btIDebugDraw.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btVector3.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btScalar.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/math.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/limits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/limits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/limits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/internal_types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/limits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/syslimits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/page.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdlib.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/string.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/malloc.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/alloca.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/strings.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btMinMax.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAlignedAllocator.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btTransform.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btMatrix3x3.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btQuaternion.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btQuadWord.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btGhostObject.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObject.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btTransform.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btMotionState.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAlignedAllocator.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAlignedObjectArray.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/new \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btOverlappingPairCallback.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btOverlappingPairCache.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseInterface.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseProxy.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btScalar.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btVector3.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btOverlappingPairCallback.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionWorld.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionDispatcher.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btDispatcher.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btPersistentManifold.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btManifoldPoint.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btTransformUtil.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btManifoldResult.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObjectWrapper.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObject.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseProxy.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionCreateFunc.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionShapes/btMultiSphereShape.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexInternalShape.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexShape.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionShape.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btMatrix3x3.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionMargin.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAabbUtil2.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btCollisionAlgorithm.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionWorld.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btDefaultMotionState.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btMotionState.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/BulletDynamics/Character/btKinematicCharacterController.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/BulletDynamics/Character/btCharacterControllerInterface.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletDynamics/Dynamics/btActionInterface.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletDynamics/Dynamics/btRigidBody.h
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btIDebugDraw.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdio.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btVector3.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btMinMax.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/api-level.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btTransform.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdint.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btMatrix3x3.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/_types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btQuaternion.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/_types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btQuadWord.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/posix_types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btGhostObject.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/stddef.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObject.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/compiler.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btTransform.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/posix_types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btMotionState.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAlignedObjectArray.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/kernel.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/new:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/sysmacros.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btOverlappingPairCallback.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btIDebugDraw.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btOverlappingPairCache.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btVector3.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseInterface.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btScalar.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseProxy.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/math.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/limits.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btVector3.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/limits.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btOverlappingPairCallback.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/limits.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionWorld.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/internal_types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionDispatcher.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/limits.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btDispatcher.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/syslimits.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btPersistentManifold.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/page.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btManifoldPoint.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdlib.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btTransformUtil.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/string.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btManifoldResult.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/malloc.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/alloca.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObjectWrapper.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/strings.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObject.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseProxy.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionCreateFunc.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btMinMax.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btMultiSphereShape.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAlignedAllocator.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexInternalShape.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btTransform.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexShape.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btMatrix3x3.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionShape.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btQuaternion.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btMatrix3x3.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btQuadWord.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionMargin.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btGhostObject.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAabbUtil2.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObject.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//BroadphaseCollision/btCollisionAlgorithm.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btTransform.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionWorld.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btMotionState.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btDefaultMotionState.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAlignedAllocator.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btMotionState.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAlignedObjectArray.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/BulletDynamics/Character/btKinematicCharacterController.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/new:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/BulletDynamics/Character/btCharacterControllerInterface.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btOverlappingPairCallback.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletDynamics/Dynamics/btActionInterface.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btOverlappingPairCache.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletDynamics/Dynamics/btRigidBody.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseInterface.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseProxy.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btScalar.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btVector3.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btOverlappingPairCallback.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionWorld.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionDispatcher.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btDispatcher.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btPersistentManifold.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btManifoldPoint.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btTransformUtil.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btManifoldResult.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObjectWrapper.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionObject.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btBroadphaseProxy.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionCreateFunc.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionShapes/btMultiSphereShape.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexInternalShape.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionShapes/btConvexShape.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionShape.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btMatrix3x3.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionShapes/btCollisionMargin.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAabbUtil2.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//BroadphaseCollision/btCollisionAlgorithm.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletCollision//CollisionDispatch/btCollisionWorld.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btDefaultMotionState.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btMotionState.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/BulletDynamics/Character/btKinematicCharacterController.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/BulletDynamics/Character/btCharacterControllerInterface.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletDynamics/Dynamics/btActionInterface.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletDynamics/Dynamics/btRigidBody.h:

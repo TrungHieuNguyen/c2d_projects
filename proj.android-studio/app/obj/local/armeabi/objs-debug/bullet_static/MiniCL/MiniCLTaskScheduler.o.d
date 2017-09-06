@@ -1,59 +1,152 @@
 obj/local/armeabi/objs-debug/bullet_static/MiniCL/MiniCLTaskScheduler.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/MiniCL/MiniCLTaskScheduler.cpp \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/MiniCL/MiniCLTaskScheduler.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletMultiThreaded/PlatformDefinitions.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btMinMax.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/vectormath/vmInclude.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/vectormath/scalar/vectormath_aos.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/vectormath/scalar/vec_aos.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/vectormath/scalar/quat_aos.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/vectormath/scalar/mat_aos.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletMultiThreaded/PpuAddressSpace.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAlignedObjectArray.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/new \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/MiniCL/MiniCLTask/MiniCLTask.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletMultiThreaded/btThreadSupportInterface.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletMultiThreaded/PlatformDefinitions.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/MiniCL/cl_platform.h
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/MiniCL/MiniCLTaskScheduler.cpp \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/MiniCL/MiniCLTaskScheduler.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs_elf.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/api-level.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletMultiThreaded/PlatformDefinitions.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btScalar.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/math.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdint.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/_types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/_types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/posix_types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/stddef.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/compiler.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/posix_types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/kernel.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/sysmacros.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/limits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/limits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/limits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/internal_types.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/limits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/syslimits.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/page.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdlib.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/string.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/malloc.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/alloca.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/strings.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btMinMax.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btScalar.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/vectormath/vmInclude.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/vectormath/scalar/vectormath_aos.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/vectormath/scalar/vec_aos.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/vectormath/scalar/quat_aos.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/vectormath/scalar/mat_aos.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletMultiThreaded/PpuAddressSpace.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAlignedObjectArray.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAlignedAllocator.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/new \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/MiniCL/MiniCLTask/MiniCLTask.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAlignedAllocator.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdio.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletMultiThreaded/btThreadSupportInterface.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletMultiThreaded/PlatformDefinitions.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/MiniCL/cl_platform.h
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/MiniCL/MiniCLTaskScheduler.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/MiniCL/MiniCLTaskScheduler.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletMultiThreaded/PlatformDefinitions.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/assert.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btMinMax.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btScalar.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/api-level.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/vectormath/vmInclude.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletMultiThreaded/PlatformDefinitions.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/vectormath/scalar/vectormath_aos.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btScalar.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/vectormath/scalar/vec_aos.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/math.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/vectormath/scalar/quat_aos.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/vectormath/scalar/mat_aos.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdint.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletMultiThreaded/PpuAddressSpace.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/_types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAlignedObjectArray.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/_types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/posix_types.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/new:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/stddef.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/MiniCL/MiniCLTask/MiniCLTask.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/compiler.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/LinearMath/btAlignedAllocator.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/posix_types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletMultiThreaded/btThreadSupportInterface.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/BulletMultiThreaded/PlatformDefinitions.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/types.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/external/bullet/../bullet/MiniCL/cl_platform.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/kernel.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/sysmacros.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/limits.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/limits.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/limits.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/internal_types.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/machine/limits.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/syslimits.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/asm/page.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdlib.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/string.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/malloc.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/alloca.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/strings.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btMinMax.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btScalar.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/vectormath/vmInclude.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/vectormath/scalar/vectormath_aos.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/vectormath/scalar/vec_aos.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/vectormath/scalar/quat_aos.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/vectormath/scalar/mat_aos.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletMultiThreaded/PpuAddressSpace.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAlignedObjectArray.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAlignedAllocator.h:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/new:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/MiniCL/MiniCLTask/MiniCLTask.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/LinearMath/btAlignedAllocator.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdio.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletMultiThreaded/btThreadSupportInterface.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/BulletMultiThreaded/PlatformDefinitions.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\external/bullet/../bullet/MiniCL/cl_platform.h:

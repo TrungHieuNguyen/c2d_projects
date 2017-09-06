@@ -1,89 +1,134 @@
 obj/local/armeabi/objs-debug/audioengine_static/AudioPlayerProvider.o: \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/AudioPlayerProvider.cpp \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/AudioPlayerProvider.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/IAudioPlayer.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/OpenSLHelper.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/cutils/log.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/PcmData.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/UrlAudioPlayer.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/AssetFd.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/PcmAudioPlayer.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/Track.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/IVolumeProvider.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/audio_utils/include/audio_utils/minifloat.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/PcmBufferProvider.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/AudioBufferProvider.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/utils/Errors.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/AudioDecoder.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/AudioMixerController.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/atomic \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/PcmAudioService.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/CCThreadPool.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/queue \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/ICallerThreadUtils.h \
- /Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/utils/Utils.h \
- /Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/AudioPlayerProvider.cpp \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/AudioPlayerProvider.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/IAudioPlayer.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/OpenSLHelper.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/cutils/log.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/unistd.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/select.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/sysconf.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/capability.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/pathconf.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/log.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES_Platform.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES_Android.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/PcmData.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/memory \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/UrlAudioPlayer.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/AssetFd.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/PcmAudioPlayer.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/Track.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/IVolumeProvider.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/audio_utils/include/audio_utils/minifloat.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/PcmBufferProvider.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/AudioBufferProvider.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/utils/Errors.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/AudioDecoder.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/AudioMixerController.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/atomic \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/PcmAudioService.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/CCThreadPool.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/queue \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/ICallerThreadUtils.h \
+ E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/utils/Utils.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/system_properties.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdlib.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/alloca.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/strings.h \
+ E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h \
+ E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/AudioPlayerProvider.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/AudioPlayerProvider.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/IAudioPlayer.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/IAudioPlayer.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/OpenSLHelper.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/OpenSLHelper.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/cutils/log.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/cutils/log.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/PcmData.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/unistd.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/select.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/sysconf.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/linux/capability.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/pathconf.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/UrlAudioPlayer.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/android/log.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/AssetFd.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES_Platform.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/PcmAudioPlayer.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES_Android.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/Track.h:
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/SLES/OpenSLES.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/IVolumeProvider.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/PcmData.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/audio_utils/include/audio_utils/minifloat.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/PcmBufferProvider.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/AudioBufferProvider.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/utils/Errors.h:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/AudioDecoder.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/UrlAudioPlayer.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/AudioMixerController.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/AssetFd.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/atomic:
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/PcmAudioService.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/PcmAudioPlayer.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/CCThreadPool.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/Track.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/queue:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/IVolumeProvider.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/ICallerThreadUtils.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/audio_utils/include/audio_utils/minifloat.h:
 
-/Users/nguyentrunghieu/Documents/CocosProjects/Game3.14/cgame/cgame/cocos2d/cocos/audio/android/../../audio/android/utils/Utils.h:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/PcmBufferProvider.h:
 
-/Users/nguyentrunghieu/Documents/Devtools/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/AudioBufferProvider.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/utils/Errors.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/AudioDecoder.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/AudioMixerController.h:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/atomic:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/PcmAudioService.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/CCThreadPool.h:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/queue:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/ICallerThreadUtils.h:
+
+E:\Projects\Cocos2d\GitSample\cocos2d\cocos/audio/android/../../audio/android/utils/Utils.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/sys/system_properties.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/stdlib.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/alloca.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/strings.h:
+
+E:/DevTools/android-ndk-r10d/platforms/android-13/arch-arm/usr/include/memory.h:
+
+E:/DevTools/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:

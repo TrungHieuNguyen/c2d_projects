@@ -5,7 +5,7 @@ android {
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "com.chip.game"
+        applicationId "com.xchip"
         minSdkVersion 10
         targetSdkVersion 22
         versionCode 1
