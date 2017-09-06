@@ -1,7 +1,7 @@
 ﻿#include "CoreElement.h"
 #include "../MiniGame/DBAnimation.h"
 #include "../MiniGame/Dealer.h"
-#include "extensions/GUI/CCScrollView/CCScrollView.h"
+//#include "extensions/GUI/CCScrollView/CCScrollView.h"
 #include "ui/CocosGUI.h"
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
 
@@ -116,7 +116,7 @@ bool CoreElementGame::init()
         touchListener->onMouseMove = CC_CALLBACK_1(CoreElementGame::_mouseMovedHandler, this);
         this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener, this);
 
-        _player = new Mecha();
+       // _player = new Mecha();
 
         const auto text = cocos2d::Label::create();
         text->setPosition(480.f, 60.f);
@@ -167,29 +167,29 @@ bool CoreElementGame::init()
     // add the label into the container-layer
     containerLayer->addChild(label);
     
-    // NOW create a Scrollview
-    auto scrollView = cocos2d::extension::ScrollView::create();
-    scrollView->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
-    // set the scrollview size = container layer size
-    scrollView->setContentSize(Size(containerLayer->getContentSize().width, containerLayer->getContentSize().height));
-    
-    // set the position of the scroll-view	(here center of the screen
-    scrollView->setPosition(Point(visibleSize.width/2,visibleSize.height/2));
-    
-    // set the scroll-direction for scroll-view
-    scrollView->setDirection(cocos2d::extension::ScrollView::Direction::VERTICAL);
-    
-    // set the size of the scrollview - here 90% of visible screen.
-    scrollView->setViewSize(Size(visibleSize.width*0.9,visibleSize.height*0.9));
-    
-    // set the content offset of the scrollview
-    scrollView->setContentOffset(Vec2(0, 0));
-    
-    // add / set the container-layer to the scrollview.
-    scrollView->setContainer(containerLayer);
-    
-    // add scroll-view to your scene-layer.
-    //this->addChild(scrollView);
+    //// NOW create a Scrollview
+    //auto scrollView = cocos2d::extension::ScrollView::create();
+    //scrollView->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
+    //// set the scrollview size = container layer size
+    //scrollView->setContentSize(Size(containerLayer->getContentSize().width, containerLayer->getContentSize().height));
+    //
+    //// set the position of the scroll-view	(here center of the screen
+    //scrollView->setPosition(Point(visibleSize.width/2,visibleSize.height/2));
+    //
+    //// set the scroll-direction for scroll-view
+    //scrollView->setDirection(cocos2d::extension::ScrollView::Direction::VERTICAL);
+    //
+    //// set the size of the scrollview - here 90% of visible screen.
+    //scrollView->setViewSize(Size(visibleSize.width*0.9,visibleSize.height*0.9));
+    //
+    //// set the content offset of the scrollview
+    //scrollView->setContentOffset(Vec2(0, 0));
+    //
+    //// add / set the container-layer to the scrollview.
+    //scrollView->setContainer(containerLayer);
+    //
+    //// add scroll-view to your scene-layer.
+    ////this->addChild(scrollView);
     
     
     
@@ -241,7 +241,7 @@ void CoreElementGame::addBullet(CoreElementBullet* bullet)
 
 void CoreElementGame::_enterFrameHandler(float passedTime)
 {
-    _player->update();
+  //  _player->update();
 
     int i = _bullets.size();
     while (i--)
@@ -326,11 +326,11 @@ void CoreElementGame::_keyBoardReleasedHandler(cocos2d::EventKeyboard::KeyCode k
 
 void CoreElementGame::_mouseDownHandler(cocos2d::EventMouse* event)
 {
-    _player->attack(true);
+  //  _player->attack(true);
 }
 void CoreElementGame::_mouseUpHandler(cocos2d::EventMouse* event)
 {
-    _player->attack(false);
+   // _player->attack(false);
 }
 
 void CoreElementGame::_mouseMovedHandler(cocos2d::EventMouse* event)
@@ -429,9 +429,9 @@ Mecha::~Mecha()
 
 void Mecha::update()
 {
-    _updatePosition();
+   /* _updatePosition();
     _updateAim();
-    _updateAttack();
+    _updateAttack();*/
 }
 
 void Mecha::move(int dir)
