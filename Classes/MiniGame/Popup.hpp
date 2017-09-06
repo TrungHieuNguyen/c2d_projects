@@ -29,8 +29,9 @@ class Popup: public LayerColor
     LayerColor * layerBG;
     
     CREATE_FUNC(Popup);
-    Popup();
     
+public:
+    Popup();
     virtual ~Popup();
     virtual void initComponent();
     virtual void onTouchClose(Ref* pSender, cocos2d::ui::Widget::TouchEventType type);

@@ -18,7 +18,7 @@
         <iOS_Target Value="CSSample-mobile" />
         <iOS_BundleID Value="iPhone Developer: trunghieu.nguyen@hotmail.com (Z4PFM2JWBS)" />
         <Platform Value="None" />
-        <RunPlatform Value="None" />
+        <RunPlatform Value="Mac" />
         <FrameworkVersion Value="cocos2d-x-3.10" />
         <IsDebugKeystore Value="True" />
         <KeystorePassword Value="" />

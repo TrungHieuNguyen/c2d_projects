@@ -3,18 +3,174 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
+        <Folder Name="fonts">
+          <TTF Name="arial.ttf" />
+          <TTF Name="AvenirNextCondensed-Bold.ttf" />
+          <TTF Name="AvenirNextCondensed-Medium.ttf" />
+          <TTF Name="AvenirNextCondensed-Regular.ttf" />
+          <TTF Name="AvenirNextCondensed-UltraLight.ttf" />
+          <Fnt Name="font_lost_eff.fnt" />
+          <Fnt Name="font_win_eff.fnt" />
+          <Image Name="font_win_lose_tx_gold.png" />
+          <Image Name="font_win_lose_tx_gray.png" />
+          <TTF Name="Marker Felt.ttf" />
+        </Folder>
         <Folder Name="images">
+          <Folder Name="button">
+            <Image Name="btn_boluot.png" />
+            <Image Name="btn_boluot2.png" />
+            <Image Name="btn_danh.png" />
+            <Image Name="btn_danh2.png" />
+            <Image Name="btn_gianhluot.png" />
+            <Image Name="btn_gianhluot2.png" />
+            <Image Name="btn_green.png" />
+            <Image Name="btn_red.png" />
+            <Image Name="btn_xep.png" />
+            <Image Name="btn_xep2.png" />
+            <Image Name="btn_yellow.png" />
+          </Folder>
+          <Folder Name="card">
+            <Image Name="bich1.png" />
+            <Image Name="bich10.png" />
+            <Image Name="bich11.png" />
+            <Image Name="bich12.png" />
+            <Image Name="bich13.png" />
+            <Image Name="bich2.png" />
+            <Image Name="bich3.png" />
+            <Image Name="bich4.png" />
+            <Image Name="bich5.png" />
+            <Image Name="bich6.png" />
+            <Image Name="bich7.png" />
+            <Image Name="bich8.png" />
+            <Image Name="bich9.png" />
+            <Image Name="cardback.png" />
+            <Image Name="chuon1.png" />
+            <Image Name="chuon10.png" />
+            <Image Name="chuon11.png" />
+            <Image Name="chuon12.png" />
+            <Image Name="chuon13.png" />
+            <Image Name="chuon2.png" />
+            <Image Name="chuon3.png" />
+            <Image Name="chuon4.png" />
+            <Image Name="chuon5.png" />
+            <Image Name="chuon6.png" />
+            <Image Name="chuon7.png" />
+            <Image Name="chuon8.png" />
+            <Image Name="chuon9.png" />
+            <Image Name="co1.png" />
+            <Image Name="co10.png" />
+            <Image Name="co11.png" />
+            <Image Name="co12.png" />
+            <Image Name="co13.png" />
+            <Image Name="co2.png" />
+            <Image Name="co3.png" />
+            <Image Name="co4.png" />
+            <Image Name="co5.png" />
+            <Image Name="co6.png" />
+            <Image Name="co7.png" />
+            <Image Name="co8.png" />
+            <Image Name="co9.png" />
+            <Image Name="ro1.png" />
+            <Image Name="ro10.png" />
+            <Image Name="ro11.png" />
+            <Image Name="ro12.png" />
+            <Image Name="ro13.png" />
+            <Image Name="ro2.png" />
+            <Image Name="ro3.png" />
+            <Image Name="ro4.png" />
+            <Image Name="ro5.png" />
+            <Image Name="ro6.png" />
+            <Image Name="ro7.png" />
+            <Image Name="ro8.png" />
+            <Image Name="ro9.png" />
+          </Folder>
+          <Folder Name="menu">
+            <Image Name="bg_money.png" />
+            <Image Name="bg_name.png" />
+            <Image Name="btn_back.png" />
+            <Image Name="btn_frame.png" />
+            <Image Name="btn_gift.png" />
+            <Image Name="btn_mail.png" />
+            <Image Name="btn_news.png" />
+            <Image Name="btn_plus.png" />
+            <Image Name="gold.png" />
+            <Image Name="list_frame.png" />
+            <Image Name="money.png" />
+            <Image Name="noti.png" />
+            <Image Name="sign_friend.png" />
+            <Image Name="sign_setting.png" />
+            <Image Name="sign_top.png" />
+            <Image Name="user_pic.png" />
+            <Image Name="user_pic_outline.png" />
+          </Folder>
+          <Folder Name="popup">
+            <Image Name="arrowL.png" />
+            <Image Name="arrowR.png" />
+            <Image Name="box_hide.png" />
+            <Image Name="box_mail.png" />
+            <Image Name="box_slide.png" />
+            <Image Name="box_slide_2.png" />
+            <Image Name="boxBgPopup.png" />
+            <Image Name="boxNormal.png" />
+            <Image Name="boxProfile.png" />
+            <Image Name="boxSelect.png" />
+            <Image Name="boxSelect2.png" />
+            <Image Name="boxThanhTich.png" />
+            <Image Name="boxUser.png" />
+            <Image Name="btn-.png" />
+            <Image Name="btn_add.png" />
+            <Image Name="btn_back.png" />
+            <Image Name="btn_here.png" />
+            <Image Name="btn_kick.png" />
+            <Image Name="btn_next.png" />
+            <Image Name="btn_select.png" />
+            <Image Name="btnBgMucCuoc.png" />
+            <Image Name="btnBlue.png" />
+            <Image Name="btnBoxYellow.png" />
+            <Image Name="btnClose.png" />
+            <Image Name="btnPencil.png" />
+            <Image Name="btnPhoto.png" />
+            <Image Name="btnRed.png" />
+            <Image Name="btnSelect.png" />
+            <Image Name="btnSelectMucCuoc.png" />
+            <Image Name="btnTLbet.png" />
+            <Image Name="btnTLbet_selected.png" />
+            <Image Name="buttonGreen.png" />
+            <Image Name="check.png" />
+            <Image Name="check_box.png" />
+            <Image Name="coin.png" />
+            <Image Name="effectTopPopup.png" />
+            <Image Name="frame_slide.png" />
+            <Image Name="frame_top.png" />
+            <Image Name="hotro.png" />
+            <Image Name="icon_no_email.png" />
+            <Image Name="line.png" />
+            <Image Name="mail.png" />
+            <Image Name="mail_open.png" />
+            <Image Name="rate.png" />
+            <Image Name="ro1.png" />
+            <Image Name="sprBorderAvatar.png" />
+            <Image Name="sprBorderName.png" />
+            <Image Name="sprEffectSelect.png" />
+            <Image Name="trash.png" />
+            <Image Name="txthanhtTch.png" />
+          </Folder>
           <Image Name="bich1.png" />
           <Image Name="co1.png" />
           <Image Name="co1_1.png" />
+          <Image Name="digital_space_universe_1280x720.jpg" />
           <Image Name="fin1.png" />
           <Image Name="fin2.png" />
           <Image Name="fin3.png" />
           <Image Name="HelloWorld.png" />
           <Image Name="Main_dealer2_ani.png" />
         </Folder>
-        <Project Name="MainScene.csd" Type="Scene" />
-        <Project Name="Skeleton.csd" Type="Skeleton" />
+        <Project Name="GameScene.csd" Type="Layer" />
+        <Project Name="HUDLayer.csd" Type="Layer" />
+        <Project Name="PopupResult.csd" Type="Layer" />
+        <Project Name="Result.csd" Type="Layer" />
+        <Project Name="SilderDatChuong10.csd" Type="Layer" />
+        <Project Name="WinLoseResult.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
