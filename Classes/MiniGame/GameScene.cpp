@@ -182,13 +182,18 @@ bool GameScene::init()
     sliderUnit = 500;
     silderDatChuong = CSLoader::createNode(RES_SLIDER_DATCHUONG_CSB);
     silderDatChuong->setAnchorPoint(Point(0.5f, 0.5f));
-    silderDatChuong->setPosition(Vec2(visibleSize.width - silderDatChuong->getContentSize().width/2 - 200 , visibleSize.height/2 - 50 ));
+    silderDatChuong->setPosition(Vec2(visibleSize.width + silderDatChuong->getContentSize().width/2 + 50, visibleSize.height/2 - 50 ));
     this->addChild(silderDatChuong,Z_ODER_HUD);
     auto btnChuong = silderDatChuong->getChildByName<Button*>("btnChuong");
     btnChuong->setPressedActionEnabled(true);
+    ActionInterval* move = MoveTo::create(0.5, Vec2(visibleSize.width - silderDatChuong->getContentSize().width/2 - 50 , visibleSize.height/2 - 50));
+    ActionInterval* move_ease = EaseBackInOut::create(
+                                                      (ActionInterval*) (move->clone()));
+
     btnChuong->addClickEventListener([&](Ref* sender)
     {
-       
+        silderDatChuong->stopAllActions();
+        silderDatChuong->runAction(move_ease);
     });
     cocos2d::ui::Slider *sliderSound = ( cocos2d::ui::Slider * )silderDatChuong->getChildByName( "Slider" );
     auto txtValue = silderDatChuong->getChildByName<Text*>("lbValueChuong");
@@ -212,10 +217,8 @@ bool GameScene::init()
         txtValue->setString(std::to_string((i+1)*sliderUnit));
     }
     
-    
-    
-
-    
+    silderDatChuong->stopAllActions();
+    silderDatChuong->runAction(MoveTo::create(0.5, Vec2(visibleSize.width - silderDatChuong->getContentSize().width/2 - 50 , visibleSize.height/2 - 50)));
 
     
     return true;
