@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="HUD_Layer" Type="Layer" ID="f0cb557b-7c47-48dc-af23-87c441a000b5" Version="3.10.0.0" />
+  <PropertyGroup Name="HUDLayer" Type="Layer" ID="f0cb557b-7c47-48dc-af23-87c441a000b5" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -23,7 +23,7 @@
             </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="292.3663" Y="105.0474" />
-            <Scale ScaleX="1.6389" ScaleY="1.3753" />
+            <Scale ScaleX="1.6389" ScaleY="1.6511" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.2284" Y="0.7003" />
             <PreSize X="0.0922" Y="0.2333" />
@@ -54,7 +54,7 @@
             <FileData Type="Normal" Path="images/menu/money.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="sprCoinBar" ActionTag="1365337790" Tag="16" IconVisible="False" LeftMargin="1101.8052" RightMargin="60.1948" TopMargin="27.5236" BottomMargin="87.4764" ctype="SpriteObjectData">
+          <AbstractNodeData Name="sprCoinBar" ActionTag="1365337790" Tag="16" IconVisible="False" LeftMargin="1101.8038" RightMargin="60.1962" TopMargin="27.5241" BottomMargin="87.4759" ctype="SpriteObjectData">
             <Size X="118.0000" Y="35.0000" />
             <Children>
               <AbstractNodeData Name="lbCoin" ActionTag="1217883328" Tag="20" IconVisible="False" LeftMargin="12.6714" RightMargin="16.3286" TopMargin="5.3933" BottomMargin="6.6067" FontSize="20" LabelText="1.000.000" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
@@ -70,8 +70,8 @@
               </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5073" ScaleY="0.4721" />
-            <Position X="1161.6655" Y="103.9994" />
-            <Scale ScaleX="1.7022" ScaleY="1.3861" />
+            <Position X="1161.6653" Y="103.9994" />
+            <Scale ScaleX="1.7022" ScaleY="1.6782" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.9076" Y="0.6933" />
             <PreSize X="0.0922" Y="0.2333" />
@@ -106,7 +106,7 @@
             <Size X="80.0000" Y="80.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="49.1197" Y="105.6213" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <Scale ScaleX="1.0804" ScaleY="1.0402" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.0384" Y="0.7041" />
             <PreSize X="0.0625" Y="0.5333" />

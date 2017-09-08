@@ -31,7 +31,8 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="PopupResult.csd" />
+          <FilePathData Path="SilderDatChuong10.csd" />
+          <FilePathData Path="HUDLayer.csd" />
           <FilePathData Path="WinLoseResult.csd" />
         </OpenedDocuments>
         <ActiveDocument Path="WinLoseResult.csd" />

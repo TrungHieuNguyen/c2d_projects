@@ -186,14 +186,14 @@ bool GameScene::init()
     this->addChild(silderDatChuong,Z_ODER_HUD);
     auto btnChuong = silderDatChuong->getChildByName<Button*>("btnChuong");
     btnChuong->setPressedActionEnabled(true);
-    ActionInterval* move = MoveTo::create(0.5, Vec2(visibleSize.width - silderDatChuong->getContentSize().width/2 - 50 , visibleSize.height/2 - 50));
-    ActionInterval* move_ease = EaseBackInOut::create(
-                                                      (ActionInterval*) (move->clone()));
+    
+    
 
     btnChuong->addClickEventListener([&](Ref* sender)
     {
-        silderDatChuong->stopAllActions();
-        silderDatChuong->runAction(move_ease);
+            ActionInterval* move = MoveTo::create(0.5, Point(getContentSize().width/2, getContentSize().height/2));
+            ActionInterval* move_ease = EaseBackInOut::create((ActionInterval*) (move->clone()));
+            silderDatChuong->runAction(move_ease);
     });
     cocos2d::ui::Slider *sliderSound = ( cocos2d::ui::Slider * )silderDatChuong->getChildByName( "Slider" );
     auto txtValue = silderDatChuong->getChildByName<Text*>("lbValueChuong");
@@ -218,7 +218,7 @@ bool GameScene::init()
     }
     
     silderDatChuong->stopAllActions();
-    silderDatChuong->runAction(MoveTo::create(0.5, Vec2(visibleSize.width - silderDatChuong->getContentSize().width/2 - 50 , visibleSize.height/2 - 50)));
+    silderDatChuong->runAction(MoveTo::create(0.7, Vec2(visibleSize.width - silderDatChuong->getContentSize().width/2 - 50 , visibleSize.height/2 - 50)));
 
     
     return true;
