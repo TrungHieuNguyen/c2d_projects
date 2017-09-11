@@ -203,7 +203,8 @@ bool GameScene::init()
     txtValue->setString(std::to_string(sliderValue));
     sliderSound->addEventListener([&,txtValue](Ref* sender, Slider::EventType type) {
         auto slider = dynamic_cast<Slider*>(sender);
-        if (type == Slider::EventType::ON_PERCENTAGE_CHANGED) {
+        if (type == Slider::EventType::ON_PERCENTAGE_CHANGED)
+        {
             log("MOVED: %d",slider->getPercent());
             sliderValue = (slider->getPercent() + 1)*sliderUnit;
             txtValue->setString(std::to_string(sliderValue));
@@ -223,7 +224,32 @@ bool GameScene::init()
     ActionInterval* move_ease = EaseBackInOut::create((ActionInterval*) (move->clone()));
     silderDatChuong->runAction(move_ease);
 
+    std::string fileName = "Sprite3DTest/tortoise.c3b";
+    auto sprite = Sprite3D::create(fileName);
+    sprite->setScale(0.1f);
+    auto s = Director::getInstance()->getWinSize();
+    sprite->setPosition(Vec2(s.width * 4.f / 5.f, s.height / 2.f));
+    addChild(sprite,Z_ODER_HUD);
+    _sprite = sprite;
+    auto animation = Animation3D::create(fileName);
+    if (animation)
+    {
+        auto animate = Animate3D::create(animation, 0.f, 1.933f);
+        _swim = RepeatForever::create(animate);
+        sprite->runAction(_swim);
+        
+        _swim->retain();
+        _hurt = Animate3D::create(animation, 1.933f, 2.8f);
+        _hurt->retain();
+        _state = State::SWIMMING;
+    }
     
+    _moveAction = MoveTo::create(4.f, Vec2(s.width / 5.f, s.height / 2.f));
+    _moveAction->retain();
+    auto seq = Sequence::create(_moveAction, CallFunc::create(CC_CALLBACK_0(GameScene::reachEndCallBack, this)), nullptr);
+    seq->setTag(100);
+    sprite->runAction(seq);
+    _elapseTransTime = 0;
     return true;
 }
 void GameScene::update(float dt)
@@ -243,6 +269,25 @@ void GameScene::update(float dt)
     }
 
     _ldbGameClock->setPercent(_frameCounter);
+    if (_state == State::HURT_TO_SWIMMING)
+    {
+        _elapseTransTime += dt;
+        
+        if (_elapseTransTime >= Animate3D::getTransitionTime())
+        {
+            _sprite->stopAction(_hurt);
+            _state = State::SWIMMING;
+        }
+    }
+    else if (_state == State::SWIMMING_TO_HURT)
+    {
+        _elapseTransTime += dt;
+        if (_elapseTransTime >= Animate3D::getTransitionTime())
+        {
+            _sprite->stopAction(_swim);
+            _state = State::HURT;
+        }
+    }
 
 }
 void GameScene::setViewPointCenter(Point position) {
@@ -268,6 +313,8 @@ void GameScene::start()
 {
     isStartedGame = true;
     _frameCounter = 0;
+    _elapseTransTime = 0;
+
     this->schedule(schedule_selector(GameScene::update));
     silderDatChuong->stopAllActions();
     auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -396,3 +443,18 @@ void GameScene::updateSliderBar(int value)
 //        
 //    }
 }
+void GameScene::reachEndCallBack()
+{
+    auto s = Director::getInstance()->getWinSize();
+    _sprite->stopActionByTag(100);
+    auto inverse = MoveTo::create(4.f, Vec2(s.width - _sprite->getPositionX(), s.height / 2.f));
+    inverse->retain();
+    _moveAction->release();
+    _moveAction = inverse;
+    auto rot = RotateBy::create(1.f, Vec3(0.f, 180.f, 0.f));
+    auto seq = Sequence::create(rot, _moveAction, CallFunc::create(CC_CALLBACK_0(GameScene::reachEndCallBack, this)), nullptr);
+    seq->setTag(100);
+    _sprite->runAction(seq);
+}
+
+
