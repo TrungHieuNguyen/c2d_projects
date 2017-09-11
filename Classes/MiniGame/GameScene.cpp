@@ -182,7 +182,7 @@ bool GameScene::init()
     sliderUnit = 500;
     silderDatChuong = CSLoader::createNode(RES_SLIDER_DATCHUONG_CSB);
     silderDatChuong->setAnchorPoint(Point(0.5f, 0.5f));
-    silderDatChuong->setPosition(Vec2(visibleSize.width + silderDatChuong->getContentSize().width/2 + 50, visibleSize.height/2 - 50 ));
+    silderDatChuong->setPosition(Vec2(visibleSize.width + silderDatChuong->getContentSize().width/2, visibleSize.height/2 - 50 ));
     this->addChild(silderDatChuong,Z_ODER_HUD);
     auto btnChuong = silderDatChuong->getChildByName<Button*>("btnChuong");
     btnChuong->setPressedActionEnabled(true);
@@ -191,7 +191,8 @@ bool GameScene::init()
 
     btnChuong->addClickEventListener([&](Ref* sender)
     {
-            ActionInterval* move = MoveTo::create(0.5, Point(getContentSize().width/2, getContentSize().height/2));
+            auto visibleSize = Director::getInstance()->getVisibleSize();
+            ActionInterval* move = MoveTo::create(0.5, Point(visibleSize.width + silderDatChuong->getContentSize().width/2 +50, visibleSize.height/2 - 50));
             ActionInterval* move_ease = EaseBackInOut::create((ActionInterval*) (move->clone()));
             silderDatChuong->runAction(move_ease);
     });
@@ -218,7 +219,9 @@ bool GameScene::init()
     }
     
     silderDatChuong->stopAllActions();
-    silderDatChuong->runAction(MoveTo::create(0.7, Vec2(visibleSize.width - silderDatChuong->getContentSize().width/2 - 50 , visibleSize.height/2 - 50)));
+    ActionInterval* move = MoveTo::create(0.5, Point(visibleSize.width - silderDatChuong->getContentSize().width/2 - 50, visibleSize.height/2 - 50));
+    ActionInterval* move_ease = EaseBackInOut::create((ActionInterval*) (move->clone()));
+    silderDatChuong->runAction(move_ease);
 
     
     return true;
@@ -266,6 +269,11 @@ void GameScene::start()
     isStartedGame = true;
     _frameCounter = 0;
     this->schedule(schedule_selector(GameScene::update));
+    silderDatChuong->stopAllActions();
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    ActionInterval* move = MoveTo::create(0.5, Point(visibleSize.width - silderDatChuong->getContentSize().width/2 -50, visibleSize.height/2 - 50));
+    ActionInterval* move_ease = EaseBackInOut::create((ActionInterval*) (move->clone()));
+    silderDatChuong->runAction(move_ease);
 }
 void GameScene::stop()
 {
