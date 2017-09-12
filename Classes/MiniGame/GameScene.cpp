@@ -62,7 +62,7 @@ bool GameScene::init()
     auto layerBG = CSLoader::createNode("GameScene.csb");
     layerBG->setAnchorPoint(Point(0.5f, 0.5f));
     layerBG->setPosition(layerBG->getContentSize()/2);
-    addChild(layerBG);
+    //addChild(layerBG,-1);
     
     Button* btnA = (Button*) layerBG->getChildByName("btnA");
     btnA->addClickEventListener([&](Ref* sender){
@@ -175,7 +175,12 @@ bool GameScene::init()
     
     layerHUD = CSLoader::createNode("HUDLayer.csb");
     layerHUD->setAnchorPoint(Point(0.5f, 0.5f));
-    layerHUD->setPosition(Vec2(layerHUD->getContentSize().width/2,visibleSize.height -70));
+    layerHUD->setPosition(Vec2(layerHUD->getContentSize().width/2,visibleSize.height + 70));
+    layerHUD->stopAllActions();
+    ActionInterval* hud_move = MoveTo::create(0.7, Point(layerHUD->getContentSize().width/2, visibleSize.height -70));
+    ActionInterval* hud_move_ease = EaseBackInOut::create((ActionInterval*) (hud_move->clone()));
+    layerHUD->runAction(hud_move_ease);
+
     addChild(layerHUD, Z_ODER_HUD);
     
     sliderValue = 0;
@@ -220,15 +225,15 @@ bool GameScene::init()
     }
     
     silderDatChuong->stopAllActions();
-    ActionInterval* move = MoveTo::create(0.5, Point(visibleSize.width - silderDatChuong->getContentSize().width/2 - 50, visibleSize.height/2 - 50));
-    ActionInterval* move_ease = EaseBackInOut::create((ActionInterval*) (move->clone()));
-    silderDatChuong->runAction(move_ease);
+    ActionInterval* slider_move = MoveTo::create(0.5, Point(visibleSize.width - silderDatChuong->getContentSize().width/2 - 50, visibleSize.height/2 - 50));
+    ActionInterval* slider_move_ease = EaseBackInOut::create((ActionInterval*) (slider_move->clone()));
+    silderDatChuong->runAction(slider_move_ease);
 
     std::string fileName = "Sprite3DTest/tortoise.c3b";
     auto sprite = Sprite3D::create(fileName);
-    sprite->setScale(0.1f);
+    sprite->setScale(0.3f);
     auto s = Director::getInstance()->getWinSize();
-    sprite->setPosition(Vec2(s.width * 4.f / 5.f, s.height / 2.f));
+    sprite->setPosition(Vec2(visibleSize.width /2, visibleSize.height / 2));
     addChild(sprite,Z_ODER_HUD);
     _sprite = sprite;
     auto animation = Animation3D::create(fileName);
@@ -250,6 +255,27 @@ bool GameScene::init()
     seq->setTag(100);
     sprite->runAction(seq);
     _elapseTransTime = 0;
+    
+    
+    
+
+    auto sprite_orc = Sprite3D::create("Sprite3DTest/orc.c3b");
+    sprite_orc->setScale(10);
+    sprite_orc->setRotation3D(Vec3(0,180,0));
+    addChild(sprite_orc);
+    sprite_orc->setPosition( Vec2(visibleSize.width /2, visibleSize.height / 2) );
+    
+    auto sp = Sprite3D::create("Sprite3DTest/axe.c3b");
+    sprite_orc->getAttachNode("Bip001 R Hand")->addChild(sp);
+    
+    auto animation_orc = Animation3D::create("Sprite3DTest/orc.c3b");
+    if (animation_orc)
+    {
+        auto animate = Animate3D::create(animation_orc);
+        sprite_orc->runAction(RepeatForever::create(animate));
+    }
+    
+    
     return true;
 }
 void GameScene::update(float dt)
@@ -264,8 +290,7 @@ void GameScene::update(float dt)
     _frameCounter++;
     if (_frameCounter >= 100)
     {
-        //unschedule(schedule_selector(LoadingScreen::loading));
-        _frameCounter = 0;
+        result();
     }
 
     _ldbGameClock->setPercent(_frameCounter);
@@ -321,17 +346,51 @@ void GameScene::start()
     ActionInterval* move = MoveTo::create(0.5, Point(visibleSize.width - silderDatChuong->getContentSize().width/2 -50, visibleSize.height/2 - 50));
     ActionInterval* move_ease = EaseBackInOut::create((ActionInterval*) (move->clone()));
     silderDatChuong->runAction(move_ease);
+    
+    layerHUD->stopAllActions();
+    ActionInterval* hud_move = MoveTo::create(0.7, Point(layerHUD->getContentSize().width/2, visibleSize.height -70));
+    ActionInterval* hud_move_ease = EaseBackInOut::create((ActionInterval*) (hud_move->clone()));
+    layerHUD->runAction(hud_move_ease);
 }
 void GameScene::stop()
 {
     isStartedGame = false;
     this->unschedule(schedule_selector(GameScene::update));
+    
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    ActionInterval* move = MoveTo::create(0.5, Point(visibleSize.width + silderDatChuong->getContentSize().width/2 +50, visibleSize.height/2 - 50));
+    ActionInterval* move_ease = EaseBackInOut::create((ActionInterval*) (move->clone()));
+    silderDatChuong->runAction(move_ease);
+    
+    layerHUD->stopAllActions();
+    ActionInterval* hud_move = MoveTo::create(0.7, Point(layerHUD->getContentSize().width/2, visibleSize.height + 70));
+    ActionInterval* hud_move_ease = EaseBackInOut::create((ActionInterval*) (hud_move->clone()));
+    layerHUD->runAction(hud_move_ease);
+    
+    
+    
     //_eventDispatcher->removeAllEventListeners();
 }
 void GameScene::pause()
 {
     
 }
+
+void GameScene::result()
+{
+    //unschedule(schedule_selector(LoadingScreen::loading));
+    _frameCounter = 0;
+    stop();
+    PopupResult* p = PopupResult::gI();
+    if (p->getParent() == NULL)
+    {
+        p->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2, Director::getInstance()->getVisibleSize().height/2));
+        addChild(p, Z_ODER_POPUP);
+        p->fadeInBgDark();
+        p->open();
+    }
+}
+
 void GameScene::setPlayerPosition(CCPoint position)
 {
     Point tileCoord = this->tileCoordForPosition(position);
@@ -456,5 +515,7 @@ void GameScene::reachEndCallBack()
     seq->setTag(100);
     _sprite->runAction(seq);
 }
+
+
 
 
