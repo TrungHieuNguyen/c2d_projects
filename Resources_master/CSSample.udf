@@ -4,7 +4,7 @@
       <Value ctype="CocosRecentOperation">
         <LastPublishType Value="Resource" />
         <IsLastPublish Value="True" />
-        <LastRunType Value="Mac" />
+        <LastRunType Value="Windows" />
       </Value>
     </Item>
     <Item Key="PackageParamsKey">
@@ -34,8 +34,9 @@
           <FilePathData Path="SilderDatChuong10.csd" />
           <FilePathData Path="HUDLayer.csd" />
           <FilePathData Path="WinLoseResult.csd" />
+          <FilePathData Path="GameScene.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="HUDLayer.csd" />
+        <ActiveDocument Path="GameScene.csd" />
       </Value>
     </Item>
   </Properties>

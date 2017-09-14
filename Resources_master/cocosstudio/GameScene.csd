@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" ctype="GameLayerObjectData">
         <Size X="1280.0000" Y="720.0000" />
         <Children>
-          <AbstractNodeData Name="digital_space_universe_1280x720_1" ActionTag="416359974" Tag="2" IconVisible="False" LeftMargin="1.7789" RightMargin="-1.7788" TopMargin="1.8678" BottomMargin="-1.8678" ctype="SpriteObjectData">
+          <AbstractNodeData Name="digital_space_universe_1280x720_1" ActionTag="416359974" VisibleForFrame="False" Tag="2" IconVisible="False" LeftMargin="1.7836" RightMargin="-1.7837" TopMargin="1.8765" BottomMargin="-1.8765" ctype="SpriteObjectData">
             <Size X="1280.0000" Y="720.0000" />
             <AnchorPoint ScaleX="0.4824" ScaleY="0.4736" />
             <Position X="619.2556" Y="339.1155" />
