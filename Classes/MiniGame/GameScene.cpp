@@ -62,7 +62,7 @@ bool GameScene::init()
     auto layerBG = CSLoader::createNode("GameScene.csb");
     layerBG->setAnchorPoint(Point(0.5f, 0.5f));
     layerBG->setPosition(layerBG->getContentSize()/2);
-    //addChild(layerBG,-1);
+    addChild(layerBG,-1);
     
     Button* btnA = (Button*) layerBG->getChildByName("btnA");
     btnA->addClickEventListener([&](Ref* sender){
