@@ -33,14 +33,14 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lbTitle" ActionTag="-479545442" Tag="6" IconVisible="False" LeftMargin="542.2755" RightMargin="537.7245" TopMargin="6.3278" BottomMargin="602.6722" FontSize="80" LabelText="About" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
-            <Size X="200.0000" Y="111.0000" />
+          <AbstractNodeData Name="lbTitle" ActionTag="-479545442" Tag="6" IconVisible="False" LeftMargin="449.7755" RightMargin="445.2245" TopMargin="6.3278" BottomMargin="602.6722" FontSize="80" LabelText="MAIN MENU" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+            <Size X="385.0000" Y="111.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="642.2755" Y="658.1722" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5018" Y="0.9141" />
-            <PreSize X="0.1563" Y="0.1542" />
+            <PreSize X="0.3008" Y="0.1542" />
             <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Bold.ttf" Plist="" />
             <OutlineColor A="255" R="0" G="255" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />

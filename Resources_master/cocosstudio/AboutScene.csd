@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="MainScene_0" Type="Layer" ID="4c906db9-0400-4bcc-aaa3-6aec9ddb0a92" Version="3.10.0.0" />
+  <PropertyGroup Name="AboutScene" Type="Layer" ID="4c906db9-0400-4bcc-aaa3-6aec9ddb0a92" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -33,79 +33,31 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lbTitle" ActionTag="-479545442" Tag="6" IconVisible="False" LeftMargin="329.7755" RightMargin="325.2245" TopMargin="6.3278" BottomMargin="602.6722" FontSize="80" LabelText="COCOS 2D TEST APP" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
-            <Size X="625.0000" Y="111.0000" />
+          <AbstractNodeData Name="lbTitle" ActionTag="-479545442" Tag="6" IconVisible="False" LeftMargin="531.7755" RightMargin="527.2245" TopMargin="6.3278" BottomMargin="602.6722" FontSize="80" LabelText="ABOUT" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+            <Size X="221.0000" Y="111.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="642.2755" Y="658.1722" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5018" Y="0.9141" />
-            <PreSize X="0.4883" Y="0.1542" />
+            <PreSize X="0.1727" Y="0.1542" />
             <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Bold.ttf" Plist="" />
             <OutlineColor A="255" R="0" G="255" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btn2D" ActionTag="640980814" Tag="44" IconVisible="False" LeftMargin="544.8901" RightMargin="525.1099" TopMargin="270.7889" BottomMargin="398.2111" TouchEnable="True" FontSize="30" ButtonText="2D Game" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="180" Scale9Height="29" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="210.0000" Y="51.0000" />
+          <AbstractNodeData Name="btnAbout" ActionTag="-1302691831" Tag="47" IconVisible="False" LeftMargin="4.3641" RightMargin="1195.6360" TopMargin="1.6447" BottomMargin="638.3553" TouchEnable="True" FontSize="30" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="80.0000" Y="80.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="649.8901" Y="423.7111" />
-            <Scale ScaleX="1.6208" ScaleY="1.4339" />
+            <Position X="44.3641" Y="678.3553" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5077" Y="0.5885" />
-            <PreSize X="0.1641" Y="0.0708" />
+            <PrePosition X="0.0347" Y="0.9422" />
+            <PreSize X="0.0625" Y="0.1111" />
             <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Regular.ttf" Plist="" />
             <TextColor A="255" R="238" G="238" B="51" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="Normal" Path="images/popup/sprBorderName.png" Plist="" />
-            <NormalFileData Type="Normal" Path="images/popup/sprBorderName.png" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="btnTiledMap" ActionTag="-2005250662" Tag="45" IconVisible="False" LeftMargin="547.7285" RightMargin="522.2715" TopMargin="370.5103" BottomMargin="298.4897" TouchEnable="True" FontSize="30" ButtonText="Tiled Map" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="180" Scale9Height="29" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="210.0000" Y="51.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="652.7285" Y="323.9897" />
-            <Scale ScaleX="1.6208" ScaleY="1.4339" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5099" Y="0.4500" />
-            <PreSize X="0.1641" Y="0.0708" />
-            <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Regular.ttf" Plist="" />
-            <TextColor A="255" R="238" G="238" B="51" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="Normal" Path="images/popup/sprBorderName.png" Plist="" />
-            <NormalFileData Type="Normal" Path="images/popup/sprBorderName.png" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="btn3D" ActionTag="-794377576" Tag="46" IconVisible="False" LeftMargin="545.1968" RightMargin="524.8032" TopMargin="473.3918" BottomMargin="195.6082" TouchEnable="True" FontSize="30" ButtonText="3D World" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="180" Scale9Height="29" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="210.0000" Y="51.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="650.1968" Y="221.1082" />
-            <Scale ScaleX="1.6208" ScaleY="1.4339" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5080" Y="0.3071" />
-            <PreSize X="0.1641" Y="0.0708" />
-            <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Regular.ttf" Plist="" />
-            <TextColor A="255" R="238" G="238" B="51" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="Normal" Path="images/popup/sprBorderName.png" Plist="" />
-            <NormalFileData Type="Normal" Path="images/popup/sprBorderName.png" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="btnAbout" ActionTag="-1302691831" Tag="47" IconVisible="False" LeftMargin="546.2453" RightMargin="523.7547" TopMargin="574.6931" BottomMargin="94.3069" TouchEnable="True" FontSize="30" ButtonText="About" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="180" Scale9Height="29" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="210.0000" Y="51.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="651.2453" Y="119.8069" />
-            <Scale ScaleX="1.6208" ScaleY="1.4339" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5088" Y="0.1664" />
-            <PreSize X="0.1641" Y="0.0708" />
-            <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Regular.ttf" Plist="" />
-            <TextColor A="255" R="238" G="238" B="51" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="Normal" Path="images/popup/sprBorderName.png" Plist="" />
-            <NormalFileData Type="Normal" Path="images/popup/sprBorderName.png" Plist="" />
+            <PressedFileData Type="Normal" Path="images/menu/btn_back.png" Plist="" />
+            <NormalFileData Type="Normal" Path="images/menu/btn_back.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>

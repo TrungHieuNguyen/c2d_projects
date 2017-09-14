@@ -58,19 +58,19 @@ void MainScene::initComponents()
     Button* btnTiledMap = (Button*) layerBG->getChildByName("btnTiledMap");
     btnTiledMap->setPressedActionEnabled(true);
     btnTiledMap->addClickEventListener([&](Ref* sender){
-        Director::getInstance()->replaceScene(GameScene::createScene());
+        Director::getInstance()->replaceScene(GameTiledMap::createScene());
     });
     
     Button* btn3D = (Button*) layerBG->getChildByName("btn3D");
     btn3D->setPressedActionEnabled(true);
     btn3D->addClickEventListener([&](Ref* sender){
-        Director::getInstance()->replaceScene(GameScene::createScene());
+        Director::getInstance()->replaceScene(Game3D::createScene());
     });
     
     Button* btnAbout = (Button*) layerBG->getChildByName("btnAbout");
     btnAbout->setPressedActionEnabled(true);
     btnAbout->addClickEventListener([&](Ref* sender){
-        Director::getInstance()->replaceScene(GameScene::createScene());
+        Director::getInstance()->replaceScene(AboutScene::createScene());
     });
 
     
