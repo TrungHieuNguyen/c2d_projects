@@ -8,9 +8,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\AppDelegate.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\HelloWorldScene.cpp">
-      <Filter>Classes</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Cocos2dRenderer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)OpenGLES.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)OpenGLESPage.xaml.cpp" />
@@ -25,9 +22,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\AppDelegate.h">
-      <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\HelloWorldScene.h">
       <Filter>Classes</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)OpenGLES.h" />
