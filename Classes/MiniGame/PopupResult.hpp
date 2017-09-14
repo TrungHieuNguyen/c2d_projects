@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "Popup.hpp"
-
+#include "GameDefine.h"
 class PopupResult : public Popup
 {
    

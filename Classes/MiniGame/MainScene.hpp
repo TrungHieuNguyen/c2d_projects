@@ -10,8 +10,15 @@
 #define MainScene_hpp
 
 #include <stdio.h>
+#include "cocos2d.h"
+#include "ui/CocosGUI.h"
+using namespace cocos2d;
+using namespace ui;
+
 class MainScene : public cocos2d::Scene
 {
+    Node* layerBG;
+    Text* lbTitle;
 public:
     static cocos2d::Scene* createScene();
     
@@ -19,7 +26,7 @@ public:
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
-    
+    void initComponents();
     // implement the "static create()" method manually
     CREATE_FUNC(MainScene);
 };

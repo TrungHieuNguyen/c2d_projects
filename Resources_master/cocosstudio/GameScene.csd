@@ -47,18 +47,6 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lbScore" ActionTag="-479545442" Tag="6" IconVisible="False" LeftMargin="37.5966" RightMargin="1139.4034" TopMargin="18.8755" BottomMargin="633.1245" FontSize="48" LabelText="9999" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
-            <Size X="103.0000" Y="68.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="89.0966" Y="667.1245" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0696" Y="0.9266" />
-            <PreSize X="0.0805" Y="0.0944" />
-            <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Bold.ttf" Plist="" />
-            <OutlineColor A="255" R="0" G="255" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
           <AbstractNodeData Name="LayerCard" ActionTag="-1328070269" Tag="9" IconVisible="True" LeftMargin="619.2592" RightMargin="660.7408" TopMargin="380.8813" BottomMargin="339.1187" ctype="SingleNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <Children>
@@ -102,6 +90,18 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.4838" Y="0.4710" />
             <PreSize X="0.0000" Y="0.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="lbTitle" ActionTag="-2144628828" Tag="72" IconVisible="False" LeftMargin="494.7755" RightMargin="490.2245" TopMargin="6.3278" BottomMargin="602.6722" FontSize="80" LabelText="2D GAME" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+            <Size X="295.0000" Y="111.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="642.2755" Y="658.1722" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.5018" Y="0.9141" />
+            <PreSize X="0.2305" Y="0.1542" />
+            <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Bold.ttf" Plist="" />
+            <OutlineColor A="255" R="0" G="255" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

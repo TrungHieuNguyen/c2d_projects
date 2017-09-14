@@ -12,6 +12,7 @@
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
 #include "SimpleAudioEngine.h"
 #include "PopupResult.hpp"
+#include "ShaderNode.hpp"
 
 USING_NS_CC;
 
@@ -59,12 +60,13 @@ bool GameScene::init()
     
     
 
-    auto layerBG = CSLoader::createNode("GameScene.csb");
+    auto layerBG = CSLoader::createNode(SCENE_GAME2D_CSB);
     layerBG->setAnchorPoint(Point(0.5f, 0.5f));
     layerBG->setPosition(layerBG->getContentSize()/2);
     addChild(layerBG,-1);
     
     Button* btnA = (Button*) layerBG->getChildByName("btnA");
+    btnA->setPressedActionEnabled(true);
     btnA->addClickEventListener([&](Ref* sender){
         if(!isStartedGame)
             start();
@@ -73,6 +75,7 @@ bool GameScene::init()
     });
 
     Button* btnB = (Button*) layerBG->getChildByName("btnB");
+    btnB->setPressedActionEnabled(true);
     btnB->addClickEventListener([&](Ref* sender){
         PopupResult* p = PopupResult::gI();
         if (p->getParent() == NULL)
@@ -88,7 +91,7 @@ bool GameScene::init()
     auto LayerCard = layerBG->getChildByName("LayerCard");
     
     
-    lbScore = (Text*) layerBG->getChildByName("lbScore");
+    lbScore = (Text*) layerBG->getChildByName("lbTitle");
     lbScore->setColor(Color3B::WHITE);
     lbScore->setIgnoreAnchorPointForPosition(false);
     lbScore->setAnchorPoint(Point(0, 0.5f));
@@ -173,7 +176,7 @@ bool GameScene::init()
     
     _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
     
-    layerHUD = CSLoader::createNode("HUDLayer.csb");
+    layerHUD = CSLoader::createNode(SCENE_GAME_HUD_CSB);
     layerHUD->setAnchorPoint(Point(0.5f, 0.5f));
     layerHUD->setPosition(Vec2(layerHUD->getContentSize().width/2,visibleSize.height + 70));
     layerHUD->stopAllActions();
@@ -275,6 +278,11 @@ bool GameScene::init()
         sprite_orc->runAction(RepeatForever::create(animate));
     }
     
+    auto sn = ShaderNode::shaderNodeWithVertex("", "Shaders/shadertoy_Glow.fsh");
+    sn->setPosition(Vec2(visibleSize.width/4, visibleSize.height/4));
+    sn->setContentSize(Size(visibleSize.width/4,visibleSize.height/4));
+    addChild(sn);
+
     
     return true;
 }
@@ -325,7 +333,6 @@ void GameScene::setViewPointCenter(Point position) {
     x = MIN(x, (_tileMap->getMapSize().width * this->_tileMap->getTileSize().width) - winSize.width / 2);
     y = MIN(y, (_tileMap->getMapSize().height * _tileMap->getTileSize().height) - winSize.height/2);
     Point actualPosition = ccp(x, y);
-    
     Point centerOfView = ccp(winSize.width/2, winSize.height/2);
     Point viewPoint = ccpSub(centerOfView, actualPosition);
     this->setPosition(viewPoint);

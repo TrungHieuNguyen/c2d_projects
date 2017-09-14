@@ -167,8 +167,12 @@
         </Folder>
         <Project Name="GameScene.csd" Type="Layer" />
         <Project Name="HUDLayer.csd" Type="Layer" />
+        <Project Name="MainScene.csd" Type="Layer" />
         <Project Name="SilderDatChuong10.csd" Type="Layer" />
         <Project Name="WinLoseResult.csd" Type="Layer" />
+        <Project Name="AboutScene.csd" Type="Layer" />
+        <Project Name="Game3D.csd" Type="Layer" />
+        <Project Name="GameTiledMap.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
