@@ -135,3 +135,8 @@ proj.android-studio/app/obj/local/armeabi/objs-debug/spine_static/archiver.list
 proj.android-studio/app/libs/armeabi/gdb.setup
 proj.android-studio/app/libs/armeabi/gdbserver
 proj.android-studio/app/libs/armeabi/libMyGame.so
+proj.win8.1-universal/cgame.VC.db
+proj.win8.1-universal/ipch/CGAME.WINDOWS-3d2c6442/CGAME.ipch
+proj.win8.1-universal/ipch/CGAME.WINDOWS-d977461/CGAME.ipch
+proj.win8.1-universal/ipch/CGAME.WINDOWSPHONE-10f1e4b6/CGAME.ipch
+proj.win8.1-universal/ipch/CGAME.WINDOWSPHONE-94aae795/CGAME.ipch

@@ -11,6 +11,108 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Cocos2dRenderer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)OpenGLES.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)OpenGLESPage.xaml.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\animation\Animation.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\animation\AnimationState.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\animation\TimelineState.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\animation\WorldClock.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\armature\Armature.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\armature\Bone.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\armature\Slot.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\cocos2dx\CCArmatureDisplay.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\cocos2dx\CCFactory.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\cocos2dx\CCSlot.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\cocos2dx\CCTextureData.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\core\BaseObject.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\events\EventObject.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\factories\BaseFactory.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\model\AnimationData.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\model\ArmatureData.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\model\DragonBonesData.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\model\FrameData.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\model\TimelineData.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\parsers\DataParser.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\parsers\JSONDataParser.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\textures\TextureData.cpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\AboutScene.cpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\DBAnimation.cpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\Dealer.cpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\Game3D.cpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\GameScene.cpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\GameTiledMap.cpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\HelloWorldScene.cpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\MainScene.cpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\Popup.cpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\PopupResult.cpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\PopupWaiting.cpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\ShaderNode.cpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml" />
@@ -18,6 +120,12 @@
   <ItemGroup>
     <Filter Include="Classes">
       <UniqueIdentifier>{38ad799c-8c3c-44a2-8e41-516c8f62f556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\DragonBones">
+      <UniqueIdentifier>{a5af1ad9-616c-4f69-92d0-151b81a110af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\MiniGame">
+      <UniqueIdentifier>{a77c82e9-5564-407f-9570-055ae8d514a2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -27,6 +135,261 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)OpenGLES.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)OpenGLESPage.xaml.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Cocos2dRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\animation\Animation.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\animation\AnimationState.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\animation\BaseTimelineState.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\animation\IAnimateble.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\animation\TimelineState.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\animation\WorldClock.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\armature\Armature.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\armature\Bone.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\armature\IArmatureDisplay.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\armature\Slot.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\armature\TransformObject.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\cocos2dx\CCArmatureDisplay.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\cocos2dx\CCDragonBonesHeaders.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\cocos2dx\CCFactory.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\cocos2dx\CCSlot.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\cocos2dx\CCTextureData.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\core\BaseObject.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\core\DragonBones.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\events\EventObject.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\factories\BaseFactory.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\geom\ColorTransform.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\geom\Matrix.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\geom\Point.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\geom\Rectangle.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\geom\Transform.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\model\AnimationData.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\model\ArmatureData.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\model\DragonBonesData.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\model\FrameData.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\model\TimelineData.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\parsers\DataParser.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\parsers\JSONDataParser.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\allocators.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\document.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\encodedstream.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\encodings.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\error\en.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\error\error.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\filereadstream.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\filewritestream.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\fwd.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\internal\biginteger.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\internal\diyfp.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\internal\dtoa.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\internal\ieee754.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\internal\itoa.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\internal\meta.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\internal\pow10.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\internal\regex.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\internal\stack.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\internal\strfunc.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\internal\strtod.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\internal\swap.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\istreamwrapper.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\memorybuffer.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\memorystream.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\msinttypes\inttypes.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\ostreamwrapper.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\pointer.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\prettywriter.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\rapidjson.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\reader.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\schema.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\stream.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\stringbuffer.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidjson\writer.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidxml\rapidxml.hpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidxml\rapidxml_iterators.hpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidxml\rapidxml_print.hpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidxml\rapidxml_utils.hpp">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\textures\TextureData.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\DragonBonesHeaders.h">
+      <Filter>Classes\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\AboutScene.hpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\DBAnimation.h">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\Dealer.h">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\Game3D.hpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\GameDefine.h">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\GameScene.hpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\GameTiledMap.hpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\HelloWorldScene.h">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\MainScene.hpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\Popup.hpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\PopupResult.hpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\PopupWaiting.h">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\ShaderNode.hpp">
+      <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)OpenGLESPage.xaml" />
