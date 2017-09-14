@@ -14,6 +14,7 @@
 #include "ui/CocosGUI.h"
 using namespace cocos2d;
 using namespace ui;
+#include "GameDefine.h"
 
 class AboutScene : public cocos2d::Scene
 {

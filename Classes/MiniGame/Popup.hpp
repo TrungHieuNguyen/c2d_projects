@@ -10,7 +10,7 @@
 #define Popup_hpp
 #include <stdio.h>
 #include "cocos2d.h"
-
+#include "GameDefine.h"
 #include "ui/CocosGUI.h"
 #include <stdio.h>
 #define  Z_POPUP_PRIORITY 100

@@ -60,7 +60,7 @@ bool GameScene::init()
     
     
 
-    auto layerBG = CSLoader::createNode("GameScene.csb");
+    auto layerBG = CSLoader::createNode(SCENE_GAME2D_CSB);
     layerBG->setAnchorPoint(Point(0.5f, 0.5f));
     layerBG->setPosition(layerBG->getContentSize()/2);
     addChild(layerBG,-1);
@@ -91,7 +91,7 @@ bool GameScene::init()
     auto LayerCard = layerBG->getChildByName("LayerCard");
     
     
-    lbScore = (Text*) layerBG->getChildByName("lbScore");
+    lbScore = (Text*) layerBG->getChildByName("lbTitle");
     lbScore->setColor(Color3B::WHITE);
     lbScore->setIgnoreAnchorPointForPosition(false);
     lbScore->setAnchorPoint(Point(0, 0.5f));
@@ -176,7 +176,7 @@ bool GameScene::init()
     
     _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
     
-    layerHUD = CSLoader::createNode("HUDLayer.csb");
+    layerHUD = CSLoader::createNode(SCENE_GAME_HUD_CSB);
     layerHUD->setAnchorPoint(Point(0.5f, 0.5f));
     layerHUD->setPosition(Vec2(layerHUD->getContentSize().width/2,visibleSize.height + 70));
     layerHUD->stopAllActions();

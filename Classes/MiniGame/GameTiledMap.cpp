@@ -29,7 +29,7 @@ bool GameTiledMap::init()
 
 void GameTiledMap::initComponents()
 {
-    layerBG = CSLoader::createNode("MainScene.csb");
+    layerBG = CSLoader::createNode(SCENE_GAME_TILEDMAP_CSB);
     addChild(layerBG, -1);
 
     lbTitle = (Text*) layerBG->getChildByName("lbTitle");

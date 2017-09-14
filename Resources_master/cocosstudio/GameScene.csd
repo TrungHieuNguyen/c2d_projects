@@ -47,7 +47,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lbScore" ActionTag="-479545442" Tag="6" IconVisible="False" LeftMargin="1138.5817" RightMargin="38.4183" TopMargin="90.4842" BottomMargin="561.5158" FontSize="48" LabelText="9999" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="lbTitle" ActionTag="-479545442" Tag="6" IconVisible="False" LeftMargin="1138.5817" RightMargin="38.4183" TopMargin="90.4842" BottomMargin="561.5158" FontSize="48" LabelText="9999" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="103.0000" Y="68.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="1190.0817" Y="595.5158" />

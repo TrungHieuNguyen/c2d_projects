@@ -28,7 +28,7 @@ bool AboutScene::init()
 
 void AboutScene::initComponents()
 {
-    layerBG = CSLoader::createNode("MainScene.csb");
+    layerBG = CSLoader::createNode(SCENE_ABOUT_CSB);
     addChild(layerBG, -1);
 
     lbTitle = (Text*) layerBG->getChildByName("lbTitle");

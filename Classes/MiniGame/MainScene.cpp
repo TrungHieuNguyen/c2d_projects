@@ -1,8 +1,12 @@
 
-#include "MainScene.hpp"
+
 #include "ui/CocosGUI.h"
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
+#include "MainScene.hpp"
 #include "GameScene.hpp"
+#include "Game3D.hpp"
+#include "GameTiledMap.hpp"
+#include "AboutScene.hpp"
 
 USING_NS_CC;
 
@@ -29,7 +33,7 @@ bool MainScene::init()
 
 void MainScene::initComponents()
 {
-    layerBG = CSLoader::createNode("MainScene.csb");
+    layerBG = CSLoader::createNode(SCENE_MAIN_CSB);
     addChild(layerBG, -1);
 
     lbTitle = (Text*) layerBG->getChildByName("lbTitle");

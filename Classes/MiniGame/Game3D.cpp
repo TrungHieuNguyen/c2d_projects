@@ -29,7 +29,7 @@ bool Game3D::init()
 
 void Game3D::initComponents()
 {
-    layerBG = CSLoader::createNode("MainScene.csb");
+    layerBG = CSLoader::createNode(SCENE_GAME3D_CSB);
     addChild(layerBG, -1);
 
     lbTitle = (Text*) layerBG->getChildByName("lbTitle");

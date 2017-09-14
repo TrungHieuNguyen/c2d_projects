@@ -5,10 +5,11 @@
 
 #include <stdio.h>
 #include "cocos2d.h"
-
+#include "GameDefine.h"
 
 using namespace std;
 using namespace cocos2d;
+
 
 class PopupWaiting : public LayerColor {
 protected:
