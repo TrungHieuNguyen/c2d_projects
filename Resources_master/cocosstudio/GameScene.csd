@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" ctype="GameLayerObjectData">
         <Size X="1280.0000" Y="720.0000" />
         <Children>
-          <AbstractNodeData Name="digital_space_universe_1280x720_1" ActionTag="416359974" Tag="2" IconVisible="False" LeftMargin="1.7789" RightMargin="-1.7788" TopMargin="1.8678" BottomMargin="-1.8678" ctype="SpriteObjectData">
+          <AbstractNodeData Name="digital_space_universe_1280x720_1" ActionTag="416359974" VisibleForFrame="False" Tag="2" IconVisible="False" LeftMargin="1.7836" RightMargin="-1.7837" TopMargin="1.8765" BottomMargin="-1.8765" ctype="SpriteObjectData">
             <Size X="1280.0000" Y="720.0000" />
             <AnchorPoint ScaleX="0.4824" ScaleY="0.4736" />
             <Position X="619.2556" Y="339.1155" />
@@ -47,13 +47,13 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="lbScore" ActionTag="-479545442" Tag="6" IconVisible="False" LeftMargin="37.5966" RightMargin="1139.4034" TopMargin="18.8755" BottomMargin="633.1245" FontSize="48" LabelText="9999" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="lbScore" ActionTag="-479545442" Tag="6" IconVisible="False" LeftMargin="1138.5817" RightMargin="38.4183" TopMargin="90.4842" BottomMargin="561.5158" FontSize="48" LabelText="9999" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="103.0000" Y="68.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="89.0966" Y="667.1245" />
+            <Position X="1190.0817" Y="595.5158" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0696" Y="0.9266" />
+            <PrePosition X="0.9298" Y="0.8271" />
             <PreSize X="0.0805" Y="0.0944" />
             <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Bold.ttf" Plist="" />
             <OutlineColor A="255" R="0" G="255" B="0" />

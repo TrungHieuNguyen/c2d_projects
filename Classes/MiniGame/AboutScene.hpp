@@ -6,8 +6,8 @@
 //
 //
 
-#ifndef MainScene_hpp
-#define MainScene_hpp
+#ifndef AboutScene_hpp
+#define AboutScene_hpp
 
 #include <stdio.h>
 #include "cocos2d.h"
@@ -15,7 +15,7 @@
 using namespace cocos2d;
 using namespace ui;
 
-class MainScene : public cocos2d::Scene
+class AboutScene : public cocos2d::Scene
 {
     Node* layerBG;
     Text* lbTitle;
@@ -30,4 +30,4 @@ public:
     // implement the "static create()" method manually
     CREATE_FUNC(MainScene);
 };
-#endif /* MainScene_hpp */
+#endif /* AboutScene_hpp */

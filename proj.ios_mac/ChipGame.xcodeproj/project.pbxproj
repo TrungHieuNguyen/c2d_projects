@@ -44,6 +44,10 @@
 		241F02961F21EBB800323F34 /* Knight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F028F1F21EBB800323F34 /* Knight.cpp */; };
 		241F02971F21EBB800323F34 /* PerformanceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 241F02911F21EBB800323F34 /* PerformanceTest.cpp */; };
 		2429EF851F4BEC650095D2B8 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2429EF831F4BEC650095D2B8 /* GameScene.cpp */; };
+		242AEEAE1F6A3D5F0012C627 /* AboutScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 242AEEA81F6A3D5F0012C627 /* AboutScene.cpp */; };
+		242AEEAF1F6A3D5F0012C627 /* Game3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 242AEEAA1F6A3D5F0012C627 /* Game3D.cpp */; };
+		242AEEB01F6A3D5F0012C627 /* GameTiledMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 242AEEAC1F6A3D5F0012C627 /* GameTiledMap.cpp */; };
+		2430485A1F692B760081D61E /* ShaderNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 243048581F692B760081D61E /* ShaderNode.cpp */; };
 		2489FD791F46E43500D14F0B /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2489FD771F46E43500D14F0B /* MainScene.cpp */; };
 		2489FD7D1F46E49200D14F0B /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2489FD7B1F46E49200D14F0B /* HelloWorldScene.cpp */; };
 		24ECF2BC1F5FC4B9000A35A8 /* PopupResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24ECF2BA1F5FC4B9000A35A8 /* PopupResult.cpp */; };
@@ -252,6 +256,14 @@
 		241F02C21F220A6D00323F34 /* rapidxml_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_utils.hpp; sourceTree = "<group>"; };
 		2429EF831F4BEC650095D2B8 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		2429EF841F4BEC650095D2B8 /* GameScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameScene.hpp; sourceTree = "<group>"; };
+		242AEEA81F6A3D5F0012C627 /* AboutScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AboutScene.cpp; sourceTree = "<group>"; };
+		242AEEA91F6A3D5F0012C627 /* AboutScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AboutScene.hpp; sourceTree = "<group>"; };
+		242AEEAA1F6A3D5F0012C627 /* Game3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game3D.cpp; sourceTree = "<group>"; };
+		242AEEAB1F6A3D5F0012C627 /* Game3D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game3D.hpp; sourceTree = "<group>"; };
+		242AEEAC1F6A3D5F0012C627 /* GameTiledMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameTiledMap.cpp; sourceTree = "<group>"; };
+		242AEEAD1F6A3D5F0012C627 /* GameTiledMap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameTiledMap.hpp; sourceTree = "<group>"; };
+		243048581F692B760081D61E /* ShaderNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderNode.cpp; sourceTree = "<group>"; };
+		243048591F692B760081D61E /* ShaderNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ShaderNode.hpp; sourceTree = "<group>"; };
 		2489FD771F46E43500D14F0B /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainScene.cpp; sourceTree = "<group>"; };
 		2489FD781F46E43500D14F0B /* MainScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainScene.hpp; sourceTree = "<group>"; };
 		2489FD7B1F46E49200D14F0B /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
@@ -407,6 +419,12 @@
 				24079D3E1F28335300501F01 /* Popup.cpp */,
 				24079D3F1F28335300501F01 /* Popup.hpp */,
 				24079D401F28335300501F01 /* PopupWaiting.cpp */,
+				242AEEA81F6A3D5F0012C627 /* AboutScene.cpp */,
+				242AEEA91F6A3D5F0012C627 /* AboutScene.hpp */,
+				242AEEAA1F6A3D5F0012C627 /* Game3D.cpp */,
+				242AEEAB1F6A3D5F0012C627 /* Game3D.hpp */,
+				242AEEAC1F6A3D5F0012C627 /* GameTiledMap.cpp */,
+				242AEEAD1F6A3D5F0012C627 /* GameTiledMap.hpp */,
 				24079D411F28335300501F01 /* PopupWaiting.h */,
 				2489FD771F46E43500D14F0B /* MainScene.cpp */,
 				2489FD781F46E43500D14F0B /* MainScene.hpp */,
@@ -415,6 +433,8 @@
 				24F2DEDE1F4EAEB5009E0469 /* GameDefine.h */,
 				24ECF2BA1F5FC4B9000A35A8 /* PopupResult.cpp */,
 				24ECF2BB1F5FC4B9000A35A8 /* PopupResult.hpp */,
+				243048581F692B760081D61E /* ShaderNode.cpp */,
+				243048591F692B760081D61E /* ShaderNode.hpp */,
 			);
 			path = MiniGame;
 			sourceTree = "<group>";
@@ -908,11 +928,14 @@
 				240A814F1F0E1639009893B7 /* ArmatureData.cpp in Sources */,
 				240A81521F0E1639009893B7 /* TimelineData.cpp in Sources */,
 				24079D441F28335300501F01 /* Dealer.cpp in Sources */,
+				2430485A1F692B760081D61E /* ShaderNode.cpp in Sources */,
 				24079D451F28335300501F01 /* Popup.cpp in Sources */,
 				2489FD791F46E43500D14F0B /* MainScene.cpp in Sources */,
 				2429EF851F4BEC650095D2B8 /* GameScene.cpp in Sources */,
+				242AEEAE1F6A3D5F0012C627 /* AboutScene.cpp in Sources */,
 				240A814C1F0E1639009893B7 /* EventObject.cpp in Sources */,
 				240A814E1F0E1639009893B7 /* AnimationData.cpp in Sources */,
+				242AEEB01F6A3D5F0012C627 /* GameTiledMap.cpp in Sources */,
 				240A814B1F0E1639009893B7 /* BaseObject.cpp in Sources */,
 				24079D431F28335300501F01 /* DBAnimation.cpp in Sources */,
 				240A81AE1F0E1DD6009893B7 /* CCSlot.cpp in Sources */,
@@ -938,6 +961,7 @@
 				241F02971F21EBB800323F34 /* PerformanceTest.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				242AEEAF1F6A3D5F0012C627 /* Game3D.cpp in Sources */,
 				240A814A1F0E1639009893B7 /* Slot.cpp in Sources */,
 				240A81531F0E1639009893B7 /* DataParser.cpp in Sources */,
 				24FBDA6D1F3C78C500B21CFB /* AppDelegate.cpp in Sources */,

@@ -2,16 +2,16 @@
 #include "MainScene.hpp"
 #include "ui/CocosGUI.h"
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
-#include "GameScene.hpp"
+#include "Game3D.hpp"
 
 USING_NS_CC;
 
-Scene* MainScene::createScene()
+Scene* Game3D::createScene()
 {
-    return MainScene::create();
+    return Game3D::create();
 }
 
-bool MainScene::init()
+bool Game3D::init()
 {
     if ( !Scene::init() )
     {
@@ -27,7 +27,7 @@ bool MainScene::init()
     return true;
 }
 
-void MainScene::initComponents()
+void Game3D::initComponents()
 {
     layerBG = CSLoader::createNode("MainScene.csb");
     addChild(layerBG, -1);
@@ -40,7 +40,7 @@ void MainScene::initComponents()
     btnPlay->setPressedActionEnabled(true);
     btnPlay->addClickEventListener([&](Ref* sender){
 
-        Director::getInstance()->replaceScene(GameScene::createScene());
+        Director::getInstance()->replaceScene(MainScene::createScene());
 
         
     });
@@ -48,30 +48,30 @@ void MainScene::initComponents()
     Button* btn2D = (Button*) layerBG->getChildByName("btn2D");
     btn2D->setPressedActionEnabled(true);
     btn2D->addClickEventListener([&](Ref* sender){
-        Director::getInstance()->replaceScene(GameScene::createScene());
+        Director::getInstance()->replaceScene(MainScene::createScene());
     });
     
     Button* btnTiledMap = (Button*) layerBG->getChildByName("btnTiledMap");
     btnTiledMap->setPressedActionEnabled(true);
     btnTiledMap->addClickEventListener([&](Ref* sender){
-        Director::getInstance()->replaceScene(GameScene::createScene());
+        Director::getInstance()->replaceScene(MainScene::createScene());
     });
     
     Button* btn3D = (Button*) layerBG->getChildByName("btn3D");
     btn3D->setPressedActionEnabled(true);
     btn3D->addClickEventListener([&](Ref* sender){
-        Director::getInstance()->replaceScene(GameScene::createScene());
+        Director::getInstance()->replaceScene(MainScene::createScene());
     });
     
     Button* btnAbout = (Button*) layerBG->getChildByName("btnAbout");
     btnAbout->setPressedActionEnabled(true);
     btnAbout->addClickEventListener([&](Ref* sender){
-        Director::getInstance()->replaceScene(GameScene::createScene());
+        Director::getInstance()->replaceScene(MainScene::createScene());
     });
 
     
 }
-void MainScene::menuCloseCallback(Ref* pSender)
+void Game3D::menuCloseCallback(Ref* pSender)
 {
     Director::getInstance()->end();
     

@@ -6,8 +6,8 @@
 //
 //
 
-#ifndef MainScene_hpp
-#define MainScene_hpp
+#ifndef GameTiledMap_hpp
+#define GameTiledMap_hpp
 
 #include <stdio.h>
 #include "cocos2d.h"
@@ -15,7 +15,7 @@
 using namespace cocos2d;
 using namespace ui;
 
-class MainScene : public cocos2d::Scene
+class GameTiledMap : public cocos2d::Scene
 {
     Node* layerBG;
     Text* lbTitle;
