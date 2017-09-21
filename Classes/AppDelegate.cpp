@@ -25,7 +25,14 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::createWithRect("DragonBonesCPP", Rect(0, 0, 1280, 720));
+               glview = GLViewImpl::create("Game Sample");
+#if  (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
+		//glview->setFrameSize(m_SceenSize.x *FRAME_SCALE_FACTOR, m_SceenSize.y * FRAME_SCALE_FACTOR);
+		glview->setFrameSize(1280, 720);
+#else
+		glview->setFrameSize(1280, 720);
+#endif
+		
         director->setOpenGLView(glview);
     }
 

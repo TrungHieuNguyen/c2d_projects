@@ -52,7 +52,7 @@ class GameScene : public cocos2d::Scene
     cocos2d::Action* _swim;
     cocos2d::Animate3D* _hurt;
     cocos2d::MoveTo*    _moveAction;
-    
+    ProgressTimer *topImage;
      float _elapseTransTime;
     
 public:

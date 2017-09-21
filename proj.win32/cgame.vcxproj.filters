@@ -69,33 +69,6 @@
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloDragonBones.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Knight.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\PerformanceTest.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Popup.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\PopupWaiting.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\AnimationBaseTest.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\CoreElement.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\DBAnimation.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Dealer.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\DragonBones\textures\TextureData.cpp">
       <Filter>src\DragonBones\textures</Filter>
     </ClCompile>
@@ -162,6 +135,33 @@
     <ClCompile Include="..\Classes\DragonBones\animation\WorldClock.cpp">
       <Filter>src\DragonBones\animation</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\DragonBonesTest\AnimationBaseTest.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DragonBonesTest\CoreElement.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DragonBonesTest\HelloDragonBones.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DragonBonesTest\Knight.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DragonBonesTest\PerformanceTest.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MiniGame\DBAnimation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MiniGame\Dealer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MiniGame\Popup.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MiniGame\PopupWaiting.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -171,33 +171,6 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\HelloWorldScene.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\HelloDragonBones.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Knight.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\PerformanceTest.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Popup.hpp">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\PopupWaiting.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\AnimationBaseTest.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\CoreElement.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\DBAnimation.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Dealer.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\rapidxml\rapidxml.hpp">
@@ -415,6 +388,33 @@
     </ClInclude>
     <ClInclude Include="..\Classes\DragonBones\animation\WorldClock.h">
       <Filter>src\DragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DragonBonesTest\AnimationBaseTest.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DragonBonesTest\CoreElement.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DragonBonesTest\HelloDragonBones.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DragonBonesTest\Knight.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DragonBonesTest\PerformanceTest.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MiniGame\DBAnimation.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MiniGame\Dealer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MiniGame\Popup.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MiniGame\PopupWaiting.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

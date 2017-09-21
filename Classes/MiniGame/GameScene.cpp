@@ -284,6 +284,15 @@ bool GameScene::init()
     addChild(sn);
 
     
+    
+    
+    
+    topImage = ProgressTimer::create(Sprite::create("loading/time.png"));
+    topImage->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
+    topImage->setRotation(180);
+    topImage->setType(cocos2d::ProgressTimer::Type::RADIAL);
+    topImage->setPercentage(0);
+    addChild(topImage);
     return true;
 }
 void GameScene::update(float dt)
@@ -302,6 +311,8 @@ void GameScene::update(float dt)
     }
 
     _ldbGameClock->setPercent(_frameCounter);
+    topImage->setPercentage(_frameCounter);
+    
     if (_state == State::HURT_TO_SWIMMING)
     {
         _elapseTransTime += dt;

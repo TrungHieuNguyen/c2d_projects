@@ -144,11 +144,12 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Classes\AnimationBaseTest.cpp" />
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
-    <ClCompile Include="..\Classes\CoreElement.cpp" />
-    <ClCompile Include="..\Classes\DBAnimation.cpp" />
-    <ClCompile Include="..\Classes\Dealer.cpp" />
+    <ClCompile Include="..\Classes\DragonBonesTest\AnimationBaseTest.cpp" />
+    <ClCompile Include="..\Classes\DragonBonesTest\CoreElement.cpp" />
+    <ClCompile Include="..\Classes\DragonBonesTest\HelloDragonBones.cpp" />
+    <ClCompile Include="..\Classes\DragonBonesTest\Knight.cpp" />
+    <ClCompile Include="..\Classes\DragonBonesTest\PerformanceTest.cpp" />
     <ClCompile Include="..\Classes\DragonBones\animation\Animation.cpp" />
     <ClCompile Include="..\Classes\DragonBones\animation\AnimationState.cpp" />
     <ClCompile Include="..\Classes\DragonBones\animation\TimelineState.cpp" />
@@ -171,20 +172,20 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\DragonBones\parsers\DataParser.cpp" />
     <ClCompile Include="..\Classes\DragonBones\parsers\JSONDataParser.cpp" />
     <ClCompile Include="..\Classes\DragonBones\textures\TextureData.cpp" />
-    <ClCompile Include="..\Classes\HelloDragonBones.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
-    <ClCompile Include="..\Classes\Knight.cpp" />
-    <ClCompile Include="..\Classes\PerformanceTest.cpp" />
-    <ClCompile Include="..\Classes\Popup.cpp" />
-    <ClCompile Include="..\Classes\PopupWaiting.cpp" />
+    <ClCompile Include="..\Classes\MiniGame\DBAnimation.cpp" />
+    <ClCompile Include="..\Classes\MiniGame\Dealer.cpp" />
+    <ClCompile Include="..\Classes\MiniGame\Popup.cpp" />
+    <ClCompile Include="..\Classes\MiniGame\PopupWaiting.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Classes\AnimationBaseTest.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
-    <ClInclude Include="..\Classes\CoreElement.h" />
-    <ClInclude Include="..\Classes\DBAnimation.h" />
-    <ClInclude Include="..\Classes\Dealer.h" />
+    <ClInclude Include="..\Classes\DragonBonesTest\AnimationBaseTest.h" />
+    <ClInclude Include="..\Classes\DragonBonesTest\CoreElement.h" />
+    <ClInclude Include="..\Classes\DragonBonesTest\HelloDragonBones.h" />
+    <ClInclude Include="..\Classes\DragonBonesTest\Knight.h" />
+    <ClInclude Include="..\Classes\DragonBonesTest\PerformanceTest.h" />
     <ClInclude Include="..\Classes\DragonBones\animation\Animation.h" />
     <ClInclude Include="..\Classes\DragonBones\animation\AnimationState.h" />
     <ClInclude Include="..\Classes\DragonBones\animation\BaseTimelineState.h" />
@@ -219,12 +220,11 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\DragonBones\parsers\DataParser.h" />
     <ClInclude Include="..\Classes\DragonBones\parsers\JSONDataParser.h" />
     <ClInclude Include="..\Classes\DragonBones\textures\TextureData.h" />
-    <ClInclude Include="..\Classes\HelloDragonBones.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
-    <ClInclude Include="..\Classes\Knight.h" />
-    <ClInclude Include="..\Classes\PerformanceTest.h" />
-    <ClInclude Include="..\Classes\Popup.hpp" />
-    <ClInclude Include="..\Classes\PopupWaiting.h" />
+    <ClInclude Include="..\Classes\MiniGame\DBAnimation.h" />
+    <ClInclude Include="..\Classes\MiniGame\Dealer.h" />
+    <ClInclude Include="..\Classes\MiniGame\Popup.hpp" />
+    <ClInclude Include="..\Classes\MiniGame\PopupWaiting.h" />
     <ClInclude Include="..\Classes\rapidjson\allocators.h" />
     <ClInclude Include="..\Classes\rapidjson\document.h" />
     <ClInclude Include="..\Classes\rapidjson\encodedstream.h" />
