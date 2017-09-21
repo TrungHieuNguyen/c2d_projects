@@ -102,7 +102,7 @@
             <FileData Type="Normal" Path="images/menu/bg_name.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnBack" ActionTag="-1691825445" Tag="20" IconVisible="False" LeftMargin="0.2247" RightMargin="1199.7754" TopMargin="3.9469" BottomMargin="66.0531" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnBack" ActionTag="-1691825445" Tag="20" IconVisible="False" LeftMargin="0.2247" RightMargin="1199.7753" TopMargin="3.9469" BottomMargin="66.0531" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="80.0000" Y="80.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="40.2247" Y="106.0531" />
@@ -132,14 +132,14 @@
             <Size X="98.0000" Y="98.0000" />
             <Children>
               <AbstractNodeData Name="sprAvatar" ActionTag="-1962275074" Tag="65" IconVisible="False" LeftMargin="3.9090" RightMargin="2.0910" TopMargin="3.3950" BottomMargin="2.6050" ctype="SpriteObjectData">
-                <Size X="92.0000" Y="92.0000" />
+                <Size X="144.0000" Y="144.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.4830" />
                 <Position X="49.9090" Y="47.0410" />
-                <Scale ScaleX="0.9909" ScaleY="1.0017" />
+                <Scale ScaleX="0.6371" ScaleY="0.6030" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5093" Y="0.4800" />
                 <PreSize X="0.9388" Y="0.9388" />
-                <FileData Type="Normal" Path="images/menu/user_pic.png" Plist="" />
+                <FileData Type="Normal" Path="images/Icon-76.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
             </Children>
