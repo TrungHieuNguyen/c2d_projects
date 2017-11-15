@@ -7,7 +7,7 @@
 #include "Game3D.hpp"
 #include "GameTiledMap.hpp"
 #include "AboutScene.hpp"
-
+#include "Game2D.h"
 USING_NS_CC;
 
 Scene* MainScene::createScene()
@@ -58,7 +58,7 @@ void MainScene::initComponents()
     Button* btnTiledMap = (Button*) layerBG->getChildByName("btnTiledMap");
     btnTiledMap->setPressedActionEnabled(true);
     btnTiledMap->addClickEventListener([&](Ref* sender){
-        Director::getInstance()->replaceScene(GameTiledMap::createScene());
+        Director::getInstance()->replaceScene(Game2D::createScene());
     });
     
     Button* btn3D = (Button*) layerBG->getChildByName("btn3D");
