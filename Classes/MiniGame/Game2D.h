@@ -4,6 +4,7 @@
 #include "cocos2d.h"
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
+#include "GameDefine.h"
 USING_NS_CC;
 class Game2D : public cocos2d::Layer
 {

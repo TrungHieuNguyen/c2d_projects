@@ -23,7 +23,7 @@ bool Game2D::init()
     stateHero = 0;
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    auto rootNode = CSLoader::createNode("2DGame.csb");
+    auto rootNode = CSLoader::createNode(SCENE_GAME2D_CSB);
    
     addChild(rootNode,-1);
     

@@ -13,7 +13,7 @@
 #include "SimpleAudioEngine.h"
 #include "PopupResult.hpp"
 #include "ShaderNode.hpp"
-
+#include "MainScene.hpp"
 USING_NS_CC;
 
 Scene* GameScene::createScene()
@@ -60,7 +60,7 @@ bool GameScene::init()
     
     
 
-    auto layerBG = CSLoader::createNode(SCENE_GAME2D_CSB);
+    auto layerBG = CSLoader::createNode(SCENE_GAME_CSB);
     layerBG->setAnchorPoint(Point(0.5f, 0.5f));
     layerBG->setPosition(layerBG->getContentSize()/2);
     addChild(layerBG,-1);
@@ -77,14 +77,7 @@ bool GameScene::init()
     Button* btnB = (Button*) layerBG->getChildByName("btnB");
     btnB->setPressedActionEnabled(true);
     btnB->addClickEventListener([&](Ref* sender){
-        PopupResult* p = PopupResult::gI();
-        if (p->getParent() == NULL)
-        {
-            p->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2, Director::getInstance()->getVisibleSize().height/2));
-            addChild(p, Z_ODER_POPUP);
-            p->fadeInBgDark();
-            p->open();
-        }
+       Director::getInstance()->replaceScene(MainScene::createScene());
         
     });
     //LayerCard
