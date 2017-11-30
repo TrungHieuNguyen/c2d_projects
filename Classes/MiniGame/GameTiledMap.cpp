@@ -25,7 +25,7 @@ bool GameTiledMap::init()
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     initComponents();
-     AbstractScene::showHUD()();
+     AbstractScene::showHUD();
     return true;
 }
 
