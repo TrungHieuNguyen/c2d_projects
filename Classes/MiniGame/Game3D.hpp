@@ -18,7 +18,7 @@ using namespace cocos2d;
 using namespace ui;
 
 
-class Game3D : public cocos2d::Scene
+class Game3D : public AbstractScene
 {
     Node* layerBG;
     Text* lbTitle;

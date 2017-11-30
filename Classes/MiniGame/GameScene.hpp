@@ -15,7 +15,7 @@
 using namespace cocos2d;
 using namespace ui;
 #include "GameDefine.h"
-
+#include "AbstractScene.hpp"
 enum class State
 {
     SWIMMING,
@@ -24,7 +24,7 @@ enum class State
     HURT_TO_SWIMMING,
 };
 
-class GameScene : public cocos2d::Scene
+class GameScene : public AbstractScene
 {
     TMXTiledMap *_tileMap;
     TMXLayer *_background;
@@ -62,7 +62,7 @@ public:
     void update(float dt);
     void menuCloseCallback(cocos2d::Ref* pSender);
     void setViewPointCenter(Point position);
-    void registerWithTouchDispatcher();
+    //void registerWithTouchDispatcher();
     void setPlayerPosition(Point position);
     CREATE_FUNC(GameScene);
     void start();

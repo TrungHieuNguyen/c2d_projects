@@ -8,12 +8,17 @@ USING_NS_CC;
 
 Scene* Game3D::createScene()
 {
-    return Game3D::create();
+    //return Game3D::create();
+    auto scene = Scene::create();
+    auto layer = Game3D::create();
+    scene->addChild(layer);
+    return scene;
+    
 }
 
 bool Game3D::init()
 {
-    if ( !Scene::init() )
+    if ( !AbstractScene::init() )
     {
         return false;
     }
@@ -68,7 +73,7 @@ void Game3D::initComponents()
     btnAbout->addClickEventListener([&](Ref* sender){
         Director::getInstance()->replaceScene(MainScene::createScene());
     });
-
+    AbstractScene::showHUD();
     
 }
 void Game3D::menuCloseCallback(Ref* pSender)

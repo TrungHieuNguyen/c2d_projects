@@ -5,8 +5,9 @@
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "GameDefine.h"
+#include "AbstractScene.hpp"
 USING_NS_CC;
-class Game2D : public cocos2d::Layer
+class Game2D : public AbstractScene
 {
 public:
     Animate * animateRun;

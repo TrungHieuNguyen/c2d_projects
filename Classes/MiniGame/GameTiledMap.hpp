@@ -13,11 +13,11 @@
 #include "cocos2d.h"
 #include "ui/CocosGUI.h"
 #include "GameDefine.h"
-
+#include "AbstractScene.hpp"
 using namespace cocos2d;
 using namespace ui;
 
-class GameTiledMap : public cocos2d::Scene
+class GameTiledMap : public AbstractScene
 {
     Node* layerBG;
     Text* lbTitle;
@@ -30,6 +30,6 @@ public:
     void menuCloseCallback(cocos2d::Ref* pSender);
     void initComponents();
     // implement the "static create()" method manually
-    CREATE_FUNC(MainScene);
+    CREATE_FUNC(GameTiledMap);
 };
 #endif /* MainScene_hpp */

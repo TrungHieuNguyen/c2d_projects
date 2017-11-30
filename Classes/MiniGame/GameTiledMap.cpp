@@ -3,27 +3,29 @@
 #include "ui/CocosGUI.h"
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
 #include "GameTiledMap.hpp"
-
+#include "AbstractScene.hpp"
 USING_NS_CC;
 
 Scene* GameTiledMap::createScene()
 {
-    return MainScene::create();
+    //return MainScene::create();
+    auto scene = Scene::create();
+    auto layer = GameTiledMap::create();
+    scene->addChild(layer);
+    return scene;
 }
 
 bool GameTiledMap::init()
 {
-    if ( !Scene::init() )
+    if ( !AbstractScene::init())
     {
         return false;
     }
     
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
-        initComponents();
-
-    
+    initComponents();
+     AbstractScene::showHUD()();
     return true;
 }
 
@@ -45,7 +47,7 @@ void GameTiledMap::initComponents()
         
     });
     
-
+  
 
     
 }

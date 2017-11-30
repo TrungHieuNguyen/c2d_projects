@@ -18,12 +18,16 @@ USING_NS_CC;
 
 Scene* GameScene::createScene()
 {
-    return GameScene::create();
+    //return GameScene::create();
+    auto scene = Scene::create();
+    auto layer = GameScene::create();
+    scene->addChild(layer);
+    return scene;
 }
 
 bool GameScene::init()
 {
-    if ( !Scene::init() )
+    if ( !AbstractScene::init() )
     {
         return false;
     }
@@ -169,15 +173,16 @@ bool GameScene::init()
     
     _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
     
-    layerHUD = CSLoader::createNode(SCENE_GAME_HUD_CSB);
-    layerHUD->setAnchorPoint(Point(0.5f, 0.5f));
-    layerHUD->setPosition(Vec2(layerHUD->getContentSize().width/2,visibleSize.height + 70));
-    layerHUD->stopAllActions();
-    ActionInterval* hud_move = MoveTo::create(0.7, Point(layerHUD->getContentSize().width/2, visibleSize.height -70));
-    ActionInterval* hud_move_ease = EaseBackInOut::create((ActionInterval*) (hud_move->clone()));
-    layerHUD->runAction(hud_move_ease);
-
-    addChild(layerHUD, Z_ODER_HUD);
+    AbstractScene::showHUD();
+//    layerHUD = CSLoader::createNode(SCENE_GAME_HUD_CSB);
+//    layerHUD->setAnchorPoint(Point(0.5f, 0.5f));
+//    layerHUD->setPosition(Vec2(layerHUD->getContentSize().width/2,visibleSize.height + 70));
+//    layerHUD->stopAllActions();
+//    ActionInterval* hud_move = MoveTo::create(0.7, Point(layerHUD->getContentSize().width/2, visibleSize.height -70));
+//    ActionInterval* hud_move_ease = EaseBackInOut::create((ActionInterval*) (hud_move->clone()));
+//    layerHUD->runAction(hud_move_ease);
+//
+//    addChild(layerHUD, Z_ODER_HUD);
     
     sliderValue = 0;
     sliderUnit = 500;
@@ -358,10 +363,7 @@ void GameScene::start()
     ActionInterval* move_ease = EaseBackInOut::create((ActionInterval*) (move->clone()));
     silderDatChuong->runAction(move_ease);
     
-    layerHUD->stopAllActions();
-    ActionInterval* hud_move = MoveTo::create(0.7, Point(layerHUD->getContentSize().width/2, visibleSize.height -70));
-    ActionInterval* hud_move_ease = EaseBackInOut::create((ActionInterval*) (hud_move->clone()));
-    layerHUD->runAction(hud_move_ease);
+
 }
 void GameScene::stop()
 {

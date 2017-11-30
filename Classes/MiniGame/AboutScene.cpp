@@ -8,7 +8,11 @@ USING_NS_CC;
 
 Scene* AboutScene::createScene()
 {
-    return AboutScene::create();
+    //return AboutScene::create();
+    auto scene = Scene::create();
+    auto layer = AboutScene::create();
+    scene->addChild(layer);
+    return scene;
 }
 
 bool AboutScene::init()

@@ -1,5 +1,5 @@
 #include "Game2D.h"
-
+#include "AbstractScene.hpp"
 
 USING_NS_CC;
 
@@ -16,7 +16,7 @@ Scene* Game2D::createScene()
 bool Game2D::init()
 {
    
-    if ( !Layer::init() )
+    if ( !AbstractScene::init())
     {
         return false;
     }
@@ -117,6 +117,8 @@ bool Game2D::init()
 //    animateDizzy = Animate::create(fizzyAnimation);
 //    auto hero_sequence = Sequence::create(movement, animateAttach, animateDizzy,NULL);
 //    sprHero->runAction(RepeatForever::create(hero_sequence));
+    
+     AbstractScene::showHUD();
     return true;
 }
  Vector< SpriteFrame*> Game2D::getAnimation(const char *format, int count)

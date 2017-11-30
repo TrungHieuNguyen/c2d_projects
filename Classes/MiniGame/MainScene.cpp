@@ -12,12 +12,17 @@ USING_NS_CC;
 
 Scene* MainScene::createScene()
 {
-    return MainScene::create();
+    
+    //return MainScene::create();
+    auto scene = Scene::create();
+    auto layer = MainScene::create();
+    scene->addChild(layer);
+    return scene;
 }
 
 bool MainScene::init()
 {
-    if ( !Scene::init() )
+    if ( !Layer::init() )
     {
         return false;
     }
