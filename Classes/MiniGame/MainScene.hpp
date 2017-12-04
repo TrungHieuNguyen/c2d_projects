@@ -12,10 +12,11 @@
 #include <stdio.h>
 #include "cocos2d.h"
 #include "ui/CocosGUI.h"
+#include "AbstractScene.hpp"
 using namespace cocos2d;
 using namespace ui;
 
-class MainScene : public cocos2d::Scene
+class MainScene : public AbstractScene
 {
     Node* layerBG;
     Text* lbTitle;

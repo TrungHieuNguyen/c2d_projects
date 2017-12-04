@@ -8,12 +8,15 @@ USING_NS_CC;
 
 Scene* AboutScene::createScene()
 {
-    return AboutScene::create();
+    auto scene = Scene::create();
+    auto layer = AboutScene::create();
+    scene->addChild(layer);
+    return scene;
 }
 
 bool AboutScene::init()
 {
-    if ( !Scene::init() )
+    if ( !AbstractScene::init() )
     {
         return false;
     }
@@ -38,14 +41,9 @@ void AboutScene::initComponents()
     Button* btnPlay = (Button*) layerBG->getChildByName("btnPlay");
     btnPlay->setPressedActionEnabled(true);
     btnPlay->addClickEventListener([&](Ref* sender){
-
         Director::getInstance()->replaceScene(AboutScene::createScene());
-
-        
     });
-    
-
-
+    AbstractScene::showHUD();
     
 }
 void AboutScene::menuCloseCallback(Ref* pSender)

@@ -13,23 +13,34 @@
 #include "cocos2d.h"
 #include "ui/CocosGUI.h"
 #include "GameDefine.h"
-
+#include "AbstractScene.hpp"
 using namespace cocos2d;
 using namespace ui;
 
-class GameTiledMap : public cocos2d::Scene
+class GameTiledMap : public AbstractScene
 {
     Node* layerBG;
     Text* lbTitle;
+    TMXTiledMap *_tileMap;
+    TMXLayer *_background;
+    TMXLayer *_foreground;
+    TMXLayer *_meta;
+    Sprite *_player;
 public:
     static cocos2d::Scene* createScene();
     
     virtual bool init();
-    
-    // a selector callback
+    void setViewPointCenter(Point position);
+    Point tileCoordForPosition(Point position);
+    void setPlayerPosition(Point position);
     void menuCloseCallback(cocos2d::Ref* pSender);
     void initComponents();
     // implement the "static create()" method manually
-    CREATE_FUNC(MainScene);
+    CREATE_FUNC(GameTiledMap);
+    
+    virtual bool onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
+    virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
+    virtual void onTouchMoved(cocos2d::Touch*, cocos2d::Event*);
+    virtual void onTouchCancelled(cocos2d::Touch*, cocos2d::Event*);
 };
 #endif /* MainScene_hpp */

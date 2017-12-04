@@ -7,17 +7,22 @@
 #include "Game3D.hpp"
 #include "GameTiledMap.hpp"
 #include "AboutScene.hpp"
-
+#include "Game2D.h"
 USING_NS_CC;
 
 Scene* MainScene::createScene()
 {
-    return MainScene::create();
+    
+    //return MainScene::create();
+    auto scene = Scene::create();
+    auto layer = MainScene::create();
+    scene->addChild(layer);
+    return scene;
 }
 
 bool MainScene::init()
 {
-    if ( !Scene::init() )
+    if ( !Layer::init() )
     {
         return false;
     }
@@ -52,7 +57,7 @@ void MainScene::initComponents()
     Button* btn2D = (Button*) layerBG->getChildByName("btn2D");
     btn2D->setPressedActionEnabled(true);
     btn2D->addClickEventListener([&](Ref* sender){
-        Director::getInstance()->replaceScene(GameScene::createScene());
+        Director::getInstance()->replaceScene(Game2D::createScene());
     });
     
     Button* btnTiledMap = (Button*) layerBG->getChildByName("btnTiledMap");

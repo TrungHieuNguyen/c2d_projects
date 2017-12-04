@@ -155,7 +155,11 @@
             <Image Name="trash.png" />
             <Image Name="txthanhtTch.png" />
           </Folder>
+          <Image Name="bg_cardboard.png" />
+          <Image Name="bg_dark.jpg" />
           <Image Name="bich1.png" />
+          <Image Name="btn_circle_60.png" />
+          <Image Name="btn_rect_40x20.png" />
           <Image Name="co1.png" />
           <Image Name="co1_1.png" />
           <Image Name="digital_space_universe_1280x720.jpg" />
@@ -167,6 +171,7 @@
           <Image Name="Main_dealer2_ani.png" />
         </Folder>
         <Project Name="AboutScene.csd" Type="Layer" />
+        <Project Name="Game2D.csd" Type="Scene" />
         <Project Name="Game3D.csd" Type="Layer" />
         <Project Name="GameScene.csd" Type="Layer" />
         <Project Name="GameTiledMap.csd" Type="Layer" />
