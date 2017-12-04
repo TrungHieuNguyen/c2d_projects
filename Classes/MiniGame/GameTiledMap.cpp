@@ -43,8 +43,6 @@ void GameTiledMap::initComponents()
     btnPlay->addClickEventListener([&](Ref* sender){
 
         Director::getInstance()->replaceScene(MainScene::createScene());
-
-        
     });
     
   

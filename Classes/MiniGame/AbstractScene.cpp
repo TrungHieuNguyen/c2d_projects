@@ -20,7 +20,15 @@ bool AbstractScene::init()
     visibleSize = Director::getInstance()->getVisibleSize();
     return true;
 }
-
+ void AbstractScene:: updateScore(int score)
+{
+        Sprite* sprMoneyBar = layerHUD->getChildByName<Sprite*>("sprMoneyBar");
+        Text* lbMoneyValue = sprMoneyBar->getChildByName<Text*>("lbMoney");
+        lbMoneyValue->setString(std::to_string(score));
+        Sprite* sprCoinBar = layerHUD->getChildByName<Sprite*>("sprCoinBar");
+        Text* lbCoinValue = sprCoinBar->getChildByName<Text*>("lbCoin");
+        lbCoinValue->setString(std::to_string(score));
+}
 void AbstractScene::hideHUD()
 {
     layerHUD->stopAllActions();

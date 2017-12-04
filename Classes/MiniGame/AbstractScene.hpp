@@ -25,5 +25,6 @@ class AbstractScene : public cocos2d::Layer
     virtual void clickBtnBack(Ref* sender);
     void hideHUD();
     void showHUD();
+    void updateScore(int);
 };
 #endif /* AbstractScene_hpp */

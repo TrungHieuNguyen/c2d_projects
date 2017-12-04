@@ -28,22 +28,37 @@ bool Game2D::init()
     addChild(rootNode,-1);
     
     ui::Button* btnUp = (ui::Button*) rootNode->getChildByName("btnUp");
-    btnUp->setTouchEnabled(true);
+    btnUp->setPressedActionEnabled(true);
+    btnUp->addTouchEventListener(CC_CALLBACK_2(Game2D::onUp, this));
+    
     ui::Button* btnDown = (ui::Button*) rootNode->getChildByName("btnDown");
-    btnDown->setTouchEnabled(true);
+    btnDown->setPressedActionEnabled(true);
+    btnDown->addTouchEventListener(CC_CALLBACK_2(Game2D::onDown, this));
+    
     ui::Button* btnLeft = (ui::Button*) rootNode->getChildByName("btnLeft");
-    btnLeft->setTouchEnabled(true);
+    btnLeft->setPressedActionEnabled(true);
+    btnLeft->addTouchEventListener(CC_CALLBACK_2(Game2D::onLeft, this));
+    
     ui::Button* btnRight = (ui::Button*) rootNode->getChildByName("btnRight");
-    btnRight->setTouchEnabled(true);
+    btnRight->setPressedActionEnabled(true);
+    btnRight->addTouchEventListener(CC_CALLBACK_2(Game2D::onRight, this));
+    
     
     ui::Button* btnA = (ui::Button*) rootNode->getChildByName("btnA");
-    btnA->setTouchEnabled(true);
+    btnA->setPressedActionEnabled(true);
+    btnA->addTouchEventListener(CC_CALLBACK_2(Game2D::onA, this));
+    
     ui::Button* btnB = (ui::Button*) rootNode->getChildByName("btnB");
-    btnB->setTouchEnabled(true);
+    btnB->setPressedActionEnabled(true);
+    btnB->addTouchEventListener(CC_CALLBACK_2(Game2D::onB, this));
+    
     ui::Button* btnC = (ui::Button*) rootNode->getChildByName("btnC");
-    btnC->setTouchEnabled(true);
+    btnC->setPressedActionEnabled(true);
+    btnC->addTouchEventListener(CC_CALLBACK_2(Game2D::onC, this));
+    
     ui::Button* btnD = (ui::Button*) rootNode->getChildByName("btnD");
-    btnD->setTouchEnabled(true);
+    btnD->setPressedActionEnabled(true);
+    btnD->addTouchEventListener(CC_CALLBACK_2(Game2D::onD, this));
     
     SpriteFrameCache* cache = SpriteFrameCache::getInstance();
     cache->addSpriteFramesWithFile("res/plist/anim_hero_run.plist");
@@ -212,6 +227,65 @@ void Game2D::onAttach(Ref* pSender, ui::Widget::TouchEventType eEventType)
 }
 void Game2D::onHurt(Ref* pSender, ui::Widget::TouchEventType eEventType)
 {
+    sprHero->stopAllActions();
+    Vector< SpriteFrame*> frames = getAnimation("hero_dizzy_0%d.png",5);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    animation->retain();
+    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+}
+void Game2D::onUp(Ref* pSender, ui::Widget::TouchEventType eEventType){
+    sprHero->stopAllActions();
+    Vector< SpriteFrame*> frames = getAnimation("hero_flying_0%d.png",4);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    animation->retain();
+    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+    
+}
+void Game2D::onDown(Ref* pSender, ui::Widget::TouchEventType eEventType){
+    sprHero->stopAllActions();
+    Vector< SpriteFrame*> frames = getAnimation("hero_jump_0%d.png",4);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    animation->retain();
+    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+}
+void Game2D::onLeft(Ref* pSender, ui::Widget::TouchEventType eEventType){
+    sprHero->stopAllActions();
+    Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    sprHero->setFlippedX(true);
+    animation->retain();
+    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+}
+void Game2D::onRight(Ref* pSender, ui::Widget::TouchEventType eEventType){
+    sprHero->stopAllActions();
+    Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    animation->retain();
+    sprHero->setFlippedX(false);
+    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+}
+void Game2D::onA(Ref* pSender, ui::Widget::TouchEventType eEventType){
+    sprHero->stopAllActions();
+    Vector< SpriteFrame*> frames = getAnimation("hero_shooting_0%d.png",4);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    animation->retain();
+    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+}
+void Game2D::onB(Ref* pSender, ui::Widget::TouchEventType eEventType){
+    sprHero->stopAllActions();
+    Vector< SpriteFrame*> frames = getAnimation("hero_die_0%d.png",3);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    animation->retain();
+    sprHero->runAction(Animate::create(animation));
+}
+void Game2D::onC(Ref* pSender, ui::Widget::TouchEventType eEventType){
+    sprHero->stopAllActions();
+    Vector< SpriteFrame*> frames = getAnimation("hero_through_0%d.png",3);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    animation->retain();
+    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+}
+void Game2D::onD(Ref* pSender, ui::Widget::TouchEventType eEventType){
     sprHero->stopAllActions();
     Vector< SpriteFrame*> frames = getAnimation("hero_dizzy_0%d.png",5);
     Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);

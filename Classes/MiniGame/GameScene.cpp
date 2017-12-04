@@ -296,12 +296,14 @@ bool GameScene::init()
 void GameScene::update(float dt)
 {
     log("update...%f", dt);
-    Sprite* sprMoneyBar = layerHUD->getChildByName<Sprite*>("sprMoneyBar");
-    Text* lbMoneyValue = sprMoneyBar->getChildByName<Text*>("lbMoney");
-    lbMoneyValue->setString(std::to_string(_frameCounter));
-    Sprite* sprCoinBar = layerHUD->getChildByName<Sprite*>("sprCoinBar");
-    Text* lbCoinValue = sprCoinBar->getChildByName<Text*>("lbCoin");
-    lbCoinValue->setString(std::to_string(dt));
+//    Sprite* sprMoneyBar = layerHUD->getChildByName<Sprite*>("sprMoneyBar");
+//    Text* lbMoneyValue = sprMoneyBar->getChildByName<Text*>("lbMoney");
+//    lbMoneyValue->setString(std::to_string(_frameCounter));
+//    Sprite* sprCoinBar = layerHUD->getChildByName<Sprite*>("sprCoinBar");
+//    Text* lbCoinValue = sprCoinBar->getChildByName<Text*>("lbCoin");
+//    lbCoinValue->setString(std::to_string(dt));
+    
+    updateScore(_frameCounter);
     _frameCounter++;
     if (_frameCounter >= 100)
     {
@@ -375,10 +377,10 @@ void GameScene::stop()
     ActionInterval* move_ease = EaseBackInOut::create((ActionInterval*) (move->clone()));
     silderDatChuong->runAction(move_ease);
     
-    layerHUD->stopAllActions();
-    ActionInterval* hud_move = MoveTo::create(0.7, Point(layerHUD->getContentSize().width/2, visibleSize.height + 70));
-    ActionInterval* hud_move_ease = EaseBackInOut::create((ActionInterval*) (hud_move->clone()));
-    layerHUD->runAction(hud_move_ease);
+//    layerHUD->stopAllActions();
+//    ActionInterval* hud_move = MoveTo::create(0.7, Point(layerHUD->getContentSize().width/2, visibleSize.height + 70));
+//    ActionInterval* hud_move_ease = EaseBackInOut::create((ActionInterval*) (hud_move->clone()));
+//    layerHUD->runAction(hud_move_ease);
     
     
     

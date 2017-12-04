@@ -19,6 +19,15 @@ public:
     virtual bool init();
     void onAttach(Ref* pSender, ui::Widget::TouchEventType eEventType);
     void onHurt(Ref* pSender, ui::Widget::TouchEventType eEventType);
+    void onUp(Ref* pSender, ui::Widget::TouchEventType eEventType);
+    void onDown(Ref* pSender, ui::Widget::TouchEventType eEventType);
+    void onLeft(Ref* pSender, ui::Widget::TouchEventType eEventType);
+    void onRight(Ref* pSender, ui::Widget::TouchEventType eEventType);
+    
+    void onA(Ref* pSender, ui::Widget::TouchEventType eEventType);
+    void onB(Ref* pSender, ui::Widget::TouchEventType eEventType);
+    void onC(Ref* pSender, ui::Widget::TouchEventType eEventType);
+    void onD(Ref* pSender, ui::Widget::TouchEventType eEventType);
     Vector< SpriteFrame*> getAnimation(const char *format, int count);
     CREATE_FUNC(Game2D);
 };
