@@ -14,10 +14,22 @@
 #include "ui/CocosGUI.h"
 #include "GameDefine.h"
 USING_NS_CC;
+
+enum PlayerRank
+{
+    RANK_NHAT,
+    RANK_NHI,
+    RANK_BA,
+    RANK_BET,
+    RANK_THANG,
+    RANK_HOA,
+    RANK_THUA,
+    HIDE,
+};
+
 class AbstractScene : public cocos2d::Layer
 {
     Node * _layerMain;
-
     Node* layerHUD;
     public:
     Size visibleSize;
@@ -27,7 +39,7 @@ class AbstractScene : public cocos2d::Layer
     void hideHUD();
     void showHUD();
     void updateScore(int);
-
-    
+    void showGold(long long _gold, bool isWin);
+    void showResult(PlayerRank stt, int delay);
 };
 #endif /* AbstractScene_hpp */

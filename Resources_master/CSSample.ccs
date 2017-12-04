@@ -155,6 +155,7 @@
             <Image Name="trash.png" />
             <Image Name="txthanhtTch.png" />
           </Folder>
+          <Image Name="bg_cardboard.png" />
           <Image Name="bg_dark.jpg" />
           <Image Name="bich1.png" />
           <Image Name="btn_circle_60.png" />

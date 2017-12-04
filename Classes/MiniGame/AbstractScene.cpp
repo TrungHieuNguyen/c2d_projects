@@ -56,6 +56,41 @@ void AbstractScene::showHUD()
     layerHUD->runAction(hud_move_ease);
     addChild(layerHUD, Z_ODER_HUD);
 }
+void AbstractScene::showGold(long long _gold, bool isWin)
+{
+    log("showGold %lld", _gold);
+    
+    const char* fontRes = FONT_BITMAP_LOSE_EFF;
+    std::string strGold = StringUtils::toString(_gold);
+    if(_gold > 0 )
+    {
+        fontRes = FONT_BITMAP_WIN_EFF;
+    }
+    
+    auto _lbGold = Label::createWithBMFont(fontRes,  strGold);
+    _lbGold->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
+    _lbGold->setPosition(150, 100);
+    addChild(_lbGold,1000);
+    _lbGold->runAction(Sequence::create(FadeIn::create(0.3f),Spawn::create( MoveBy::create(3, Vec2(0,150)),FadeOut::create(1.5f),NULL),RemoveSelf::create(), NULL));
+    
+}
+void AbstractScene::showResult(PlayerRank stt, int delay)
+{
+    const char* res = "images/texts/hoa.png";
+    log("setResultPLayer %d",stt);
+    
+    if (stt == HIDE){
+    }
+    else if(stt ==RANK_NHAT)
+    {
+
+       res = "images/texts/nhat.png";
+    }
+    auto label = Sprite::create(res);
+    addChild(label, 100);
+    label->setPosition(90,100);
+    label->runAction(Sequence::create(Spawn::create(ScaleTo::create(0.1f, 1.3f) ,FadeIn::create(0.3f), NULL),DelayTime::create(delay),RemoveSelf::create(), NULL));
+}
 void AbstractScene::goMainScreen()
 {
     Director::getInstance()->replaceScene(MainScene::createScene());

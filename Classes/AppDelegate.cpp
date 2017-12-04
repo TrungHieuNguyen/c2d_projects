@@ -1,4 +1,4 @@
-﻿#include "AppDelegate.h"
+#include "AppDelegate.h"
 #include "DragonBonesTest/CoreElement.h"
 #include "MiniGame/MainScene.hpp"
 #include "MiniGame/GameScene.hpp"
@@ -37,13 +37,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
 
     director->getOpenGLView()->setDesignResolutionSize(1280, 720, ResolutionPolicy::SHOW_ALL);
-    director->setDisplayStats(true);
+    //director->setDisplayStats(true);
     director->setAnimationInterval(1.f / 60.f);
 
     FileUtils::getInstance()->addSearchPath(".");
     FileUtils::getInstance()->addSearchPath("res");
     FileUtils::getInstance()->addSearchPath("fonts");
-    //auto scene = GameScene::createScene();
     auto scene = MainScene::createScene();
     director->runWithScene(scene);
     return true;

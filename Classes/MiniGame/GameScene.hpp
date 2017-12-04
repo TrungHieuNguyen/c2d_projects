@@ -19,11 +19,8 @@ using namespace ui;
 
 class GameScene : public AbstractScene
 {
-    TMXTiledMap *_tileMap;
-    TMXLayer *_background;
-    TMXLayer *_foreground;
-    TMXLayer *_meta;
-    Sprite *_player;
+
+
     EventListenerTouchOneByOne* listenerTouchByOne;
     Text* lbScore;
     Node* layerHUD;
@@ -36,7 +33,7 @@ class GameScene : public AbstractScene
     void updateSliderBar(int value);
     ProgressTimer *topImage;
     float _elapseTransTime;
-
+    Sprite* _player;
     
 public:
     static cocos2d::Scene* createScene();
@@ -46,7 +43,7 @@ public:
     void menuCloseCallback(cocos2d::Ref* pSender);
     void setViewPointCenter(Point position);
     //void registerWithTouchDispatcher();
-    void setPlayerPosition(Point position);
+
     CREATE_FUNC(GameScene);
     void start();
     void stop();
@@ -56,7 +53,7 @@ public:
     virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchMoved(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchCancelled(cocos2d::Touch*, cocos2d::Event*);
-    Point tileCoordForPosition(Point position);
+
  
     
     

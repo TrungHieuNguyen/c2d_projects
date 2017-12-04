@@ -34,7 +34,8 @@
 
 #define RES_SLIDER_DATCHUONG_CSB    "SilderDatChuong10.csb"
 #define RES_SLIDER_RESULT_CSB       "WinLoseResult.csb"
-
+#define FONT_BITMAP_WIN_EFF "fonts/font_win_eff.fnt"
+#define FONT_BITMAP_LOSE_EFF "fonts/font_lost_eff.fnt"
 
 
 
