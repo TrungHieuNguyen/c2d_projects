@@ -39,13 +39,13 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\parsers\DataParser.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\parsers\JSONDataParser.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\textures\TextureData.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\AboutScene.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\DBAnimation.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\Dealer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\Game3D.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\GameScene.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\GameTiledMap.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\HelloWorldScene.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\MainScene.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\Popup.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\PopupResult.cpp" />
@@ -132,6 +132,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidxml\rapidxml_print.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\rapidxml\rapidxml_utils.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\DragonBones\textures\TextureData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\HelloWorldScene.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\AboutScene.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\DBAnimation.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\Dealer.h" />
@@ -139,7 +140,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\GameDefine.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\GameScene.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\GameTiledMap.hpp" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\HelloWorldScene.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\MainScene.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\Popup.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\PopupResult.hpp" />

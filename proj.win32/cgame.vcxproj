@@ -71,7 +71,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(EngineRoot)external;$(EngineRoot)cocos\audio\include;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(EngineRoot)external;$(EngineRoot)cocos\audio\include;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END);$(EngineRoot)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -172,11 +172,18 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\DragonBones\parsers\DataParser.cpp" />
     <ClCompile Include="..\Classes\DragonBones\parsers\JSONDataParser.cpp" />
     <ClCompile Include="..\Classes\DragonBones\textures\TextureData.cpp" />
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\MiniGame\AboutScene.cpp" />
     <ClCompile Include="..\Classes\MiniGame\DBAnimation.cpp" />
     <ClCompile Include="..\Classes\MiniGame\Dealer.cpp" />
+    <ClCompile Include="..\Classes\MiniGame\Game3D.cpp" />
+    <ClCompile Include="..\Classes\MiniGame\GameScene.cpp" />
+    <ClCompile Include="..\Classes\MiniGame\GameTiledMap.cpp" />
+    <ClCompile Include="..\Classes\MiniGame\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\MiniGame\MainScene.cpp" />
     <ClCompile Include="..\Classes\MiniGame\Popup.cpp" />
+    <ClCompile Include="..\Classes\MiniGame\PopupResult.cpp" />
     <ClCompile Include="..\Classes\MiniGame\PopupWaiting.cpp" />
+    <ClCompile Include="..\Classes\MiniGame\ShaderNode.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -220,11 +227,19 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\DragonBones\parsers\DataParser.h" />
     <ClInclude Include="..\Classes\DragonBones\parsers\JSONDataParser.h" />
     <ClInclude Include="..\Classes\DragonBones\textures\TextureData.h" />
-    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\MiniGame\AboutScene.hpp" />
     <ClInclude Include="..\Classes\MiniGame\DBAnimation.h" />
     <ClInclude Include="..\Classes\MiniGame\Dealer.h" />
+    <ClInclude Include="..\Classes\MiniGame\Game3D.hpp" />
+    <ClInclude Include="..\Classes\MiniGame\GameDefine.h" />
+    <ClInclude Include="..\Classes\MiniGame\GameScene.hpp" />
+    <ClInclude Include="..\Classes\MiniGame\GameTiledMap.hpp" />
+    <ClInclude Include="..\Classes\MiniGame\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\MiniGame\MainScene.hpp" />
     <ClInclude Include="..\Classes\MiniGame\Popup.hpp" />
+    <ClInclude Include="..\Classes\MiniGame\PopupResult.hpp" />
     <ClInclude Include="..\Classes\MiniGame\PopupWaiting.h" />
+    <ClInclude Include="..\Classes\MiniGame\ShaderNode.hpp" />
     <ClInclude Include="..\Classes\rapidjson\allocators.h" />
     <ClInclude Include="..\Classes\rapidjson\document.h" />
     <ClInclude Include="..\Classes\rapidjson\encodedstream.h" />
