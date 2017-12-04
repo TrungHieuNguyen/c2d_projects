@@ -54,7 +54,14 @@ bool GameScene::init()
     Button* btnB = (Button*) layerBG->getChildByName("btnB");
     btnB->setPressedActionEnabled(true);
     btnB->addClickEventListener([&](Ref* sender){
-       Director::getInstance()->replaceScene(MainScene::createScene());
+        PopupResult* p = PopupResult::gI();
+        if (p->getParent() == NULL)
+        {
+            p->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2, Director::getInstance()->getVisibleSize().height/2));
+            addChild(p, Z_ODER_POPUP);
+            p->fadeInBgDark();
+            p->open();
+        }
         
     });
     //LayerCard
@@ -277,15 +284,6 @@ void GameScene::result()
     
     AbstractScene::showGold(10000,false);
     AbstractScene::showResult(PlayerRank::RANK_NHAT,5);
-    
-    PopupResult* p = PopupResult::gI();
-    if (p->getParent() == NULL)
-    {
-        p->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2, Director::getInstance()->getVisibleSize().height/2));
-        addChild(p, Z_ODER_POPUP);
-        p->fadeInBgDark();
-        p->open();
-    }
 }
 
 
