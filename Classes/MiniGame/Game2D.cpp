@@ -132,7 +132,7 @@ bool Game2D::init()
 //    animateDizzy = Animate::create(fizzyAnimation);
 //    auto hero_sequence = Sequence::create(movement, animateAttach, animateDizzy,NULL);
 //    sprHero->runAction(RepeatForever::create(hero_sequence));
-    
+     this->schedule(schedule_selector(Game2D::update));
      AbstractScene::showHUD();
     return true;
 }
@@ -291,4 +291,8 @@ void Game2D::onD(Ref* pSender, ui::Widget::TouchEventType eEventType){
     Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
     animation->retain();
     sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+}
+void Game2D::update(float dt)
+{
+    log("update...%f", dt);
 }

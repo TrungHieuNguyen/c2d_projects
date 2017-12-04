@@ -17,6 +17,7 @@ public:
     int stateHero;
     static cocos2d::Scene* createScene();
     virtual bool init();
+    void update(float dt);
     void onAttach(Ref* pSender, ui::Widget::TouchEventType eEventType);
     void onHurt(Ref* pSender, ui::Widget::TouchEventType eEventType);
     void onUp(Ref* pSender, ui::Widget::TouchEventType eEventType);
