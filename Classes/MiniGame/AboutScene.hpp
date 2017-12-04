@@ -16,7 +16,7 @@ using namespace cocos2d;
 using namespace ui;
 #include "GameDefine.h"
 
-class AboutScene : public cocos2d::Scene
+class AboutScene : public AbstractScene
 {
     Node* layerBG;
     Text* lbTitle;
@@ -29,6 +29,6 @@ public:
     void menuCloseCallback(cocos2d::Ref* pSender);
     void initComponents();
     // implement the "static create()" method manually
-    CREATE_FUNC(MainScene);
+    CREATE_FUNC(AboutScene);
 };
 #endif /* AboutScene_hpp */

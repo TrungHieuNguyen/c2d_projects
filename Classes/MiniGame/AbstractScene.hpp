@@ -17,14 +17,17 @@ USING_NS_CC;
 class AbstractScene : public cocos2d::Layer
 {
     Node * _layerMain;
-    Size visibleSize;
+
     Node* layerHUD;
-    public: 
+    public:
+    Size visibleSize;
     bool init();
     virtual void goMainScreen();
     virtual void clickBtnBack(Ref* sender);
     void hideHUD();
     void showHUD();
     void updateScore(int);
+
+    
 };
 #endif /* AbstractScene_hpp */
