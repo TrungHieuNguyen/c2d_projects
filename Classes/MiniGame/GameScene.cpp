@@ -211,7 +211,7 @@ bool GameScene::init()
     
     
     
-    topImage = ProgressTimer::create(Sprite::create("loading/time.png"));
+    topImage = ProgressTimer::create(Sprite::create("loading/icon_sample.png"));
     topImage->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
     topImage->setRotation(180);
     topImage->setType(cocos2d::ProgressTimer::Type::RADIAL);

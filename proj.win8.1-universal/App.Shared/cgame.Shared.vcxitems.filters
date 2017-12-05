@@ -95,9 +95,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\GameTiledMap.cpp">
       <Filter>Classes\MiniGame</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\HelloWorldScene.cpp">
-      <Filter>Classes\MiniGame</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\MainScene.cpp">
       <Filter>Classes\MiniGame</Filter>
     </ClCompile>
@@ -112,6 +109,9 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\ShaderNode.cpp">
       <Filter>Classes\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -372,9 +372,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\GameTiledMap.hpp">
       <Filter>Classes\MiniGame</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\HelloWorldScene.h">
-      <Filter>Classes\MiniGame</Filter>
-    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\MainScene.hpp">
       <Filter>Classes\MiniGame</Filter>
     </ClInclude>
@@ -389,6 +386,9 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\MiniGame\ShaderNode.hpp">
       <Filter>Classes\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Classes\HelloWorldScene.h">
+      <Filter>Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
