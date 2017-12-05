@@ -14,7 +14,7 @@
 #include "ui/CocosGUI.h"
 #include "GameDefine.h"
 USING_NS_CC;
-
+using namespace std;
 enum PlayerRank
 {
     RANK_NHAT,
@@ -41,5 +41,6 @@ class AbstractScene : public cocos2d::Layer
     void updateScore(int);
     void showGold(long long _gold, bool isWin);
     void showResult(PlayerRank stt, int delay);
+    void showTextGame(string);
 };
 #endif /* AbstractScene_hpp */

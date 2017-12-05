@@ -91,6 +91,17 @@ void AbstractScene::showResult(PlayerRank stt, int delay)
     label->setPosition(90,100);
     label->runAction(Sequence::create(Spawn::create(ScaleTo::create(0.1f, 1.3f) ,FadeIn::create(0.3f), NULL),DelayTime::create(delay),RemoveSelf::create(), NULL));
 }
+void AbstractScene::showTextGame(string text)
+{
+    auto labelAction = Label::createWithBMFont( FONT_BITMAP_WIN_EFF,text);
+    labelAction->setHorizontalAlignment(TextHAlignment::CENTER);
+    labelAction->setAnchorPoint(Point(0.5f, 0.5f));
+    labelAction->setPosition(visibleSize/2);
+    addChild(labelAction,1000);
+    labelAction->setOpacity(0);
+    labelAction->runAction(Sequence::create(Spawn::create(ScaleTo::create(0.1f, 2.0f) ,FadeIn::create(0.3f), NULL),DelayTime::create(1),RemoveSelf::create(), NULL));
+    
+}
 void AbstractScene::goMainScreen()
 {
     Director::getInstance()->replaceScene(MainScene::createScene());

@@ -179,6 +179,7 @@
         <Project Name="MainScene.csd" Type="Layer" />
         <Project Name="SilderDatChuong10.csd" Type="Layer" />
         <Project Name="WinLoseResult.csd" Type="Layer" />
+        <Project Name="Popup.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

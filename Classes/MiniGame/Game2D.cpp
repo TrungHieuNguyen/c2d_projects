@@ -120,7 +120,7 @@ bool Game2D::init()
     Vector< SpriteFrame*> _walkFrames = getAnimation("hero_run_0%d.png",6);
     Animation* _walkAnimation = Animation::createWithSpriteFrames(_walkFrames, 0.1f);
     _walkAnimation->retain();
-    sprHero->setScale(1.5f);
+    sprHero->setScale(2.0f);
     
 //    //sprite->runAction(RepeatForever::create(Animate::create(_walkAnimation)));
 //    auto movement = MoveTo::create(15, Vec2(800,sprHero->getPosition().y));
@@ -229,14 +229,14 @@ void Game2D::onHurt(Ref* pSender, ui::Widget::TouchEventType eEventType)
 {
     sprHero->stopAllActions();
     Vector< SpriteFrame*> frames = getAnimation("hero_dizzy_0%d.png",5);
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
     animation->retain();
     sprHero->runAction(RepeatForever::create(Animate::create(animation)));
 }
 void Game2D::onUp(Ref* pSender, ui::Widget::TouchEventType eEventType){
     sprHero->stopAllActions();
     Vector< SpriteFrame*> frames = getAnimation("hero_flying_0%d.png",4);
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
     animation->retain();
     sprHero->runAction(RepeatForever::create(Animate::create(animation)));
     
@@ -244,22 +244,23 @@ void Game2D::onUp(Ref* pSender, ui::Widget::TouchEventType eEventType){
 void Game2D::onDown(Ref* pSender, ui::Widget::TouchEventType eEventType){
     sprHero->stopAllActions();
     Vector< SpriteFrame*> frames = getAnimation("hero_jump_0%d.png",4);
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
     animation->retain();
     sprHero->runAction(RepeatForever::create(Animate::create(animation)));
 }
 void Game2D::onLeft(Ref* pSender, ui::Widget::TouchEventType eEventType){
     sprHero->stopAllActions();
     Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
     sprHero->setFlippedX(true);
     animation->retain();
     sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+    
 }
 void Game2D::onRight(Ref* pSender, ui::Widget::TouchEventType eEventType){
     sprHero->stopAllActions();
     Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
     animation->retain();
     sprHero->setFlippedX(false);
     sprHero->runAction(RepeatForever::create(Animate::create(animation)));

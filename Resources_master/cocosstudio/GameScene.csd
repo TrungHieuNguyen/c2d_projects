@@ -32,16 +32,16 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnB" ActionTag="-1306995302" Tag="4" IconVisible="False" LeftMargin="1138.2572" RightMargin="-8.2572" TopMargin="649.8879" BottomMargin="0.1121" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="202" Scale9Height="77" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="150.0000" Y="70.0000" />
+          <AbstractNodeData Name="btnB" ActionTag="-1306995302" Tag="4" IconVisible="False" LeftMargin="1090.1005" RightMargin="-42.1005" TopMargin="637.6799" BottomMargin="-16.6799" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="202" Scale9Height="77" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="232.0000" Y="99.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="1213.2572" Y="35.1121" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <Position X="1206.1005" Y="32.8201" />
+            <Scale ScaleX="0.6177" ScaleY="0.6243" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.9479" Y="0.0488" />
-            <PreSize X="0.1172" Y="0.0972" />
+            <PrePosition X="0.9423" Y="0.0456" />
+            <PreSize X="0.1813" Y="0.1375" />
             <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <DisabledFileData Type="Normal" Path="images/button/btn_danh.png" Plist="" />
             <PressedFileData Type="Normal" Path="images/button/btn_danh2.png" Plist="" />
             <NormalFileData Type="Normal" Path="images/button/btn_danh.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />

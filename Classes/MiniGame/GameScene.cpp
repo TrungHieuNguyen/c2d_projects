@@ -53,7 +53,7 @@ bool GameScene::init()
 
     Button* btnB = (Button*) layerBG->getChildByName("btnB");
     btnB->setPressedActionEnabled(true);
-    btnB->addClickEventListener([&](Ref* sender){
+    btnB->addClickEventListener([&,btnB](Ref* sender){
         PopupResult* p = PopupResult::gI();
         if (p->getParent() == NULL)
         {
@@ -63,11 +63,15 @@ bool GameScene::init()
             p->open();
         }
         
+        CallFuncN * cal = CallFuncN::create([&](Ref *target){
+            Button* btn = (Button*)target;
+            btn->setEnabled(true);
+        });
+        btnB->setEnabled(false);
+        btnB->runAction(Sequence::create(DelayTime::create(3),cal, NULL));
     });
     //LayerCard
     auto LayerCard = layerBG->getChildByName("LayerCard");
-    
-    
     lbScore = (Text*) layerBG->getChildByName("lbTitle");
     lbScore->setColor(Color3B::WHITE);
     lbScore->setIgnoreAnchorPointForPosition(false);
@@ -284,6 +288,7 @@ void GameScene::result()
     
     AbstractScene::showGold(10000,false);
     AbstractScene::showResult(PlayerRank::RANK_NHAT,5);
+    AbstractScene::showTextGame("You Win!!!");
 }
 
 
