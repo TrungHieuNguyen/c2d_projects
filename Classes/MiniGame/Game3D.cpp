@@ -39,6 +39,7 @@ void Game3D::initComponents()
     sprite->setPosition(Vec2(visibleSize.width /2, visibleSize.height / 2));
     addChild(sprite,Z_ODER_HUD);
     _sprite = sprite;
+    
     auto animation = Animation3D::create(fileName);
     if (animation)
     {
@@ -66,7 +67,7 @@ void Game3D::initComponents()
     sprite_orc->setScale(10);
     sprite_orc->setRotation3D(Vec3(0,180,0));
     addChild(sprite_orc);
-    sprite_orc->setPosition( Vec2(visibleSize.width /2, visibleSize.height / 2) );
+    sprite_orc->setPosition( Vec2(1000, 100) );
     
     auto sp = Sprite3D::create("Sprite3DTest/axe.c3b");
     sprite_orc->getAttachNode("Bip001 R Hand")->addChild(sp);
@@ -79,7 +80,7 @@ void Game3D::initComponents()
     }
     
     auto sn = ShaderNode::shaderNodeWithVertex("", "Shaders/shadertoy_Glow.fsh");
-    sn->setPosition(Vec2(visibleSize.width/4, visibleSize.height/4));
+    sn->setPosition(Vec2(100, 20));
     sn->setContentSize(Size(visibleSize.width/4,visibleSize.height/4));
     addChild(sn);
     

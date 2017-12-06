@@ -55,14 +55,14 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="pnlProducts" ActionTag="-1890051779" Tag="90" IconVisible="False" LeftMargin="165.0000" RightMargin="135.0000" TopMargin="212.0000" BottomMargin="88.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
-            <Size X="700.0000" Y="300.0000" />
+          <AbstractNodeData Name="pnlProducts" ActionTag="-1890051779" Alpha="14" Tag="90" IconVisible="False" LeftMargin="100.0000" RightMargin="100.0000" TopMargin="213.0000" BottomMargin="87.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+            <Size X="800.0000" Y="300.0000" />
             <AnchorPoint />
-            <Position X="165.0000" Y="88.0000" />
+            <Position X="100.0000" Y="87.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1650" Y="0.1467" />
-            <PreSize X="0.7000" Y="0.5000" />
+            <PrePosition X="0.1000" Y="0.1450" />
+            <PreSize X="0.8000" Y="0.5000" />
             <SingleColor A="255" R="150" G="200" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
