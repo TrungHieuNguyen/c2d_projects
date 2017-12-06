@@ -11,7 +11,7 @@
 #include "ui/CocosGUI.h"
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
 
-#define W 800
+#define W 1000
 #define H 600
 
 #define WTAB 800
@@ -55,7 +55,7 @@ bool PopupShop::init()
         mainLayer->setPosition(Vec2(visibleSize.width/2 , visibleSize.height/2));
         
         auto layerContent = mainLayer->getChildByName("pnlProducts");
-        tableView = TableView::create(this, Size(W, H));
+        tableView = TableView::create(this, Size(WTAB, HTAB));
         tableView->setDirection(cocos2d::extension::ScrollView::Direction::HORIZONTAL);
         tableView->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
         tableView->setColor(Color3B::RED);
@@ -242,7 +242,7 @@ ssize_t PopupShop::numberOfCellsInTableView(cocos2d::extension::TableView *table
 }
 Size PopupShop::cellSizeForTable(TableView *table)
 {
-     return Size(WCELL+10, HCELL);
+     return Size(WCELL+30, HCELL);
 }
 IAPItem::IAPItem()
 {
