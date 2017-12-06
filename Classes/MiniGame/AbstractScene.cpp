@@ -99,7 +99,7 @@ void AbstractScene::showTextGame(string text)
     labelAction->setPosition(visibleSize/2);
     addChild(labelAction,1000);
     labelAction->setOpacity(0);
-    labelAction->runAction(Sequence::create(Spawn::create(ScaleTo::create(0.1f, 2.0f) ,FadeIn::create(0.3f), NULL),DelayTime::create(1),RemoveSelf::create(), NULL));
+    labelAction->runAction(Sequence::create(Spawn::create(ScaleTo::create(0.1f, 2.5f) ,FadeIn::create(0.3f), NULL),DelayTime::create(1.5),RemoveSelf::create(), NULL));
     
 }
 void AbstractScene::goMainScreen()

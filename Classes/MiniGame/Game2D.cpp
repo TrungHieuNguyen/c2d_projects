@@ -121,17 +121,6 @@ bool Game2D::init()
     Animation* _walkAnimation = Animation::createWithSpriteFrames(_walkFrames, 0.1f);
     _walkAnimation->retain();
     sprHero->setScale(2.0f);
-    
-//    //sprite->runAction(RepeatForever::create(Animate::create(_walkAnimation)));
-//    auto movement = MoveTo::create(15, Vec2(800,sprHero->getPosition().y));
-//    auto resetPosition = MoveTo::create(0, Vec2(0,sprHero->getPosition().y));
-//    auto sequence = Sequence::create(movement, resetPosition, NULL);
-//    //sprite->runAction(RepeatForever::create(sequence));
-//    animateRun = Animate::create(_walkAnimation);
-//    animateAttach = Animate::create(splashAnimation);
-//    animateDizzy = Animate::create(fizzyAnimation);
-//    auto hero_sequence = Sequence::create(movement, animateAttach, animateDizzy,NULL);
-//    sprHero->runAction(RepeatForever::create(hero_sequence));
      this->schedule(schedule_selector(Game2D::update));
      AbstractScene::showHUD();
     return true;
