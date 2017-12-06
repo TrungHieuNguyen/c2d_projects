@@ -13,6 +13,10 @@
 #include "GameDefine.h"
 #include "ui/CocosGUI.h"
 #include <stdio.h>
+
+#include "cocos-ext.h"
+#include "editor-support/cocostudio/ActionTimeline/CSLoader.h"
+#include <iostream>
 #define  Z_POPUP_PRIORITY 100
 using namespace::cocos2d;
 

@@ -34,6 +34,12 @@
 
 #define RES_SLIDER_DATCHUONG_CSB    "SilderDatChuong10.csb"
 #define RES_SLIDER_RESULT_CSB       "WinLoseResult.csb"
+
+#define BM_FONT_WORD "fonts/font_word.fnt"
+#define FONT_AVENIR_REGULAR "fonts/AvenirNextCondensed-Regular.ttf"
+#define FONT_BUTTON "fonts/AvenirNextCondensed-Regular.ttf"
+#define FONT_AVENIR_BOLD "fonts/AvenirNextCondensed-Bold.ttf"
+#define FONT_AVENIR_MEDIUM "fonts/AvenirNextCondensed-Medium.ttf"
 #define FONT_BITMAP_WIN_EFF "fonts/font_win_eff.fnt"
 #define FONT_BITMAP_LOSE_EFF "fonts/font_lost_eff.fnt"
 

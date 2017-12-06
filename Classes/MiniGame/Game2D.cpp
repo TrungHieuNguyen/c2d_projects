@@ -81,7 +81,7 @@ bool Game2D::init()
 //    spritebatch->addChild(sprite2);
     auto btnAttach = ui::Button::create();
     btnAttach->setTouchEnabled(true);
-    btnAttach->loadTextures("res/image/button/btn_red.png","res/image/button/btn_red2.png", "");
+    btnAttach->loadTextures("res/images/button/btn_red.png","res/image/button/btn_red2.png", "");
     btnAttach->setPosition(Vec2(btnAttach->getContentSize().width/2 ,700));
     btnAttach->setScale(0.5);
     btnAttach->addTouchEventListener(CC_CALLBACK_2(Game2D::onAttach, this));
@@ -91,7 +91,7 @@ bool Game2D::init()
     
     auto btnRun = ui::Button::create();
     btnRun->setTouchEnabled(true);
-    btnRun->loadTextures("res/image/button/btn_red.png","res/image/button/btn_red2.png", "");
+    btnRun->loadTextures("res/images/button/btn_red.png","res/image/button/btn_red2.png", "");
     btnRun->setPosition(Vec2(visibleSize.width - btnRun->getContentSize().width/2 ,700));
     btnRun->setScale(0.5);
     btnRun->addTouchEventListener(CC_CALLBACK_2(Game2D::onHurt, this));

@@ -82,6 +82,7 @@
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		BF5EEC4B1FD7911900E0FA18 /* PopupShop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF5EEC4A1FD7911900E0FA18 /* PopupShop.cpp */; };
 		BFC0977C1FCFB56400AC2E73 /* AbstractScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC0977A1FCFB56400AC2E73 /* AbstractScene.cpp */; };
 		BFF3CD231FBC217E00A6AE29 /* Game2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF3CD221FBC217D00A6AE29 /* Game2D.cpp */; };
 		CDD34559A389B8AC14C6BC14 /* sdkbox_config.json in Resources */ = {isa = PBXBuildFile; fileRef = E300439EB548D74EB0E7CA86 /* sdkbox_config.json */; };
@@ -299,6 +300,8 @@
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BF5EEC481FD7911900E0FA18 /* PopupShop.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PopupShop.hpp; sourceTree = "<group>"; };
+		BF5EEC4A1FD7911900E0FA18 /* PopupShop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PopupShop.cpp; sourceTree = "<group>"; };
 		BFC0977A1FCFB56400AC2E73 /* AbstractScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractScene.cpp; sourceTree = "<group>"; };
 		BFC0977B1FCFB56400AC2E73 /* AbstractScene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractScene.hpp; sourceTree = "<group>"; };
 		BFF3CD211FBC217C00A6AE29 /* Game2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game2D.h; sourceTree = "<group>"; };
@@ -416,6 +419,8 @@
 				242AEEAC1F6A3D5F0012C627 /* GameTiledMap.cpp */,
 				242AEEAD1F6A3D5F0012C627 /* GameTiledMap.hpp */,
 				24079D411F28335300501F01 /* PopupWaiting.h */,
+				BF5EEC4A1FD7911900E0FA18 /* PopupShop.cpp */,
+				BF5EEC481FD7911900E0FA18 /* PopupShop.hpp */,
 				24ECF2BA1F5FC4B9000A35A8 /* PopupResult.cpp */,
 				24ECF2BB1F5FC4B9000A35A8 /* PopupResult.hpp */,
 				243048581F692B760081D61E /* ShaderNode.cpp */,
@@ -940,6 +945,7 @@
 				240A81671F0E1639009893B7 /* TextureData.cpp in Sources */,
 				240A81461F0E1639009893B7 /* TimelineState.cpp in Sources */,
 				241F02951F21EBB800323F34 /* HelloDragonBones.cpp in Sources */,
+				BF5EEC4B1FD7911900E0FA18 /* PopupShop.cpp in Sources */,
 				241F02971F21EBB800323F34 /* PerformanceTest.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,

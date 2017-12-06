@@ -12,6 +12,7 @@
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
 #include "SimpleAudioEngine.h"
 #include "PopupResult.hpp"
+#include "PopupShop.hpp"
 
 #include "MainScene.hpp"
 USING_NS_CC;
@@ -54,7 +55,7 @@ bool GameScene::init()
     Button* btnB = (Button*) layerBG->getChildByName("btnB");
     btnB->setPressedActionEnabled(true);
     btnB->addClickEventListener([&,btnB](Ref* sender){
-        PopupResult* p = PopupResult::gI();
+        PopupShop* p = PopupShop::gI();
         if (p->getParent() == NULL)
         {
             p->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2, Director::getInstance()->getVisibleSize().height/2));
