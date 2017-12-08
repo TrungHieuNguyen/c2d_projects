@@ -7,6 +7,21 @@
 #include "GameDefine.h"
 #include "AbstractScene.hpp"
 USING_NS_CC;
+
+
+enum class HeroState
+{
+    STAND,
+    LEFT,
+    RIGHT,
+    UP,
+    DOWN,
+    HURT,
+    ATTACH,
+    JUMP,
+    DIE
+};
+
 class Game2D : public AbstractScene
 {
 public:
@@ -14,7 +29,7 @@ public:
     Animate * animateAttach;
     Animate * animateDizzy;
     Sprite * sprHero;
-    int stateHero;
+    HeroState stateHero;
     static cocos2d::Scene* createScene();
     virtual bool init();
     void update(float dt);

@@ -20,7 +20,7 @@ bool Game2D::init()
     {
         return false;
     }
-    stateHero = 0;
+    stateHero = HeroState::LEFT;
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     auto rootNode = CSLoader::createNode(SCENE_GAME2D_CSB);
@@ -70,12 +70,12 @@ bool Game2D::init()
     cache->addSpriteFramesWithFile("res/plist/anim_hero_shoot.plist");
     
     sprHero= Sprite::createWithSpriteFrameName("hero_run_01.png");
-    sprHero->setPosition(Vec2(visibleSize.width/2 + origin.x, 200));
+    sprHero->setPosition(Vec2(visibleSize.width/2 + origin.x, 300));
     addChild(sprHero);
-    
-    SpriteBatchNode* spritebatch = SpriteBatchNode::create("res/plist/anim_hero_run.png");
-    spritebatch->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-    addChild(spritebatch);
+//
+//    SpriteBatchNode* spritebatch = SpriteBatchNode::create("res/plist/anim_hero_run.png");
+//    spritebatch->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+//    addChild(spritebatch);
     
 //    Sprite *sprite2 = Sprite::createWithSpriteFrameName("hero_run_01.png");
 //    spritebatch->addChild(sprite2);
@@ -97,25 +97,25 @@ bool Game2D::init()
     btnRun->addTouchEventListener(CC_CALLBACK_2(Game2D::onHurt, this));
     addChild(btnRun);
     
-    Vector< SpriteFrame*> fizzyFrames = getAnimation("hero_dizzy_0%d.png",5);
-    Animation* fizzyAnimation = Animation::createWithSpriteFrames(fizzyFrames, 0.1f);
-    fizzyAnimation->retain();
-    Sprite *fizzySprite = Sprite::createWithSpriteFrameName("hero_run_01.png");
-    fizzySprite->setPosition(Vec2(visibleSize.width/2 + origin.x, 300));
-    addChild(fizzySprite);
-    fizzySprite->setScale(1.5f);
-    fizzySprite->runAction(RepeatForever::create(Animate::create(fizzyAnimation)));
-    
-    Vector< SpriteFrame*> splashFrames = getAnimation("hero_through_0%d.png",4);
-    Animation* splashAnimation = Animation::createWithSpriteFrames(splashFrames, 0.1f);
-    splashAnimation->retain();
-    Sprite *splashSprite = Sprite::createWithSpriteFrameName("hero_through_01.png");
-    splashSprite->setPosition(Vec2(visibleSize.width/2 + origin.x, 500));
-    addChild(splashSprite);
-    splashSprite->setScale(1.5f);
-    
-    splashSprite->runAction(RepeatForever::create(Animate::create(splashAnimation)));
-    
+//    Vector< SpriteFrame*> fizzyFrames = getAnimation("hero_dizzy_0%d.png",5);
+//    Animation* fizzyAnimation = Animation::createWithSpriteFrames(fizzyFrames, 0.1f);
+//    fizzyAnimation->retain();
+//    Sprite *fizzySprite = Sprite::createWithSpriteFrameName("hero_run_01.png");
+//    fizzySprite->setPosition(Vec2(visibleSize.width/2 + origin.x, 300));
+//    addChild(fizzySprite);
+//    fizzySprite->setScale(1.5f);
+//    fizzySprite->runAction(RepeatForever::create(Animate::create(fizzyAnimation)));
+//
+//    Vector< SpriteFrame*> splashFrames = getAnimation("hero_through_0%d.png",4);
+//    Animation* splashAnimation = Animation::createWithSpriteFrames(splashFrames, 0.1f);
+//    splashAnimation->retain();
+//    Sprite *splashSprite = Sprite::createWithSpriteFrameName("hero_through_01.png");
+//    splashSprite->setPosition(Vec2(visibleSize.width/2 + origin.x, 500));
+//    addChild(splashSprite);
+//    splashSprite->setScale(1.5f);
+//
+//    splashSprite->runAction(RepeatForever::create(Animate::create(splashAnimation)));
+//
     
     Vector< SpriteFrame*> _walkFrames = getAnimation("hero_run_0%d.png",6);
     Animation* _walkAnimation = Animation::createWithSpriteFrames(_walkFrames, 0.1f);
@@ -140,119 +140,150 @@ bool Game2D::init()
 void Game2D::onAttach(Ref* pSender, ui::Widget::TouchEventType eEventType)
 {
    
-    switch (eEventType)
-    {
-        case ui::Widget::TouchEventType::BEGAN:
-            if(sprHero!= nullptr)
-            {
-                if(stateHero==0)
-                {
-                    sprHero->stopAllActions();
-                    Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
-                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-                    animation->retain();
-                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                }
-                else if(stateHero==1)
-                {
-                    sprHero->stopAllActions();
-                    Vector< SpriteFrame*> frames = getAnimation("hero_dizzy_0%d.png",5);
-                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-                    animation->retain();
-                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                }
-                else if(stateHero==2)
-                {
-                    sprHero->stopAllActions();
-                    Vector< SpriteFrame*> frames = getAnimation("hero_through_0%d.png",3);
-                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-                    animation->retain();
-                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                }
-                else if(stateHero==3)
-                {
-                    sprHero->stopAllActions();
-                    Vector< SpriteFrame*> frames = getAnimation("hero_shooting_0%d.png",4);
-                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-                    animation->retain();
-                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                }
-                else if(stateHero==4)
-                {
-                    sprHero->stopAllActions();
-                    Vector< SpriteFrame*> frames = getAnimation("hero_flying_0%d.png",4);
-                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-                    animation->retain();
-                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                }
-                else if(stateHero==5)
-                {
-                    sprHero->stopAllActions();
-                    Vector< SpriteFrame*> frames = getAnimation("hero_jump_0%d.png",4);
-                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-                    animation->retain();
-                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                }
-                else if(stateHero==6)
-                {
-                    sprHero->stopAllActions();
-                    Vector< SpriteFrame*> frames = getAnimation("hero_die_0%d.png",3);
-                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-                    animation->retain();
-                    sprHero->runAction(Animate::create(animation));
-                }
-                
-            }
-            stateHero++;
-            if(stateHero > 6) stateHero = 0;
-            break;
-        case ui::Widget::TouchEventType::ENDED:
-            break;
-        default:
-            break;
-    }
+//    switch (eEventType)
+//    {
+//        case ui::Widget::TouchEventType::BEGAN:
+//            if(sprHero!= nullptr)
+//            {
+//                if(stateHero==0)
+//                {
+//                    sprHero->stopAllActions();
+//                    Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
+//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+//                    animation->retain();
+//                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+//                }
+//                else if(stateHero==1)
+//                {
+//                    sprHero->stopAllActions();
+//                    Vector< SpriteFrame*> frames = getAnimation("hero_dizzy_0%d.png",5);
+//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+//                    animation->retain();
+//                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+//                }
+//                else if(stateHero==2)
+//                {
+//                    sprHero->stopAllActions();
+//                    Vector< SpriteFrame*> frames = getAnimation("hero_through_0%d.png",3);
+//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+//                    animation->retain();
+//                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+//                }
+//                else if(stateHero==3)
+//                {
+//                    sprHero->stopAllActions();
+//                    Vector< SpriteFrame*> frames = getAnimation("hero_shooting_0%d.png",4);
+//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+//                    animation->retain();
+//                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+//                }
+//                else if(stateHero==4)
+//                {
+//                    sprHero->stopAllActions();
+//                    Vector< SpriteFrame*> frames = getAnimation("hero_flying_0%d.png",4);
+//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+//                    animation->retain();
+//                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+//                }
+//                else if(stateHero==5)
+//                {
+//                    sprHero->stopAllActions();
+//                    Vector< SpriteFrame*> frames = getAnimation("hero_jump_0%d.png",4);
+//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+//                    animation->retain();
+//                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+//                }
+//                else if(stateHero==6)
+//                {
+//                    sprHero->stopAllActions();
+//                    Vector< SpriteFrame*> frames = getAnimation("hero_die_0%d.png",3);
+//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+//                    animation->retain();
+//                    sprHero->runAction(Animate::create(animation));
+//                }
+//
+//            }
+//            stateHero++;
+//            if(stateHero > 6) stateHero = 0;
+//            break;
+//        case ui::Widget::TouchEventType::ENDED:
+//            break;
+//        default:
+//            break;
+//    }
   
     
 }
 void Game2D::onHurt(Ref* pSender, ui::Widget::TouchEventType eEventType)
 {
-    sprHero->stopAllActions();
-    Vector< SpriteFrame*> frames = getAnimation("hero_dizzy_0%d.png",5);
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
-    animation->retain();
-    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+    if( stateHero != HeroState::HURT)
+    {
+        sprHero->stopAllActions();
+        Vector< SpriteFrame*> frames = getAnimation("hero_dizzy_0%d.png",5);
+        Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
+        animation->retain();
+        sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+    }
 }
 void Game2D::onUp(Ref* pSender, ui::Widget::TouchEventType eEventType){
-    sprHero->stopAllActions();
-    Vector< SpriteFrame*> frames = getAnimation("hero_flying_0%d.png",4);
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
-    animation->retain();
-    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+    if( stateHero != HeroState::UP)
+    {
+       
+        sprHero->stopAllActions();
+        Vector< SpriteFrame*> frames = getAnimation("hero_flying_0%d.png",4);
+        Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
+        animation->retain();
+        sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+        stateHero = HeroState::UP;
+    }
+    MoveBy * moveTo = MoveBy::create(0.3, Point(0,50));
+    sprHero->runAction(moveTo);
     
 }
 void Game2D::onDown(Ref* pSender, ui::Widget::TouchEventType eEventType){
-    sprHero->stopAllActions();
-    Vector< SpriteFrame*> frames = getAnimation("hero_jump_0%d.png",4);
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
-    animation->retain();
-    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+    if( stateHero != HeroState::DOWN)
+    {
+        sprHero->stopAllActions();
+        Vector< SpriteFrame*> frames = getAnimation("hero_jump_0%d.png",4);
+        Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
+        animation->retain();
+        sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+        stateHero = HeroState::DOWN;
+    }
+    MoveBy * moveTo = MoveBy::create(0.3, Point(0,-50));
+    sprHero->runAction(moveTo);
 }
 void Game2D::onLeft(Ref* pSender, ui::Widget::TouchEventType eEventType){
-    sprHero->stopAllActions();
-    Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
-    sprHero->setFlippedX(true);
-    animation->retain();
-    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+    if( stateHero != HeroState::LEFT)
+    {
+        stateHero = HeroState::LEFT;
+        sprHero->stopAllActions();
+        Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
+        Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
+        sprHero->setFlippedX(true);
+        animation->retain();
+        sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+    
+    }
+    MoveBy * moveTo = MoveBy::create(0.3, Point(-50,0));
+    sprHero->runAction(moveTo);
     
 }
 void Game2D::onRight(Ref* pSender, ui::Widget::TouchEventType eEventType){
-    sprHero->stopAllActions();
-    Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
-    Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
-    animation->retain();
-    sprHero->setFlippedX(false);
-    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+    if( stateHero != HeroState::RIGHT)
+    {
+        stateHero = HeroState::RIGHT;
+        sprHero->stopAllActions();
+        Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
+        Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
+        animation->retain();
+        sprHero->setFlippedX(false);
+        sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+        
+        
+    }
+    MoveBy * moveTo = MoveBy::create(0.3, Point(50,0));
+    sprHero->runAction(moveTo);
 }
 void Game2D::onA(Ref* pSender, ui::Widget::TouchEventType eEventType){
     sprHero->stopAllActions();
