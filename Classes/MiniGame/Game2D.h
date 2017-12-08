@@ -18,6 +18,7 @@ enum class HeroState
     DOWN,
     HURT,
     ATTACH,
+    SHOOT,
     JUMP,
     DIE
 };
