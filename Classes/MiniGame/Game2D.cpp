@@ -240,7 +240,8 @@ void Game2D::onUp(Ref* pSender, ui::Widget::TouchEventType eEventType){
         stateHero = HeroState::UP;
     }
     MoveBy * moveTo = MoveBy::create(0.3, Point(0,50));
-    sprHero->runAction(moveTo);
+    auto revert = MoveBy::create(0.3, Point(0,+50));
+    sprHero->runAction(Sequence::create(moveTo,DelayTime::create(0.5), revert, NULL));
     
 }
 void Game2D::onDown(Ref* pSender, ui::Widget::TouchEventType eEventType){
@@ -254,7 +255,8 @@ void Game2D::onDown(Ref* pSender, ui::Widget::TouchEventType eEventType){
         stateHero = HeroState::DOWN;
     }
     MoveBy * moveTo = MoveBy::create(0.3, Point(0,-50));
-    sprHero->runAction(moveTo);
+    auto revert = MoveBy::create(0.3, Point(0,+50));
+    sprHero->runAction(Sequence::create(moveTo,DelayTime::create(0.5), revert, NULL));
 }
 void Game2D::onLeft(Ref* pSender, ui::Widget::TouchEventType eEventType){
     if( stateHero != HeroState::LEFT)
