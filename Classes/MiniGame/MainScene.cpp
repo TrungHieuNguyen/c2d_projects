@@ -1,6 +1,7 @@
 
 
 #include "ui/CocosGUI.h"
+//#include "cocos-ext.h"
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
 #include "MainScene.hpp"
 #include "GameScene.hpp"
@@ -27,10 +28,8 @@ bool MainScene::init()
         return false;
     }
     
-    auto visibleSize = Director::getInstance()->getVisibleSize();
-    Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
-        initComponents();
+
+    initComponents();
 
     
     return true;
@@ -38,6 +37,9 @@ bool MainScene::init()
 
 void MainScene::initComponents()
 {
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    
     layerBG = CSLoader::createNode(SCENE_MAIN_CSB);
     addChild(layerBG, -1);
 
@@ -78,14 +80,39 @@ void MainScene::initComponents()
         Director::getInstance()->replaceScene(AboutScene::createScene());
     });
 
+    Menu* menu = Menu::create();
+    for (int i = 0; i < 8; i++)
+    {
+        auto closeItem = MenuItemImage::create(  "res/images/button/btn_red.png", "res/images/button/btn_red2.png",CC_CALLBACK_1(MainScene::menuCloseCallback, this));
+        closeItem->setAnchorPoint(Point(0.5, 0.5));
+        closeItem->setPosition(Vec2(0,i*80+ 80));
+        menu->addChild(closeItem);
+    }
+    menu->alignItemsVertically();
+    
+//    Size scroll_size = Director::getInstance()->getWinSize();
+//    Size container_size = Size(scroll_size.width * 2, scroll_size.height);
+//    Layer* container = Layer::create();
+//    container->setContentSize(container_size);
+    cocos2d::ui::ScrollView* scrollView = cocos2d::ui::ScrollView::create();
+    scrollView->setContentSize(Size(visibleSize.width * 0.9, 550)); // What user see
+    scrollView->setInnerContainerSize(Size(visibleSize.width * 0.9, 750));
+    //scrollView->setAnchorPoint(Point(0.5, 0.5));
+    scrollView->setDirection(ScrollView::Direction::VERTICAL);
+    scrollView->setBounceEnabled(true);
+    scrollView->addChild(menu);
+    scrollView->setPosition(Point (visibleSize.width/2,visibleSize.height/2));
+   // scrollView->setContentSize(Size(menu->getContentSize().width, menu->getContentSize().height));
+    scrollView->unscheduleAllSelectors();
+    this->addChild(scrollView, 2);
     
 }
 void MainScene::menuCloseCallback(Ref* pSender)
 {
-    Director::getInstance()->end();
+   // Director::getInstance()->end();
     
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    exit(0);
+   // exit(0);
 #endif
     
     
