@@ -7,6 +7,7 @@
 
 #include "AbstractScene.hpp"
 #include "MainScene.hpp"
+#include "PopupShop.hpp"
 void AbstractScene::clickBtnBack(Ref* sender)
 {
     
@@ -51,6 +52,44 @@ void AbstractScene::showHUD()
         
         Director::getInstance()->replaceScene(MainScene::createScene());
         
+        
+    });
+    Button* btnSetting = (Button*) layerHUD->getChildByName("btnSetting");
+    btnSetting->setPressedActionEnabled(true);
+    btnSetting->addClickEventListener([&](Ref* sender){
+        
+        Director::getInstance()->replaceScene(MainScene::createScene());
+        
+        
+    });
+    
+    Button* btnAddCoin = (Button*) layerHUD->getChildByName("sprCoinBar")->getChildByName("btnAddCoin");
+    btnAddCoin->setPressedActionEnabled(true);
+    btnAddCoin->addClickEventListener([&](Ref* sender){
+        
+        PopupShop* p = PopupShop::gI();
+        if (p->getParent() == NULL)
+        {
+            p->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2, Director::getInstance()->getVisibleSize().height/2));
+            addChild(p, Z_ODER_POPUP);
+            p->fadeInBgDark();
+            p->open();
+        }
+        
+    });
+    
+    Button* btnAddCash = (Button*) layerHUD->getChildByName("sprMoneyBar")->getChildByName("btnAddCash");
+    btnAddCash->setPressedActionEnabled(true);
+    btnAddCash->addClickEventListener([&](Ref* sender){
+        
+        PopupShop* p = PopupShop::gI();
+        if (p->getParent() == NULL)
+        {
+            p->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2, Director::getInstance()->getVisibleSize().height/2));
+            addChild(p, Z_ODER_POPUP);
+            p->fadeInBgDark();
+            p->open();
+        }
         
     });
     layerHUD->runAction(hud_move_ease);

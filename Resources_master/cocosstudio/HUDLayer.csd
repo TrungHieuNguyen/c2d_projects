@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="12" ctype="GameLayerObjectData">
         <Size X="1280.0000" Y="150.0000" />
         <Children>
-          <AbstractNodeData Name="sprMoneyBar" ActionTag="534430117" Tag="14" IconVisible="False" LeftMargin="301.7977" RightMargin="860.2023" TopMargin="36.3392" BottomMargin="78.6608" ctype="SpriteObjectData">
+          <AbstractNodeData Name="sprMoneyBar" ActionTag="534430117" Tag="14" IconVisible="False" LeftMargin="275.0082" RightMargin="886.9918" TopMargin="38.0134" BottomMargin="76.9866" ctype="SpriteObjectData">
             <Size X="118.0000" Y="35.0000" />
             <Children>
               <AbstractNodeData Name="lbMoney" ActionTag="-936021751" Tag="19" IconVisible="False" LeftMargin="13.4525" RightMargin="15.5475" TopMargin="6.5388" BottomMargin="5.4612" FontSize="20" LabelText="1.000.000" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
@@ -20,17 +20,32 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
+              <AbstractNodeData Name="btnAddCash" ActionTag="1240512601" Tag="48" IconVisible="False" LeftMargin="85.4554" RightMargin="-40.4554" TopMargin="-28.6291" BottomMargin="-8.3709" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="43" Scale9Height="50" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="73.0000" Y="72.0000" />
+                <AnchorPoint ScaleX="0.5315" ScaleY="0.5520" />
+                <Position X="124.2582" Y="31.3706" />
+                <Scale ScaleX="0.5157" ScaleY="0.5264" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="1.0530" Y="0.8963" />
+                <PreSize X="0.6186" Y="2.0571" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="images/menu/btn_plus.png" Plist="" />
+                <NormalFileData Type="Normal" Path="images/menu/btn_plus.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="360.7977" Y="96.1608" />
+            <Position X="334.0082" Y="94.4866" />
             <Scale ScaleX="1.5527" ScaleY="1.5172" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.2819" Y="0.6411" />
+            <PrePosition X="0.2609" Y="0.6299" />
             <PreSize X="0.0922" Y="0.2333" />
             <FileData Type="Normal" Path="images/menu/bg_name.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="MoneyIcon" ActionTag="-505546127" Tag="13" IconVisible="False" LeftMargin="176.9843" RightMargin="1025.0156" TopMargin="23.7178" BottomMargin="65.2822" ctype="SpriteObjectData">
+          <AbstractNodeData Name="MoneyIcon" ActionTag="-505546127" Tag="13" IconVisible="False" LeftMargin="171.9611" RightMargin="1030.0388" TopMargin="23.7178" BottomMargin="65.2822" ctype="SpriteObjectData">
             <Size X="78.0000" Y="61.0000" />
             <Children>
               <AbstractNodeData Name="Circle" ActionTag="1553119707" Tag="19" IconVisible="False" LeftMargin="-10.9093" RightMargin="-9.0907" TopMargin="-16.9753" BottomMargin="-20.0247" ctype="SpriteObjectData">
@@ -46,10 +61,10 @@
               </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="215.9843" Y="95.7822" />
+            <Position X="210.9611" Y="95.7822" />
             <Scale ScaleX="0.8957" ScaleY="0.8835" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1687" Y="0.6385" />
+            <PrePosition X="0.1648" Y="0.6385" />
             <PreSize X="0.0609" Y="0.4067" />
             <FileData Type="Normal" Path="images/menu/money.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
@@ -57,10 +72,10 @@
           <AbstractNodeData Name="CoinIcon" ActionTag="-1816928" Tag="17" IconVisible="False" LeftMargin="475.1548" RightMargin="744.8452" TopMargin="22.9812" BottomMargin="67.0188" ctype="SpriteObjectData">
             <Size X="60.0000" Y="60.0000" />
             <Children>
-              <AbstractNodeData Name="Circle" ActionTag="824793625" Tag="18" IconVisible="False" LeftMargin="-19.0254" RightMargin="-18.9746" TopMargin="-17.0654" BottomMargin="-20.9346" ctype="SpriteObjectData">
+              <AbstractNodeData Name="Circle" ActionTag="824793625" Tag="18" IconVisible="False" LeftMargin="-19.0255" RightMargin="-18.9745" TopMargin="-17.0651" BottomMargin="-20.9349" ctype="SpriteObjectData">
                 <Size X="98.0000" Y="98.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="29.9746" Y="28.0654" />
+                <Position X="29.9745" Y="28.0651" />
                 <Scale ScaleX="0.7079" ScaleY="0.7504" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4996" Y="0.4678" />
@@ -78,26 +93,41 @@
             <FileData Type="Normal" Path="images/menu/gold.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="sprCoinBar" ActionTag="1365337790" Tag="16" IconVisible="False" LeftMargin="586.6512" RightMargin="575.3488" TopMargin="36.9354" BottomMargin="78.0646" ctype="SpriteObjectData">
+          <AbstractNodeData Name="sprCoinBar" ActionTag="1365337790" Tag="16" IconVisible="False" LeftMargin="583.3019" RightMargin="578.6981" TopMargin="38.6093" BottomMargin="76.3907" ctype="SpriteObjectData">
             <Size X="118.0000" Y="35.0000" />
             <Children>
-              <AbstractNodeData Name="lbCoin" ActionTag="1217883328" Tag="20" IconVisible="False" LeftMargin="12.6714" RightMargin="16.3286" TopMargin="5.3933" BottomMargin="6.6067" FontSize="20" LabelText="1.000.000" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="lbCoin" ActionTag="1217883328" Tag="20" IconVisible="False" LeftMargin="12.6706" RightMargin="16.3294" TopMargin="6.5305" BottomMargin="5.4695" FontSize="20" LabelText="1.000.000" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="89.0000" Y="23.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="57.1714" Y="18.1067" />
+                <Position X="57.1706" Y="16.9695" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4845" Y="0.5173" />
+                <PrePosition X="0.4845" Y="0.4848" />
                 <PreSize X="0.7542" Y="0.6571" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="btnAddCoin" ActionTag="1813270168" Tag="47" IconVisible="False" LeftMargin="89.0779" RightMargin="-44.0779" TopMargin="-31.7711" BottomMargin="-5.2289" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="43" Scale9Height="50" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="73.0000" Y="72.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="125.5779" Y="30.7711" />
+                <Scale ScaleX="0.5157" ScaleY="0.5264" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="1.0642" Y="0.8792" />
+                <PreSize X="0.6186" Y="2.0571" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="images/menu/btn_plus.png" Plist="" />
+                <NormalFileData Type="Normal" Path="images/menu/btn_plus.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5073" ScaleY="0.4721" />
-            <Position X="646.5126" Y="94.5881" />
-            <Scale ScaleX="1.6054" ScaleY="1.4731" />
+            <Position X="643.1633" Y="92.9142" />
+            <Scale ScaleX="1.6342" ScaleY="1.4731" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5051" Y="0.6306" />
+            <PrePosition X="0.5025" Y="0.6194" />
             <PreSize X="0.0922" Y="0.2333" />
             <FileData Type="Normal" Path="images/menu/bg_name.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
@@ -128,7 +158,7 @@
             <FileData Type="Normal" Path="images/popup/box_hide.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="sprAvatarOut" ActionTag="-1978911192" Tag="66" IconVisible="False" LeftMargin="70.1837" RightMargin="1111.8164" TopMargin="5.4619" BottomMargin="46.5381" ctype="SpriteObjectData">
+          <AbstractNodeData Name="sprAvatarOut" ActionTag="-1978911192" Tag="66" IconVisible="False" LeftMargin="70.1837" RightMargin="1111.8163" TopMargin="5.4619" BottomMargin="46.5381" ctype="SpriteObjectData">
             <Size X="98.0000" Y="98.0000" />
             <Children>
               <AbstractNodeData Name="sprAvatar" ActionTag="-1962275074" Tag="65" IconVisible="False" LeftMargin="-28.2355" RightMargin="-17.7645" TopMargin="-23.4892" BottomMargin="-22.5108" ctype="SpriteObjectData">

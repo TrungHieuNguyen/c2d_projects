@@ -16,7 +16,7 @@ using namespace cocos2d;
 using namespace ui;
 #include "GameDefine.h"
 #include "AbstractScene.hpp"
-
+#include "TienLen/Player.hpp"
 class GameScene : public AbstractScene
 {
 
@@ -34,6 +34,7 @@ class GameScene : public AbstractScene
     ProgressTimer *topImage;
     float _elapseTransTime;
     Sprite* _player;
+    Vector<Player*> vPlayer;
     
 public:
     static cocos2d::Scene* createScene();

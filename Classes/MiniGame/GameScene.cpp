@@ -36,12 +36,12 @@ bool GameScene::init()
     
     isStartedGame = false;
     _frameCounter = 0;
-   
+
 
     auto layerBG = CSLoader::createNode(SCENE_GAME_CSB);
     layerBG->setAnchorPoint(Point(0.5f, 0.5f));
     layerBG->setPosition(layerBG->getContentSize()/2);
-    addChild(layerBG,-1);
+    //addChild(layerBG,-1);
     
     Button* btnA = (Button*) layerBG->getChildByName("btnA");
     btnA->setPressedActionEnabled(true);
@@ -206,21 +206,30 @@ bool GameScene::init()
 //
 //
 
-    _player = Sprite::create("Player.png");
-    _player->setPosition(Vec2(10,800));
+    _player = Sprite::create("res/images/Icon-76.png");
+    _player->setPosition(Vec2(10,500));
     this->addChild(_player,6);
     
     
     
-    topImage = ProgressTimer::create(Sprite::create("loading/icon_sample.png"));
+    topImage = ProgressTimer::create(Sprite::create("res/loading/icon_sample.png"));
     topImage->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
     topImage->setRotation(180);
     topImage->setType(cocos2d::ProgressTimer::Type::RADIAL);
     topImage->setPercentage(0);
     addChild(topImage);
     
-    AbstractScene::showGold(10000,false);
-    AbstractScene::showResult(PlayerRank::RANK_NHAT,5);
+    for(int i=0; i< 4;i++)
+    {
+        Player* player = Player::create();
+        vPlayer.pushBack(player);
+        player->initPlayerType((PlayerType) i);
+        addChild(player,10);
+    }
+
+    //player->setPosition(100,100);
+    ///AbstractScene::showGold(10000,false);
+    //AbstractScene::showResult(PlayerRank::RANK_NHAT,5);
     return true;
 }
 void GameScene::update(float dt)

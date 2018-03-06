@@ -243,10 +243,24 @@ void Game2D::onUp(Ref* pSender, ui::Widget::TouchEventType eEventType){
                 Vector< SpriteFrame*> frames = getAnimation("hero_flying_0%d.png",4);
                 Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
                 animation->retain();
-                sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+                //sprHero->runAction(RepeatForever::create(Animate::create(animation)));
                 stateHero = HeroState::UP;
-                MoveBy * moveTo = MoveBy::create(0.3, Point(0,50));
-                auto revert = MoveBy::create(0.3, Point(0,+50));
+                MoveBy * moveTo = MoveBy::create(0.2, Point(0,100));
+                auto revert = MoveBy::create(0.1, Point(0,-100));
+                auto spa = Spawn::createWithTwoActions(moveTo, Animate::create(animation));
+                
+                sprHero->stopAllActions();
+                Vector< SpriteFrame*> frames2 = getAnimation("hero_stand_0%d.png",5);
+                Animation* animation2 = Animation::createWithSpriteFrames(frames2, 0.1f);
+                animation2->retain();
+                auto spa2 = Spawn::createWithTwoActions(revert, RepeatForever::create(Animate::create(animation2)));
+                
+                auto callFuncN = CallFuncN::create([&](Ref * sender)
+                                                   {
+                                                      stateHero = HeroState::STAND;
+                                                   });
+                auto seq= Sequence::create(spa, DelayTime::create(0.1f), spa2, callFuncN, nullptr);
+                sprHero->runAction(seq);
                 //sprHero->runAction(Sequence::create(moveTo,DelayTime::create(0.5), revert, NULL));
             }
 
@@ -254,13 +268,13 @@ void Game2D::onUp(Ref* pSender, ui::Widget::TouchEventType eEventType){
         case ui::Widget::TouchEventType::ENDED:
             if( stateHero != HeroState::STAND)
             {
-                sprHero->stopAllActions();
-                Vector< SpriteFrame*> frames = getAnimation("hero_stand_0%d.png",5);
-                Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-                animation->retain();
-                //sprHero->runAction(Animate::create(animation));
-                sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                stateHero = HeroState::STAND;
+//                sprHero->stopAllActions();
+//                Vector< SpriteFrame*> frames = getAnimation("hero_stand_0%d.png",5);
+//                Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+//                animation->retain();
+//                //sprHero->runAction(Animate::create(animation));
+//                sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+//                stateHero = HeroState::STAND;
             }
             break;
     }

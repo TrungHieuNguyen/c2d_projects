@@ -106,22 +106,22 @@
           <AbstractNodeData Name="playerMain" ActionTag="-418336331" Tag="43" IconVisible="True" LeftMargin="83.5046" RightMargin="1196.4954" TopMargin="613.0197" BottomMargin="106.9803" ctype="SingleNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <Children>
-              <AbstractNodeData Name="avatar" ActionTag="-92005047" Tag="44" IconVisible="False" LeftMargin="-72.1266" RightMargin="-71.8734" TopMargin="-72.1327" BottomMargin="-71.8673" ctype="SpriteObjectData">
+              <AbstractNodeData Name="avatar" ActionTag="-92005047" Tag="44" IconVisible="False" LeftMargin="-72.1284" RightMargin="-71.8716" TopMargin="-53.7147" BottomMargin="-90.2853" ctype="SpriteObjectData">
                 <Size X="144.0000" Y="144.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="-0.1266" Y="0.1327" />
-                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <Position X="-0.1284" Y="-18.2853" />
+                <Scale ScaleX="0.6279" ScaleY="0.6047" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="0.0000" Y="0.0000" />
                 <FileData Type="Normal" Path="images/Icon-76.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="money_bg" ActionTag="-1513367536" Tag="45" IconVisible="False" LeftMargin="-39.1173" RightMargin="-39.8827" TopMargin="74.2948" BottomMargin="-102.2948" ctype="SpriteObjectData">
+              <AbstractNodeData Name="money_bg" ActionTag="-1513367536" Tag="45" IconVisible="False" LeftMargin="-39.1177" RightMargin="-39.8823" TopMargin="74.2948" BottomMargin="-102.2948" ctype="SpriteObjectData">
                 <Size X="79.0000" Y="28.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="0.3827" Y="-88.2948" />
-                <Scale ScaleX="1.7740" ScaleY="1.0094" />
+                <Position X="0.3823" Y="-88.2948" />
+                <Scale ScaleX="1.3501" ScaleY="0.8898" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition />
                 <PreSize X="0.0000" Y="0.0000" />

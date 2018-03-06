@@ -81,11 +81,12 @@ void MainScene::initComponents()
     });
 
     Menu* menu = Menu::create();
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < 9; i++)
     {
         auto closeItem = MenuItemImage::create(  "res/images/button/btn_red.png", "res/images/button/btn_red2.png",CC_CALLBACK_1(MainScene::menuCloseCallback, this));
-        closeItem->setAnchorPoint(Point(0.5, 0.5));
-        closeItem->setPosition(Vec2(0,i*80+ 80));
+        //closeItem->setAnchorPoint(Point(0.5, 0.5));
+        closeItem->setAnchorPoint(Point(0,0));
+        closeItem->setPosition(Vec2(0,i*50));
         menu->addChild(closeItem);
     }
     menu->alignItemsVertically();
@@ -95,16 +96,16 @@ void MainScene::initComponents()
 //    Layer* container = Layer::create();
 //    container->setContentSize(container_size);
     cocos2d::ui::ScrollView* scrollView = cocos2d::ui::ScrollView::create();
-    scrollView->setContentSize(Size(visibleSize.width * 0.9, 550)); // What user see
-    scrollView->setInnerContainerSize(Size(visibleSize.width * 0.9, 750));
-    //scrollView->setAnchorPoint(Point(0.5, 0.5));
+    scrollView->setContentSize(Size(visibleSize.width * 0.9, 450)); // What user see
+    scrollView->setInnerContainerSize(Size(visibleSize.width * 0.9, 900));
+    scrollView->setAnchorPoint(Vec2(0.5,0.5));
     scrollView->setDirection(ScrollView::Direction::VERTICAL);
     scrollView->setBounceEnabled(true);
     scrollView->addChild(menu);
     scrollView->setPosition(Point (visibleSize.width/2,visibleSize.height/2));
    // scrollView->setContentSize(Size(menu->getContentSize().width, menu->getContentSize().height));
     scrollView->unscheduleAllSelectors();
-    this->addChild(scrollView, 2);
+    //this->addChild(scrollView, 2);
     
 }
 void MainScene::menuCloseCallback(Ref* pSender)

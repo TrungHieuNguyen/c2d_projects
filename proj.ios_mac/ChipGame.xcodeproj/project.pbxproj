@@ -83,6 +83,11 @@
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
 		BF5EEC4B1FD7911900E0FA18 /* PopupShop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF5EEC4A1FD7911900E0FA18 /* PopupShop.cpp */; };
+		BF7E7D76204E4CC100980405 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D74204E4CC100980405 /* Player.cpp */; };
+		BF7E7D79204E4CED00980405 /* GameTL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D77204E4CED00980405 /* GameTL.cpp */; };
+		BF7E7D7C204E4D0800980405 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D7A204E4D0800980405 /* Game.cpp */; };
+		BF7E7D7F204E4D2B00980405 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D7D204E4D2B00980405 /* Card.cpp */; };
+		BF7E7D82204E507900980405 /* CardList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D80204E507900980405 /* CardList.cpp */; };
 		BFC0977C1FCFB56400AC2E73 /* AbstractScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC0977A1FCFB56400AC2E73 /* AbstractScene.cpp */; };
 		BFF3CD231FBC217E00A6AE29 /* Game2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF3CD221FBC217D00A6AE29 /* Game2D.cpp */; };
 		CDD34559A389B8AC14C6BC14 /* sdkbox_config.json in Resources */ = {isa = PBXBuildFile; fileRef = E300439EB548D74EB0E7CA86 /* sdkbox_config.json */; };
@@ -302,6 +307,16 @@
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BF5EEC481FD7911900E0FA18 /* PopupShop.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PopupShop.hpp; sourceTree = "<group>"; };
 		BF5EEC4A1FD7911900E0FA18 /* PopupShop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PopupShop.cpp; sourceTree = "<group>"; };
+		BF7E7D74204E4CC100980405 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		BF7E7D75204E4CC100980405 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		BF7E7D77204E4CED00980405 /* GameTL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameTL.cpp; sourceTree = "<group>"; };
+		BF7E7D78204E4CED00980405 /* GameTL.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameTL.hpp; sourceTree = "<group>"; };
+		BF7E7D7A204E4D0800980405 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		BF7E7D7B204E4D0800980405 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		BF7E7D7D204E4D2B00980405 /* Card.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		BF7E7D7E204E4D2B00980405 /* Card.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Card.hpp; sourceTree = "<group>"; };
+		BF7E7D80204E507900980405 /* CardList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CardList.cpp; sourceTree = "<group>"; };
+		BF7E7D81204E507900980405 /* CardList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CardList.hpp; sourceTree = "<group>"; };
 		BFC0977A1FCFB56400AC2E73 /* AbstractScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractScene.cpp; sourceTree = "<group>"; };
 		BFC0977B1FCFB56400AC2E73 /* AbstractScene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractScene.hpp; sourceTree = "<group>"; };
 		BFF3CD211FBC217C00A6AE29 /* Game2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game2D.h; sourceTree = "<group>"; };
@@ -398,6 +413,7 @@
 		24079D371F28335300501F01 /* MiniGame */ = {
 			isa = PBXGroup;
 			children = (
+				BF7E7D72204E4C9400980405 /* TienLen */,
 				24F2DEDE1F4EAEB5009E0469 /* GameDefine.h */,
 				24079D3A1F28335300501F01 /* DBAnimation.cpp */,
 				24079D3B1F28335300501F01 /* DBAnimation.h */,
@@ -774,6 +790,23 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		BF7E7D72204E4C9400980405 /* TienLen */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E7D74204E4CC100980405 /* Player.cpp */,
+				BF7E7D75204E4CC100980405 /* Player.hpp */,
+				BF7E7D77204E4CED00980405 /* GameTL.cpp */,
+				BF7E7D78204E4CED00980405 /* GameTL.hpp */,
+				BF7E7D7A204E4D0800980405 /* Game.cpp */,
+				BF7E7D7B204E4D0800980405 /* Game.hpp */,
+				BF7E7D7D204E4D2B00980405 /* Card.cpp */,
+				BF7E7D7E204E4D2B00980405 /* Card.hpp */,
+				BF7E7D80204E507900980405 /* CardList.cpp */,
+				BF7E7D81204E507900980405 /* CardList.hpp */,
+			);
+			path = TienLen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -913,10 +946,12 @@
 				240A81541F0E1639009893B7 /* JSONDataParser.cpp in Sources */,
 				240A814F1F0E1639009893B7 /* ArmatureData.cpp in Sources */,
 				240A81521F0E1639009893B7 /* TimelineData.cpp in Sources */,
+				BF7E7D7C204E4D0800980405 /* Game.cpp in Sources */,
 				24079D441F28335300501F01 /* Dealer.cpp in Sources */,
 				BFC0977C1FCFB56400AC2E73 /* AbstractScene.cpp in Sources */,
 				2430485A1F692B760081D61E /* ShaderNode.cpp in Sources */,
 				24079D451F28335300501F01 /* Popup.cpp in Sources */,
+				BF7E7D79204E4CED00980405 /* GameTL.cpp in Sources */,
 				2489FD791F46E43500D14F0B /* MainScene.cpp in Sources */,
 				2429EF851F4BEC650095D2B8 /* GameScene.cpp in Sources */,
 				242AEEAE1F6A3D5F0012C627 /* AboutScene.cpp in Sources */,
@@ -940,6 +975,7 @@
 				BFF3CD231FBC217E00A6AE29 /* Game2D.cpp in Sources */,
 				24ECF2BC1F5FC4B9000A35A8 /* PopupResult.cpp in Sources */,
 				241F02941F21EBB800323F34 /* CoreElement.cpp in Sources */,
+				BF7E7D76204E4CC100980405 /* Player.cpp in Sources */,
 				240A81451F0E1639009893B7 /* AnimationState.cpp in Sources */,
 				240A81AF1F0E1DD6009893B7 /* CCTextureData.cpp in Sources */,
 				240A81671F0E1639009893B7 /* TextureData.cpp in Sources */,
@@ -950,11 +986,13 @@
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				242AEEAF1F6A3D5F0012C627 /* Game3D.cpp in Sources */,
+				BF7E7D82204E507900980405 /* CardList.cpp in Sources */,
 				240A814A1F0E1639009893B7 /* Slot.cpp in Sources */,
 				240A81531F0E1639009893B7 /* DataParser.cpp in Sources */,
 				24FBDA6D1F3C78C500B21CFB /* AppDelegate.cpp in Sources */,
 				240A81491F0E1639009893B7 /* Bone.cpp in Sources */,
 				240A81441F0E1639009893B7 /* Animation.cpp in Sources */,
+				BF7E7D7F204E4D2B00980405 /* Card.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
