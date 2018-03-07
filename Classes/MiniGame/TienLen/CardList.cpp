@@ -4,16 +4,15 @@
 //
 //  Created by TrungHieu on 3/6/18.
 //
-#include <stdio.h>
-#include <iostream>
-#include "cocos2d.h"
 #include "CardList.hpp"
-using namespace std;
-using namespace cocos2d;
-#include "Card.hpp"
-class CardList: public LayerColor
+bool CardList::init()
 {
-public:
-    CC_SYNTHESIZE(Vector<Card*>, vCard, VCard);
-    CC_SYNTHESIZE(Vector<Card*>, vFireCard, vFireCard);
-};
+    bool pRet = false;
+    if (LayerColor::initWithColor(Color4B(100, 100, 200, 0)))
+    {
+        this->setContentSize(Size(WIDTH_CARD*13, HEIGHT_CARD));
+        setTouchEnabled(true);
+        pRet = true;
+    }
+    return pRet;
+}

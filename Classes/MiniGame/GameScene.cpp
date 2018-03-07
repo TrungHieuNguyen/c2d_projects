@@ -241,7 +241,7 @@ bool GameScene::init()
         }
         Card* card = Card::create();
         card->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
-        card->setPosition(Vec2(100+offsetX*30,600 - offsetY*100));
+        card->setPosition(Vec2(400+offsetX*50,600 - offsetY*100));
         card->set52(j);
         card->flip();
         this->addChild(card,10);

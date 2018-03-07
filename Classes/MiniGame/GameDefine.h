@@ -19,7 +19,8 @@
 #define Z_ODER_HUD 2
 #define Z_ODER_POPUP 3
 
-
+#define WIDTH_CARD 147
+#define HEIGHT_CARD 180
 
 ///////////////////////////////////////////////////
 //         CSB DEFINED
