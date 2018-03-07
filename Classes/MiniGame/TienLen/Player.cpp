@@ -24,22 +24,19 @@ void Player::initContent()
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     //setIgnoreAnchorPointForPosition(false);
-    setAnchorPoint(Point(0.5f, 0.5f));
+    //setAnchorPoint(Vec2::ANCHOR_MIDDLE);
     sprAvatar = Sprite::create("res/images/Icon-76.png");
     setContentSize(sprAvatar->getContentSize());
     sprAvatar->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
-    sprAvatar->setPosition(Vec2(getContentSize().width/2,getContentSize().height/2));
-    //sprAvatar->setScale(0.7);
+    //sprAvatar->setPosition(Vec2(getContentSize().width/2,getContentSize().height/2));
+    sprAvatar->setPosition(Vec2(0,0));
+    sprAvatar->setScale(0.7);
     addChild(sprAvatar);
     
     return;
 }
 void Player::initPlayerType(PlayerType _type)
 {
-    //Size size =  Director::getInstance()->getOpenGLView()->getVisibleSize();
-    //auto visibleSize = Director::getInstance()->getVisibleSize();
-    //Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    //Size size =  getContentSize();
     Size size =  Director::getInstance()->getOpenGLView()->getVisibleSize();
     mType = _type;
     
@@ -47,7 +44,7 @@ void Player::initPlayerType(PlayerType _type)
     {
         case PlayerLeft:
         {
-            mPosition = Vec2(0, 0);
+            mPosition = Vec2(100, size.height/2);
             break;
         }
         case PlayerRight:
@@ -70,5 +67,4 @@ void Player::initPlayerType(PlayerType _type)
     }
     
     setPosition(convertToWorldSpace(mPosition));
-    //sprAvatar->setPosition(mPosition);
 }

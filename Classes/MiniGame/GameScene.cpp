@@ -15,6 +15,7 @@
 #include "PopupShop.hpp"
 
 #include "MainScene.hpp"
+#include "Card.hpp"
 USING_NS_CC;
 
 Scene* GameScene::createScene()
@@ -206,7 +207,7 @@ bool GameScene::init()
 //
 //
 
-    _player = Sprite::create("res/images/Icon-76.png");
+    _player = Sprite::create("res/images/card/cardback.png");
     _player->setPosition(Vec2(10,500));
     this->addChild(_player,6);
     
@@ -222,11 +223,30 @@ bool GameScene::init()
     for(int i=0; i< 4;i++)
     {
         Player* player = Player::create();
+        player->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
         vPlayer.pushBack(player);
         player->initPlayerType((PlayerType) i);
+        //player->setPosition(Vec2(0,0));
         addChild(player,10);
     }
-
+    int offsetX = 0;
+    int offsetY = 0;
+    for(int j=0; j< 52;j++)
+    {
+       
+        if(j%13==0)
+        {
+            offsetY++;
+            offsetX = 0;
+        }
+        Card* card = Card::create();
+        card->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
+        card->setPosition(Vec2(100+offsetX*30,600 - offsetY*100));
+        card->set52(j);
+        card->flip();
+        this->addChild(card,10);
+        offsetX++;
+    }
     //player->setPosition(100,100);
     ///AbstractScene::showGold(10000,false);
     //AbstractScene::showResult(PlayerRank::RANK_NHAT,5);
