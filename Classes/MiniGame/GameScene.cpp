@@ -241,7 +241,7 @@ bool GameScene::init()
     
     
     
-     dealCards();
+   
     return true;
 }
 void GameScene::update(float dt)

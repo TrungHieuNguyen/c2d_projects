@@ -15,6 +15,8 @@ bool CardList::init()
     {
         this->setContentSize(Size(WIDTH_CARD*13, HEIGHT_CARD));
         setTouchEnabled(true);
+        vCard.clear();
+        vFireCard.clear();
         pRet = true;
     }
     return pRet;
@@ -41,5 +43,6 @@ void CardList::setPlayer(Player* player)
 void CardList::addCard(Card *c)
 {
     vCard.pushBack(c);
+    c->setPosition(vCard.size()*30, 0);
     addChild(c);
 }
