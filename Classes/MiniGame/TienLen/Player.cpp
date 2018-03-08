@@ -6,6 +6,8 @@
 //
 
 #include "Player.hpp"
+#include "CardList.hpp"
+
 Player::Player(){}
 Player::~Player(){}
 
@@ -32,6 +34,10 @@ void Player::initContent()
     sprAvatar->setPosition(Vec2(0,0));
     sprAvatar->setScale(0.7);
     addChild(sprAvatar);
+    Cards = CardList::create();
+ //   Cards->initCards(3);
+//    //Cards->setParent(this);
+    addChild(Cards);
     
     return;
 }

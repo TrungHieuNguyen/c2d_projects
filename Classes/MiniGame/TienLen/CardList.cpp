@@ -5,14 +5,41 @@
 //  Created by TrungHieu on 3/6/18.
 //
 #include "CardList.hpp"
+#include "Player.hpp"
+CardList::~CardList(){}
+CardList::CardList(){}
 bool CardList::init()
 {
     bool pRet = false;
-    if (LayerColor::initWithColor(Color4B(100, 100, 200, 0)))
+    if (LayerColor::initWithColor(Color4B(100, 100, 200, 200)))
     {
         this->setContentSize(Size(WIDTH_CARD*13, HEIGHT_CARD));
         setTouchEnabled(true);
         pRet = true;
     }
     return pRet;
+}
+void CardList::initCards(int number)
+{
+    vCard.clear();
+    vFireCard.clear();
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+     this->setContentSize(Size(WIDTH_CARD*number, HEIGHT_CARD));
+    for (int i = 0; i < number; i++)
+    {
+        Card *card = Card::create();
+        card->set(CardTypeBich, XI);
+        card->setPosition(i*30, 0);
+        vCard.pushBack(card);
+        addCard(card);
+    }
+}
+void CardList::setPlayer(Player* player)
+{
+    mPlayer = player;
+}
+void CardList::addCard(Card *c)
+{
+    vCard.pushBack(c);
+    addChild(c);
 }

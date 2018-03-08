@@ -17,6 +17,7 @@ using namespace ui;
 #include "GameDefine.h"
 #include "AbstractScene.hpp"
 #include "TienLen/Player.hpp"
+#include "TienLen/Card.hpp"
 class GameScene : public AbstractScene
 {
 
@@ -35,6 +36,7 @@ class GameScene : public AbstractScene
     float _elapseTransTime;
     Sprite* _player;
     Vector<Player*> vPlayer;
+    Vector<Card*> vCard52;
     
 public:
     static cocos2d::Scene* createScene();
@@ -54,7 +56,7 @@ public:
     virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchMoved(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchCancelled(cocos2d::Touch*, cocos2d::Event*);
-
+    void dealCards();
  
     
     

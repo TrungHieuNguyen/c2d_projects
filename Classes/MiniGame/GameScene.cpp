@@ -42,7 +42,7 @@ bool GameScene::init()
     auto layerBG = CSLoader::createNode(SCENE_GAME_CSB);
     layerBG->setAnchorPoint(Point(0.5f, 0.5f));
     layerBG->setPosition(layerBG->getContentSize()/2);
-    //addChild(layerBG,-1);
+    addChild(layerBG,-1);
     
     Button* btnA = (Button*) layerBG->getChildByName("btnA");
     btnA->setPressedActionEnabled(true);
@@ -56,21 +56,7 @@ bool GameScene::init()
     Button* btnB = (Button*) layerBG->getChildByName("btnB");
     btnB->setPressedActionEnabled(true);
     btnB->addClickEventListener([&,btnB](Ref* sender){
-        PopupShop* p = PopupShop::gI();
-        if (p->getParent() == NULL)
-        {
-            p->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2, Director::getInstance()->getVisibleSize().height/2));
-            addChild(p, Z_ODER_POPUP);
-            p->fadeInBgDark();
-            p->open();
-        }
-        
-        CallFuncN * cal = CallFuncN::create([&](Ref *target){
-            Button* btn = (Button*)target;
-            btn->setEnabled(true);
-        });
-        btnB->setEnabled(false);
-        btnB->runAction(Sequence::create(DelayTime::create(3),cal, NULL));
+        dealCards();
     });
     //LayerCard
     auto LayerCard = layerBG->getChildByName("LayerCard");
@@ -231,9 +217,10 @@ bool GameScene::init()
     }
     int offsetX = 0;
     int offsetY = 0;
+    vCard52.clear();
     for(int j=0; j< 52;j++)
     {
-       
+
         if(j%13==0)
         {
             offsetY++;
@@ -241,15 +228,20 @@ bool GameScene::init()
         }
         Card* card = Card::create();
         card->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
-        card->setPosition(Vec2(400+offsetX*50,600 - offsetY*100));
+        //card->setPosition(Vec2(400+offsetX*50,600 - offsetY*100));
         card->set52(j);
         card->flip();
-        this->addChild(card,10);
+        vCard52.pushBack(card);
+        //this->addChild(card,10);
         offsetX++;
     }
     //player->setPosition(100,100);
     ///AbstractScene::showGold(10000,false);
     //AbstractScene::showResult(PlayerRank::RANK_NHAT,5);
+    
+    
+    
+     dealCards();
     return true;
 }
 void GameScene::update(float dt)
@@ -382,6 +374,14 @@ void GameScene::updateSliderBar(int value)
 }
 
 
+void GameScene::dealCards()
+{
+    for(int i=0; i<vCard52.size();i++){
+        Card* card = (Card*) vCard52.at(i);
+        Player *player = (Player*) vPlayer.at(i % vPlayer.size());
+        player->Cards->addCard(card);
+    }
 
+}
 
 

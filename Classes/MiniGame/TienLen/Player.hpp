@@ -10,6 +10,7 @@
 #include "cocos2d.h"
 #include "../GameDefine.h"
 #include <stdio.h>
+#include "Player.hpp"
 #include "CardList.hpp"
 USING_NS_CC;
 using namespace::cocos2d;
@@ -27,7 +28,9 @@ class Player : public LayerColor
     PlayerType mType;
     Sprite * sprAvatar;
     Vec2 mPosition;
+   
     public:
+    CardList* Cards;
     Player();
     virtual ~Player();
     bool init();
