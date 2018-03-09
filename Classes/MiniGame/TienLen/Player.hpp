@@ -14,15 +14,8 @@
 #include "CardList.hpp"
 USING_NS_CC;
 using namespace::cocos2d;
-enum PlayerType
-{
-    PlayerNoThing   =   -1,
-    PlayerBottom    =   0,
-    PlayerLeft      =   1,
-    PlayerTop       =   2,
-    PlayerRight     =   3,
-};
 
+class CardList;
 class Player : public LayerColor
 {
     PlayerType mType;

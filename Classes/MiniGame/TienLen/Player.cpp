@@ -32,7 +32,7 @@ void Player::initContent()
     sprAvatar->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
     //sprAvatar->setPosition(Vec2(getContentSize().width/2,getContentSize().height/2));
     sprAvatar->setPosition(Vec2(0,0));
-    sprAvatar->setScale(0.7);
+    sprAvatar->setScale(0.6);
     addChild(sprAvatar);
     Cards = CardList::create();
  //   Cards->initCards(3);

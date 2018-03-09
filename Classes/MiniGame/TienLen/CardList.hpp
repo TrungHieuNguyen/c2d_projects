@@ -12,10 +12,12 @@
 #include <stdio.h>
 #include <iostream>
 #include "cocos2d.h"
-
+#include "../GameDefine.h"
 using namespace std;
 using namespace cocos2d;
 #include "Card.hpp"
+#include "Player.hpp"
+
 class Player;
 class CardList: public LayerColor
 {
@@ -24,6 +26,7 @@ public:
     Player* mPlayer;
     //CC_SYNTHESIZE(Vector<Card*>, vCard, VCard);
     CC_SYNTHESIZE(Vector<Card*>, vFireCard, vFireCard);
+    CC_SYNTHESIZE(PlayerType, typePlayer, TypePlayer);
     CREATE_FUNC(CardList);
     virtual ~CardList();
     CardList();

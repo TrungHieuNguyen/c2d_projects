@@ -212,6 +212,7 @@ bool GameScene::init()
         player->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
         vPlayer.pushBack(player);
         player->initPlayerType((PlayerType) i);
+        player->Cards->setTypePlayer((PlayerType)i);
         //player->setPosition(Vec2(0,0));
         addChild(player,10);
     }

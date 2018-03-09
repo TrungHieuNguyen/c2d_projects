@@ -45,7 +45,14 @@
 #define FONT_BITMAP_LOSE_EFF "fonts/font_lost_eff.fnt"
 
 
-
+enum PlayerType
+{
+    PlayerNoThing   =   -1,
+    PlayerBottom    =   0,
+    PlayerLeft      =   1,
+    PlayerTop       =   2,
+    PlayerRight     =   3,
+};
 
 
 
