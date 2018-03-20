@@ -2,7 +2,9 @@
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 
-
+USING_NS_CC;
+using namespace cocos2d;
+using namespace cocos2d::ui;
 using namespace std;
 using namespace cocostudio::timeline;
 
@@ -29,6 +31,7 @@ bool HelloWorld::init()
         return false;
     }
     vBallGrid = std::vector<vector<int>>(GRID_ROW_MAX , std::vector<int> (BALL_COL_MAX,0));
+    vBalls.clear();
     auto touchListener = EventListenerTouchOneByOne::create();
     touchListener->setSwallowTouches(true);
     touchListener->onTouchBegan = CC_CALLBACK_2(HelloWorld::onTouchBegan, this);
@@ -41,6 +44,8 @@ bool HelloWorld::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     auto rootNode = CSLoader::createNode("SceneGame.csb");
     addChild(rootNode,-1);
+    
+    addHUD();
     sprCanon = (Sprite*) rootNode->getChildByName("sprCanon");
 //    TMXTiledMap* _tileMap = TMXTiledMap::create("res/untitled.tmx");
 //    addChild(_tileMap,-1);
@@ -105,9 +110,9 @@ bool HelloWorld::onTouchBegan(Touch* touch, Event* event)
             ball->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
             ball->setPosition(posOfGridCord(p));
             ball->setTag(p.x +100 + p.y*BALL_COL_MAX);
-            auto label = Label::createWithSystemFont(StringUtils::toString(ball->getTag()) , "Arial", 24);
+            auto label = Label::createWithSystemFont(StringUtils::toString(ball->getTag()) , "Arial", BALL_W/3);
             ball->addChild(label);
-            label->setPosition(25, 25);
+            label->setPosition(BALL_W/2, BALL_W/2);
             addChild(ball);
             
         }
@@ -214,15 +219,20 @@ int HelloWorld::getTagNumber(Point p)
 
 void HelloWorld::resetGame()
 {
-    
+    for (Sprite * ball: vBalls) {
+        if (ball != nullptr && ball->getParent() != nullptr)
+            ball->removeFromParent();
+    }
+    vBalls.clear();
+    //vBallGrid.clear();
 }
 void HelloWorld::startGame()
 {
+    resetGame();
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     int x = origin.x;
     int y = 1250;
-   
     //std::vector<std::vector<int>> fog(10, std::vector<int>(15));
     for(int i = 0; i< BALL_ROW_MAX; i++ )
     {
@@ -235,17 +245,38 @@ void HelloWorld::startGame()
             //Ball* ball = new Ball();
             Sprite* ball = Sprite::create(path);
             ball->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
-            ball->setPosition(Vec2(x + j*50,y - i*50));
+            ball->setPosition(Vec2(x + j*BALL_W,y - i*BALL_W));
             auto rotation = RotateBy::create(1.0f, 90.0f);
             //ball->runAction(RepeatForever::create(rotation));
             ball->setTag(j+ (i*BALL_COL_MAX) + 100);
-            auto label = Label::createWithSystemFont(StringUtils::toString(ball->getTag()) , "Arial", 24);
+            auto label = Label::createWithSystemFont(StringUtils::toString(ball->getTag()) , "Arial", BALL_W/3);
             ball->addChild(label);
-            label->setPosition(25, 25);
+            label->setPosition(BALL_W/2, BALL_W/2);
             addChild(ball);
             rowOfBall.push_back(random_v);
             vBallGrid[i][j] = random_v;
+            vBalls.push_back(ball);
         }
         //vBallGrid.push_back(rowOfBall);
     }
+}
+void HelloWorld::addHUD()
+{
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    Button* btnPlay = Button::create("res/image/button/btn_boluot.png", "res/image/button/btn_boluot2.png", "");
+    btnPlay->setScale(0.6f);
+    btnPlay->setPosition(Vec2(btnPlay->getBoundingBox().size.width/2 +10,30));
+    addChild(btnPlay,100);
+    btnPlay->addClickEventListener([&](Ref* sender){
+        log("btnPlay clicked");
+        startGame();
+    });
+    Button* btnRestart = Button::create("res/image/button/btn_boluot.png", "res/image/button/btn_boluot2.png", "");
+    btnRestart->setScale(0.6f);
+    btnRestart->setPosition(Vec2(visibleSize.width - btnRestart->getBoundingBox().size.width/2 - 10,30));
+    addChild(btnRestart,100);
+    
+    btnRestart->addClickEventListener([&](Ref* sender){
+        log("btnRestart clicked");
+    });
 }

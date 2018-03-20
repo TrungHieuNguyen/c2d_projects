@@ -1,9 +1,9 @@
 #ifndef __HELLOWORLD_SCENE_H__
 #define __HELLOWORLD_SCENE_H__
 
-#define BALL_W 50
+#define BALL_W 72
 #define BALL_SIZE 150
-#define BALL_COL_MAX 15
+#define BALL_COL_MAX 12
 #define BALL_ROW_MAX 15
 #define GRID_COL_MAX 15
 #define GRID_ROW_MAX 30
@@ -21,6 +21,7 @@ class Ball : public Sprite
 class HelloWorld : public cocos2d::Layer
 {
     std::vector<std::vector<int>> vBallGrid;
+    std::vector<Sprite*> vBalls;
     Sprite* sprCanon;
     float _prevAngle;
 public:
@@ -37,6 +38,7 @@ public:
     Point posOfGridCord(Point);
     int getTagNumber(Point p);
     void findMatchColor(Point p,int color);
+    void addHUD();
     void resetGame();
     void startGame();
     // implement the "static create()" method manually
