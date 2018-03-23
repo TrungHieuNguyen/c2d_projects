@@ -16,7 +16,7 @@
 #include "AbstractScene.hpp"
 using namespace cocos2d;
 using namespace ui;
-
+#include "HUDLayer.hpp"
 class GameTiledMap : public AbstractScene
 {
     Node* layerBG;
@@ -26,6 +26,9 @@ class GameTiledMap : public AbstractScene
     TMXLayer *_foreground;
     TMXLayer *_meta;
     Sprite *_player;
+    HudLayer *_hud;
+    int _numCollected;
+    
 public:
     static cocos2d::Scene* createScene();
     
@@ -37,7 +40,7 @@ public:
     void initComponents();
     // implement the "static create()" method manually
     CREATE_FUNC(GameTiledMap);
-    void registerTouchDispatcher();
+    void registerTouch();
     virtual bool onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchMoved(cocos2d::Touch*, cocos2d::Event*);

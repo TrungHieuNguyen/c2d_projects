@@ -83,6 +83,7 @@
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
 		BF5EEC4B1FD7911900E0FA18 /* PopupShop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF5EEC4A1FD7911900E0FA18 /* PopupShop.cpp */; };
+		BF6210E92064AF010017D34B /* HUDLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6210E72064AF010017D34B /* HUDLayer.cpp */; };
 		BF7E7D76204E4CC100980405 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D74204E4CC100980405 /* Player.cpp */; };
 		BF7E7D79204E4CED00980405 /* GameTL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D77204E4CED00980405 /* GameTL.cpp */; };
 		BF7E7D7C204E4D0800980405 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D7A204E4D0800980405 /* Game.cpp */; };
@@ -307,6 +308,8 @@
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BF5EEC481FD7911900E0FA18 /* PopupShop.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PopupShop.hpp; sourceTree = "<group>"; };
 		BF5EEC4A1FD7911900E0FA18 /* PopupShop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PopupShop.cpp; sourceTree = "<group>"; };
+		BF6210E72064AF010017D34B /* HUDLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUDLayer.cpp; sourceTree = "<group>"; };
+		BF6210E82064AF010017D34B /* HUDLayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HUDLayer.hpp; sourceTree = "<group>"; };
 		BF7E7D74204E4CC100980405 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		BF7E7D75204E4CC100980405 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		BF7E7D77204E4CED00980405 /* GameTL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameTL.cpp; sourceTree = "<group>"; };
@@ -443,6 +446,8 @@
 				243048591F692B760081D61E /* ShaderNode.hpp */,
 				BFC0977A1FCFB56400AC2E73 /* AbstractScene.cpp */,
 				BFC0977B1FCFB56400AC2E73 /* AbstractScene.hpp */,
+				BF6210E72064AF010017D34B /* HUDLayer.cpp */,
+				BF6210E82064AF010017D34B /* HUDLayer.hpp */,
 			);
 			path = MiniGame;
 			sourceTree = "<group>";
@@ -948,6 +953,7 @@
 				240A81521F0E1639009893B7 /* TimelineData.cpp in Sources */,
 				BF7E7D7C204E4D0800980405 /* Game.cpp in Sources */,
 				24079D441F28335300501F01 /* Dealer.cpp in Sources */,
+				BF6210E92064AF010017D34B /* HUDLayer.cpp in Sources */,
 				BFC0977C1FCFB56400AC2E73 /* AbstractScene.cpp in Sources */,
 				2430485A1F692B760081D61E /* ShaderNode.cpp in Sources */,
 				24079D451F28335300501F01 /* Popup.cpp in Sources */,

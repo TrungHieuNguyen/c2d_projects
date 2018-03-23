@@ -12,6 +12,10 @@ Scene* GameTiledMap::createScene()
     auto scene = Scene::create();
     auto layer = GameTiledMap::create();
     scene->addChild(layer);
+    HudLayer *hud = new HudLayer();
+    hud->init();
+    scene->addChild(hud,5);
+    layer->_hud = hud;
     return scene;
 }
 
@@ -31,7 +35,7 @@ bool GameTiledMap::init()
 
 void GameTiledMap::initComponents()
 {
-    registerTouchDispatcher();
+    registerTouch();
     layerBG = CSLoader::createNode(SCENE_GAME_TILEDMAP_CSB);
     addChild(layerBG, -1);
 
@@ -66,6 +70,7 @@ void GameTiledMap::initComponents()
     ValueMap spawnPoint = objectGroup->getObject("SpawnPoint");
     float x  = spawnPoint["x"].asFloat();
     float y  = spawnPoint["y"].asFloat();
+
     
     _player = new CCSprite();
     _player->initWithFile("res/Player.png");
@@ -74,7 +79,7 @@ void GameTiledMap::initComponents()
     this->addChild(_player,2);
     this->setViewPointCenter(_player->getPosition());
     
-    
+
 
     
 }
@@ -110,10 +115,13 @@ void GameTiledMap::setPlayerPosition(CCPoint position)
             if (collectible && (collectible->compare("True") == 0)) {
                 _meta->removeTileAt(tileCoord);
                 _foreground->removeTileAt(tileCoord);
+                _numCollected++;
+                _hud->numCollectedChanged(_numCollected);
             }
         }
     }
     _player->setPosition(position);
+    
 }
 
 CCPoint GameTiledMap::tileCoordForPosition(CCPoint position)
@@ -175,7 +183,7 @@ void GameTiledMap::onTouchCancelled(cocos2d::Touch*, cocos2d::Event*)
 {
     
 }
-void GameTiledMap::registerTouchDispatcher() {
+void GameTiledMap::registerTouch() {
     //CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
     auto touchListener = EventListenerTouchOneByOne::create();
     
