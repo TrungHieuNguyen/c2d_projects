@@ -37,7 +37,7 @@ public:
     void initComponents();
     // implement the "static create()" method manually
     CREATE_FUNC(GameTiledMap);
-    
+    void registerTouchDispatcher();
     virtual bool onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchMoved(cocos2d::Touch*, cocos2d::Event*);

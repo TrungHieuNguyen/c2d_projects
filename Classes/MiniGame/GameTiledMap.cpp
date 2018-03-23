@@ -31,6 +31,7 @@ bool GameTiledMap::init()
 
 void GameTiledMap::initComponents()
 {
+    registerTouchDispatcher();
     layerBG = CSLoader::createNode(SCENE_GAME_TILEDMAP_CSB);
     addChild(layerBG, -1);
 
@@ -66,15 +67,18 @@ void GameTiledMap::initComponents()
     float x  = spawnPoint["x"].asFloat();
     float y  = spawnPoint["y"].asFloat();
     
-
-    //this->setViewPointCenter(_player->getPosition());
+    _player = new CCSprite();
+    _player->initWithFile("res/Player.png");
+    _player->setPosition(ccp(x,y));
+    
+    this->addChild(_player,2);
+    this->setViewPointCenter(_player->getPosition());
     
     
 
     
 }
 void GameTiledMap::setViewPointCenter(Point position) {
-    return;
     
     CCSize winSize = Director::sharedDirector()->getWinSize();
     
@@ -125,7 +129,60 @@ void GameTiledMap::menuCloseCallback(Ref* pSender)
     exit(0);
 #endif
 }
-bool GameTiledMap::onTouchBegan(cocos2d::Touch*, cocos2d::Event*){}
-void GameTiledMap::onTouchEnded(cocos2d::Touch*, cocos2d::Event*){}
-void GameTiledMap::onTouchMoved(cocos2d::Touch*, cocos2d::Event*){}
-void GameTiledMap::onTouchCancelled(cocos2d::Touch*, cocos2d::Event*){}
+bool GameTiledMap::onTouchBegan(cocos2d::Touch*, cocos2d::Event*)
+{
+    return true;
+}
+void GameTiledMap::onTouchEnded(cocos2d::Touch* touch, cocos2d::Event*)
+{
+    CCPoint touchLocation = touch->getLocationInView();
+    touchLocation = CCDirector::sharedDirector()->convertToGL(touchLocation);
+    touchLocation = this->convertToNodeSpace(touchLocation);
+    
+    CCPoint playerPos = _player->getPosition();
+    CCPoint diff = ccpSub(touchLocation, playerPos);
+    
+    if ( abs(diff.x) > abs(diff.y) ) {
+        if (diff.x > 0) {
+            playerPos.x += _tileMap->getTileSize().width;
+        } else {
+            playerPos.x -= _tileMap->getTileSize().width;
+        }
+    } else {
+        if (diff.y > 0) {
+            playerPos.y += _tileMap->getTileSize().height;
+        } else {
+            playerPos.y -= _tileMap->getTileSize().height;
+        }
+    }
+    
+    // safety check on the bounds of the map
+    if (playerPos.x <= (_tileMap->getMapSize().width * _tileMap->getTileSize().width) &&
+        playerPos.y <= (_tileMap->getMapSize().height * _tileMap->getTileSize().height) &&
+        playerPos.y >= 0 &&
+        playerPos.x >= 0 )
+    {
+        this->setPlayerPosition(playerPos);
+    }
+    
+    this->setViewPointCenter(_player->getPosition());
+}
+void GameTiledMap::onTouchMoved(cocos2d::Touch*, cocos2d::Event*)
+{
+    
+}
+void GameTiledMap::onTouchCancelled(cocos2d::Touch*, cocos2d::Event*)
+{
+    
+}
+void GameTiledMap::registerTouchDispatcher() {
+    //CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
+    auto touchListener = EventListenerTouchOneByOne::create();
+    
+    touchListener->onTouchBegan = CC_CALLBACK_2(GameTiledMap::onTouchBegan, this);
+    touchListener->onTouchEnded = CC_CALLBACK_2(GameTiledMap::onTouchEnded, this);
+    touchListener->onTouchMoved = CC_CALLBACK_2(GameTiledMap::onTouchMoved, this);
+    touchListener->onTouchCancelled = CC_CALLBACK_2(GameTiledMap::onTouchCancelled, this);
+    
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
+}
