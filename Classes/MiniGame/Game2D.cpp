@@ -1,6 +1,6 @@
 #include "Game2D.h"
 #include "AbstractScene.hpp"
-
+#include "Player2D.hpp"
 USING_NS_CC;
 
 using namespace cocostudio::timeline;
@@ -76,9 +76,15 @@ bool Game2D::init()
     
     
     sprHero= Sprite::createWithSpriteFrameName("hero_run_01.png");
-    sprHero->setPosition(Vec2(visibleSize.width/2 + origin.x, 300));
+    //sprHero->setPosition(Vec2(visibleSize.width/2 + origin.x, 300));
     addChild(sprHero);
-//
+    //sprHero->stopAllActions();
+    Vector< SpriteFrame*> frames = getAnimation("hero_stand_0%d.png",5);
+    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+    animation->retain();
+    //sprHero->runAction(Animate::create(animation));
+    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+    stateHero = HeroState::STAND;
 //    SpriteBatchNode* spritebatch = SpriteBatchNode::create("res/plist/anim_hero_run.png");
 //    spritebatch->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
 //    addChild(spritebatch);
@@ -129,6 +135,12 @@ bool Game2D::init()
     sprHero->setScale(2.0f);
      this->schedule(schedule_selector(Game2D::update));
      AbstractScene::showHUD();
+    
+    sprPlayer = Player2D::create();
+    sprPlayer->setScale(2.0f);
+    
+    sprPlayer->setPosition(Vec2(visibleSize.width/2 + origin.x, 300));
+    addChild(sprPlayer);
     return true;
 }
  Vector< SpriteFrame*> Game2D::getAnimation(const char *format, int count)
@@ -233,171 +245,31 @@ void Game2D::onHurt(Ref* pSender, ui::Widget::TouchEventType eEventType)
     }
 }
 void Game2D::onUp(Ref* pSender, ui::Widget::TouchEventType eEventType){
-    switch (eEventType)
-    {
-        case ui::Widget::TouchEventType::BEGAN:
-            if( stateHero != HeroState::UP)
-            {
-               
-                sprHero->stopAllActions();
-                Vector< SpriteFrame*> frames = getAnimation("hero_flying_0%d.png",4);
-                Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
-                animation->retain();
-                //sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                stateHero = HeroState::UP;
-                MoveBy * moveTo = MoveBy::create(0.2, Point(0,100));
-                auto revert = MoveBy::create(0.1, Point(0,-100));
-                auto spa = Spawn::createWithTwoActions(moveTo, Animate::create(animation));
-                
-                sprHero->stopAllActions();
-                Vector< SpriteFrame*> frames2 = getAnimation("hero_stand_0%d.png",5);
-                Animation* animation2 = Animation::createWithSpriteFrames(frames2, 0.1f);
-                animation2->retain();
-                auto spa2 = Spawn::createWithTwoActions(revert, RepeatForever::create(Animate::create(animation2)));
-                
-                auto callFuncN = CallFuncN::create([&](Ref * sender)
-                                                   {
-                                                      stateHero = HeroState::STAND;
-                                                   });
-                auto seq= Sequence::create(spa, DelayTime::create(0.1f), spa2, callFuncN, nullptr);
-                sprHero->runAction(seq);
-                //sprHero->runAction(Sequence::create(moveTo,DelayTime::create(0.5), revert, NULL));
-            }
-
-            break;
-        case ui::Widget::TouchEventType::ENDED:
-            if( stateHero != HeroState::STAND)
-            {
-//                sprHero->stopAllActions();
-//                Vector< SpriteFrame*> frames = getAnimation("hero_stand_0%d.png",5);
-//                Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-//                animation->retain();
-//                //sprHero->runAction(Animate::create(animation));
-//                sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-//                stateHero = HeroState::STAND;
-            }
-            break;
-    }
+  
+    sprPlayer->setPositionY(sprPlayer->getPositionY()+10);
             
 }
 void Game2D::onDown(Ref* pSender, ui::Widget::TouchEventType eEventType)
 {
-    switch (eEventType)
-    {
-        case ui::Widget::TouchEventType::BEGAN:
-            if( stateHero != HeroState::DOWN)
-            {
-                sprHero->stopAllActions();
-                Vector< SpriteFrame*> frames = getAnimation("hero_jump_0%d.png",4);
-                Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
-                animation->retain();
-                sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                stateHero = HeroState::DOWN;
-                MoveBy * moveTo = MoveBy::create(0.3, Point(0,-50));
-                auto revert = MoveBy::create(0.3, Point(0,+50));
-                //sprHero->runAction(Sequence::create(moveTo,DelayTime::create(0.5), revert, NULL));
-            }
-            break;
-        case ui::Widget::TouchEventType::ENDED:
-            if( stateHero != HeroState::STAND)
-            {
-                sprHero->stopAllActions();
-                Vector< SpriteFrame*> frames = getAnimation("hero_stand_0%d.png",5);
-                Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-                animation->retain();
-                //sprHero->runAction(Animate::create(animation));
-                sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                stateHero = HeroState::STAND;
-            }
-            break;
-    }
-}
-void Game2D::onLeft(Ref* pSender, ui::Widget::TouchEventType eEventType){
-        switch (eEventType)
-        {
-            case ui::Widget::TouchEventType::BEGAN:
-                if( stateHero != HeroState::LEFT )
-                {
-                    stateHero = HeroState::LEFT;
-                    sprHero->stopAllActions();
-                    Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
-                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
-                    sprHero->setFlippedX(true);
-                    animation->retain();
-                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                    MoveBy * moveTo = MoveBy::create(0.3, Point(-50,0));
-                    sprHero->runAction(moveTo);
-                }
-                else
-                {
-                    MoveBy * moveTo = MoveBy::create(0.3, Point(-50,0));
-                    sprHero->runAction(moveTo);
-                }
-
-                break;
-            case ui::Widget::TouchEventType::MOVED:
-
-               break;
-            case ui::Widget::TouchEventType::ENDED:
-                if( stateHero != HeroState::STAND)
-                {
-                    sprHero->stopAllActions();
-                    Vector< SpriteFrame*> frames = getAnimation("hero_stand_0%d.png",5);
-                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-                    animation->retain();
-                    //sprHero->runAction(Animate::create(animation));
-                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                    stateHero = HeroState::STAND;
-                }
-                break;
-            case ui::Widget::TouchEventType::CANCELED:
-               
-                break;
-        }
-
-
+    sprPlayer->setPositionY(sprPlayer->getPositionY()-10);
     
 }
-void Game2D::onRight(Ref* pSender, ui::Widget::TouchEventType eEventType){
-    switch (eEventType)
-    {
-        case ui::Widget::TouchEventType::BEGAN:
-            if( stateHero != HeroState::RIGHT)
-            {
-                stateHero = HeroState::RIGHT;
-                sprHero->stopAllActions();
-                Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
-                Animation* animation = Animation::createWithSpriteFrames(frames, 0.15f);
-                animation->retain();
-                sprHero->setFlippedX(false);
-                sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                MoveBy * moveTo = MoveBy::create(0.3, Point(50,0));
-                sprHero->runAction(moveTo);
-                
-            }
-            else
-            {
-                MoveBy * moveTo = MoveBy::create(0.3, Point(50,0));
-                sprHero->runAction(moveTo);
-            }
-
-            break;
-            
-        case ui::Widget::TouchEventType::ENDED:
-            if( stateHero != HeroState::STAND)
-            {
-                sprHero->stopAllActions();
-                Vector< SpriteFrame*> frames = getAnimation("hero_stand_0%d.png",5);
-                Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-                animation->retain();
-                //sprHero->runAction(Animate::create(animation));
-                sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-                stateHero = HeroState::STAND;
-            }
-            break;
-    }
+void Game2D::onLeft(Ref* pSender, ui::Widget::TouchEventType eEventType)
+{
+    if(!sprPlayer->isFlippedX())
+        sprPlayer->setFlippedX(true);
+    sprPlayer->setStatus(HeroState::SHOOT);
+    sprPlayer->setPositionX(sprPlayer->getPositionX()-10);
 }
-void Game2D::onA(Ref* pSender, ui::Widget::TouchEventType eEventType){
+void Game2D::onRight(Ref* pSender, ui::Widget::TouchEventType eEventType)
+{
+    if(sprPlayer->isFlippedX())
+        sprPlayer->setFlippedX(false);
+    sprPlayer->setStatus(HeroState::SHOOT);
+    sprPlayer->setPositionX(sprPlayer->getPositionX()+10);
+}
+void Game2D::onA(Ref* pSender, ui::Widget::TouchEventType eEventType)
+{
     switch (eEventType)
     {
         case ui::Widget::TouchEventType::BEGAN:
@@ -428,16 +300,25 @@ void Game2D::onA(Ref* pSender, ui::Widget::TouchEventType eEventType){
 }
 void Game2D::onB(Ref* pSender, ui::Widget::TouchEventType eEventType)
 {
-        if( stateHero != HeroState::STAND)
-        {
-            sprHero->stopAllActions();
-            Vector< SpriteFrame*> frames = getAnimation("hero_stand_0%d.png",5);
-            Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-            animation->retain();
-            //sprHero->runAction(Animate::create(animation));
-             sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-             stateHero = HeroState::STAND;
-        }
+    switch (eEventType)
+    {
+        case ui::Widget::TouchEventType::BEGAN:
+            playerStatus++;
+            if(playerStatus > (int)HeroState::END) playerStatus = 0;
+            log("status...%d", playerStatus);
+            sprPlayer->setStatus(HeroState (playerStatus));
+            break;
+    }
+//        if( stateHero != HeroState::STAND)
+//        {
+//            sprHero->stopAllActions();
+//            Vector< SpriteFrame*> frames = getAnimation("hero_stand_0%d.png",5);
+//            Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
+//            animation->retain();
+//            //sprHero->runAction(Animate::create(animation));
+//             sprHero->runAction(RepeatForever::create(Animate::create(animation)));
+//             stateHero = HeroState::STAND;
+//        }
 //    if( stateHero != HeroState::DIE)
 //    {
 //        sprHero->stopAllActions();
@@ -472,5 +353,5 @@ void Game2D::onD(Ref* pSender, ui::Widget::TouchEventType eEventType){
 }
 void Game2D::update(float dt)
 {
-    log("update...%f", dt);
+    //log("update...%f", dt);
 }

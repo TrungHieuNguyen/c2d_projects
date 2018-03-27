@@ -6,22 +6,10 @@
 #include "ui/CocosGUI.h"
 #include "GameDefine.h"
 #include "AbstractScene.hpp"
+#include "Player2D.hpp"
 USING_NS_CC;
 
 
-enum class HeroState
-{
-    STAND,
-    LEFT,
-    RIGHT,
-    UP,
-    DOWN,
-    HURT,
-    ATTACH,
-    SHOOT,
-    JUMP,
-    DIE
-};
 
 class Game2D : public AbstractScene
 {
@@ -30,6 +18,8 @@ public:
     Animate * animateAttach;
     Animate * animateDizzy;
     Sprite * sprHero;
+    Player2D* sprPlayer;
+    int playerStatus;
     HeroState stateHero;
     static cocos2d::Scene* createScene();
     virtual bool init();

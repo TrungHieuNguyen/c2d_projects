@@ -56,6 +56,24 @@ enum PlayerType
 
 
 
+enum class HeroState
+{
+    STAND,
+    LEFT,
+    RIGHT,
+    UP,
+    DOWN,
+    HURT,
+    ATTACH,
+    SHOOT,
+    JUMP,
+    DIE,
+    DIZZY,
+    THROUGH,
+    RUN,
+    FLY,
+    END,
+};
 
 
 #endif /* GameDefine_h */
