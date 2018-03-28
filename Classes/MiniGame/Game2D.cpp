@@ -23,6 +23,20 @@ bool Game2D::init()
     stateHero = HeroState::LEFT;
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    
+    DrawNode* drawNode = DrawNode::create();
+    float x = visibleSize.width*2 - 100;
+    float y = visibleSize.height;
+    
+    Vec2 vertices[] = { Vec2(5,5), Vec2(x-5,5), Vec2(x-5,y-5), Vec2(5,y-5) };
+    drawNode->drawPoly(vertices, 4, true,  Color4F(CCRANDOM_0_1(), CCRANDOM_0_1(), CCRANDOM_0_1(), 1));
+
+    this->addChild(drawNode);
+    
+    
+    
+    
+    
     auto rootNode = CSLoader::createNode(SCENE_GAME2D_CSB);
    
     addChild(rootNode,-1);
@@ -141,6 +155,92 @@ bool Game2D::init()
     
     sprPlayer->setPosition(Vec2(visibleSize.width/2 + origin.x, 300));
     addChild(sprPlayer);
+    
+    
+    _grossini = Sprite::create("images/grossini.png");
+    //_grossini->retain();
+    _grossini->setPosition(Vec2(visibleSize.width - 100 + origin.x, 100));
+    
+    _tamara = Sprite::create("images/grossinis_sister1.png");
+    //_tamara->retain();
+    _tamara->setPosition(Vec2(visibleSize.width/2 - 100 + origin.x, 300));
+    
+    _kathia = Sprite::create("images/grossinis_sister2.png");
+    //_kathia->retain();
+    _kathia->setPosition(Vec2(100 + origin.x, 500));
+    
+    addChild(_grossini, 1);
+    addChild(_tamara, 2);
+    addChild(_kathia, 3);
+    
+    auto actionTo = JumpTo::create(2, Vec2(300,300), 50, 4);
+    auto actionBy = JumpBy::create(2, Vec2(-300,0), 50, 4);
+    auto actionUp = JumpBy::create(2, Vec2(0,0), 80, 4);
+    auto actionByBack = actionBy->reverse();
+    
+    //_tamara->runAction( RepeatForever::create(actionTo));
+    _grossini->runAction(RepeatForever::create( Sequence::create(actionBy, actionByBack, nullptr)));
+    //_kathia->runAction( RepeatForever::create(actionUp));
+    
+    
+    auto move = MoveBy::create(3, Vec2(visibleSize.width-130, 0));
+    
+    auto move_ease_inout1 = EaseElasticInOut::create(move->clone(), 0.3f);
+    auto move_ease_inout_back1 = move_ease_inout1->reverse();
+    
+    auto move_ease_inout2 = EaseElasticInOut::create(move->clone(), 0.45f);
+    auto move_ease_inout_back2 = move_ease_inout2->reverse();
+    
+    auto move_ease_inout3 = EaseElasticInOut::create(move->clone(), 0.6f);
+    auto move_ease_inout_back3 = move_ease_inout3->reverse();
+    
+    auto delay = DelayTime::create(0.25f);
+    
+    auto seq1 = Sequence::create(move_ease_inout1, delay, move_ease_inout_back1, delay->clone(), nullptr);
+    auto seq2 = Sequence::create(move_ease_inout2, delay->clone(), move_ease_inout_back2, delay->clone(), nullptr);
+    auto seq3 = Sequence::create(move_ease_inout3, delay->clone(), move_ease_inout_back3, delay->clone(), nullptr);
+    
+    //_grossini->runAction( RepeatForever::create(seq1));
+    //_tamara->runAction( RepeatForever::create(seq2));
+   _kathia->runAction( RepeatForever::create(seq3));
+    // sprite 1
+//    ccBezierConfig bezier;
+//    bezier.controlPoint_1 = Vec2(0, visibleSize.height/2);
+//    bezier.controlPoint_2 = Vec2(300, -visibleSize.height/2);
+//    bezier.endPosition = Vec2(300,100);
+    
+//    auto bezierForward = BezierBy::create(3, bezier);
+//    auto bezierBack = bezierForward->reverse();
+//    auto rep = RepeatForever::create(Sequence::create( bezierForward, bezierBack, nullptr));
+//    _tamara->runAction( rep);
+    auto s = Director::getInstance()->getWinSize();
+    
+    auto array = PointArray::create(20);
+    
+    array->addControlPoint(Vec2(0, 0));
+    array->addControlPoint(Vec2(s.width/2-30,0));
+    array->addControlPoint(Vec2(s.width/2-30,s.height-80));
+    array->addControlPoint(Vec2(0, s.height-80));
+    array->addControlPoint(Vec2(0, 0));
+    auto *action2 = CardinalSplineBy::create(3, array, 1);
+    auto reverse2 = action2->reverse();
+    
+    auto seq5 = Sequence::create(action2, reverse2, nullptr);
+    
+    _tamara->setPosition(s.width/2,50);
+    
+    _tamara->runAction(RepeatForever::create(seq5));
+    
+//    _tamara->runAction(RepeatForever::create(Sequence::create(
+//                                                              MoveBy::create(0.05f, Vec2(10,0)),
+//                                                              MoveBy::create(0.05f, Vec2(-10,0)),
+//                                                              nullptr)));
+    
+    auto drawNode2 = DrawNode::create();
+    drawNode2->setPosition(Vec2(s.width/2,50));
+    drawNode2->drawCardinalSpline(array, 1, 100, Color4F(0.0, 0.0, 1.0, 1.0));
+    this->addChild(drawNode2);
+    
     return true;
 }
  Vector< SpriteFrame*> Game2D::getAnimation(const char *format, int count)

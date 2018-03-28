@@ -43,7 +43,16 @@ void Player2D::loadComponents()
     Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
     animation->retain();
     //sprPlayer->runAction(Animate::create(animation));
+    auto action1 = FadeIn::create(1.0f);
+    auto action1Back = action1->reverse();
+    
+    auto action2 = FadeOut::create(1.0f);
+    auto action2Back = action2->reverse();
+    sprPlayer->runAction(Sequence::create(action1,action1Back,nullptr));
     sprPlayer->runAction(RepeatForever::create(Animate::create(animation)));
+    
+    
+
 }
 
 void Player2D::run()

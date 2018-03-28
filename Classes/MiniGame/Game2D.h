@@ -19,6 +19,9 @@ public:
     Animate * animateDizzy;
     Sprite * sprHero;
     Player2D* sprPlayer;
+    cocos2d::Sprite*    _grossini;
+    cocos2d::Sprite*    _tamara;
+    cocos2d::Sprite*    _kathia;
     int playerStatus;
     HeroState stateHero;
     static cocos2d::Scene* createScene();
