@@ -1,4 +1,7 @@
 #include "Game2D.h"
+#include "renderer/CCRenderer.h"
+#include "2d/CCFontAtlasCache.h"
+
 #include "AbstractScene.hpp"
 #include "Player2D.hpp"
 USING_NS_CC;
@@ -113,8 +116,6 @@ bool Game2D::init()
     btnAttach->addTouchEventListener(CC_CALLBACK_2(Game2D::onAttach, this));
     addChild(btnAttach);
     
-    
-    
     auto btnRun = ui::Button::create();
     btnRun->setTouchEnabled(true);
     btnRun->loadTextures("res/images/button/btn_red.png","res/image/button/btn_red2.png", "");
@@ -153,7 +154,7 @@ bool Game2D::init()
     sprPlayer = Player2D::create();
     sprPlayer->setScale(2.0f);
     
-    sprPlayer->setPosition(Vec2(visibleSize.width/2 + origin.x, 300));
+    sprPlayer->setPosition(Vec2(200, visibleSize.height/2 + 100));
     addChild(sprPlayer);
     
     
@@ -240,6 +241,26 @@ bool Game2D::init()
     drawNode2->setPosition(Vec2(s.width/2,50));
     drawNode2->drawCardinalSpline(array, 1, 100, Color4F(0.0, 0.0, 1.0, 1.0));
     this->addChild(drawNode2);
+    
+    auto label =  Label::createWithTTF("xchip.ios.com", "fonts/arial.ttf", 24);
+    label->enableOutline(Color4B::ORANGE,1);
+    label->setPosition(s.width/2, s.height/2 -30);
+    addChild(label);
+    
+    auto label1 = Label::createWithBMFont("fonts/futura-48.fnt", "cocos2d-x sample");
+    // Demo for reloadFontAtlasFNT function, after it been called, all UI widget
+    //  use the special font must reset font, because the old one is invalid.
+    FontAtlasCache::reloadFontAtlasFNT("fonts/futura-48.fnt");
+    label1->setBMFontFilePath("fonts/futura-48.fnt");
+    addChild(label1);
+    label1->setPosition(Vec2(s.width / 2, s.height * 0.4f));
+    
+    auto label2 = Label::createWithBMFont("fonts/konqa32.fnt", "NYC STUDIO");
+    addChild(label2);
+    label2->setPosition(Vec2(s.width/2, s.height/2));
+    //label2->enableOutline(Color4B::ORANGE,1);
+    
+    
     
     return true;
 }

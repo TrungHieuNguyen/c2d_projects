@@ -87,7 +87,71 @@ void Game3D::initComponents()
     
     AbstractScene::showHUD();
     
+    
+    
+    //auto s = Director::getInstance()->getWinSize();
+    
+    auto sprite3 = Sprite3D::create("Sprite3DTest/box_VertexCol.c3t");
+    sprite3->setPosition(Vec2(0, 0));
+    sprite3->setScale(1.0f);
+    sprite3->setCameraMask(2);
+    auto mat = Sprite3DMaterial::createWithFilename("Sprite3DTest/VertexColor.material");
+    sprite3->setMaterial(mat);
+    sprite3->runAction(RepeatForever::create(RotateBy::create(1.0f, Vec3(10.0f, 50.0f, 10.0f))));
+    
+    this->addChild(sprite3);
+    
+    //setup camera
+    auto camera = Camera::createPerspective(40, s.width / s.height, 0.01f, 1000.f);
+    camera->setCameraFlag(CameraFlag::USER1);
+    camera->setPosition3D(Vec3(0.0f, 0.0f, 10.f));
+    camera->lookAt(Vec3(0.f, 0.f, 0.f));
+    addChild(camera);
+    
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
+    _backToForegroundListener = EventListenerCustom::create(EVENT_COME_TO_FOREGROUND,
+                                                            [=](EventCustom*)
+                                                            {
+                                                                auto mat = Sprite3DMaterial::createWithFilename("Sprite3DTest/VertexColor.material");
+                                                                sprite->setMaterial(mat);
+                                                            }
+                                                            );
+    Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(_backToForegroundListener, 1);
+#endif
+    
+//    
+////==================
+//    auto _camera = Camera::createPerspective(60, visibleSize.width/visibleSize.height, 0.1f, 200);
+//    _camera->setCameraFlag(CameraFlag::USER1);
+//    // create a teapot
+//    auto teapot = Sprite3D::create("Sprite3DTest/teapot.c3b");
+//    auto matTeaPot = Sprite3DMaterial::createWithFilename("Sprite3DTest/BasicToon.material");
+//    _glState = matTeaPot->getTechniqueByIndex(0)->getPassByIndex(0)->getGLProgramState();
+//    teapot->setMaterial(matTeaPot);
+//    
+//    teapot->setPosition3D(Vec3(0,-5,-20));
+//    teapot->setRotation3D(Vec3(-90,180,0));
+//    auto rotate_action = RotateBy::create(1.5,Vec3(0,30,0));
+//    teapot->runAction(RepeatForever::create(rotate_action));
+//    addChild(teapot);
+//    addChild(_camera);
+//    setCameraMask(2);
+//#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
+//    _backToForegroundListener = EventListenerCustom::create(EVENT_COME_TO_FOREGROUND,
+//                                                            [=](EventCustom*)
+//                                                            {
+//                                                                auto mat = Sprite3DMaterial::createWithFilename("Sprite3DTest/BasicToon.material");
+//                                                                _glState = matTeaPot->getTechniqueByIndex(0)->getPassByIndex(0)->getGLProgramState();
+//                                                                teapot->setMaterial(matTeaPot);
+//                                                            }
+//                                                            );
+//    Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(_backToForegroundListener, -1);
+//#endif
+//    
+ //=========
+    Sprite3DNormalMappingTest();
 }
+
 void Game3D::update(float dt)
 {
     log("update...%f", dt);
@@ -136,3 +200,61 @@ void Game3D::menuCloseCallback(Ref* pSender)
 
     
 }
+void Game3D::Sprite3DNormalMappingTest()
+{
+    auto s = Director::getInstance()->getWinSize();
+    
+    {
+        auto sprite = Sprite3D::create("Sprite3DTest/sphere.c3b");
+        sprite->setPosition(Vec2(-30, 0));
+        sprite->setRotation3D(Vec3(90.0f, 0.0f, 0.0f));
+        sprite->setScale(2.0);
+        sprite->setCameraMask(2);
+        sprite->setTexture("Sprite3DTest/brickwork-texture.jpg");
+        addChild(sprite);
+    }
+    
+    int maxAttributes;
+    glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &maxAttributes);
+    CCASSERT(maxAttributes > 8, "attributes supported must be greater than 8");
+    if (maxAttributes > 8)
+    {
+        auto sprite = Sprite3D::create("Sprite3DTest/sphere_bumped.c3b");
+        sprite->setPosition(Vec2(30, 0));
+        sprite->setRotation3D(Vec3(90.0f, 0.0f, 0.0f));
+        sprite->setScale(20.0);
+        sprite->setCameraMask(2);
+        sprite->setTexture("Sprite3DTest/brickwork-texture.jpg");
+        addChild(sprite);
+    }
+    
+    float radius = 100.0;
+    
+    PointLight* light = PointLight::create(Vec3(0.0, 0.0, 0.0), Color3B(255, 255, 255), 1000);
+    light->runAction(RepeatForever::create(Sequence::create(CallFuncN::create([radius](Node *node){
+        static float angle = 0.0;
+        static bool reverseDir = false;
+        node->setPosition3D(Vec3(radius * cos(angle), 0.0f, radius * sin(angle)));
+        if (reverseDir){
+            angle -= 0.01f;
+            if (angle < 0.0)
+                reverseDir = false;
+        }
+        else{
+            angle += 0.01f;
+            if (3.14159 < angle)
+                reverseDir = true;
+        }
+    }), nullptr)));
+    //setup camera
+    auto camera = Camera::createPerspective(60.0, s.width / s.height, 1.0f, 1000.f);
+    camera->setCameraFlag(CameraFlag::USER1);
+    camera->setPosition3D(Vec3(0.f, 0.f, 100.f));
+    camera->lookAt(Vec3(0.f, 0.f, 0.f));
+    addChild(camera);
+    
+    addChild(light);
+}
+
+
+

@@ -41,6 +41,8 @@ class Game3D : public AbstractScene
     cocos2d::Animate3D* _hurt;
     cocos2d::MoveTo*    _moveAction;
     float _elapseTransTime;
+protected:
+    cocos2d::GLProgramState * _glState;
 public:
     static cocos2d::Scene* createScene();
     void update(float dt);
@@ -48,6 +50,7 @@ public:
     void reachEndCallBack();
     void menuCloseCallback(cocos2d::Ref* pSender);
     void initComponents();
+    void Sprite3DNormalMappingTest();
     CREATE_FUNC(Game3D);
 };
 #endif /* Game3D_hpp */
