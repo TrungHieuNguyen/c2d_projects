@@ -260,11 +260,11 @@ bool Game2D::init()
     label2->setPosition(Vec2(s.width/2, s.height/2));
     //label2->enableOutline(Color4B::ORANGE,1);
     
-    cocos2d::ui::Scale9Sprite* sprBg = cocos2d::ui::Scale9Sprite::create("images/popup/boxBgPopup.png");
+    cocos2d::ui::Scale9Sprite* sprBg = cocos2d::ui::Scale9Sprite::create("images/bullet01.png");
     //sprBg->setScale(0);
     sprBg->setContentSize(Size(500, 100));
-    //sprBg->setPosition(getContentSize()/2);
-    label2->setPosition(Vec2(200, s.height/5));
+    sprBg->setAnchorPoint(Vec2::ANCHOR_MIDDLE_LEFT);
+    sprBg->setPosition(Vec2(200, s.height/5));
     this->addChild(sprBg);
     
     return true;
