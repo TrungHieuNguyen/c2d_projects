@@ -43,7 +43,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Title" ActionTag="-1909453834" Tag="33" IconVisible="False" LeftMargin="411.1883" RightMargin="388.8116" TopMargin="29.3456" BottomMargin="502.6544" IsCustomSize="True" FontSize="50" LabelText="NAP THE" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="Title" ActionTag="-1909453834" Tag="33" IconVisible="False" LeftMargin="411.1883" RightMargin="388.8116" TopMargin="29.3456" BottomMargin="502.6544" IsCustomSize="True" FontSize="50" LabelText="KẾT QUẢ " HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="200.0000" Y="68.0000" />
             <AnchorPoint ScaleX="0.5458" ScaleY="0.5627" />
             <Position X="520.3483" Y="540.9180" />
@@ -55,7 +55,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="pnlProducts" ActionTag="-1890051779" Alpha="14" Tag="90" IconVisible="False" LeftMargin="100.0000" RightMargin="100.0000" TopMargin="213.0000" BottomMargin="87.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="pnlProducts" ActionTag="-1890051779" Alpha="14" Tag="90" IconVisible="False" LeftMargin="100.0000" RightMargin="100.0000" TopMargin="213.0000" BottomMargin="87.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="800.0000" Y="300.0000" />
             <AnchorPoint />
             <Position X="100.0000" Y="87.0000" />

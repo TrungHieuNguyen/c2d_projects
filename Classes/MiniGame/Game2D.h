@@ -27,6 +27,9 @@ public:
     static cocos2d::Scene* createScene();
     virtual bool init();
     void update(float dt);
+    virtual bool onTouchBegan(Touch* touch, Event* event);
+    virtual void onTouchEnded(Touch* touch, Event* event);
+    
     void onAttach(Ref* pSender, ui::Widget::TouchEventType eEventType);
     void onHurt(Ref* pSender, ui::Widget::TouchEventType eEventType);
     void onUp(Ref* pSender, ui::Widget::TouchEventType eEventType);
