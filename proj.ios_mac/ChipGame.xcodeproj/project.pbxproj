@@ -91,6 +91,7 @@
 		BF7E7D7F204E4D2B00980405 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D7D204E4D2B00980405 /* Card.cpp */; };
 		BF7E7D82204E507900980405 /* CardList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D80204E507900980405 /* CardList.cpp */; };
 		BFC0977C1FCFB56400AC2E73 /* AbstractScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC0977A1FCFB56400AC2E73 /* AbstractScene.cpp */; };
+		BFE4F918207B1F5E0097E4E4 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFE4F917207B1F5E0097E4E4 /* config.plist */; };
 		BFF3CD231FBC217E00A6AE29 /* Game2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF3CD221FBC217D00A6AE29 /* Game2D.cpp */; };
 		CDD34559A389B8AC14C6BC14 /* sdkbox_config.json in Resources */ = {isa = PBXBuildFile; fileRef = E300439EB548D74EB0E7CA86 /* sdkbox_config.json */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
@@ -325,6 +326,7 @@
 		BF7E7D81204E507900980405 /* CardList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CardList.hpp; sourceTree = "<group>"; };
 		BFC0977A1FCFB56400AC2E73 /* AbstractScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractScene.cpp; sourceTree = "<group>"; };
 		BFC0977B1FCFB56400AC2E73 /* AbstractScene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbstractScene.hpp; sourceTree = "<group>"; };
+		BFE4F917207B1F5E0097E4E4 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		BFF3CD211FBC217C00A6AE29 /* Game2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game2D.h; sourceTree = "<group>"; };
 		BFF3CD221FBC217D00A6AE29 /* Game2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game2D.cpp; sourceTree = "<group>"; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -747,6 +749,7 @@
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
 				E300439EB548D74EB0E7CA86 /* sdkbox_config.json */,
+				BFE4F917207B1F5E0097E4E4 /* config.plist */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -928,6 +931,7 @@
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
+				BFE4F918207B1F5E0097E4E4 /* config.plist in Resources */,
 				248EB5791F73B22900C4CFAD /* Icon-76.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,

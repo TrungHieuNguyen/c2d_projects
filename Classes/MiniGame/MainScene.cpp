@@ -3,6 +3,8 @@
 #include "ui/CocosGUI.h"
 //#include "cocos-ext.h"
 #include "../cocos/editor-support/cocostudio/CocoStudio.h"
+#include <string>
+
 #include "MainScene.hpp"
 #include "GameScene.hpp"
 #include "Game3D.hpp"
@@ -39,7 +41,9 @@ void MainScene::initComponents()
 {
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    
+    ValueMap map = FileUtils::getInstance()->getValueMapFromFile("config.plist");
+    string homeURL = map["HOME_URL"].asString();
+    log("HOME_URL...%s", homeURL.c_str());
     layerBG = CSLoader::createNode(SCENE_MAIN_CSB);
     addChild(layerBG, -1);
 

@@ -2,6 +2,9 @@
 #include "renderer/CCRenderer.h"
 #include "2d/CCFontAtlasCache.h"
 
+#include <string>
+
+
 #include "AbstractScene.hpp"
 #include "Player2D.hpp"
 USING_NS_CC;
@@ -265,8 +268,10 @@ bool Game2D::init()
     sprBg->setContentSize(Size(500, 100));
     sprBg->setAnchorPoint(Vec2::ANCHOR_MIDDLE_LEFT);
     sprBg->setPosition(Vec2(200, s.height/5));
-    this->addChild(sprBg);
+    //this->addChild(sprBg);
     
+    playerStatus = UserDefault::getInstance()->getIntegerForKey("ATTACK_COUNTER", true);
+    log("Init PlayerStatus...%d", playerStatus);
     return true;
 }
  Vector< SpriteFrame*> Game2D::getAnimation(const char *format, int count)
@@ -283,80 +288,7 @@ bool Game2D::init()
 }
 void Game2D::onAttach(Ref* pSender, ui::Widget::TouchEventType eEventType)
 {
-   
-//    switch (eEventType)
-//    {
-//        case ui::Widget::TouchEventType::BEGAN:
-//            if(sprHero!= nullptr)
-//            {
-//                if(stateHero==0)
-//                {
-//                    sprHero->stopAllActions();
-//                    Vector< SpriteFrame*> frames = getAnimation("hero_run_0%d.png",6);
-//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-//                    animation->retain();
-//                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-//                }
-//                else if(stateHero==1)
-//                {
-//                    sprHero->stopAllActions();
-//                    Vector< SpriteFrame*> frames = getAnimation("hero_dizzy_0%d.png",5);
-//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-//                    animation->retain();
-//                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-//                }
-//                else if(stateHero==2)
-//                {
-//                    sprHero->stopAllActions();
-//                    Vector< SpriteFrame*> frames = getAnimation("hero_through_0%d.png",3);
-//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-//                    animation->retain();
-//                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-//                }
-//                else if(stateHero==3)
-//                {
-//                    sprHero->stopAllActions();
-//                    Vector< SpriteFrame*> frames = getAnimation("hero_shooting_0%d.png",4);
-//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-//                    animation->retain();
-//                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-//                }
-//                else if(stateHero==4)
-//                {
-//                    sprHero->stopAllActions();
-//                    Vector< SpriteFrame*> frames = getAnimation("hero_flying_0%d.png",4);
-//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-//                    animation->retain();
-//                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-//                }
-//                else if(stateHero==5)
-//                {
-//                    sprHero->stopAllActions();
-//                    Vector< SpriteFrame*> frames = getAnimation("hero_jump_0%d.png",4);
-//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-//                    animation->retain();
-//                    sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-//                }
-//                else if(stateHero==6)
-//                {
-//                    sprHero->stopAllActions();
-//                    Vector< SpriteFrame*> frames = getAnimation("hero_die_0%d.png",3);
-//                    Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-//                    animation->retain();
-//                    sprHero->runAction(Animate::create(animation));
-//                }
-//
-//            }
-//            stateHero++;
-//            if(stateHero > 6) stateHero = 0;
-//            break;
-//        case ui::Widget::TouchEventType::ENDED:
-//            break;
-//        default:
-//            break;
-//    }
-  
-    
+
 }
 void Game2D::onHurt(Ref* pSender, ui::Widget::TouchEventType eEventType)
 {
@@ -433,6 +365,8 @@ void Game2D::onB(Ref* pSender, ui::Widget::TouchEventType eEventType)
             if(playerStatus > (int)HeroState::END) playerStatus = 0;
             log("status...%d", playerStatus);
             sprPlayer->setStatus(HeroState (playerStatus));
+            UserDefault::getInstance()->setIntegerForKey("ATTACK_COUNTER", playerStatus);
+            UserDefault::getInstance()->flush();
             break;
     }
 //        if( stateHero != HeroState::STAND)
