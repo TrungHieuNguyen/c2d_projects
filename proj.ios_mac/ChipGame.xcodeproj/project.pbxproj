@@ -82,6 +82,8 @@
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		BF5C8DD92080ACC200645AA5 /* PopupMiniTaiXiu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF5C8DD42080ACC100645AA5 /* PopupMiniTaiXiu.cpp */; };
+		BF5C8DDA2080ACC200645AA5 /* PopupSelectBuyIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF5C8DD72080ACC200645AA5 /* PopupSelectBuyIn.cpp */; };
 		BF5EEC4B1FD7911900E0FA18 /* PopupShop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF5EEC4A1FD7911900E0FA18 /* PopupShop.cpp */; };
 		BF6210E92064AF010017D34B /* HUDLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6210E72064AF010017D34B /* HUDLayer.cpp */; };
 		BF6EDACA2068D54C00CA0F01 /* Player2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6EDAC82068D54C00CA0F01 /* Player2D.cpp */; };
@@ -308,6 +310,10 @@
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BF5C8DD42080ACC100645AA5 /* PopupMiniTaiXiu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PopupMiniTaiXiu.cpp; sourceTree = "<group>"; };
+		BF5C8DD62080ACC100645AA5 /* PopupMiniTaiXiu.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PopupMiniTaiXiu.hpp; sourceTree = "<group>"; };
+		BF5C8DD72080ACC200645AA5 /* PopupSelectBuyIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PopupSelectBuyIn.cpp; sourceTree = "<group>"; };
+		BF5C8DD82080ACC200645AA5 /* PopupSelectBuyIn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PopupSelectBuyIn.hpp; sourceTree = "<group>"; };
 		BF5EEC481FD7911900E0FA18 /* PopupShop.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PopupShop.hpp; sourceTree = "<group>"; };
 		BF5EEC4A1FD7911900E0FA18 /* PopupShop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PopupShop.cpp; sourceTree = "<group>"; };
 		BF6210E72064AF010017D34B /* HUDLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HUDLayer.cpp; sourceTree = "<group>"; };
@@ -423,6 +429,10 @@
 			children = (
 				BF7E7D72204E4C9400980405 /* TienLen */,
 				24F2DEDE1F4EAEB5009E0469 /* GameDefine.h */,
+				BF5C8DD42080ACC100645AA5 /* PopupMiniTaiXiu.cpp */,
+				BF5C8DD62080ACC100645AA5 /* PopupMiniTaiXiu.hpp */,
+				BF5C8DD72080ACC200645AA5 /* PopupSelectBuyIn.cpp */,
+				BF5C8DD82080ACC200645AA5 /* PopupSelectBuyIn.hpp */,
 				24079D3A1F28335300501F01 /* DBAnimation.cpp */,
 				24079D3B1F28335300501F01 /* DBAnimation.h */,
 				24079D3C1F28335300501F01 /* Dealer.cpp */,
@@ -975,6 +985,7 @@
 				240A814E1F0E1639009893B7 /* AnimationData.cpp in Sources */,
 				242AEEB01F6A3D5F0012C627 /* GameTiledMap.cpp in Sources */,
 				240A814B1F0E1639009893B7 /* BaseObject.cpp in Sources */,
+				BF5C8DDA2080ACC200645AA5 /* PopupSelectBuyIn.cpp in Sources */,
 				24079D431F28335300501F01 /* DBAnimation.cpp in Sources */,
 				240A81AE1F0E1DD6009893B7 /* CCSlot.cpp in Sources */,
 				240A81501F0E1639009893B7 /* DragonBonesData.cpp in Sources */,
@@ -1001,6 +1012,7 @@
 				241F02971F21EBB800323F34 /* PerformanceTest.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				BF5C8DD92080ACC200645AA5 /* PopupMiniTaiXiu.cpp in Sources */,
 				242AEEAF1F6A3D5F0012C627 /* Game3D.cpp in Sources */,
 				BF7E7D82204E507900980405 /* CardList.cpp in Sources */,
 				240A814A1F0E1639009893B7 /* Slot.cpp in Sources */,

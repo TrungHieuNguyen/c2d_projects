@@ -14,15 +14,14 @@
 #include "cocos2d.h"
 #include "cocos-ext.h"
 #include "ui/CocosGUI.h"
-#include "PopupAbstract.hpp"
 #include "editor-support/cocostudio/ActionTimeline/CSLoader.h"
-#include "../Utility/TBTextField.h"
+#include "Popup.hpp"
 
 using namespace std;
 using namespace cocos2d;
 using namespace::ui;
 
-class PopupSelectBuyIn : public PopupAbstract
+class PopupSelectBuyIn : public Popup
 {
     Node * mainNode;
     Node * spTextfield;
@@ -59,7 +58,7 @@ public:
     string getStringMinValue();
     string getStringMaxValue();
     void open();
-    void setPositionType(TypeEase type);
+   // void setPositionType(TypeEase type);
     
 };
 

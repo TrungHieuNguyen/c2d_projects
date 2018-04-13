@@ -11,7 +11,7 @@ CardList::CardList(){}
 bool CardList::init()
 {
     bool pRet = false;
-    if (LayerColor::initWithColor(Color4B(100, 100, 200, 200)))
+    if (LayerColor::initWithColor(Color4B(0, 0, 0, 0)))
     {
         this->setContentSize(Size(WIDTH_CARD*13, HEIGHT_CARD));
         setTouchEnabled(true);

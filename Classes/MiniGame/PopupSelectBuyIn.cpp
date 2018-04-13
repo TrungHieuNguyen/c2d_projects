@@ -8,8 +8,6 @@
 
 #include <climits>
 #include "PopupSelectBuyIn.hpp"
-#include "../Utility/Resources.h"
-#include "../Screen/AbstractScreen.h"
 //#include "../Utility/AppUtil.h"
 #define W 710.00
 #define H 552
@@ -40,13 +38,13 @@ bool PopupSelectBuyIn::init()
     tablePass = "";
     isInvited = false;
     hasLogin = false;
-    if (PopupAbstract::init())
+    if (Popup::init())
     {
         instance = this;
         setAnchorPoint(Vec2::ANCHOR_MIDDLE);
         setIgnoreAnchorPointForPosition(false);
        
-        mainNode = CSLoader::createNode(RES_POPUP_SELECT_BUYIN_LIENG);
+        mainNode = CSLoader::createNode("");
         mainNode->setIgnoreAnchorPointForPosition(false);
         mainNode->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
         setContentSize(mainNode->getContentSize());
@@ -58,27 +56,20 @@ bool PopupSelectBuyIn::init()
         btnOk->setPressedActionEnabled(true);
         btnOk->addClickEventListener([&](Ref* sender)
                                      {
-                                         SoundManager::gI()->playSound(SOUND_BUTTON);
-                                         log("Select BUY-IN: Money:%ld, AutoDraw:%d",iSelectedValue,isAutoDrawMoney);
-                                         if(!hasLogin){
-                                             PopupWaiting::gI()->show();
-                                             CCGlobalService::gI()->setBuyIn(iSelectedValue, isAutoDrawMoney,tableID,tablePass,isInvited );
-                                         }
-                                         else
-                                             CCGlobalService::gI()->getBuyIn(iSelectedValue, isAutoDrawMoney);
-                                         
+                                         //SoundManager::gI()->playSound(SOUND_BUTTON);
+                                    
                                          PopupSelectBuyIn::close();
                                      });
         btnCancel = static_cast<cocos2d::ui::Button*>(mainNode->getChildByName("btnCancel"));
         btnCancel->setPressedActionEnabled(true);
         btnCancel->addClickEventListener([&](Ref* sender)
                                          {
-                                             SoundManager::gI()->playSound(SOUND_BUTTON);
+                                            // SoundManager::gI()->playSound(SOUND_BUTTON);
                                              PopupSelectBuyIn::close();
                                               if(hasLogin)
                                               {
                                             
-                                                      CCGlobalService::gI()->sendMsgLeaveTable(tableID);
+                                                      //CCGlobalService::gI()->sendMsgLeaveTable(tableID);
                                               }
                                          });
 
@@ -90,7 +81,7 @@ bool PopupSelectBuyIn::init()
         sliderBuyIn = ( cocos2d::ui::Slider * )mainNode->getChildByName("sliderBuyIn");
         sliderBuyIn->setMaxPercent(100);
         iSelectedValue = (sliderBuyIn->getPercent());
-        txtSelectedValue->setString(getShortStringGoldDisplayK(iSelectedValue, true, true));
+        //txtSelectedValue->setString(getShortStringGoldDisplayK(iSelectedValue, true, true));
         sliderBuyIn->addEventListener([&](Ref* sender, Slider::EventType type) {
             auto slider = dynamic_cast<Slider*>(sender);
             if (type == Slider::EventType::ON_PERCENTAGE_CHANGED)
@@ -98,7 +89,7 @@ bool PopupSelectBuyIn::init()
                 iSelectedValue = ((slider->getPercent() + lMinValue/lTableValue) * lTableValue);
                 
                 //lMaxValue/tableBet -lMinValue/tableBet
-                txtSelectedValue->setString(getShortStringGoldDisplayK(iSelectedValue, true, true));
+               // txtSelectedValue->setString(getShortStringGoldDisplayK(iSelectedValue, true, true));
                 //txtSelectedValue->setString(StringUtils::toString(sliderBuyIn->getPercent()));
             }
         });
@@ -141,8 +132,8 @@ void PopupSelectBuyIn::initType(long _min, long _max,long tableBet,int _id, stri
 {
     lMaxValue  = _max*tableBet;
     lMinValue = _min*tableBet;
-    txtMaxValue->setString(getShortStringGoldDisplayK(lMaxValue,true,true));
-    txtMinValue->setString(getShortStringGoldDisplayK(lMinValue,true,true));
+    //txtMaxValue->setString(getShortStringGoldDisplayK(lMaxValue,true,true));
+    //txtMinValue->setString(getShortStringGoldDisplayK(lMinValue,true,true));
     tableID = _id;
     tablePass = _pass;
     isInvited = _invited;
@@ -156,7 +147,7 @@ void PopupSelectBuyIn::initType(long _min, long _max,long tableBet,int _id, stri
         sliderBuyIn->setPercent(maxPecent/2);
         //iSelectedValue = ((sliderBuyIn->getPercent() + lMinValue/sliderUnit) * sliderUnit);
          iSelectedValue = ((sliderBuyIn->getPercent() + lMinValue/lTableValue) * lTableValue);
-        txtSelectedValue->setString(getShortStringGoldDisplayK(iSelectedValue, true, true));
+       // txtSelectedValue->setString(getShortStringGoldDisplayK(iSelectedValue, true, true));
         //txtSelectedValue->setString(StringUtils::toString(sliderBuyIn->getPercent()));
     }
 }
@@ -169,7 +160,7 @@ void PopupSelectBuyIn::close()
             layerBG->removeFromParent();
             layerBG = nullptr;
         }
-        PopupAbstract::close();
+        Popup::close();
     });
     
     mainNode->runAction(Sequence::create(CallFuncN::create([&](Ref* sender){
@@ -209,30 +200,31 @@ void PopupSelectBuyIn::open()
 //    mainNode->runAction(move_ease);
 }
 
-void PopupSelectBuyIn::setPositionType(TypeEase type)
-{
-    switch (type) {
-        case TypeEase::TOP:
-        {
-            mainNode->setPosition(getContentSize().width/2, - getContentSize().height * 2);
-        }
-            break;
-        case TypeEase::DOWN:
-        {
-            mainNode->setPosition(getContentSize().width/2, getContentSize().height * 2);
-        }
-            break;
-        case TypeEase::RIGHT:
-        {
-            mainNode->setPosition(getContentSize().width * 2.5, getContentSize().height/2);
-        }
-            break;
-        case TypeEase::LEFT:
-        {
-            mainNode->setPosition(-getContentSize().width * 2.5, getContentSize().height/2);
-        }
-            break;
-        default:
-            break;
-    }
-}
+//void PopupSelectBuyIn::setPositionType(TypeEase type)
+//{
+//    switch (type) {
+//        case TypeEase::TOP:
+//        {
+//            mainNode->setPosition(getContentSize().width/2, - getContentSize().height * 2);
+//        }
+//            break;
+//        case TypeEase::DOWN:
+//        {
+//            mainNode->setPosition(getContentSize().width/2, getContentSize().height * 2);
+//        }
+//            break;
+//        case TypeEase::RIGHT:
+//        {
+//            mainNode->setPosition(getContentSize().width * 2.5, getContentSize().height/2);
+//        }
+//            break;
+//        case TypeEase::LEFT:
+//        {
+//            mainNode->setPosition(-getContentSize().width * 2.5, getContentSize().height/2);
+//        }
+//            break;
+//        default:
+//            break;
+//    }
+//}
+

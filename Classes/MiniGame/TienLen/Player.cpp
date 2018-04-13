@@ -14,7 +14,7 @@ Player::~Player(){}
 bool Player::init()
 {
     bool pRet = false;
-    if (LayerColor::initWithColor(Color4B(0, 0, 100, 100)));
+    if (LayerColor::initWithColor(Color4B(0, 0, 0, 0)));
     {
         initContent();
         return true;

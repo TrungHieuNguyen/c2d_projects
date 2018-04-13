@@ -7,15 +7,13 @@
 #include "cocos2d.h"
 #include "cocos-ext.h"
 #include "ui/CocosGUI.h"
-#include "PopupAbstract.hpp"
 #include "editor-support/cocostudio/ActionTimeline/CSLoader.h"
-#include "../Utility/TBTextField.h"
-
+#include "Popup.hpp"
 using namespace std;
 using namespace cocos2d;
 using namespace::ui;
 
-class PopupMiniTaiXiu : public PopupAbstract,
+class PopupMiniTaiXiu : public Popup,
 public cocos2d::extension::TableViewDataSource,
 public cocos2d::extension::TableViewDelegate
 {
@@ -23,7 +21,7 @@ public cocos2d::extension::TableViewDelegate
     Layout * nodeTKPage01;
     Layout * nodeTKPage02;
     Layout * nodeLichSuPage;
-    TableView* tableView;
+    cocos2d::extension::TableView* tableView;
     Node * spTextfield;
     long betGoldTable;
     ValueVector arrData;
@@ -34,7 +32,7 @@ protected:
     virtual void  tableCellTouched(cocos2d::extension::TableView* table, cocos2d::extension::TableViewCell* cell);
     virtual       cocos2d::extension::TableViewCell* tableCellAtIndex(cocos2d::extension::TableView *table, ssize_t idx);
     virtual       ssize_t numberOfCellsInTableView(cocos2d::extension::TableView *table);
-    virtual Size  cellSizeForTable(TableView *table);
+    virtual Size  cellSizeForTable(cocos2d::extension::TableView *table);
     
 public:
    
@@ -62,7 +60,7 @@ public:
     void close();
     static void removePopup();
     void open();
-    void setPositionType(TypeEase type);
+    //void setPositionType(TypeEase type);
     
 };
 

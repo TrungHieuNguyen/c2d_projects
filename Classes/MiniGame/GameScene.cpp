@@ -241,8 +241,17 @@ bool GameScene::init()
     //AbstractScene::showResult(PlayerRank::RANK_NHAT,5);
     
     
+    auto array = PointArray::create(20);
     
-   
+    array->addControlPoint(Vec2(0, 0));
+    array->addControlPoint(Vec2(visibleSize.width/2-30,0));
+    array->addControlPoint(Vec2(visibleSize.width/2-30,visibleSize.height-80));
+    array->addControlPoint(Vec2(0, visibleSize.height-80));
+    array->addControlPoint(Vec2(0, 0));
+    auto drawNode2 = DrawNode::create();
+    drawNode2->setPosition(Vec2(visibleSize.width/2,50));
+    drawNode2->drawCardinalSpline(array, 1, 100, Color4F::GREEN);
+    this->addChild(drawNode2);
     return true;
 }
 void GameScene::update(float dt)

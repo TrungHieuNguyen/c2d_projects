@@ -1,8 +1,7 @@
 
 #include <climits>
 #include "PopupMiniTaiXiu.hpp"
-#include "../Utility/Resources.h"
-#include "../Screen/AbstractScreen.h"
+
 
 //#include "../Utility/AppUtil.h"
 #define W 710.00
@@ -24,13 +23,13 @@ bool PopupMiniTaiXiu::init()
     //////////////////////////////
     // 1. super init first
     bool pRet = false;
-    if (PopupAbstract::init())
+    if (Popup::init())
     {
         instance = this;
         setAnchorPoint(Vec2::ANCHOR_MIDDLE);
         setIgnoreAnchorPointForPosition(false);
        
-        mainNode = CSLoader::createNode(RES_POPUP_MINI_TAIXIU);
+        mainNode = CSLoader::createNode("");
         mainNode->setIgnoreAnchorPointForPosition(false);
         mainNode->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
         setContentSize(mainNode->getContentSize());
@@ -133,14 +132,14 @@ bool PopupMiniTaiXiu::init()
         });
 
         
-        tableView = TableView::create(this, Size(800, 420));
+        tableView = cocos2d::extension::TableView::create(this, Size(800, 420));
         tableView->setDirection(cocos2d::extension::ScrollView::Direction::VERTICAL);
         tableView->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
         tableView->setColor(Color3B::RED);
         tableView->setIgnoreAnchorPointForPosition(false);
         tableView->setPosition(nodeLichSuPage->getContentSize()/2);
         tableView->setDelegate(this);
-        tableView->setVerticalFillOrder(TableView::VerticalFillOrder::TOP_DOWN);;
+        tableView->setVerticalFillOrder(cocos2d::extension::TableView::VerticalFillOrder::TOP_DOWN);;
         nodeLichSuPage->addChild(tableView, 10);
         tableView->reloadData();
         initBgDark();
@@ -164,7 +163,7 @@ void PopupMiniTaiXiu::close()
             layerBG->removeFromParent();
             layerBG = nullptr;
         }
-        PopupAbstract::close();
+        Popup::close();
     });
     
     mainNode->runAction(Sequence::create(CallFuncN::create([&](Ref* sender){
@@ -193,34 +192,34 @@ void PopupMiniTaiXiu::open()
 //    mainNode->runAction(move_ease);
 }
 
-void PopupMiniTaiXiu::setPositionType(TypeEase type)
-{
-    switch (type) {
-        case TypeEase::TOP:
-        {
-            mainNode->setPosition(getContentSize().width/2, - getContentSize().height * 2);
-        }
-            break;
-        case TypeEase::DOWN:
-        {
-            mainNode->setPosition(getContentSize().width/2, getContentSize().height * 2);
-        }
-            break;
-        case TypeEase::RIGHT:
-        {
-            mainNode->setPosition(getContentSize().width * 2.5, getContentSize().height/2);
-        }
-            break;
-        case TypeEase::LEFT:
-        {
-            mainNode->setPosition(-getContentSize().width * 2.5, getContentSize().height/2);
-        }
-            break;
-        default:
-            break;
-    }
-}
-Size PopupMiniTaiXiu::cellSizeForTable(TableView *table)
+//void PopupMiniTaiXiu::setPositionType(TypeEase type)
+//{
+//    switch (type) {
+//        case TypeEase::TOP:
+//        {
+//            mainNode->setPosition(getContentSize().width/2, - getContentSize().height * 2);
+//        }
+//            break;
+//        case TypeEase::DOWN:
+//        {
+//            mainNode->setPosition(getContentSize().width/2, getContentSize().height * 2);
+//        }
+//            break;
+//        case TypeEase::RIGHT:
+//        {
+//            mainNode->setPosition(getContentSize().width * 2.5, getContentSize().height/2);
+//        }
+//            break;
+//        case TypeEase::LEFT:
+//        {
+//            mainNode->setPosition(-getContentSize().width * 2.5, getContentSize().height/2);
+//        }
+//            break;
+//        default:
+//            break;
+//    }
+//}
+Size PopupMiniTaiXiu::cellSizeForTable(cocos2d::extension::TableView *table)
 {
     return Size(800, 100);
 }
@@ -234,7 +233,7 @@ void PopupMiniTaiXiu::scrollViewDidZoom(cocos2d::extension::ScrollView* view){
     
 }
 
-void PopupMiniTaiXiu::tableCellTouched(TableView* table, TableViewCell* cell)
+void PopupMiniTaiXiu::tableCellTouched(cocos2d::extension::TableView* table, cocos2d::extension::TableViewCell* cell)
 {
 //    layerContent->setVisible(false);
 //    layerDetail->setVisible(true);
@@ -258,14 +257,14 @@ void PopupMiniTaiXiu::tableCellTouched(TableView* table, TableViewCell* cell)
 //    }
 }
 
-ssize_t PopupMiniTaiXiu::numberOfCellsInTableView(TableView *table)
+ssize_t PopupMiniTaiXiu::numberOfCellsInTableView(cocos2d::extension::TableView *table)
 {
     return arrData.size();
 }
-TableViewCell* PopupMiniTaiXiu::tableCellAtIndex(TableView *table, ssize_t idx)
+cocos2d::extension::TableViewCell* PopupMiniTaiXiu::tableCellAtIndex(cocos2d::extension::TableView *table, ssize_t idx)
 {
     auto index = StringUtils::format("%ld", static_cast<long>(idx));
-    TableViewCell *cell = table->dequeueCell();
+    cocos2d::extension::TableViewCell *cell = table->dequeueCell();
     ValueMap value = arrData.at(idx).asValueMap();
     string sender = value["sender"].asString();
     string title = value["title"].asString();
@@ -274,7 +273,7 @@ TableViewCell* PopupMiniTaiXiu::tableCellAtIndex(TableView *table, ssize_t idx)
     int mail_id = value["id"].asInt();
     if (!cell)
     {
-        cell = new TableViewCell();
+        cell = new cocos2d::extension::TableViewCell();
         cell->autorelease();
         auto font_size = 27;
         Label * lbTitle = Label::createWithTTF("", FONT_AVENIR_REGULAR, 24);

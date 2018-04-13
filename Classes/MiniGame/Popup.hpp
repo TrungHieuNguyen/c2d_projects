@@ -25,18 +25,20 @@ using namespace::cocos2d;
 class Popup: public LayerColor
 {
   
+
+    
+
+    
+public:
     Label * lbTitle;
-     static Vector<Popup*> *listPopups;
+    static Vector<Popup*> *listPopups;
     Size size;
     Size sTable;
     Sprite * spBgFull;
     LayerColor * layerBG;
-    
-    CREATE_FUNC(Popup);
-    
-public:
     Popup();
     virtual ~Popup();
+    CREATE_FUNC(Popup);
     virtual void initComponent();
     virtual void onTouchClose(Ref* pSender, cocos2d::ui::Widget::TouchEventType type);
     virtual void close();
