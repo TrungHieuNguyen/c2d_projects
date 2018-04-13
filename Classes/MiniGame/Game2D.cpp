@@ -7,6 +7,7 @@
 
 #include "AbstractScene.hpp"
 #include "Player2D.hpp"
+#include "PopupResult.hpp"
 USING_NS_CC;
 
 using namespace cocostudio::timeline;
@@ -26,6 +27,14 @@ bool Game2D::init()
     {
         return false;
     }
+    
+    
+    auto touchListener = EventListenerTouchOneByOne::create();
+    touchListener->setSwallowTouches(true);
+    touchListener->onTouchBegan = CC_CALLBACK_2(Game2D::onTouchBegan, this);
+    touchListener->onTouchEnded = CC_CALLBACK_2(Game2D::onTouchEnded, this);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
+    
     stateHero = HeroState::LEFT;
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
@@ -390,28 +399,32 @@ void Game2D::onB(Ref* pSender, ui::Widget::TouchEventType eEventType)
 //    }
 }
 void Game2D::onC(Ref* pSender, ui::Widget::TouchEventType eEventType){
-    if( stateHero != HeroState::ATTACH)
-    {
-        sprHero->stopAllActions();
-        Vector< SpriteFrame*> frames = getAnimation("hero_through_0%d.png",3);
-        Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-        animation->retain();
-        sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-         stateHero = HeroState::ATTACH;
-    }
+    
 }
 void Game2D::onD(Ref* pSender, ui::Widget::TouchEventType eEventType){
-    if( stateHero != HeroState::HURT)
+    
+    PopupResult* p = PopupResult::gI();
+    if (p->getParent() == NULL)
     {
-        sprHero->stopAllActions();
-        Vector< SpriteFrame*> frames = getAnimation("hero_dizzy_0%d.png",5);
-        Animation* animation = Animation::createWithSpriteFrames(frames, 0.1f);
-        animation->retain();
-        sprHero->runAction(RepeatForever::create(Animate::create(animation)));
-         stateHero = HeroState::HURT;
+        p->setPosition(Point(Director::getInstance()->getVisibleSize().width / 2, Director::getInstance()->getVisibleSize().height/2));
+        addChild(p, Z_ODER_POPUP);
+        p->fadeInBgDark();
+        p->open();
     }
 }
 void Game2D::update(float dt)
 {
     //log("update...%f", dt);
 }
+bool Game2D::onTouchBegan(Touch* touch, Event* event)
+{
+    Point pt = touch->getLocation();
+    CCParticleSystemQuad * smokeParticle = CCParticleSystemQuad::create("res/particle/particle_yellow_circle_click.plist");
+    smokeParticle->setPosition(pt);
+    smokeParticle->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
+    this->addChild(smokeParticle);
+    smokeParticle->setAutoRemoveOnFinish(true);
+}
+void Game2D::onTouchEnded(Touch* touch, Event* event)
+{
+} 

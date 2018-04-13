@@ -28,5 +28,25 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="WinLoseResult.csd" />
+          <FilePathData Path="PopupSetting.csd" />
+          <FilePathData Path="GameTiledMap.csd" />
+          <FilePathData Path="GameScene.csd" />
+          <FilePathData Path="Game2D.csd" />
+          <FilePathData Path="HUDLayer.csd" />
+          <FilePathData Path="AboutScene.csd" />
+          <FilePathData Path="Game3D.csd" />
+          <FilePathData Path="MainScene.csd" />
+          <FilePathData Path="Popup.csd" />
+          <FilePathData Path="SilderDatChuong10.csd" />
+          <FilePathData Path="PopupMiniTaiXiu.csd" />
+          <FilePathData Path="PopupBuyIn.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="PopupBuyIn.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
