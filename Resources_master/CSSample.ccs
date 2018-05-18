@@ -155,20 +155,39 @@
             <Image Name="trash.png" />
             <Image Name="txthanhtTch.png" />
           </Folder>
+          <Image Name="bet.png" />
+          <Image Name="bet_amount.png" />
+          <Image Name="bet_amount_selected.png" />
+          <Image Name="bet2.png" />
           <Image Name="bg_cardboard.png" />
           <Image Name="bg_dark.jpg" />
           <Image Name="bich1.png" />
           <Image Name="btn_circle_60.png" />
           <Image Name="btn_rect_40x20.png" />
+          <Image Name="can_bang_board_xocdia.png" />
+          <Image Name="cancel_btn.png" />
+          <Image Name="chan.png" />
+          <Image Name="chat_btn.png" />
           <Image Name="co1.png" />
           <Image Name="co1_1.png" />
           <Image Name="digital_space_universe_1280x720.jpg" />
+          <Image Name="dish_2.png" />
+          <Image Name="dish_3.png" />
+          <Image Name="dong_vi.png" />
           <Image Name="fin1.png" />
           <Image Name="fin2.png" />
           <Image Name="fin3.png" />
           <Image Name="HelloWorld.png" />
+          <Image Name="history_btn.png" />
           <Image Name="Icon-76.png" />
+          <Image Name="le.png" />
           <Image Name="Main_dealer2_ani.png" />
+          <Image Name="red_side.png" />
+          <Image Name="statistic_btn.png" />
+          <Image Name="top_btn.png" />
+          <Image Name="tutorial_btn.png" />
+          <Image Name="user_icon.png" />
+          <Image Name="white_side.png" />
         </Folder>
         <Project Name="AboutScene.csd" Type="Layer" />
         <Project Name="Game2D.csd" Type="Scene" />
@@ -178,9 +197,7 @@
         <Project Name="HUDLayer.csd" Type="Layer" />
         <Project Name="MainScene.csd" Type="Layer" />
         <Project Name="Popup.csd" Type="Layer" />
-        <Project Name="PopupMiniTaiXiu.csd" Type="Layer" />
         <Project Name="PopupSetting.csd" Type="Layer" />
-        <Project Name="PopupBuyIn.csd" Type="Layer" />
         <Project Name="SilderDatChuong10.csd" Type="Layer" />
         <Project Name="WinLoseResult.csd" Type="Layer" />
       </RootFolder>

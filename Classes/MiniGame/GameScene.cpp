@@ -195,9 +195,25 @@ bool GameScene::init()
 
     _player = Sprite::create("res/images/card/cardback.png");
     _player->setPosition(Vec2(10,500));
+    if(_player)
+        _player->runAction(
+                           RepeatForever::create(
+                                                 Sequence::create(
+                                                                  MoveBy::create(0.05f, Vec2(20,2)),
+                                                                  MoveBy::create(0.05f, Vec2(-20,-2)),
+                                                                  nullptr)));
     this->addChild(_player,6);
     
     
+    Sprite* sprDish = layerBG->getChildByName<Sprite*>("sprDish");
+    if(sprDish)
+        sprDish->runAction(
+                      RepeatForever::create(
+                                            Sequence::create(
+                                                             MoveBy::create(0.05f, Vec2(20,2)),
+                                                             DelayTime::create(0.05),
+                                                             MoveBy::create(0.05f, Vec2(-20,-2)),
+                                                             nullptr)));
     
     topImage = ProgressTimer::create(Sprite::create("res/loading/icon_sample.png"));
     topImage->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
@@ -244,14 +260,42 @@ bool GameScene::init()
     auto array = PointArray::create(20);
     
     array->addControlPoint(Vec2(0, 0));
-    array->addControlPoint(Vec2(visibleSize.width/2-30,0));
-    array->addControlPoint(Vec2(visibleSize.width/2-30,visibleSize.height-80));
-    array->addControlPoint(Vec2(0, visibleSize.height-80));
-    array->addControlPoint(Vec2(0, 0));
+    array->addControlPoint(Vec2(100,100));
+    array->addControlPoint(Vec2(200,200));
+    array->addControlPoint(Vec2(300, 150));
+    array->addControlPoint(Vec2(400, 230));
+    array->addControlPoint(Vec2(500, 90));
+    array->addControlPoint(Vec2(600, 60));
+    array->addControlPoint(Vec2(700, 110));
+    
+    auto drawNode1 = DrawNode::create();
+    drawNode1->setPosition(Vec2(50,50));
+    drawNode1->drawCatmullRom(array, 50, Color4F(1.0, 0.0, 1.0, 1.0));
+    this->addChild(drawNode1);
+    
     auto drawNode2 = DrawNode::create();
-    drawNode2->setPosition(Vec2(visibleSize.width/2,50));
+    drawNode2->setPosition(Vec2(100,100));
+    drawNode2->setLineWidth(10);
     drawNode2->drawCardinalSpline(array, 1, 100, Color4F::GREEN);
     this->addChild(drawNode2);
+
+    
+    for(int i = 0; i< array->count(); i++)
+    {
+        auto drawDot = DrawNode::create();
+        drawDot->setPosition(Vec2(100,100));
+        //drawDot->drawDot(array[i], 1, Color4F::GREEN);
+        this->addChild(drawDot);
+    }
+    
+    auto drawPoly = DrawNode::create();
+    drawPoly->setLineWidth(4);
+    addChild(drawPoly, 10);
+    // open random color poly
+    Vec2 vertices[] = { Vec2(0,0), Vec2(50,50), Vec2(100,50), Vec2(100,100), Vec2(50,100) };
+    drawPoly->drawPoly( vertices, 5, false, Color4F(CCRANDOM_0_1(), CCRANDOM_0_1(), CCRANDOM_0_1(), 1));
+    
+    
     return true;
 }
 void GameScene::update(float dt)

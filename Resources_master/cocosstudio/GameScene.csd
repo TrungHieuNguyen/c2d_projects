@@ -2,7 +2,7 @@
   <PropertyGroup Name="GameScene" Type="Layer" ID="d1f3e9f8-2f12-4b47-b943-e8cdf0e5f1b5" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
-      <Animation Duration="0" Speed="1.0000" />
+      <Animation Duration="0" Speed="0.5000" />
       <ObjectData Name="Layer" ctype="GameLayerObjectData">
         <Size X="1280.0000" Y="720.0000" />
         <Children>
@@ -147,6 +147,74 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.0652" Y="0.1486" />
             <PreSize X="0.0000" Y="0.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="sprDish" ActionTag="-716711116" Tag="167" IconVisible="False" LeftMargin="325.9174" RightMargin="740.0826" TopMargin="193.0488" BottomMargin="308.9512" FlipX="True" ctype="SpriteObjectData">
+            <Size X="214.0000" Y="218.0000" />
+            <Children>
+              <AbstractNodeData Name="red_side_2" ActionTag="-828274385" Tag="168" IconVisible="False" LeftMargin="115.7078" RightMargin="67.2922" TopMargin="70.1394" BottomMargin="116.8606" ctype="SpriteObjectData">
+                <Size X="31.0000" Y="31.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="131.2078" Y="132.3606" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.6131" Y="0.6072" />
+                <PreSize X="0.1449" Y="0.1422" />
+                <FileData Type="Normal" Path="images/red_side.png" Plist="" />
+                <BlendFunc Src="1" Dst="771" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="white_side_3" ActionTag="732639249" Tag="169" IconVisible="False" LeftMargin="76.7161" RightMargin="106.2839" TopMargin="108.2100" BottomMargin="78.7900" ctype="SpriteObjectData">
+                <Size X="31.0000" Y="31.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="92.2161" Y="94.2900" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.4309" Y="0.4325" />
+                <PreSize X="0.1449" Y="0.1422" />
+                <FileData Type="Normal" Path="images/white_side.png" Plist="" />
+                <BlendFunc Src="1" Dst="771" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="red_side_2_0" ActionTag="1208486230" Tag="170" IconVisible="False" LeftMargin="115.5222" RightMargin="67.4778" TopMargin="107.1640" BottomMargin="79.8360" ctype="SpriteObjectData">
+                <Size X="31.0000" Y="31.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="131.0222" Y="95.3360" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.6123" Y="0.4373" />
+                <PreSize X="0.1449" Y="0.1422" />
+                <FileData Type="Normal" Path="images/red_side.png" Plist="" />
+                <BlendFunc Src="1" Dst="771" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="white_side_3_0" ActionTag="1953078280" Tag="171" IconVisible="False" LeftMargin="75.2981" RightMargin="107.7019" TopMargin="70.0674" BottomMargin="116.9326" ctype="SpriteObjectData">
+                <Size X="31.0000" Y="31.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="90.7981" Y="132.4326" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.4243" Y="0.6075" />
+                <PreSize X="0.1449" Y="0.1422" />
+                <FileData Type="Normal" Path="images/white_side.png" Plist="" />
+                <BlendFunc Src="1" Dst="771" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="sprDishTop" ActionTag="-814675976" Tag="172" IconVisible="False" LeftMargin="17.6346" RightMargin="19.3654" TopMargin="25.3202" BottomMargin="1.6798" ctype="SpriteObjectData">
+                <Size X="177.0000" Y="191.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="106.1346" Y="97.1798" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.4960" Y="0.4458" />
+                <PreSize X="0.8271" Y="0.8761" />
+                <FileData Type="Normal" Path="images/dish_3.png" Plist="" />
+                <BlendFunc Src="1" Dst="771" />
+              </AbstractNodeData>
+            </Children>
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="432.9174" Y="417.9512" />
+            <Scale ScaleX="0.7384" ScaleY="0.7252" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.3382" Y="0.5805" />
+            <PreSize X="0.1672" Y="0.3028" />
+            <FileData Type="Normal" Path="images/dish_2.png" Plist="" />
+            <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
