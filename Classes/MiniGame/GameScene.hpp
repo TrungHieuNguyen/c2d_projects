@@ -18,6 +18,8 @@ using namespace ui;
 #include "AbstractScene.hpp"
 #include "TienLen/Player.hpp"
 #include "TienLen/Card.hpp"
+using namespace std::chrono;
+
 class GameScene : public AbstractScene
 {
 
@@ -37,7 +39,7 @@ class GameScene : public AbstractScene
     Sprite* _player;
     Vector<Player*> vPlayer;
     Vector<Card*> vCard52;
-    
+    spine::SkeletonAnimation* anim;
 public:
     static cocos2d::Scene* createScene();
     
