@@ -39,7 +39,7 @@ class GameScene : public AbstractScene
     Sprite* _player;
     Vector<Player*> vPlayer;
     Vector<Card*> vCard52;
-    spine::SkeletonAnimation* anim;
+    //spine::SkeletonAnimation* anim;
 public:
     static cocos2d::Scene* createScene();
     

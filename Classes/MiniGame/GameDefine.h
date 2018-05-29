@@ -31,6 +31,7 @@
 #define SCENE_GAME3D_CSB        "Game3D.csb"
 #define SCENE_GAME_TILEDMAP_CSB "GameTiledMap.csb"
 #define SCENE_ABOUT_CSB         "AboutScene.csb"
+#define SCENE_SLOT_CSB         "ScreenSlot.csb"
 #define SCENE_GAME_HUD_CSB      "HUDLayer.csb"
 
 #define RES_SLIDER_DATCHUONG_CSB    "SilderDatChuong10.csb"

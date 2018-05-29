@@ -192,7 +192,6 @@ bool GameScene::init()
 //    silderDatChuong->runAction(slider_move_ease);
 //
 //
-
     _player = Sprite::create("res/images/card/cardback.png");
     _player->setPosition(Vec2(10,500));
     if(_player)
@@ -296,13 +295,13 @@ bool GameScene::init()
     drawPoly->drawPoly( vertices, 5, false, Color4F(CCRANDOM_0_1(), CCRANDOM_0_1(), CCRANDOM_0_1(), 1));
     
     
-    string path = "res/screen/XD/AnimDice/skeleton";
-    anim = spine::SkeletonAnimation::createWithJsonFile(path + ".json", path + ".atlas", 1);
-    anim->setAnimation(0, "idle", false);
-    anim->setScale(1.0);
-    anim->setVisible(true);
-    anim->setPosition(convertToWorldSpace(screenCenter->convertToWorldSpace(screenCenter->getChildByName("nodeXN")->getPosition())));
-    this->addChild(anim, 10);
+//    string path = "res/screen/XD/AnimDice/skeleton";
+//    anim = spine::SkeletonAnimation::createWithJsonFile(path + ".json", path + ".atlas", 1);
+//    anim->setAnimation(0, "idle", false);
+//    anim->setScale(1.0);
+//    anim->setVisible(true);
+//    anim->setPosition(convertToWorldSpace(screenCenter->convertToWorldSpace(screenCenter->getChildByName("nodeXN")->getPosition())));
+//    this->addChild(anim, 10);
     
     
     return true;

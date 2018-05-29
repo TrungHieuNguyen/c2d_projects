@@ -10,6 +10,7 @@
 #include "Game3D.hpp"
 #include "GameTiledMap.hpp"
 #include "AboutScene.hpp"
+#include "SlotScene.hpp"
 #include "Game2D.h"
 USING_NS_CC;
 
@@ -84,6 +85,12 @@ void MainScene::initComponents()
         Director::getInstance()->replaceScene(AboutScene::createScene());
     });
 
+    Button* btnSlotScene = (Button*) layerBG->getChildByName("btnSlot");
+    btnSlotScene->setPressedActionEnabled(true);
+    btnSlotScene->addClickEventListener([&](Ref* sender){
+        Director::getInstance()->replaceScene(SlotScene::createScene());
+    });
+    
     Menu* menu = Menu::create();
     for (int i = 0; i < 9; i++)
     {

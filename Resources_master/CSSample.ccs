@@ -16,6 +16,9 @@
           <TTF Name="Marker Felt.ttf" />
         </Folder>
         <Folder Name="images">
+          <Folder Name="background">
+            <Image Name="slot_bg.jpg" />
+          </Folder>
           <Folder Name="button">
             <Image Name="btn_boluot.png" />
             <Image Name="btn_boluot2.png" />
@@ -198,6 +201,7 @@
         <Project Name="MainScene.csd" Type="Layer" />
         <Project Name="Popup.csd" Type="Layer" />
         <Project Name="PopupSetting.csd" Type="Layer" />
+        <Project Name="ScreenSlot.csd" Type="Layer" />
         <Project Name="SilderDatChuong10.csd" Type="Layer" />
         <Project Name="WinLoseResult.csd" Type="Layer" />
       </RootFolder>

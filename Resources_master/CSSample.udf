@@ -4,7 +4,7 @@
       <Value ctype="CocosRecentOperation">
         <LastPublishType Value="Resource" />
         <IsLastPublish Value="True" />
-        <LastRunType Value="Mac" />
+        <LastRunType Value="Android" />
       </Value>
     </Item>
     <Item Key="PackageParamsKey">
@@ -18,7 +18,7 @@
         <iOS_Target Value="CSSample-mobile" />
         <iOS_BundleID Value="iPhone Developer: trunghieu.nguyen@hotmail.com (Z4PFM2JWBS)" />
         <Platform Value="None" />
-        <RunPlatform Value="Mac" />
+        <RunPlatform Value="Android" />
         <FrameworkVersion Value="cocos2d-x-3.10" />
         <IsDebugKeystore Value="True" />
         <KeystorePassword Value="" />
@@ -31,10 +31,12 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="Game2D.csd" />
+          <FilePathData Path="WinLoseResult.csd" />
+          <FilePathData Path="ScreenSlot.csd" />
           <FilePathData Path="GameScene.csd" />
+          <FilePathData Path="Game2D.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="GameScene.csd" />
+        <ActiveDocument Path="ScreenSlot.csd" />
       </Value>
     </Item>
   </Properties>
