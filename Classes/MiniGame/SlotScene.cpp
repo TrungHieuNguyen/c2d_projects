@@ -33,7 +33,7 @@ void SlotScene::initComponents()
 {
     layerBG = CSLoader::createNode(SCENE_SLOT_CSB);
     addChild(layerBG, -1);
-
+    isPlaying = false;
 //    lbTitle = (Text*) layerBG->getChildByName("lbTitle");
 //    lbTitle->setIgnoreAnchorPointForPosition(false);
 //    lbTitle->setAnchorPoint(Point(0.5, 0.5f));
@@ -50,7 +50,21 @@ void SlotScene::initComponents()
     auto card02 = LayerCard01->getChildByName("item02");
     auto card03 = LayerCard01->getChildByName("item03");
     
-    schedule(schedule_selector(SlotScene::spin), 0.05);
+    Button* btnSpin = (Button*) layerBG->getChildByName("btnSpin");
+    btnSpin->setPressedActionEnabled(true);
+    btnSpin->addClickEventListener([&](Ref* sender){
+        if(isPlaying)
+        {
+            unschedule(schedule_selector(SlotScene::spin));
+        }
+        else
+        {
+           
+            schedule(schedule_selector(SlotScene::spin), 0.05);
+        }
+         isPlaying = !isPlaying;
+    });
+    
 }
 void SlotScene::spin(float dt)
 {

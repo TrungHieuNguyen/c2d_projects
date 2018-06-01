@@ -29,6 +29,7 @@ public:
     void menuCloseCallback(cocos2d::Ref* pSender);
     void initComponents();
     void spin(float dt);
+    bool isPlaying;
     // implement the "static create()" method manually
     CREATE_FUNC(SlotScene);
 };

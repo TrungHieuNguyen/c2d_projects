@@ -21,6 +21,7 @@
             <Image Name="huong-dan-choi-tuong-trieu-van-trong-lien-quan-mobile-768x432.jpg" />
             <Image Name="huong-dan-choi-tuong-yorn-trong-lien-quan-mobile-v2-768x480.jpg" />
             <Image Name="slot_bg.jpg" />
+            <Image Name="slot_bg.png" />
           </Folder>
           <Folder Name="button">
             <Image Name="btn_boluot.png" />

@@ -14,7 +14,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.4989" Y="0.5441" />
             <PreSize X="0.5750" Y="0.7362" />
-            <FileData Type="Normal" Path="images/background/slot_bg.jpg" Plist="" />
+            <FileData Type="Normal" Path="images/background/slot_bg.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="innerbg" ActionTag="-37177808" Tag="78" IconVisible="False" LeftMargin="184.3052" RightMargin="468.6948" TopMargin="268.1091" BottomMargin="-12.1091" ctype="SpriteObjectData">
@@ -507,6 +507,36 @@
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="btnSpin" ActionTag="-168856442" Tag="847" IconVisible="False" LeftMargin="985.1184" RightMargin="62.8816" TopMargin="698.9327" BottomMargin="2.0672" TouchEnable="True" FontSize="46" ButtonText="SPIN" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="202" Scale9Height="77" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="232.0000" Y="99.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="1101.1184" Y="51.5672" />
+            <Scale ScaleX="0.8181" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.8602" Y="0.0645" />
+            <PreSize X="0.1813" Y="0.1238" />
+            <TextColor A="255" R="255" G="255" B="255" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="Normal" Path="images/button/btn_gianhluot.png" Plist="" />
+            <NormalFileData Type="Normal" Path="images/button/btn_gianhluot.png" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="btn_Bet" ActionTag="571050334" Tag="848" IconVisible="False" LeftMargin="498.4573" RightMargin="549.5427" TopMargin="704.0606" BottomMargin="-3.0606" TouchEnable="True" FontSize="46" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="202" Scale9Height="77" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="232.0000" Y="99.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="614.4573" Y="46.4394" />
+            <Scale ScaleX="0.7202" ScaleY="0.7377" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.4800" Y="0.0580" />
+            <PreSize X="0.1813" Y="0.1238" />
+            <TextColor A="255" R="255" G="255" B="255" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="Normal" Path="images/button/btn_gianhluot.png" Plist="" />
+            <NormalFileData Type="Normal" Path="images/button/btn_gianhluot.png" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
