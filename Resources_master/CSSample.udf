@@ -35,6 +35,7 @@
           <FilePathData Path="ScreenSlot.csd" />
           <FilePathData Path="GameScene.csd" />
           <FilePathData Path="Game2D.csd" />
+          <FilePathData Path="MainScene.csd" />
         </OpenedDocuments>
         <ActiveDocument Path="ScreenSlot.csd" />
       </Value>

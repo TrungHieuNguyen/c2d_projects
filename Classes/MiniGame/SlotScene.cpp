@@ -49,6 +49,29 @@ void SlotScene::initComponents()
     auto card01 = LayerCard01->getChildByName("item01");
     auto card02 = LayerCard01->getChildByName("item02");
     auto card03 = LayerCard01->getChildByName("item03");
+    
+    schedule(schedule_selector(SlotScene::spin), 0.05);
+}
+void SlotScene::spin(float dt)
+{
+
+    auto LayerCard01 = layerBG->getChildByName("panel01");
+    Point pStart = LayerCard01->getChildByName("pStart")->getPosition();
+    Point pEnd = LayerCard01->getChildByName("pEnd")->getPosition();
+    for(int i =0; i<= 3; i++)
+    {
+        string name = StringUtils::format("item0%d",i);
+        auto item = LayerCard01->getChildByName(name);
+        if(item)
+        {
+            item->setPositionY(item->getPositionY() - 30);
+            if(item->getPositionY()<= pEnd.y)
+            {
+                item->setPositionY(pStart.y);
+            }
+        }
+    }
+    
 }
 void SlotScene::menuCloseCallback(Ref* pSender)
 {

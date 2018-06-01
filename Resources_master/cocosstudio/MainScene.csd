@@ -6,15 +6,15 @@
       <ObjectData Name="Layer" ctype="GameLayerObjectData">
         <Size X="1280.0000" Y="720.0000" />
         <Children>
-          <AbstractNodeData Name="bg" ActionTag="416359974" Tag="2" IconVisible="False" LeftMargin="1.7836" RightMargin="-1.7837" TopMargin="1.8765" BottomMargin="-1.8765" ctype="SpriteObjectData">
-            <Size X="1280.0000" Y="720.0000" />
+          <AbstractNodeData Name="bg" ActionTag="416359974" Tag="2" IconVisible="False" LeftMargin="-335.8916" RightMargin="-364.1084" TopMargin="-233.9507" BottomMargin="-214.0492" ctype="SpriteObjectData">
+            <Size X="1980.0000" Y="1168.0000" />
             <AnchorPoint ScaleX="0.4824" ScaleY="0.4736" />
-            <Position X="619.2556" Y="339.1155" />
-            <Scale ScaleX="1.0049" ScaleY="1.0044" />
+            <Position X="619.2604" Y="339.1156" />
+            <Scale ScaleX="0.6589" ScaleY="0.6467" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.4838" Y="0.4710" />
             <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="images/digital_space_universe_1280x720.jpg" Plist="" />
+            <FileData Type="Normal" Path="images/background/Arthur.jpg" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="btnPlay" ActionTag="1379439207" Tag="3" IconVisible="False" LeftMargin="547.4228" RightMargin="522.5772" TopMargin="133.8596" BottomMargin="535.1404" TouchEnable="True" FontSize="30" ButtonText="Quick play" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="180" Scale9Height="29" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -93,7 +93,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnAbout" ActionTag="-1302691831" Tag="47" IconVisible="False" LeftMargin="546.2452" RightMargin="523.7548" TopMargin="634.6935" BottomMargin="34.3064" TouchEnable="True" FontSize="30" ButtonText="About" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="180" Scale9Height="29" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnAbout" ActionTag="-1302691831" Tag="47" IconVisible="False" LeftMargin="546.2452" RightMargin="523.7548" TopMargin="634.6936" BottomMargin="34.3064" TouchEnable="True" FontSize="30" ButtonText="About" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="180" Scale9Height="29" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="210.0000" Y="51.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="651.2452" Y="59.8064" />
@@ -109,7 +109,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnSlot" ActionTag="140910215" Tag="152" IconVisible="False" LeftMargin="541.3038" RightMargin="528.6962" TopMargin="535.7806" BottomMargin="133.2193" TouchEnable="True" FontSize="30" ButtonText="Slot" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="180" Scale9Height="29" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnSlot" ActionTag="140910215" Tag="152" IconVisible="False" LeftMargin="541.3038" RightMargin="528.6962" TopMargin="535.7807" BottomMargin="133.2193" TouchEnable="True" FontSize="30" ButtonText="Slot" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="180" Scale9Height="29" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="210.0000" Y="51.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="646.3038" Y="158.7193" />
