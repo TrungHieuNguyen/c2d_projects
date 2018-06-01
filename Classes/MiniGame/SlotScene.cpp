@@ -55,19 +55,23 @@ void SlotScene::initComponents()
 void SlotScene::spin(float dt)
 {
 
-    auto LayerCard01 = layerBG->getChildByName("panel01");
-    Point pStart = LayerCard01->getChildByName("pStart")->getPosition();
-    Point pEnd = LayerCard01->getChildByName("pEnd")->getPosition();
-    for(int i =0; i<= 3; i++)
+    for(int k =1; k<6; k++)
     {
-        string name = StringUtils::format("item0%d",i);
-        auto item = LayerCard01->getChildByName(name);
-        if(item)
+        string namePanel = StringUtils::format("panel0%d",k);
+        auto Layer = layerBG->getChildByName(namePanel);
+        Point pStart = Layer->getChildByName("pStart")->getPosition();
+        Point pEnd = Layer->getChildByName("pEnd")->getPosition();
+        for(int i =0; i<= 3; i++)
         {
-            item->setPositionY(item->getPositionY() - 30);
-            if(item->getPositionY()<= pEnd.y)
+            string name = StringUtils::format("item0%d",i);
+            auto item = Layer->getChildByName(name);
+            if(item)
             {
-                item->setPositionY(pStart.y);
+                item->setPositionY(item->getPositionY() - 100);
+                if(item->getPositionY()<= pEnd.y)
+                {
+                    item->setPositionY(pStart.y);
+                }
             }
         }
     }
