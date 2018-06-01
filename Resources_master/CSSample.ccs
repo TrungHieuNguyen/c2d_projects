@@ -87,6 +87,14 @@
             <Image Name="ro8.png" />
             <Image Name="ro9.png" />
           </Folder>
+          <Folder Name="items">
+            <Image Name="aochoangbangiga.png" />
+            <Image Name="giayhove.png" />
+            <Image Name="giayvesi.png" />
+            <Image Name="huanchuongtroy.png" />
+            <Image Name="khienthattruyen.png" />
+            <Image Name="nanhphenis.png" />
+          </Folder>
           <Folder Name="menu">
             <Image Name="bg_money.png" />
             <Image Name="bg_name.png" />

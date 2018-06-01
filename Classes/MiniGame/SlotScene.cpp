@@ -45,6 +45,10 @@ void SlotScene::initComponents()
 //    });
     AbstractScene::showHUD();
     
+    auto LayerCard01 = layerBG->getChildByName("panel01");
+    auto card01 = LayerCard01->getChildByName("item01");
+    auto card02 = LayerCard01->getChildByName("item02");
+    auto card03 = LayerCard01->getChildByName("item03");
 }
 void SlotScene::menuCloseCallback(Ref* pSender)
 {
@@ -53,7 +57,5 @@ void SlotScene::menuCloseCallback(Ref* pSender)
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     exit(0);
 #endif
-    
-    
     
 }

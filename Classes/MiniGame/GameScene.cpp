@@ -58,6 +58,7 @@ bool GameScene::init()
     btnB->addClickEventListener([&,btnB](Ref* sender){
         dealCards();
     });
+    
     //LayerCard
     auto LayerCard = layerBG->getChildByName("LayerCard");
     lbScore = (Text*) layerBG->getChildByName("lbTitle");
