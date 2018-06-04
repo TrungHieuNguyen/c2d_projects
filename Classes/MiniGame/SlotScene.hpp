@@ -30,6 +30,7 @@ public:
     void initComponents();
     void spin(float dt);
     bool isPlaying;
+    bool stopSpinning;
     // implement the "static create()" method manually
     CREATE_FUNC(SlotScene);
 };

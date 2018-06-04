@@ -20,7 +20,7 @@ bool SlotScene::init()
     {
         return false;
     }
-    
+    stopSpinning = true;
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     initComponents();
@@ -55,12 +55,13 @@ void SlotScene::initComponents()
     btnSpin->addClickEventListener([&](Ref* sender){
         if(isPlaying)
         {
-            unschedule(schedule_selector(SlotScene::spin));
+//            stopSpinning = true;
+//            unschedule(schedule_selector(SlotScene::spin));
         }
         else
         {
-           
-            schedule(schedule_selector(SlotScene::spin), 0.05);
+            stopSpinning = false;
+            schedule(schedule_selector(SlotScene::spin), 0.1);
         }
          isPlaying = !isPlaying;
     });
@@ -68,26 +69,34 @@ void SlotScene::initComponents()
 }
 void SlotScene::spin(float dt)
 {
-
-    for(int k =1; k<6; k++)
+    if(isPlaying)
     {
-        string namePanel = StringUtils::format("panel0%d",k);
-        auto Layer = layerBG->getChildByName(namePanel);
-        Point pStart = Layer->getChildByName("pStart")->getPosition();
-        Point pEnd = Layer->getChildByName("pEnd")->getPosition();
-        for(int i =0; i<= 3; i++)
+        for(int k =1; k<6; k++)
         {
-            string name = StringUtils::format("item0%d",i);
-            auto item = Layer->getChildByName(name);
-            if(item)
+            string namePanel = StringUtils::format("panel0%d",k);
+            auto Layer = layerBG->getChildByName(namePanel);
+            Point pStart = Layer->getChildByName("itemStart")->getPosition();
+            Point pEnd = Layer->getChildByName("itemEnd")->getPosition();
+            for(int i =0; i<= 3; i++)
             {
-                item->setPositionY(item->getPositionY() - 100);
-                if(item->getPositionY()<= pEnd.y)
+                string name = StringUtils::format("item0%d",i);
+                auto item = Layer->getChildByName(name);
+                if(item)
                 {
-                    item->setPositionY(pStart.y);
+                    int deltaY  = item->getPositionY() - pEnd.y;
+                    if(deltaY<=0)
+                    {
+                        item->setPositionY(pStart.y + deltaY);
+                    }
+                    item->setPositionY(item->getPositionY() - 30);
                 }
             }
         }
+    }
+    else
+    {
+        stopSpinning = true;
+        unschedule(schedule_selector(SlotScene::spin));
     }
     
 }
