@@ -20,6 +20,7 @@ class SlotScene : public AbstractScene
 {
     Node* layerBG;
     Text* lbTitle;
+    int m_Speed;
 public:
     static cocos2d::Scene* createScene();
     

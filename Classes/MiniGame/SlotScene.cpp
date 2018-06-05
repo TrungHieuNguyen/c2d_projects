@@ -20,6 +20,7 @@ bool SlotScene::init()
     {
         return false;
     }
+    m_Speed = 0;
     stopSpinning = true;
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
@@ -44,7 +45,7 @@ void SlotScene::initComponents()
 //        Director::getInstance()->replaceScene(SlotScene::createScene());
 //    });
     AbstractScene::showHUD();
-    
+    m_Speed = 30;
     auto LayerCard01 = layerBG->getChildByName("panel01");
     auto card01 = LayerCard01->getChildByName("item01");
     auto card02 = LayerCard01->getChildByName("item02");
@@ -61,9 +62,21 @@ void SlotScene::initComponents()
         else
         {
             stopSpinning = false;
-            schedule(schedule_selector(SlotScene::spin), 0.1);
+            schedule(schedule_selector(SlotScene::spin), 0.02);
         }
          isPlaying = !isPlaying;
+    });
+    
+    Button* btnUp = (Button*) layerBG->getChildByName("btnUp");
+    btnUp->setPressedActionEnabled(true);
+    btnUp->addClickEventListener([&](Ref* sender){
+         m_Speed += 10;
+    });
+    
+    Button* btnDown = (Button*) layerBG->getChildByName("btnDown");
+    btnDown->setPressedActionEnabled(true);
+    btnDown->addClickEventListener([&](Ref* sender){
+        m_Speed -= 10;
     });
     
 }
@@ -88,7 +101,7 @@ void SlotScene::spin(float dt)
                     {
                         item->setPositionY(pStart.y + deltaY);
                     }
-                    item->setPositionY(item->getPositionY() - 30);
+                    item->setPositionY(item->getPositionY() - m_Speed);
                 }
             }
         }
@@ -97,6 +110,41 @@ void SlotScene::spin(float dt)
     {
         stopSpinning = true;
         unschedule(schedule_selector(SlotScene::spin));
+//        for(int k =1; k<6; k++)
+//        {
+//            string namePanel = StringUtils::format("panel0%d",k);
+//            auto Layer = layerBG->getChildByName(namePanel);
+//            Point pStart = Layer->getChildByName("itemStart")->getPosition();
+//            Point pEnd = Layer->getChildByName("itemEnd")->getPosition();
+//            int deltaY  = 0;
+//            int botItem = -1;
+//            for(int i =0; i<= 3; i++)
+//            {
+//
+//                string name = StringUtils::format("item0%d",i);
+//                auto item = Layer->getChildByName(name);
+//                if(item)
+//                {
+//                    int dtY  = item->getPositionY() - pEnd.y;
+//                    if(dtY<=deltaY)
+//                    {
+//                        item->setPositionY(pStart.y + deltaY);
+//                        deltaY = dtY;
+//                        botItem = i;
+//                    }
+//                }
+//            }
+//
+//            for(int i =0; i<= 3; i++)
+//            {
+//                string name = StringUtils::format("item0%d",i);
+//                auto item = Layer->getChildByName(name);
+//                if(item)
+//                {
+//                    item->runAction(MoveTo::create(0.3,Vec2(item->getPosition().x, item->getPosition().y + deltaY)));
+//                }
+//            }
+//        }
     }
     
 }
