@@ -21,6 +21,7 @@ bool SlotScene::init()
         return false;
     }
     m_Speed = 0;
+    m_Direction = 1;
     stopSpinning = true;
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
@@ -45,7 +46,7 @@ void SlotScene::initComponents()
 //        Director::getInstance()->replaceScene(SlotScene::createScene());
 //    });
     AbstractScene::showHUD();
-    m_Speed = 30;
+    m_Speed = 20;
     auto LayerCard01 = layerBG->getChildByName("panel01");
     auto card01 = LayerCard01->getChildByName("item01");
     auto card02 = LayerCard01->getChildByName("item02");
@@ -70,13 +71,13 @@ void SlotScene::initComponents()
     Button* btnUp = (Button*) layerBG->getChildByName("btnUp");
     btnUp->setPressedActionEnabled(true);
     btnUp->addClickEventListener([&](Ref* sender){
-         m_Speed += 10;
+         m_Speed += 20;
     });
     
     Button* btnDown = (Button*) layerBG->getChildByName("btnDown");
     btnDown->setPressedActionEnabled(true);
     btnDown->addClickEventListener([&](Ref* sender){
-        m_Speed -= 10;
+        m_Speed -= 20;
     });
     
 }
@@ -96,12 +97,13 @@ void SlotScene::spin(float dt)
                 auto item = Layer->getChildByName(name);
                 if(item)
                 {
+                    item->setPositionY(item->getPositionY() - m_Speed);
                     int deltaY  = item->getPositionY() - pEnd.y;
                     if(deltaY<=0)
                     {
                         item->setPositionY(pStart.y + deltaY);
                     }
-                    item->setPositionY(item->getPositionY() - m_Speed);
+                    
                 }
             }
         }
