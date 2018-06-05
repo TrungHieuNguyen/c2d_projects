@@ -64,7 +64,7 @@ void SlotScene::initComponents()
         {
             stopSpinning = false;
             schedule(schedule_selector(SlotScene::spin), 0.02);
-            schedule(schedule_selector(SlotScene::spinCounter), 0.3);
+            schedule(schedule_selector(SlotScene::spinCounter), 0.5);
         }
          isPlaying = !isPlaying;
     });
@@ -131,7 +131,7 @@ void SlotScene::spin(float dt)
         unschedule(schedule_selector(SlotScene::spinCounter));
         unschedule(schedule_selector(SlotScene::spin));
         
-        
+//        
 //        for(int k =1; k<6; k++)
 //        {
 //            string namePanel = StringUtils::format("panel0%d",k);
@@ -140,23 +140,27 @@ void SlotScene::spin(float dt)
 //            Point pEnd = Layer->getChildByName("itemEnd")->getPosition();
 //            int deltaY  = 0;
 //            int botItem = -1;
-//            for(int i =0; i<= 3; i++)
+//            for(int i =3; i>= 0; --i)
 //            {
 //
 //                string name = StringUtils::format("item0%d",i);
 //                auto item = Layer->getChildByName(name);
+//                int offY = item->getBoundingBox().size.height;
 //                if(item)
 //                {
-//                    int dtY  = item->getPositionY() - pEnd.y;
-//                    if(dtY<=deltaY)
+//                    if(i==3)
+//                        deltaY  = pStart.y - item->getPositionY();
+//                    if(deltaY <= offY/2)
 //                    {
-//                        item->setPositionY(pStart.y + deltaY);
-//                        deltaY = dtY;
-//                        botItem = i;
+//                        item->runAction(MoveTo::create(0.3,Vec2(item->getPosition().x, item->getPosition().y - deltaY)));
+//                    }
+//                    else
+//                    {
+//                        item->runAction(MoveTo::create(0.3,Vec2(item->getPosition().x, item->getPosition().y + deltaY)));
 //                    }
 //                }
 //            }
-//
+
 //            for(int i =0; i<= 3; i++)
 //            {
 //                string name = StringUtils::format("item0%d",i);
@@ -166,7 +170,7 @@ void SlotScene::spin(float dt)
 //                    item->runAction(MoveTo::create(0.3,Vec2(item->getPosition().x, item->getPosition().y + deltaY)));
 //                }
 //            }
-//        }
+        }
     }
     
 }
