@@ -31,6 +31,7 @@ public:
     void menuCloseCallback(cocos2d::Ref* pSender);
     void initComponents();
     void spin(float dt);
+    void spinCounter(float dt);
     bool isPlaying;
     bool stopSpinning;
     // implement the "static create()" method manually

@@ -64,6 +64,7 @@ void SlotScene::initComponents()
         {
             stopSpinning = false;
             schedule(schedule_selector(SlotScene::spin), 0.02);
+            schedule(schedule_selector(SlotScene::spinCounter), 0.3);
         }
          isPlaying = !isPlaying;
     });
@@ -81,8 +82,24 @@ void SlotScene::initComponents()
     });
     
 }
+void SlotScene::spinCounter(float dt)
+{
+    log("spinCounter...");
+    if(m_Speed == 100)
+    {
+        m_Direction = -1;
+    }
+    m_Speed += m_Direction*10;
+    if(m_Speed<= 0 && m_Direction < 0)
+    {
+        isPlaying = false;
+        m_Direction = 1;
+        m_Speed = 0;
+    }
+}
 void SlotScene::spin(float dt)
 {
+    log("spin...");
     if(isPlaying)
     {
         for(int k =1; k<6; k++)
@@ -111,7 +128,10 @@ void SlotScene::spin(float dt)
     else
     {
         stopSpinning = true;
+        unschedule(schedule_selector(SlotScene::spinCounter));
         unschedule(schedule_selector(SlotScene::spin));
+        
+        
 //        for(int k =1; k<6; k++)
 //        {
 //            string namePanel = StringUtils::format("panel0%d",k);
