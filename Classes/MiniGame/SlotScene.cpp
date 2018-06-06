@@ -20,9 +20,10 @@ bool SlotScene::init()
     {
         return false;
     }
-    m_Speed = 0;
+    m_Speed = 1;
     m_Direction = 1;
     stopSpinning = true;
+    m_Velocity = 1;
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     initComponents();
@@ -36,6 +37,7 @@ void SlotScene::initComponents()
     layerBG = CSLoader::createNode(SCENE_SLOT_CSB);
     addChild(layerBG, -1);
     isPlaying = false;
+    m_Velocity = 1;
     arrResult[3][5] = {{1}};
 //    lbTitle = (Text*) layerBG->getChildByName("lbTitle");
 //    lbTitle->setIgnoreAnchorPointForPosition(false);
@@ -47,7 +49,7 @@ void SlotScene::initComponents()
 //        Director::getInstance()->replaceScene(SlotScene::createScene());
 //    });
     AbstractScene::showHUD();
-    m_Speed = 20;
+    //m_Speed = 20;
     auto LayerCard01 = layerBG->getChildByName("panel01");
     auto card01 = LayerCard01->getChildByName("item01");
     auto card02 = LayerCard01->getChildByName("item02");
@@ -64,6 +66,7 @@ void SlotScene::initComponents()
         else
         {
             stopSpinning = false;
+            m_Speed = 20;
             schedule(schedule_selector(SlotScene::spin), 0.02);
             schedule(schedule_selector(SlotScene::spinCounter), 0.5);
         }
@@ -86,16 +89,24 @@ void SlotScene::initComponents()
 void SlotScene::spinCounter(float dt)
 {
     log("spinCounter...");
-    if(m_Speed >= 80)
+    if(m_Speed >= 100)
     {
         m_Direction = -1;
     }
-    m_Speed += m_Direction*10;
+    if(abs(m_Speed) > 50)
+    {
+        m_Velocity = 30;
+    }
+    else
+    {
+         m_Velocity = 10;
+    }
+    m_Speed += m_Direction*m_Velocity;
     if(m_Speed<= 0 && m_Direction < 0)
     {
         isPlaying = false;
         m_Direction = 1;
-        m_Speed = 0;
+        m_Speed = 20;
     }
     Text* txtCoinSize = (Text*) layerBG->getChildByName("txtCoinSize");
     txtCoinSize->setString(StringUtils::toString(m_Speed));
@@ -117,13 +128,14 @@ void SlotScene::spin(float dt)
                 Sprite* item = Layer->getChildByName<Sprite*>(name);
                 if(item)
                 {
-                    int rand = RandomHelper::random_int(0,11);
-                    string path = StringUtils::format("images/items/item%02d.png",rand);
-                    item->setTexture(path);
+                    
                     item->setPositionY(item->getPositionY() - m_Speed);
                     int deltaY  = item->getPositionY() - pEnd.y;
                     if(deltaY<=0)
                     {
+                        int rand = RandomHelper::random_int(0,11);
+                        string path = StringUtils::format("images/items/item%02d.png",rand);
+                        item->setTexture(path);
                         item->setPositionY(pStart.y + deltaY);
                     }
                     
@@ -134,7 +146,7 @@ void SlotScene::spin(float dt)
     else
     {
         stopSpinning = true;
-        //showResult(arrResult);
+        showResult(arrResult);
         unschedule(schedule_selector(SlotScene::spinCounter));
         unschedule(schedule_selector(SlotScene::spin));
     }

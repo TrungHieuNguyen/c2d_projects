@@ -22,6 +22,7 @@ class SlotScene : public AbstractScene
     Text* lbTitle;
     int m_Speed;
     int m_Direction;
+    int m_Velocity;
     int arrResult[3][5];
 public:
     static cocos2d::Scene* createScene();

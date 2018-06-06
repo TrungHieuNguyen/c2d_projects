@@ -34,6 +34,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 #endif
 		
         director->setOpenGLView(glview);
+        cocos2d::Device::setKeepScreenOn(true);
     }
 
     director->getOpenGLView()->setDesignResolutionSize(1280, 720, ResolutionPolicy::SHOW_ALL);
