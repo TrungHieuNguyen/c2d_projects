@@ -22,6 +22,7 @@ class SlotScene : public AbstractScene
     Text* lbTitle;
     int m_Speed;
     int m_Direction;
+    int arrResult[3][5];
 public:
     static cocos2d::Scene* createScene();
     
@@ -31,9 +32,11 @@ public:
     void menuCloseCallback(cocos2d::Ref* pSender);
     void initComponents();
     void spin(float dt);
+    void showResult(int arr[3][5]);
     void spinCounter(float dt);
     bool isPlaying;
     bool stopSpinning;
+    void resetArrayResult(int k);
     // implement the "static create()" method manually
     CREATE_FUNC(SlotScene);
 };

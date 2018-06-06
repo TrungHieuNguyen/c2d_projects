@@ -36,6 +36,7 @@ void SlotScene::initComponents()
     layerBG = CSLoader::createNode(SCENE_SLOT_CSB);
     addChild(layerBG, -1);
     isPlaying = false;
+    arrResult[3][5] = {{1}};
 //    lbTitle = (Text*) layerBG->getChildByName("lbTitle");
 //    lbTitle->setIgnoreAnchorPointForPosition(false);
 //    lbTitle->setAnchorPoint(Point(0.5, 0.5f));
@@ -85,7 +86,7 @@ void SlotScene::initComponents()
 void SlotScene::spinCounter(float dt)
 {
     log("spinCounter...");
-    if(m_Speed == 100)
+    if(m_Speed >= 80)
     {
         m_Direction = -1;
     }
@@ -96,6 +97,8 @@ void SlotScene::spinCounter(float dt)
         m_Direction = 1;
         m_Speed = 0;
     }
+    Text* txtCoinSize = (Text*) layerBG->getChildByName("txtCoinSize");
+    txtCoinSize->setString(StringUtils::toString(m_Speed));
 }
 void SlotScene::spin(float dt)
 {
@@ -111,9 +114,12 @@ void SlotScene::spin(float dt)
             for(int i =0; i<= 3; i++)
             {
                 string name = StringUtils::format("item0%d",i);
-                auto item = Layer->getChildByName(name);
+                Sprite* item = Layer->getChildByName<Sprite*>(name);
                 if(item)
                 {
+                    int rand = RandomHelper::random_int(0,11);
+                    string path = StringUtils::format("images/items/item%02d.png",rand);
+                    item->setTexture(path);
                     item->setPositionY(item->getPositionY() - m_Speed);
                     int deltaY  = item->getPositionY() - pEnd.y;
                     if(deltaY<=0)
@@ -128,51 +134,44 @@ void SlotScene::spin(float dt)
     else
     {
         stopSpinning = true;
+        //showResult(arrResult);
         unschedule(schedule_selector(SlotScene::spinCounter));
         unschedule(schedule_selector(SlotScene::spin));
-        
-//        
-//        for(int k =1; k<6; k++)
-//        {
-//            string namePanel = StringUtils::format("panel0%d",k);
-//            auto Layer = layerBG->getChildByName(namePanel);
-//            Point pStart = Layer->getChildByName("itemStart")->getPosition();
-//            Point pEnd = Layer->getChildByName("itemEnd")->getPosition();
-//            int deltaY  = 0;
-//            int botItem = -1;
-//            for(int i =3; i>= 0; --i)
-//            {
-//
-//                string name = StringUtils::format("item0%d",i);
-//                auto item = Layer->getChildByName(name);
-//                int offY = item->getBoundingBox().size.height;
-//                if(item)
-//                {
-//                    if(i==3)
-//                        deltaY  = pStart.y - item->getPositionY();
-//                    if(deltaY <= offY/2)
-//                    {
-//                        item->runAction(MoveTo::create(0.3,Vec2(item->getPosition().x, item->getPosition().y - deltaY)));
-//                    }
-//                    else
-//                    {
-//                        item->runAction(MoveTo::create(0.3,Vec2(item->getPosition().x, item->getPosition().y + deltaY)));
-//                    }
-//                }
-//            }
-
-//            for(int i =0; i<= 3; i++)
-//            {
-//                string name = StringUtils::format("item0%d",i);
-//                auto item = Layer->getChildByName(name);
-//                if(item)
-//                {
-//                    item->runAction(MoveTo::create(0.3,Vec2(item->getPosition().x, item->getPosition().y + deltaY)));
-//                }
-//            }
-        }
     }
     
+}
+void SlotScene::showResult(int arr[3][5])
+{
+    resetArrayResult(0);
+    for(int k =1; k<6; k++)
+    {
+        string namePanel = StringUtils::format("panel0%d",k);
+        auto Layer = layerBG->getChildByName(namePanel);
+        Point pStart = Layer->getChildByName("itemStart")->getPosition();
+        Point pEnd = Layer->getChildByName("itemEnd")->getPosition();
+        for(int i =0; i<= 3; i++)
+        {
+            
+            string name = StringUtils::format("item0%d",i);
+            Sprite* item = Layer->getChildByName<Sprite*>(name);
+            if(item)
+            {
+                string path = StringUtils::format("images/items/item%02d.png",arrResult[i][k-1]);
+                item->setTexture(path);
+            }
+        }
+    }
+}
+void SlotScene::resetArrayResult(int k)
+{
+    for(int i =0; i<= 3; i++)
+    for(int j =0; j<= 5; j++)
+    {
+        if(k==-1)
+             arrResult[i][j] = RandomHelper::random_int(0,11);
+        else
+            arrResult[i][j] = k;
+    }
 }
 void SlotScene::menuCloseCallback(Ref* pSender)
 {

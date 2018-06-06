@@ -55,7 +55,43 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="pnlProducts" ActionTag="-1890051779" Alpha="14" Tag="90" IconVisible="False" LeftMargin="98.7549" RightMargin="381.2451" TopMargin="413.0000" BottomMargin="87.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="txtBest" ActionTag="1941393627" Tag="52" IconVisible="False" LeftMargin="166.3536" RightMargin="976.6464" TopMargin="654.5500" BottomMargin="104.4500" FontSize="30" LabelText="999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="137.0000" Y="41.0000" />
+            <AnchorPoint ScaleY="0.4946" />
+            <Position X="166.3536" Y="124.7268" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.1300" Y="0.1559" />
+            <PreSize X="0.1070" Y="0.0512" />
+            <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Bold.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="txtWIn" ActionTag="191455690" Tag="53" IconVisible="False" LeftMargin="501.4201" RightMargin="641.5799" TopMargin="656.2501" BottomMargin="102.7499" FontSize="30" LabelText="999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="137.0000" Y="41.0000" />
+            <AnchorPoint ScaleY="0.4946" />
+            <Position X="501.4201" Y="123.0267" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.3917" Y="0.1538" />
+            <PreSize X="0.1070" Y="0.0512" />
+            <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Bold.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="txtCoinSize" ActionTag="1767694310" Tag="54" IconVisible="False" LeftMargin="184.9821" RightMargin="1033.0179" TopMargin="728.4956" BottomMargin="30.5044" FontSize="30" LabelText="9999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="62.0000" Y="41.0000" />
+            <AnchorPoint ScaleY="0.4946" />
+            <Position X="184.9821" Y="50.7812" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.1445" Y="0.0635" />
+            <PreSize X="0.0484" Y="0.0512" />
+            <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Bold.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="pnlProducts" CanEdit="False" ActionTag="-1890051779" Alpha="14" Tag="90" IconVisible="False" LeftMargin="98.7549" RightMargin="381.2451" TopMargin="413.0000" BottomMargin="87.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="800.0000" Y="300.0000" />
             <AnchorPoint />
             <Position X="98.7549" Y="87.0000" />
@@ -109,7 +145,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5057" Y="1.1733" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/aochoangbangiga.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item01.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item00" ActionTag="518931574" Tag="124" IconVisible="False" LeftMargin="49.9998" RightMargin="50.0002" TopMargin="-126.9017" BottomMargin="476.9017" ctype="SpriteObjectData">
@@ -120,7 +156,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="1.1709" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/aochoangbangiga.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item01.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item01" ActionTag="1323614725" Tag="101" IconVisible="False" LeftMargin="50.0001" RightMargin="49.9999" TopMargin="25.7905" BottomMargin="324.2095" ctype="SpriteObjectData">
@@ -131,7 +167,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.8316" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/khienthattruyen.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item04.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item02" ActionTag="1501022600" Tag="102" IconVisible="False" LeftMargin="50.0001" RightMargin="49.9999" TopMargin="176.7580" BottomMargin="173.2420" ctype="SpriteObjectData">
@@ -142,7 +178,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.4961" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/nanhphenis.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item05.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item03" ActionTag="-236811729" Tag="105" IconVisible="False" LeftMargin="50.0000" RightMargin="50.0000" TopMargin="327.4692" BottomMargin="22.5308" ctype="SpriteObjectData">
@@ -153,7 +189,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.1612" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/huanchuongtroy.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item02.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="itemEnd" ActionTag="471502991" Tag="148" IconVisible="False" LeftMargin="49.7095" RightMargin="50.2905" TopMargin="473.7278" BottomMargin="-123.7278" ctype="SpriteObjectData">
@@ -164,7 +200,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4985" Y="-0.1638" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/giayvesi.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item03.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
             </Children>
@@ -190,7 +226,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5057" Y="1.1733" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/aochoangbangiga.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item01.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item00" ActionTag="485826282" Tag="58" IconVisible="False" LeftMargin="49.9998" RightMargin="50.0002" TopMargin="-126.9017" BottomMargin="476.9017" ctype="SpriteObjectData">
@@ -201,7 +237,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="1.1709" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/aochoangbangiga.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item01.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item01" ActionTag="-1751899665" Tag="59" IconVisible="False" LeftMargin="49.9998" RightMargin="50.0002" TopMargin="25.7905" BottomMargin="324.2095" ctype="SpriteObjectData">
@@ -212,8 +248,8 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.8316" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/khienthattruyen.png" Plist="" />
-                <BlendFunc Src="1" Dst="771" />
+                <FileData Type="Normal" Path="images/items/item09.png" Plist="" />
+                <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item02" ActionTag="1125313829" Tag="60" IconVisible="False" LeftMargin="49.9997" RightMargin="50.0003" TopMargin="176.7580" BottomMargin="173.2420" ctype="SpriteObjectData">
                 <Size X="100.0000" Y="100.0000" />
@@ -223,8 +259,8 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.4961" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/nanhphenis.png" Plist="" />
-                <BlendFunc Src="1" Dst="771" />
+                <FileData Type="Normal" Path="images/items/item08.png" Plist="" />
+                <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item03" ActionTag="1727638625" Tag="61" IconVisible="False" LeftMargin="50.0000" RightMargin="50.0000" TopMargin="327.4692" BottomMargin="22.5308" ctype="SpriteObjectData">
                 <Size X="100.0000" Y="100.0000" />
@@ -234,7 +270,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.1612" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/huanchuongtroy.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item00.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="itemEnd" ActionTag="-104620573" Tag="62" IconVisible="False" LeftMargin="49.7095" RightMargin="50.2905" TopMargin="473.7278" BottomMargin="-123.7278" ctype="SpriteObjectData">
@@ -245,7 +281,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4985" Y="-0.1638" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/giayvesi.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item03.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
             </Children>
@@ -271,7 +307,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5057" Y="1.1733" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/aochoangbangiga.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item01.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item00" ActionTag="-1114858907" Tag="65" IconVisible="False" LeftMargin="49.9998" RightMargin="50.0002" TopMargin="-126.9017" BottomMargin="476.9017" ctype="SpriteObjectData">
@@ -282,7 +318,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="1.1709" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/aochoangbangiga.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item01.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item01" ActionTag="-1486816127" Tag="66" IconVisible="False" LeftMargin="49.9999" RightMargin="50.0001" TopMargin="25.7905" BottomMargin="324.2095" ctype="SpriteObjectData">
@@ -293,7 +329,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.8316" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/khienthattruyen.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item02.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item02" ActionTag="539728255" Tag="67" IconVisible="False" LeftMargin="49.9998" RightMargin="50.0002" TopMargin="176.7580" BottomMargin="173.2420" ctype="SpriteObjectData">
@@ -304,7 +340,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.4961" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/nanhphenis.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item02.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item03" ActionTag="-155883126" Tag="68" IconVisible="False" LeftMargin="50.0000" RightMargin="50.0000" TopMargin="327.4692" BottomMargin="22.5308" ctype="SpriteObjectData">
@@ -315,8 +351,8 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.1612" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/huanchuongtroy.png" Plist="" />
-                <BlendFunc Src="1" Dst="771" />
+                <FileData Type="Normal" Path="images/items/item08.png" Plist="" />
+                <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="itemEnd" ActionTag="995388998" Tag="69" IconVisible="False" LeftMargin="49.7095" RightMargin="50.2905" TopMargin="473.7278" BottomMargin="-123.7278" ctype="SpriteObjectData">
                 <Size X="100.0000" Y="100.0000" />
@@ -326,7 +362,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4985" Y="-0.1638" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/giayvesi.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item03.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
             </Children>
@@ -352,7 +388,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5057" Y="1.1733" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/aochoangbangiga.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item01.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item00" ActionTag="-648680882" Tag="72" IconVisible="False" LeftMargin="49.9998" RightMargin="50.0002" TopMargin="-126.9017" BottomMargin="476.9017" ctype="SpriteObjectData">
@@ -363,7 +399,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="1.1709" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/aochoangbangiga.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item01.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item01" ActionTag="1300213668" Tag="73" IconVisible="False" LeftMargin="49.9998" RightMargin="50.0002" TopMargin="25.7905" BottomMargin="324.2095" ctype="SpriteObjectData">
@@ -374,8 +410,8 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.8316" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/khienthattruyen.png" Plist="" />
-                <BlendFunc Src="1" Dst="771" />
+                <FileData Type="Normal" Path="images/items/item08.png" Plist="" />
+                <BlendFunc Src="770" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item02" ActionTag="-2084921092" Tag="74" IconVisible="False" LeftMargin="49.9997" RightMargin="50.0003" TopMargin="176.7580" BottomMargin="173.2420" ctype="SpriteObjectData">
                 <Size X="100.0000" Y="100.0000" />
@@ -385,7 +421,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.4961" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/nanhphenis.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item05.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item03" ActionTag="1315564176" Tag="75" IconVisible="False" LeftMargin="50.0000" RightMargin="50.0000" TopMargin="327.4692" BottomMargin="22.5308" ctype="SpriteObjectData">
@@ -396,7 +432,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.1612" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/huanchuongtroy.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item01.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="itemEnd" ActionTag="-1847681789" Tag="76" IconVisible="False" LeftMargin="49.7095" RightMargin="50.2905" TopMargin="473.7278" BottomMargin="-123.7278" ctype="SpriteObjectData">
@@ -407,7 +443,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4985" Y="-0.1638" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/giayvesi.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item03.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
             </Children>
@@ -433,7 +469,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5057" Y="1.1733" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/aochoangbangiga.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item01.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item00" ActionTag="-960232696" Tag="79" IconVisible="False" LeftMargin="49.9998" RightMargin="50.0002" TopMargin="-126.9017" BottomMargin="476.9017" ctype="SpriteObjectData">
@@ -444,7 +480,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="1.1709" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/aochoangbangiga.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item01.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item01" ActionTag="1432523476" Tag="80" IconVisible="False" LeftMargin="49.9998" RightMargin="50.0002" TopMargin="25.7905" BottomMargin="324.2095" ctype="SpriteObjectData">
@@ -455,7 +491,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.8316" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/khienthattruyen.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item00.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item02" ActionTag="396310021" Tag="81" IconVisible="False" LeftMargin="49.9996" RightMargin="50.0004" TopMargin="176.7580" BottomMargin="173.2420" ctype="SpriteObjectData">
@@ -466,7 +502,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.4961" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/nanhphenis.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item02.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="item03" ActionTag="-1659908817" Tag="82" IconVisible="False" LeftMargin="50.0000" RightMargin="50.0000" TopMargin="327.4692" BottomMargin="22.5308" ctype="SpriteObjectData">
@@ -477,7 +513,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.1612" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/huanchuongtroy.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item00.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
               <AbstractNodeData Name="itemEnd" ActionTag="1243962062" Tag="83" IconVisible="False" LeftMargin="49.7095" RightMargin="50.2905" TopMargin="473.7278" BottomMargin="-123.7278" ctype="SpriteObjectData">
@@ -488,7 +524,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4985" Y="-0.1638" />
                 <PreSize X="0.5000" Y="0.2222" />
-                <FileData Type="Normal" Path="images/items/giayvesi.png" Plist="" />
+                <FileData Type="Normal" Path="images/items/item03.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
             </Children>

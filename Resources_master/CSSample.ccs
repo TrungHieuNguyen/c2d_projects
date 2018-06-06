@@ -92,12 +92,18 @@
             <Image Name="ro9.png" />
           </Folder>
           <Folder Name="items">
-            <Image Name="aochoangbangiga.png" />
-            <Image Name="giayhove.png" />
-            <Image Name="giayvesi.png" />
-            <Image Name="huanchuongtroy.png" />
-            <Image Name="khienthattruyen.png" />
-            <Image Name="nanhphenis.png" />
+            <Image Name="item11.jpg" />
+            <Image Name="item09.png" />
+            <Image Name="item10.jpg" />
+            <Image Name="item00.png" />
+            <Image Name="item01.png" />
+            <Image Name="item02.png" />
+            <Image Name="item03.png" />
+            <Image Name="item04.png" />
+            <Image Name="item05.png" />
+            <Image Name="item06.png" />
+            <Image Name="item07.jpg" />
+            <Image Name="item08.png" />
           </Folder>
           <Folder Name="menu">
             <Image Name="bg_money.png" />
