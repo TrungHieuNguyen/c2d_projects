@@ -161,13 +161,13 @@
           <AbstractNodeData Name="sprAvatarOut" ActionTag="-1978911192" Tag="66" IconVisible="False" LeftMargin="70.1837" RightMargin="1111.8163" TopMargin="5.4619" BottomMargin="46.5381" ctype="SpriteObjectData">
             <Size X="98.0000" Y="98.0000" />
             <Children>
-              <AbstractNodeData Name="sprAvatar" ActionTag="-1962275074" Tag="65" IconVisible="False" LeftMargin="-28.2355" RightMargin="-17.7645" TopMargin="-23.4892" BottomMargin="-22.5108" ctype="SpriteObjectData">
+              <AbstractNodeData Name="sprAvatar" ActionTag="-1962275074" Tag="65" IconVisible="False" LeftMargin="-21.2015" RightMargin="-24.7985" TopMargin="-23.4870" BottomMargin="-22.5130" ctype="SpriteObjectData">
                 <Size X="144.0000" Y="144.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.4830" />
-                <Position X="43.7645" Y="47.0412" />
-                <Scale ScaleX="0.7224" ScaleY="0.6030" />
+                <Position X="50.7985" Y="47.0390" />
+                <Scale ScaleX="0.7876" ScaleY="0.6630" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.4466" Y="0.4800" />
+                <PrePosition X="0.5184" Y="0.4800" />
                 <PreSize X="1.4694" Y="1.4694" />
                 <FileData Type="Normal" Path="images/Icon-76.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />

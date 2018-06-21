@@ -31,6 +31,8 @@
             <Image Name="btn_gianhluot.png" />
             <Image Name="btn_gianhluot2.png" />
             <Image Name="btn_green.png" />
+            <Image Name="btn_main.png" />
+            <Image Name="btn_main_selected.png" />
             <Image Name="btn_red.png" />
             <Image Name="btn_xep.png" />
             <Image Name="btn_xep2.png" />
@@ -92,9 +94,6 @@
             <Image Name="ro9.png" />
           </Folder>
           <Folder Name="items">
-            <Image Name="item11.jpg" />
-            <Image Name="item09.png" />
-            <Image Name="item10.jpg" />
             <Image Name="item00.png" />
             <Image Name="item01.png" />
             <Image Name="item02.png" />
@@ -104,6 +103,9 @@
             <Image Name="item06.png" />
             <Image Name="item07.jpg" />
             <Image Name="item08.png" />
+            <Image Name="item09.png" />
+            <Image Name="item10.jpg" />
+            <Image Name="item11.jpg" />
           </Folder>
           <Folder Name="menu">
             <Image Name="bg_money.png" />
@@ -214,7 +216,10 @@
         <Project Name="Game2D.csd" Type="Scene" />
         <Project Name="Game3D.csd" Type="Layer" />
         <Project Name="GameScene.csd" Type="Layer" />
+        <Project Name="GameTeris.csd" Type="Layer" />
         <Project Name="GameTiledMap.csd" Type="Layer" />
+        <Project Name="GameTowerDefense.csd" Type="Layer" />
+        <Project Name="GoldMiner.csd" Type="Layer" />
         <Project Name="HUDLayer.csd" Type="Layer" />
         <Project Name="MainScene.csd" Type="Layer" />
         <Project Name="Popup.csd" Type="Layer" />

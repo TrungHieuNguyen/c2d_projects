@@ -1,7 +1,7 @@
 #include "AppDelegate.h"
 #include "DragonBonesTest/CoreElement.h"
-#include "MiniGame/MainScene.hpp"
-#include "MiniGame/GameScene.hpp"
+#include "MiniGame/Scenes/MainScene.hpp"
+#include "MiniGame/Scenes/GameScene.hpp"
 
 
 USING_NS_CC;

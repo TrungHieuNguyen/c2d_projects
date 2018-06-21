@@ -55,7 +55,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="txtBest" ActionTag="1941393627" Tag="52" IconVisible="False" LeftMargin="166.3536" RightMargin="976.6464" TopMargin="654.5500" BottomMargin="104.4500" FontSize="30" LabelText="999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="txtBest" ActionTag="1941393627" Tag="52" IconVisible="False" LeftMargin="166.3536" RightMargin="976.6464" TopMargin="654.5518" BottomMargin="104.4482" FontSize="30" LabelText="999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="137.0000" Y="41.0000" />
             <AnchorPoint ScaleY="0.4946" />
             <Position X="166.3536" Y="124.7268" />
@@ -67,19 +67,19 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="txtWIn" ActionTag="191455690" Tag="53" IconVisible="False" LeftMargin="501.4201" RightMargin="641.5799" TopMargin="656.2501" BottomMargin="102.7499" FontSize="30" LabelText="999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="txtWIn" ActionTag="191455690" Tag="53" IconVisible="False" LeftMargin="501.4201" RightMargin="641.5798" TopMargin="654.2519" BottomMargin="104.7481" FontSize="30" LabelText="999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="137.0000" Y="41.0000" />
             <AnchorPoint ScaleY="0.4946" />
-            <Position X="501.4201" Y="123.0267" />
+            <Position X="501.4201" Y="125.0267" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.3917" Y="0.1538" />
+            <PrePosition X="0.3917" Y="0.1563" />
             <PreSize X="0.1070" Y="0.0512" />
             <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Bold.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="txtCoinSize" ActionTag="1767694310" Tag="54" IconVisible="False" LeftMargin="184.9821" RightMargin="1033.0179" TopMargin="728.4956" BottomMargin="30.5044" FontSize="30" LabelText="9999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="txtCoinSize" ActionTag="1767694310" Tag="54" IconVisible="False" LeftMargin="184.9821" RightMargin="1033.0179" TopMargin="728.4974" BottomMargin="30.5026" FontSize="30" LabelText="9999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="62.0000" Y="41.0000" />
             <AnchorPoint ScaleY="0.4946" />
             <Position X="184.9821" Y="50.7812" />
