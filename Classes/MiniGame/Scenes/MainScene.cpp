@@ -119,11 +119,9 @@ void MainScene::initComponents()
     scrollView->unscheduleAllSelectors();
     //this->addChild(scrollView, 2);
     
-    
-    
-    ComboBox* comboBox = ComboBox::create("1985", "res/images/button/btn_red.png", "res/images/button/btn_red.png", "res/images/button/btn_red2.png", "res/images/button/btn_red.png",  60, 3);
-    comboBox->setComboBoxDataFromContinuousInt(1900,2100); // 设置内容为1900-2100的所有数字,需要设置字符串之类的可以参考其他设置内容的接口
-    comboBox->setPosition(visibleSize.width/2, visibleSize.height/2);
+    ComboBox* comboBox = ComboBox::create("1985", "res/images/button/btn_red.png", "res/images/button/btn_red.png", "res/images/button/btn_red2.png", "res/images/button/btn_red.png",  60, 3, "fonts/Marker Felt.ttf");
+    comboBox->setComboBoxDataFromContinuousInt(190,200);
+    comboBox->setPosition(visibleSize.width - 200, visibleSize.height/2);
     addChild(comboBox);
     
 }

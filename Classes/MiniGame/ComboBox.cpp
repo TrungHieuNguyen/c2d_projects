@@ -58,17 +58,13 @@ bool ComboBox::init(const char* text, const char* bgImg, const char* btnImg, con
     m_fontSize = (float)fontSize;
     m_font = font;
     
-    if (!CCLayer::init()) {
+    if (!Layer::init()) {
         return false;
     }
     
-    // 支持AnchorPoint定位, 默认情况下Layer不支持
+    
     ignoreAnchorPointForPosition(false);
-    
-    // 支持触屏
     setTouchEnabled(true);
-    
-    // 创建Label
     CCSize size;
     m_label = CCLabelTTF::create(text, font, fontSize);
     if (!m_label) return false;
@@ -76,16 +72,13 @@ bool ComboBox::init(const char* text, const char* bgImg, const char* btnImg, con
     m_label->retain();
     addChild(m_label, 1);
     size = m_label->getContentSize();
-    
-    // 创建按钮
     float space = 3;
     
-    /// 由于按钮图片可能是大图片，需要收缩，所以采用三个参数的create，需要先获取图片大小
     Sprite* tsp = Sprite::create(btnImg);
     Size s = tsp->getContentSize();
     Rect imgRect = CCRectMake(0,0, s.width, s.height);
     Rect imgRectInsets = CCRectMake(borderPix, borderPix, s.width-2*borderPix, s.height-2*borderPix);
-    tsp->release();
+    //tsp->release();
     
     Scale9Sprite *backgroundButton = Scale9Sprite::create(btnImg, imgRect, imgRectInsets);
     Scale9Sprite *backgroundHighlightedButton = Scale9Sprite::create(hightLightBtnImg, imgRect, imgRectInsets);
@@ -94,7 +87,7 @@ bool ComboBox::init(const char* text, const char* bgImg, const char* btnImg, con
     //m_button->setBackgroundSpriteForState(backgroundHighlightedButton, ControlStateHighlighted);
     m_button->setPreferredSize(CCSizeMake(size.height, size.height));
     m_button->setPosition(m_label->getContentSize().width + m_button->getContentSize().width/2 + space, m_button->getContentSize().height/2);
-    //m_button->addTargetWithActionForControlEvents(this, cccontrol_selector(ComboBox::touchUpInside), ControlEventTouchUpInside);
+    m_button->addTargetWithActionForControlEvents(this, cccontrol_selector(ComboBox::touchUpInside), Control::EventType::TOUCH_UP_INSIDE);
     m_button->retain();
     addChild(m_button, 1);
     
@@ -103,7 +96,6 @@ bool ComboBox::init(const char* text, const char* bgImg, const char* btnImg, con
         size.height = m_button->getContentSize().height;
     }
     
-    // 创建背景, 背景图片正常都是拉伸，用一个参数的create够了，如果背景还搞大图片，那就不能怪我了。。。
     m_backGround = Scale9Sprite::create(bgImg);
     m_backGround->setPreferredSize(size);
     m_backGround->setPosition(ccp(m_backGround->getContentSize().width/2, m_backGround->getContentSize().height/2));
@@ -111,9 +103,9 @@ bool ComboBox::init(const char* text, const char* bgImg, const char* btnImg, con
     addChild(m_backGround, 0);
     
     this->setContentSize(size);
-    
-//    m_tableViewLayer = ComboBoxTableViewLayer::create(&m_dataList, cellBackGround, borderPix, (float)fontSize, font);
-//    m_tableViewLayer->retain();
+    m_tableViewLayer = ComboBoxTableViewLayer::create(this,&m_dataList, cellBackGround, borderPix, (float)fontSize, font);
+    m_tableViewLayer->retain();
+    return true;
 }
 
 void ComboBox::setComboBoxDataList(const ComboBoxDataList& dataList)
@@ -157,8 +149,8 @@ bool ComboBox::onTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
     p.x+=1;
     p.y+=1;
     pTouch->setTouchInfo(pTouch->getID(), p.x, p.y);
-    m_button->ccTouchBegan(pTouch, pEvent);
-    return true;    // 屏蔽该消息不往下传递
+    m_button->onTouchBegan(pTouch, pEvent);
+    return true;
 }
 
 void ComboBox::onTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
@@ -167,7 +159,7 @@ void ComboBox::onTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
     p.x+=1;
     p.y+=1;
     pTouch->setTouchInfo(pTouch->getID(), p.x, p.y);
-    m_button->ccTouchMoved(pTouch, pEvent);
+    m_button->onTouchMoved(pTouch, pEvent);
 }
 
 void ComboBox::onTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
@@ -176,7 +168,7 @@ void ComboBox::onTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
     p.x+=1;
     p.y+=1;
     pTouch->setTouchInfo(pTouch->getID(), p.x, p.y);
-    m_button->ccTouchEnded(pTouch, pEvent);
+    m_button->onTouchEnded(pTouch, pEvent);
 }
 
 void ComboBox::onTouchCancelled(CCTouch *pTouch, CCEvent *pEvent)
@@ -185,10 +177,10 @@ void ComboBox::onTouchCancelled(CCTouch *pTouch, CCEvent *pEvent)
     p.x+=1;
     p.y+=1;
     pTouch->setTouchInfo(pTouch->getID(), p.x, p.y);
-    m_button->ccTouchEnded(pTouch, pEvent);
+    m_button->onTouchEnded(pTouch, pEvent);
 }
 
-void ComboBox::touchUpInside(Object* pSender,Event event)
+void ComboBox::touchUpInside(Ref *sender, Control::EventType controlEvent)
 {
     CCLog("touchUpInside");
     CCSize winSize = CCDirector::sharedDirector()->getWinSize();
@@ -196,7 +188,7 @@ void ComboBox::touchUpInside(Object* pSender,Event event)
     if (fontSize < 20) {
         fontSize = 20;
     }
-    ComboBoxTableViewLayer* layer = ComboBoxTableViewLayer::create(this, &m_dataList, m_cellBackGround, m_borderPix, fontSize, m_font);
+    ComboBoxTableViewLayer* layer = ComboBoxTableViewLayer::create(this,&m_dataList, m_cellBackGround, m_borderPix, fontSize, m_font);
     layer->setAnchorPoint(ccp(0.5,0.5));
     layer->setPosition(ccp(winSize.width/2, winSize.height/2));
     CCScene* curScene = CCDirector::sharedDirector()->getRunningScene();
@@ -241,20 +233,16 @@ bool ComboBoxTableViewLayer::init(ComboBoxDataList* dataList, const char* cellBa
     
     CCLog("ComboBoxTableViewLayer, cellBackGround=%s, borderPix=%f, fontSize=%f, font=%s", m_cellBackGround, m_borderPix, m_fontSize, m_font);
     
-    if ( !CCLayer::init() )
+    if ( !Layer::init() )
     {
         return false;
     }
-    
-    /// 支持锚点
     ignoreAnchorPointForPosition(false);
-    
-    // 先保存图片的大小
     CCSprite* tps = CCSprite::create(cellBackGround);
     CCSize s = tps->getContentSize();
     m_backGroundRect = CCRectMake(0,0, s.width, s.height);
     m_backGroundRectInsets = CCRectMake(m_borderPix, m_borderPix, s.width-2*m_borderPix, s.height-2*m_borderPix);
-    tps->release();
+    //tps->release();
     
     
     CCSize winSize = CCDirector::sharedDirector()->getWinSize();
@@ -333,13 +321,13 @@ void ComboBoxTableViewLayer::reloadDataList()
 
 bool ComboBoxTableViewLayer::onTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
 {
-    m_tableView->ccTouchBegan(pTouch, pEvent);
+    m_tableView->onTouchBegan(pTouch, pEvent);
     return true;
 }
 
 void ComboBoxTableViewLayer::onTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
 {
-    m_tableView->ccTouchMoved(pTouch, pEvent);
+    m_tableView->onTouchMoved(pTouch, pEvent);
 }
 
 void ComboBoxTableViewLayer::onTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
@@ -349,20 +337,32 @@ void ComboBoxTableViewLayer::onTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 
 void ComboBoxTableViewLayer::onTouchCancelled(CCTouch *pTouch, CCEvent *pEvent)
 {
-    m_tableView->ccTouchEnded(pTouch, pEvent);
+    m_tableView->onTouchEnded(pTouch, pEvent);
 }
 
 
 void ComboBoxTableViewLayer::onEnter()
 {
-    CCLayer::onEnter();
+    Layer::onEnter();
     //Director::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, -129, true);
+    auto listener = EventListenerTouchOneByOne::create();
+    listener->setSwallowTouches(_swallowsTouches);
+    
+    listener->onTouchBegan = CC_CALLBACK_2(ComboBoxTableViewLayer::onTouchBegan, this);
+    listener->onTouchMoved = CC_CALLBACK_2(ComboBoxTableViewLayer::onTouchMoved, this);
+    listener->onTouchEnded = CC_CALLBACK_2(ComboBoxTableViewLayer::onTouchEnded, this);
+    listener->onTouchCancelled = CC_CALLBACK_2(ComboBoxTableViewLayer::onTouchCancelled, this);
+    
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+    _touchListener = listener;
 }
 
 void ComboBoxTableViewLayer::onExit()
 {
-    CCLayer::onExit();
+    Layer::onExit();
     //Director::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
+    _eventDispatcher->removeEventListener(_touchListener);
+    _touchListener = nullptr;
 }
 cocos2d::extension::TableViewCell* ComboBoxTableViewLayer::tableCellAtIndex(cocos2d::extension::TableView *table, ssize_t idx){}
 

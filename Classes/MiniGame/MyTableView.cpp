@@ -9,9 +9,9 @@
 #include <stdlib.h>
 
 
-MyTableView* MyTableView::create(TableViewDataSource* dataSource, CCSize size)
+MyTableView* MyTableView::create(TableViewDataSource* dataSource, Size size)
 {
-    return MyTableView::create(dataSource, size, NULL);
+    return MyTableView::create(dataSource, size, nullptr);
 }
 
 MyTableView* MyTableView::create(TableViewDataSource* dataSource, CCSize size, CCNode *container)
@@ -20,6 +20,7 @@ MyTableView* MyTableView::create(TableViewDataSource* dataSource, CCSize size, C
     table->initWithViewSize(size, container);
     table->autorelease();
     table->setDataSource(dataSource);
+    //table->_updateCellPositions();
     table->_updateContentSize();
     
     return table;
@@ -85,6 +86,6 @@ void MyTableView::onTouchEnded(Touch *pTouch, CCEvent *pEvent)
     //            m_pTableViewDelegate->tableCellTouched(this, cell);
     //        }
     //    }
-    ScrollView::ccTouchEnded(pTouch, pEvent);
+    ScrollView::onTouchEnded(pTouch, pEvent);
     }
 }

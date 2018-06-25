@@ -24,7 +24,6 @@ USING_NS_CC_EXT;
 typedef std::vector<std::string> ComboBoxDataList;
 
 class ComboBoxTableViewLayer;
-
 class ComboBox : public Layer
 {
 public:
@@ -38,7 +37,7 @@ public:
     void onTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
     void onTouchCancelled(CCTouch *pTouch, CCEvent *pEvent);
     
-    void touchUpInside(Object* pSender, Event event);
+    void touchUpInside(Ref *sender, Control::EventType controlEvent);
     
     void setComboBoxDataList(const ComboBoxDataList& dataList) ;
     void setComboBoxDataFromContinuousInt(int start, int end, int step=1);
@@ -49,7 +48,7 @@ public:
     void setLabel(const char* label);
     
 protected:
-    void setContentSize(const CCSize& s);
+    void setContentSize(const Size& s);
     
 protected:
     CCLabelTTF* m_label;
@@ -69,6 +68,7 @@ protected:
 
 class ComboBoxTableViewLayer : public Layer, public TableViewDataSource, public TableViewDelegate
 {
+
 public:
     ComboBoxTableViewLayer();
     ~ComboBoxTableViewLayer();
