@@ -41,7 +41,7 @@
           <FilePathData Path="GameTiledMap.csd" />
           <FilePathData Path="AboutScene.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="ScreenSlot.csd" />
+        <ActiveDocument Path="MainScene.csd" />
       </Value>
     </Item>
   </Properties>

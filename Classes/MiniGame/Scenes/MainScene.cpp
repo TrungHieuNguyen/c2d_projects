@@ -97,27 +97,31 @@ void MainScene::initComponents()
     {
         auto closeItem = MenuItemImage::create(  "res/images/button/btn_red.png", "res/images/button/btn_red2.png",CC_CALLBACK_1(MainScene::menuCloseCallback, this));
         closeItem->setAnchorPoint(Point(0.5, 0.5));
-        //closeItem->setAnchorPoint(Point(0,0));
+        //closeItem->setAnchorPoint(Point(0,1));
         closeItem->setPosition(Vec2(0,i*closeItem->getContentSize().height/2));
         menu->addChild(closeItem);
     }
-    menu->alignItemsVertically();
+    //menu->setContentSize(Size(300,500));
+    //menu->alignItemsVertically();
     
 //    Size scroll_size = Director::getInstance()->getWinSize();
 //    Size container_size = Size(scroll_size.width * 2, scroll_size.height);
 //    Layer* container = Layer::create();
 //    container->setContentSize(container_size);
+    
     cocos2d::ui::ScrollView* scrollView = cocos2d::ui::ScrollView::create();
-    scrollView->setContentSize(Size(visibleSize.width, 450)); // What user see
-    scrollView->setInnerContainerSize(Size(visibleSize.width, 830));
+    //scrollView->setContentSize(Size(300, 450)); // What user see
+    scrollView->setInnerContainerSize(Size(300, 500));
     scrollView->setAnchorPoint(Vec2(0.5,0.5));
     scrollView->setDirection(cocos2d::ui::ScrollView::Direction::VERTICAL);
-    //scrollView->setBounceEnabled(true);
+    scrollView->setBounceEnabled(true);
     scrollView->addChild(menu);
-    scrollView->setPosition(Point (visibleSize.width-200,visibleSize.height/2));
-   // scrollView->setContentSize(Size(menu->getContentSize().width, menu->getContentSize().height));
+    scrollView->setColor(Color3B::WHITE);
+    scrollView->setPosition(Point (visibleSize.width/2,visibleSize.height/2));
+    Size size = menu->getContentSize();
+    scrollView->setContentSize(Size(menu->getContentSize().width/2, menu->getContentSize().height));
     scrollView->unscheduleAllSelectors();
-    //this->addChild(scrollView, 2);
+    this->addChild(scrollView, 2);
     
     ComboBox* comboBox = ComboBox::create("1985", "res/images/button/btn_red.png", "res/images/button/btn_red.png", "res/images/button/btn_red2.png", "res/images/button/btn_red.png",  60, 3, "fonts/Marker Felt.ttf");
     comboBox->setComboBoxDataFromContinuousInt(190,200);

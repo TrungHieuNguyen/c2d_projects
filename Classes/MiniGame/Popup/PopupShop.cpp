@@ -159,6 +159,7 @@ TableViewCell* PopupShop::tableCellAtIndex(cocos2d::extension::TableView *table,
         lbCoin->setIgnoreAnchorPointForPosition(false);
         lbCoin->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
         lbCoin->setTag(9990);
+        //lbCoin->setName("AAA");
         cell->addChild(lbCoin);
         lbCoin->setPosition(WCELL/2, HCELL-50);
         

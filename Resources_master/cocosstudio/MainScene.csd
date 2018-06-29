@@ -17,7 +17,7 @@
             <FileData Type="Normal" Path="images/background/Arthur.jpg" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnPlay" ActionTag="1379439207" Tag="3" IconVisible="False" LeftMargin="59.4419" RightMargin="900.5580" TopMargin="121.9837" BottomMargin="513.0163" TouchEnable="True" FontSize="40" ButtonText="Cards" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="325" Scale9Height="41" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btnPlay" ActionTag="1379439207" Tag="3" IconVisible="False" LeftMargin="59.4419" RightMargin="900.5581" TopMargin="121.9837" BottomMargin="513.0163" TouchEnable="True" FontSize="40" ButtonText="Cards" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="325" Scale9Height="41" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="320.0000" Y="85.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="219.4419" Y="555.5163" />
@@ -45,7 +45,7 @@
             <OutlineColor A="255" R="0" G="255" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btn2D" ActionTag="640980814" Tag="44" IconVisible="False" LeftMargin="56.9091" RightMargin="903.0908" TopMargin="219.9133" BottomMargin="415.0867" TouchEnable="True" FontSize="40" ButtonText="Fighting" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="325" Scale9Height="41" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btn2D" ActionTag="640980814" Tag="44" IconVisible="False" LeftMargin="56.9091" RightMargin="903.0909" TopMargin="219.9133" BottomMargin="415.0867" TouchEnable="True" FontSize="40" ButtonText="Fighting" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="325" Scale9Height="41" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="320.0000" Y="85.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="216.9091" Y="457.5867" />
@@ -159,11 +159,11 @@
           </AbstractNodeData>
           <AbstractNodeData Name="btnTiledMap_0" ActionTag="-538583398" Tag="65" IconVisible="False" LeftMargin="427.2968" RightMargin="532.7032" TopMargin="320.6681" BottomMargin="314.3319" TouchEnable="True" FontSize="40" ButtonText="Buble Shooting" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="325" Scale9Height="41" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="320.0000" Y="85.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="587.2968" Y="356.8319" />
+            <AnchorPoint ScaleX="0.5209" ScaleY="0.5039" />
+            <Position X="594.0000" Y="357.1613" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4588" Y="0.4956" />
+            <PrePosition X="0.4641" Y="0.4961" />
             <PreSize X="0.2500" Y="0.1181" />
             <FontResource Type="Normal" Path="fonts/AvenirNextCondensed-Regular.ttf" Plist="" />
             <TextColor A="255" R="238" G="238" B="51" />
@@ -220,6 +220,20 @@
             <NormalFileData Type="Normal" Path="images/button/btn_main.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="ScrollView_1" ActionTag="-1388856583" Tag="136" IconVisible="False" LeftMargin="974.0000" RightMargin="106.0000" TopMargin="36.0000" BottomMargin="484.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="129" ComboBoxIndex="1" ColorAngle="90.0000" ScrollDirectionType="Vertical" ctype="ScrollViewObjectData">
+            <Size X="200.0000" Y="200.0000" />
+            <AnchorPoint />
+            <Position X="974.0000" Y="484.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.7609" Y="0.6722" />
+            <PreSize X="0.1563" Y="0.2778" />
+            <SingleColor A="255" R="255" G="150" B="100" />
+            <FirstColor A="255" R="255" G="150" B="100" />
+            <EndColor A="255" R="255" G="255" B="255" />
+            <ColorVector ScaleY="1.0000" />
+            <InnerNodeSize Width="200" Height="300" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

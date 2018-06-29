@@ -20,7 +20,7 @@ MyTableView* MyTableView::create(TableViewDataSource* dataSource, CCSize size, C
     table->initWithViewSize(size, container);
     table->autorelease();
     table->setDataSource(dataSource);
-    //table->_updateCellPositions();
+    table->_updateCellPositions();
     table->_updateContentSize();
     
     return table;
