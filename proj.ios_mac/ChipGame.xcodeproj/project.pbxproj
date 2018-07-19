@@ -90,6 +90,7 @@
 		BF6210E92064AF010017D34B /* HUDLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6210E72064AF010017D34B /* HUDLayer.cpp */; };
 		BF685FB220BD146F00B16691 /* SlotScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF685FAF20BD146E00B16691 /* SlotScene.cpp */; };
 		BF6EDACA2068D54C00CA0F01 /* Player2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6EDAC82068D54C00CA0F01 /* Player2D.cpp */; };
+		BF75F50621009D57005192F1 /* WebSocketManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF75F50421009D57005192F1 /* WebSocketManager.cpp */; };
 		BF7E7D76204E4CC100980405 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D74204E4CC100980405 /* Player.cpp */; };
 		BF7E7D79204E4CED00980405 /* GameTL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D77204E4CED00980405 /* GameTL.cpp */; };
 		BF7E7D7C204E4D0800980405 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7D7A204E4D0800980405 /* Game.cpp */; };
@@ -329,6 +330,8 @@
 		BF685FB120BD146F00B16691 /* SlotScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SlotScene.hpp; sourceTree = "<group>"; };
 		BF6EDAC82068D54C00CA0F01 /* Player2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player2D.cpp; sourceTree = "<group>"; };
 		BF6EDAC92068D54C00CA0F01 /* Player2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player2D.hpp; sourceTree = "<group>"; };
+		BF75F50421009D57005192F1 /* WebSocketManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WebSocketManager.cpp; sourceTree = "<group>"; };
+		BF75F50521009D57005192F1 /* WebSocketManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WebSocketManager.hpp; sourceTree = "<group>"; };
 		BF7E7D74204E4CC100980405 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		BF7E7D75204E4CC100980405 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		BF7E7D77204E4CED00980405 /* GameTL.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameTL.cpp; sourceTree = "<group>"; };
@@ -760,6 +763,8 @@
 				24079D371F28335300501F01 /* MiniGame */,
 				240A80D01F0E15C5009893B7 /* DragonBones */,
 				241F02881F21EBB800323F34 /* DragonBonesTest */,
+				BF75F50421009D57005192F1 /* WebSocketManager.cpp */,
+				BF75F50521009D57005192F1 /* WebSocketManager.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -1041,6 +1046,7 @@
 				240A81671F0E1639009893B7 /* TextureData.cpp in Sources */,
 				240A81461F0E1639009893B7 /* TimelineState.cpp in Sources */,
 				241F02951F21EBB800323F34 /* HelloDragonBones.cpp in Sources */,
+				BF75F50621009D57005192F1 /* WebSocketManager.cpp in Sources */,
 				BF5EEC4B1FD7911900E0FA18 /* PopupShop.cpp in Sources */,
 				241F02971F21EBB800323F34 /* PerformanceTest.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -1101,7 +1107,10 @@
 					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../cocos/editor-support",
+				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -1120,7 +1129,7 @@
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
+				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END) $(SRCROOT)/…/cocos2d/cocos/editor-support";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
@@ -1143,7 +1152,10 @@
 					NDEBUG,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../cocos/editor-support",
+				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -1162,7 +1174,7 @@
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
+				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END) $(SRCROOT)/…/cocos2d/cocos/editor-support";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
@@ -1244,12 +1256,14 @@
 					"$(SRCROOT)/../cocos2d/extensions",
 					"$(SRCROOT)/../cocos2d/external",
 					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/…/cocos2d/cocos/editor-support",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/…/cocos2d/cocos/editor-support";
 			};
 			name = Debug;
 		};
@@ -1267,12 +1281,14 @@
 					"$(SRCROOT)/../cocos2d/extensions",
 					"$(SRCROOT)/../cocos2d/external",
 					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/…/cocos2d/cocos/editor-support",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/…/cocos2d/cocos/editor-support";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

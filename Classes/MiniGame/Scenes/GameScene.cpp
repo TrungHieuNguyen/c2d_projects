@@ -6,6 +6,7 @@
 //
 //
 
+#include "cocos-ext.h"
 #include "GameScene.hpp"
 #include "GameDefine.h"
 #include "ui/CocosGUI.h"
@@ -13,11 +14,9 @@
 #include "SimpleAudioEngine.h"
 #include "PopupResult.hpp"
 #include "PopupShop.hpp"
-
 #include "MainScene.hpp"
 #include "Card.hpp"
 USING_NS_CC;
-
 Scene* GameScene::createScene()
 {
     auto scene = Scene::create();
