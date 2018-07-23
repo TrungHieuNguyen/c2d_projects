@@ -10,6 +10,7 @@
 #include "cocos2d.h"
 #include "extensions/cocos-ext.h"
 #include "network/WebSocket.h"
+#include "Network/CCMessage.h"
 #include <stdio.h>
 class WebSocketManager  : public cocos2d::Sprite, public cocos2d::network::WebSocket::Delegate
 {
@@ -29,7 +30,7 @@ public:
     
     void onSendBinary();
     void InitManager();
-    
+    virtual void sendMessage(CCMessage * mess);
     
 private:
     cocos2d::network::WebSocket* _wsiSendBinary;

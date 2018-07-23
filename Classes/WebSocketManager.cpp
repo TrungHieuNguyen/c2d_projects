@@ -6,11 +6,11 @@
 //
 
 #include "WebSocketManager.hpp"
-
+#include <string.h>
 
 USING_NS_CC;
 USING_NS_CC_EXT;
-
+using namespace std;
 WebSocketManager::WebSocketManager()
 :
 _wsiSendBinary(nullptr)
@@ -50,7 +50,8 @@ void WebSocketManager::InitManager()
     //protocols.push_back("myprotocol_2");
     
     protocols.erase(protocols.begin());
-    if (!_wsiSendBinary->init(*this, "ws://127.0.0.1/wsapi",&protocols))
+    string url = "ws://192.168.1.13:1111";
+    if (!_wsiSendBinary->init(*this, url,&protocols))
     {
         CC_SAFE_DELETE(_wsiSendBinary);
     }
@@ -166,5 +167,7 @@ void WebSocketManager::onSendBinary()
         log("%s", _sendBinaryStatus.c_str());
     }
 }
-
-
+ void WebSocketManager::sendMessage(CCMessage * mess)
+{
+    
+}

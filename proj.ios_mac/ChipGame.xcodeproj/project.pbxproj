@@ -82,6 +82,7 @@
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		BF391FBD2105DD6D0085DF63 /* CCMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF391FBC2105DD6D0085DF63 /* CCMessage.cpp */; };
 		BF5C208220DBA724006C4E12 /* ComboBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF5C208020DBA724006C4E12 /* ComboBox.cpp */; };
 		BF5C208620DBA8ED006C4E12 /* MyTableView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF5C208420DBA8ED006C4E12 /* MyTableView.cpp */; };
 		BF5C8DD92080ACC200645AA5 /* PopupMiniTaiXiu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF5C8DD42080ACC100645AA5 /* PopupMiniTaiXiu.cpp */; };
@@ -314,6 +315,9 @@
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BF391FBB2105DD6D0085DF63 /* CCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCMessage.h; path = ../Network/CCMessage.h; sourceTree = "<group>"; };
+		BF391FBC2105DD6D0085DF63 /* CCMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCMessage.cpp; path = ../Network/CCMessage.cpp; sourceTree = "<group>"; };
+		BF391FBE2105DE080085DF63 /* CCChar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCChar.h; path = ../Network/CCChar.h; sourceTree = "<group>"; };
 		BF5C208020DBA724006C4E12 /* ComboBox.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ComboBox.cpp; sourceTree = "<group>"; };
 		BF5C208120DBA724006C4E12 /* ComboBox.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ComboBox.hpp; sourceTree = "<group>"; };
 		BF5C208420DBA8ED006C4E12 /* MyTableView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyTableView.cpp; sourceTree = "<group>"; };
@@ -758,6 +762,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BF391FB92105DD5A0085DF63 /* Network */,
 				24FBDA6B1F3C78C500B21CFB /* AppDelegate.cpp */,
 				24FBDA6C1F3C78C500B21CFB /* AppDelegate.h */,
 				24079D371F28335300501F01 /* MiniGame */,
@@ -804,6 +809,17 @@
 			name = Icons;
 			path = ios;
 			sourceTree = SOURCE_ROOT;
+		};
+		BF391FB92105DD5A0085DF63 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BF391FBC2105DD6D0085DF63 /* CCMessage.cpp */,
+				BF391FBE2105DE080085DF63 /* CCChar.h */,
+				BF391FBB2105DD6D0085DF63 /* CCMessage.h */,
+			);
+			name = Network;
+			path = "New Group";
+			sourceTree = "<group>";
 		};
 		BF6F7EF720CA362900EF805E /* Popup */ = {
 			isa = PBXGroup;
@@ -1043,6 +1059,7 @@
 				BF7E7D76204E4CC100980405 /* Player.cpp in Sources */,
 				240A81451F0E1639009893B7 /* AnimationState.cpp in Sources */,
 				240A81AF1F0E1DD6009893B7 /* CCTextureData.cpp in Sources */,
+				BF391FBD2105DD6D0085DF63 /* CCMessage.cpp in Sources */,
 				240A81671F0E1639009893B7 /* TextureData.cpp in Sources */,
 				240A81461F0E1639009893B7 /* TimelineState.cpp in Sources */,
 				241F02951F21EBB800323F34 /* HelloDragonBones.cpp in Sources */,

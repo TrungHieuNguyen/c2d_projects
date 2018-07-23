@@ -40,8 +40,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->getOpenGLView()->setDesignResolutionSize(1280, 720, ResolutionPolicy::SHOW_ALL);
     //director->setDisplayStats(true);
     director->setAnimationInterval(1.f / 60.f);
-    Configuration::getInstance()->loadConfigFile("config-example.plist");
-    
+    //Configuration::getInstance()->loadConfigFile("config-example.plist");
+    webSocketMgr = new WebSocketManager();
+    webSocketMgr->InitManager();
     FileUtils::getInstance()->addSearchPath(".");
     FileUtils::getInstance()->addSearchPath("res");
     FileUtils::getInstance()->addSearchPath("fonts");
